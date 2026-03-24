@@ -1,0 +1,63 @@
+/* Hero landing page */
+.mdx-hero {
+  margin: 0;
+  padding: 4rem 0;
+  background: var(--md-default-bg-color);
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
+  padding-bottom: 12vh;
+}
+
+.mdx-hero__content {
+  max-width: 36rem;
+}
+
+.mdx-hero__logo {
+  display: none;
+  width: 24rem;
+  height: auto;
+  margin-top: 6rem;
+}
+
+[data-md-color-scheme="default"] .mdx-hero__logo--light,
+[data-md-color-scheme="slate"] .mdx-hero__logo--dark {
+  display: block;
+}
+
+.mdx-hero__content h1 {
+  margin: 0 0 0.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--md-default-fg-color);
+}
+
+.mdx-hero__content p {
+  margin: 0 0 1.6rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+}
+
+.mdx-hero__actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* Hide sidebars and breadcrumbs on the landing page */
+.mdx-hero ~ .md-main__inner .md-sidebar {
+  display: none;
+}
+
+
+@media screen and (min-width: 60em) {
+  .mdx-hero {
+    padding: 6rem 0;
+  }
+
+  .mdx-hero__content h1 {
+    font-size: 3rem;
+  }
+}

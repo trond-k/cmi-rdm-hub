@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="mdx-hero">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero__content">
+        <h1>Research Data Management Hub</h1>
+        <p>Practical tools and guidance for handling research data across your project lifecycle at CMI - Chr. Michelsen Institute.</p>
+        <nav class="mdx-hero__actions">
+          <a href="{{ 'start-here/' | url }}" class="md-button md-button--primary">
+            Start here
+          </a>
+          <a href="{{ 'guides/' | url }}" class="md-button">
+            Browse guides
+          </a>
+        </nav>
+        <img src="{{ 'images/CMI_LOGO_ENGLISH.png' | url }}" alt="Chr. Michelsen Institute" class="mdx-hero__logo mdx-hero__logo--light">
+        <img src="{{ 'images/CMI_LOGO_ENGLISH_white_flat.png' | url }}" alt="Chr. Michelsen Institute" class="mdx-hero__logo mdx-hero__logo--dark">
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}<span data-no-copy></span>{% endblock %}
