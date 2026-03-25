@@ -1,213 +1,96 @@
 ---
 icon: lucide/clipboard-list
-title: "Build a data inventory"
-description: "Why a data inventory belongs at the centre of your project, and how to build one record at a time."
+title: "The data inventory"
+description: "A running register of every dataset in your project: what it is, where it lives, who is responsible, and how sensitive it is."
 tags:
   - Frame
+  - Plan
   - Data inventory
   - DMP
 notes: ""
 date_updated: 2026-03-25
 ---
 
-# Build a data inventory
+# The data inventory
 
-*Every research project generates more data than its creators expect. A data inventory is a structured register of the research data your project collects, reuses, and produces. It is the document that every other data management decision refers back to: what you store, how you classify it, who can access it, and where it ends up. Building one early, and keeping it current, is the single most useful thing you can do for your project's data management.*
+*A data inventory is a running register of every dataset your project creates or acquires. It records what each dataset contains, where it is stored, who is responsible for it, how sensitive it is, and what will happen to it when the project ends. Start it early, keep it current, and it becomes the single document that holds your entire data landscape together.*
 
-## What is a data inventory?
+## What a data inventory does
 
-A data inventory is a systematic list of your project's research data, organised as a set of **data records**. Each record represents a coherent data collection activity or analytical output, not an individual file. A record called 'village leader interviews' covers the full set of recordings, transcripts, and coded outputs from that interview series. A record called 'household baseline survey' covers the questionnaire instrument, the raw response data, and the cleaned dataset.
+A Data Management Plan (DMP) describes your intentions: how you plan to handle data across the project lifecycle. The data inventory is its factual counterpart. It records what actually exists. The two documents work in tandem: the DMP sets the framework, and the inventory tracks reality against it.
 
-The inventory is a living document. You draft it during project planning, refine it as fieldwork begins, and update it when new data emerges or plans change. By the end of the project it serves as a definitive account of what data you collected, what happened to it, and where it is now. It covers **primary research data** (data you collect or generate) and **secondary research data** (existing datasets you reuse or analyse).
+Without an inventory, common problems accumulate quietly. Datasets are collected but not documented. Files sit on personal laptops with no backup record. A team member leaves, and nobody knows which survey versions they used or where the consent forms are stored. Sensitive data ends up in locations that were never assessed for security. By the time you need to deposit, publish, or delete data, reconstructing what you have and where it is becomes a project in itself.
 
-## Why the inventory matters
+The inventory prevents this by making the data landscape visible from the start and keeping it visible throughout.
 
-### It anchors your Data Management Plan
+## What to record
 
-The DMP is the document that funders, ethics boards, and your own team rely on to understand how data will be handled. The inventory is its structural core. Your sensitivity classifications, storage decisions, sharing pathways, FAIR operationalisation, and retention plans all refer back to specific data records. Without the inventory, these sections become vague generalisations that are difficult to act on or verify.
+A useful inventory does not need to be elaborate, but it does need to be specific. For each dataset, record at minimum:
 
-At CMI, the data inventory forms Section 3 of the institutional DMP template, and the executive summary table at the front of the DMP is generated directly from it. If the inventory is solid, the rest of the DMP largely writes itself.
+| Field | What it captures |
+|---|---|
+| Dataset name | A short, recognisable label (e.g., 'Household survey, Kumasi') |
+| Description | What the dataset contains and how it was produced |
+| Research question or work package | Which part of the project this dataset serves |
+| Data type and format | Quantitative, qualitative, geospatial, audiovisual; file formats used |
+| Source | Primary collection, secondary acquisition, administrative records, etc. |
+| Sensitivity classification | Personal data, special category data, politically sensitive, non-sensitive |
+| Storage location | Where the authoritative copy lives (e.g., SharePoint, encrypted cloud service, local drive) |
+| Backup location | Where backups are held and how often they are updated |
+| Responsible person | Who manages this dataset day to day |
+| Access restrictions | Who can access it and under what conditions |
+| Retention plan | How long the data will be kept and what happens afterwards |
+| Persistent identifier | DOI or other identifier, once assigned |
 
-### It catches what you overlook
+You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
 
-Researchers naturally focus on their primary data collections: the interviews they will conduct, the surveys they will administer, the fieldwork they will carry out. The inventory forces you to also account for less obvious research data:
+!!! tip "Keep the format simple"
+    A spreadsheet works well for most projects. If you are managing a large or complex portfolio, a structured database may be more appropriate. The format matters less than the discipline of keeping it up to date.
 
-- **Secondary datasets** you plan to reuse or re-analyse (anonymised transcripts from a prior project, public survey data, policy document corpora)
-- **Derived outputs** that constitute research data in their own right (coded qualitative datasets, statistical models, geo-referenced incident databases)
-- **Supporting methods** that may not feel like 'real data' but still need managing (ethnographic field diaries, audio recordings made during participant observation, photographs of fieldwork contexts)
+## How the inventory evolves
 
-If it was collected or generated for the purposes of your research, it belongs in the inventory.
+The data inventory is not a document you write once. It develops alongside the project, becoming more detailed and more authoritative as you move through the research lifecycle.
 
-### It connects data to decisions
+### Before data collection
 
-Different datasets within the same project often need different treatment. Interview recordings from a conflict zone require high-security storage and restricted access. A publicly available policy document corpus can be shared openly. A household survey dataset sits somewhere in between.
+At the concept stage, the inventory is a sketch: a preliminary list of the datasets you expect to create or acquire, based on your research questions and methods. It does not need to be precise. Its purpose is to make you think concretely about what data the project will involve, what sensitivities are likely, and whether your plans are feasible.
 
-When each data record carries its own sensitivity tier, storage location, and sharing pathway, you avoid two common pitfalls: applying your most restrictive policy to everything (which makes open data unnecessarily difficult) or applying your most permissive policy to everything (which puts participants at risk).
+When you write the funding application, the inventory becomes more structured. Map each anticipated dataset to a research question or work package. Identify likely formats, estimate volumes, and flag sensitivity concerns. This version supports both the data management strategy and the ethics strategy in your proposal, and it helps you cost RDM activities realistically.
 
-### It supports accountability over time
+By the time you write your DMP, the inventory should be a formal, structured document. Specify metadata standards, file formats, sensitivity classifications, storage locations, and responsibility assignments for each dataset. The inventory is now a key component of the DMP, not a separate exercise.
 
-A versioned inventory is an audit trail. When a funder asks what data your project holds, or when a data protection authority queries your processing activities, or when a future researcher wants to understand what was collected and why, the inventory provides the answer. This is especially valuable for long-running projects and for the post-project period when team members move on and institutional memory fades.
+### During data collection and analysis
 
-## What goes into a data record
+Once fieldwork begins, the inventory shifts from planned to actual. Update it as datasets are created: record collection dates, actual formats and volumes, source details, and any deviations from what was planned. If a new dataset emerges that was not anticipated (as often happens in qualitative and mixed-methods research), add it.
 
-Each record describes a single data collection or analytical output using six fields. The aim is to be specific enough to make real decisions, but concise enough that the inventory remains usable. Target roughly 15–20 lines per record.
+The inventory should be reviewed at the same milestones you use to review the DMP: after major collection phases, after processing, and at reporting deadlines. Ask whether the inventory still reflects what you have. Have storage arrangements changed? Has someone new taken over responsibility for a dataset? Has a sensitivity classification shifted because of new information?
 
-### Description and method
+!!! warning "Do not let the inventory go stale"
+    An outdated inventory is worse than no inventory at all, because it creates false confidence. If the document says a dataset is on SharePoint but it has since been moved to a secure storage environment, anyone relying on the inventory will look in the wrong place. Schedule regular reviews rather than treating the inventory as a one-off task.
 
-What this data is and how it is collected or generated. One to two sentences.
+### After the project
 
-> *Semi-structured interviews with savings group leaders and community health workers in three Zambian provinces, exploring implementation experiences and barriers to programme adoption.*
+When you publish or deposit data, update the inventory with persistent identifiers (DOIs), access conditions, embargo timelines, and the repository where each dataset has been deposited. When data is destroyed at the end of its retention period, record the date and method of destruction.
 
-### Formats and estimated volume
+At this point, the inventory becomes the authoritative record of the project's entire data lifecycle: what was collected, how it was processed, where it was stored, what was published, what was preserved, and what was deleted. For CMI, where projects span sensitive contexts and multiple jurisdictions, this record is not just good practice; it is essential for demonstrating compliance with the GDPR, funder mandates, and ethical commitments to participants.
 
-File formats and approximate size or count. One line is usually enough.
+## Connecting the inventory to other documents
 
-> *Audio (WAV), transcripts (DOCX), coded dataset ([NVivo](https://lumivero.com/products/nvivo/) .nvp). Approximately 40 interviews, ~120 hours of audio.*
+The data inventory does not replace other project documentation. It complements it:
 
-### Data flow
+- The **DMP** describes policies and procedures; the inventory records the datasets those policies apply to.
+- The **README** in your project folder describes the naming convention and folder structure; the inventory records what is in those folders and why.
+- **Consent forms and participant information sheets** document what participants agreed to; the inventory records which datasets are covered by which consent arrangements.
+- **Data processing agreements** specify the legal terms of data handling with third parties; the inventory records which datasets are subject to those agreements.
 
-The chain from collection to end state. Use a concise chain format by default:
+If these documents contradict each other, something has gone wrong. The inventory is often the quickest way to spot the discrepancy.
 
-> *Field recording (WAV) → transcription (DOCX) → anonymised transcript (DOCX) → coded dataset (NVivo) → archived transcript (PDF/A)*
+??? example "A data inventory in practice: a mixed-methods project"
+    A CMI project studying local governance in three East African countries might begin with an inventory listing four planned datasets: a household survey, key informant interviews, focus group discussions, and administrative records obtained from municipal authorities. By mid-project, the inventory has grown to include a fifth dataset (GPS coordinates of service delivery points, added after the first field visit revealed their relevance) and records that two of the original datasets required revised sensitivity classifications after a political crisis in one of the study countries. At project close, the inventory shows that the survey data was deposited in the Sikt Research Data Archive with a DOI and open access, the interview transcripts were deposited with restricted access and a five-year embargo, the GPS data was withheld entirely due to re-identification risk, and the administrative records were returned to the municipal authorities under the terms of the data sharing agreement.
 
-> *Tablet-based data entry ([CSPro](https://www.census.gov/data/software/cspro.html)) → transfer to secure server (CSV) → cleaned dataset ([Stata](https://www.stata.com) .dta) → analysis outputs (Stata .do/.log) → archived dataset (CSV + codebook)*
+??? example "A data inventory in practice: document-based research"
+    Not all projects generate primary data through fieldwork. A commissioned policy review analysing climate adaptation legislation across ten countries might work entirely with published laws, government reports, and grey literature. An inventory is still useful. It records which documents were collected, from which sources, in which languages, and how they were selected. It tracks where the collection is stored, who compiled it, and whether any documents were obtained under access restrictions or confidentiality agreements. If the analytical outputs (a comparative coding framework, an annotated bibliography, a summary matrix) are to be deposited or shared with the commissioning body, the inventory records what was delivered and under what terms. Even when the underlying materials are publicly available, the curated collection and the analytical layer built on top of it are project outputs worth documenting.
 
-If the flow has branches or non-obvious steps, expand to a short paragraph.
+## Start now
 
-### Personal data and sensitivity
-
-Three sub-fields, each on its own line:
-
-- **Categories**: direct identifiers, indirect identifiers, special category data, or none
-- **Sensitivity tier**: Green (open), Yellow (internal), Red (restricted), or Black (strictly restricted)
-- **Key risk**: one sentence identifying the principal risk
-
-### Storage and security
-
-Where the data is stored and who has access. Omit fieldwork measures if not applicable.
-
-- **Storage**: the platform or system (e.g., CMI M365, Services for Sensitive Data (TSD), [Tresorit](https://tresorit.com))
-- **Access**: who has access and on what basis
-- **Fieldwork measures**: device encryption, upload protocols, local deletion (if applicable)
-
-### Sharing and archiving
-
-How the data will (or will not) be shared after the project, and where it will be preserved.
-
-- **Pathway**: open access, registered access, controlled access, restricted access, or no external sharing
-- **Target repository and licence**: e.g., '[Zenodo](https://zenodo.org), CC BY 4.0' or 'Sikt Research Data Archive, DDI metadata'
-- **Embargo**: if applicable
-- **If restricted**: whether a metadata-only record will be deposited
-
-## How to build your inventory
-
-### Start from your methods
-
-For each research method your project uses, ask: what data does this method produce? An interview study produces recordings, transcripts, and potentially a coded dataset. A survey produces the instrument, raw responses, and a cleaned dataset. Ethnographic fieldwork produces field diaries, photographs, and possibly audio or video recordings. List each distinct output as a candidate data record.
-
-### Account for secondary data
-
-If your project reuses existing datasets, whether from a prior project, a public archive, or a partner institution, these need their own records. Secondary data still requires decisions about storage, access, and any restrictions imposed by the original data holder. Note the source, any licensing or data-sharing agreements that govern your use, and how you will store your working copy.
-
-### Trace the data flow
-
-For each record, map the chain from the point of collection or acquisition to its final resting place. This step often reveals intermediate forms you hadn't considered (a transcription stage, a cleaning step, a format conversion for archiving) and helps you identify where sensitivity changes along the chain. Raw interview audio is highly sensitive; a fully anonymised summary may be open.
-
-!!! tip "Use a summary table for similar records"
-    If your project has six or more data records of a similar type (e.g., interview series with eight different participant groups, or survey waves across multiple sites), you do not need a full entry for each. Use a summary table to describe the set, and provide a full record only for those that differ materially in sensitivity, storage, or sharing pathway.
-
-### Check for the things people miss
-
-Researchers typically miss the implicit data objects rather than the obvious ones. Before you call the inventory complete, check for:
-
-- the key linking pseudonyms to identities
-- pilot data that never made it into the 'real' dataset
-- codebooks, README files, and translation notes
-- sampling frames and recruitment lists
-- files shared temporarily with assistants, partners, or service providers
-
-### Revisit at project milestones
-
-The inventory you draft at the proposal stage will not match reality at the mid-point. New data sources emerge, planned collections are dropped, formats change. Review and update the inventory:
-
-- after ethical approvals are obtained
-- when fieldwork begins
-- at the project mid-point
-- before archiving and final outputs
-- whenever a significant change occurs in research design or data handling
-
-## Worked examples
-
-The examples below show completed data records from different research contexts at CMI. Adapt the level of detail to your project.
-
-???+ example "Semi-structured interviews in a sensitive context"
-    **Description and method:** Semi-structured interviews with fishermen and their families in Lampedusa, exploring experiences of encountering migrant remains at sea. Conducted face-to-face by the PI, who has long-standing relationships with the community.
-
-    **Formats and estimated volume:** Audio (WAV), transcripts (DOCX), coded dataset (NVivo .nvp). Approximately 20 interviews.
-
-    **Data flow:** Field recording (WAV) → transcription and translation (DOCX) → pseudonymised transcript (DOCX) → coded dataset (NVivo) → archived transcript (PDF/A)
-
-    **Personal data and sensitivity:**
-
-    - Categories: direct identifiers (voices, names in recordings), special category data (traumatic experiences, potentially criminalised activities)
-    - Sensitivity tier: Red
-    - Key risk: small community size and distinctive personal narratives make re-identification possible even after pseudonymisation
-
-    **Storage and security:**
-
-    - Storage: CMI M365 with restricted access; raw audio on encrypted device during fieldwork
-    - Access: PI only; supervisor access to pseudonymised transcripts
-    - Fieldwork measures: encrypted recording device, upload to secure storage within 24 hours, local deletion after verification
-
-    **Sharing and archiving:**
-
-    - Pathway: restricted access
-    - Target repository and licence: metadata-only record in Zenodo; pseudonymised transcripts under permanent embargo at CMI
-    - If restricted: metadata-only record deposited with full methodological documentation
-
-??? example "Household survey dataset from a randomised controlled trial"
-    **Description and method:** Baseline and follow-up household surveys administered to approximately 11,200 pregnant women across three Zambian provinces, capturing demographics, health-seeking behaviour, birth preparedness, and antenatal care card data.
-
-    **Formats and estimated volume:** Raw data (CSPro), cleaned dataset (Stata .dta, CSV). Approximately 22,400 survey records across two waves.
-
-    **Data flow:** Tablet-based data entry (CSPro) → transfer to secure server (CSV) → cleaning and validation (Stata) → de-identified analytical dataset (CSV + Stata .dta) → archived dataset (CSV + codebook)
-
-    **Personal data and sensitivity:**
-
-    - Categories: indirect identifiers (geographic location, household composition, health data)
-    - Sensitivity tier: Yellow
-    - Key risk: combination of location, household size, and health outcomes could enable re-identification in small communities
-
-    **Storage and security:**
-
-    - Storage: secure server managed by authorised researchers; de-identified dataset on CMI M365
-    - Access: research team members with data access authorisation
-
-    **Sharing and archiving:**
-
-    - Pathway: open access (de-identified dataset)
-    - Target repository and licence: Zenodo or Sikt Research Data Archive, CC BY 4.0
-    - Embargo: 1–2 years after project completion
-
-??? example "Secondary dataset from a prior project"
-    **Description and method:** Anonymised interview transcripts from the REMIMO project, reused to triangulate new ethnographic evidence on permanent residence and income-related attachment conditions.
-
-    **Formats and estimated volume:** Anonymised transcripts (DOCX, PDF). Approximately 30 transcripts.
-
-    **Data flow:** Received from REMIMO project (anonymised DOCX) → imported to NVivo for re-coding → coded dataset (NVivo .nvp) → analytical outputs integrated into project findings
-
-    **Personal data and sensitivity:**
-
-    - Categories: none (pre-anonymised by original project)
-    - Sensitivity tier: Green
-    - Key risk: minimal; data was anonymised before transfer
-
-    **Storage and security:**
-
-    - Storage: CMI M365
-    - Access: project research team
-
-    **Sharing and archiving:**
-
-    - Pathway: subject to original data-sharing agreement; re-coded outputs may be shared as part of new project's analytical documentation
-    - Target repository and licence: governed by REMIMO data-sharing agreement
+If your project is already under way and you do not yet have a data inventory, start one today. Retrofitting is less convenient than building from scratch, but the alternative, continuing without a clear record of what you have, is riskier. List what you know, flag what you are unsure about, and fill in the gaps as you go. A partial inventory that you maintain is more valuable than a perfect template that nobody updates.
