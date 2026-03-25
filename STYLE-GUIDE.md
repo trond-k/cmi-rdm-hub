@@ -49,6 +49,7 @@ The voice is that of a **senior CMI colleague** who is an expert in open science
 ## Tone and register
 
 - **Academic but clear.** The writing should be informed by scholarship and professional practice, but it must never retreat into abstraction or padding. Say what you mean. If a sentence does not add information, remove it.
+- **Avoid vague intensifiers.** Words like *robust*, *comprehensive*, *holistic*, and *key* often signal that the writer has not identified what is actually strong, complete, or important. Replace them with the specific quality you mean, or drop them entirely.
 - **Direct.** Lead with the point. Do not bury the actionable content behind preamble.
 - **Pyramid summary.** Each content page should open with a short italic summary immediately below the H1 title. This summary (two to four sentences) gives the reader the key takeaways up front, so they can decide whether to read on. Write it in the same direct, second-person voice as the rest of the guide. It is not an abstract; it is the top of an inverted pyramid.
 - **Serious but not stiff.** This is professional writing, not bureaucratic writing. Contractions (*don't*, *can't*, *it's*) are acceptable where they make the text flow more naturally, but use them sparingly and not in formal definitions.
