@@ -62,7 +62,7 @@ Use **relative paths**, not absolute paths. This ensures links survive site rest
 
 Zensical supports automatic abbreviation tooltips via the `abbr` extension and `pymdownx.snippets`. This is the primary mechanism for making abbreviations accessible throughout the guide without repeating definitions on every page.
 
-Maintain a single file at `docs/.abbreviations.md` (a dotfile inside `docs/`, hidden from navigation) containing all abbreviation definitions:
+Maintain a single file at `includes/abbreviations.md` (a dotfile inside `docs/`, hidden from navigation) containing all abbreviation definitions:
 
 ```markdown
 *[RDM]: Research Data Management
@@ -85,7 +85,7 @@ Configure auto-append in the project configuration so that every page inherits t
 auto_append = [".abbreviations.md"]
 ```
 
-**When to add to the abbreviations file:** whenever a new abbreviation or acronym is introduced in any content page, add its definition to `docs/.abbreviations.md`.
+**When to add to the abbreviations file:** whenever a new abbreviation or acronym is introduced in any content page, add its definition to `includes/abbreviations.md`.
 
 ### Admonitions
 
@@ -203,7 +203,7 @@ Zensical supports Material Design icons and FontAwesome. Use icons sparingly, pr
 - Stage files use the stage name: `frame.md`, `fund.md`, `plan.md`, etc.
 - Discipline files use a short descriptor: `natural-physical-sciences.md`, `humanities.md`.
 - The glossary is a single file: `glossary.md`.
-- The global abbreviations file is at `docs/.abbreviations.md` (a dotfile, hidden from navigation).
+- The global abbreviations file is at `includes/abbreviations.md` (a dotfile, hidden from navigation).
 
 ---
 
@@ -226,7 +226,7 @@ Before any content is published or merged, check that it meets the following:
 - [ ] All tools, platforms, and standards linked to their homepage on first use.
 - [ ] Descriptive link text (no 'click here').
 - [ ] Alt text provided for all images and diagrams.
-- [ ] New abbreviations added to `docs/.abbreviations.md`.
+- [ ] New abbreviations added to `includes/abbreviations.md`.
 
 **Content**
 

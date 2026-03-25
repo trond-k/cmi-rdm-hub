@@ -131,7 +131,7 @@ This guide takes AI seriously as a practical tool, not as a revolution. Avoid in
 The guide has two complementary systems for making terms accessible:
 
 1. **The glossary page** (`glossary.md`). A full, browsable reference of RDM terms, tools, standards, and abbreviations. Each entry provides a definition and, where applicable, a link to the official source.
-2. **The global abbreviations file** (`docs/.abbreviations.md`). A machine-readable list of abbreviation expansions that Zensical renders as hover tooltips on every page.
+2. **The global abbreviations file** (`includes/abbreviations.md`). A machine-readable list of abbreviation expansions that Zensical renders as hover tooltips on every page.
 
 These two systems serve different purposes. The glossary page is for readers who want to look something up. The abbreviations file is for readers who encounter a term in passing and need a quick reminder. Both should be kept in sync: every abbreviation in the abbreviations file should also have a glossary entry, and vice versa.
 
@@ -142,7 +142,7 @@ Add a glossary entry when:
 - A tool or platform is referenced by name (e.g., Zenodo, DMPonline, KoBoToolbox, Whisper).
 - A standard or specification is mentioned (e.g., Dublin Core, DataCite, Darwin Core, TEI-XML).
 
-If the term has an abbreviation, also add it to `docs/.abbreviations.md`.
+If the term has an abbreviation, also add it to `includes/abbreviations.md`.
 
 ### Glossary entry format
 

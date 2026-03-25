@@ -51,6 +51,7 @@ nav = [
   { "Origins of knowledge and data sharing" = "origins-of-knowledge-and-data-sharing.md" },
   { "CMI's institutional context" = "cmi-institutional-context.md" },
   { "Name files and structure folders" = "file-and-folder-naming.md" },
+  { "Build a data inventory" = "data-inventory.md" },
 ]
 
 
