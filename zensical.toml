@@ -55,7 +55,9 @@ nav = [
   { "Frame - Design and conceptualise" = "lifecycle-1-frame.md"},
   { "Fund - Align with funder requirements" = "lifecycle-2-fund.md"},
   { "Plan - Formalise data handling" = "lifecycle-3-plan.md"},
-  { "Collect - Gather and capture data" = "lifecycle-4-collect.md"}
+  { "Collect - Gather and capture data" = "lifecycle-4-collect.md"},
+  { "Store - Keep your data secure, backed up, and organised" = "lifecycle-5-store.md"},
+  { "Process - Transform raw data into analysis-ready form" = "lifecycle-6-process.md"},
 ]
 
 
