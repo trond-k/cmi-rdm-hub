@@ -50,6 +50,7 @@ nav = [
   { "Foundations of data sharing" = "philosophical-foundations-of-data-sharing.md" },
   { "Origins of knowledge and data sharing" = "origins-of-knowledge-and-data-sharing.md" },
   { "CMI's institutional context" = "cmi-institutional-context.md" },
+  { "Reproducibility and transparency" = "reproducibility-and-transparency-v2.md" },
   { "Name files and structure folders" = "file-and-folder-naming.md" },
   { "Build a data inventory" = "data-inventory.md" },
   { "Frame - Design and conceptualise" = "lifecycle-1-frame.md"},
@@ -58,6 +59,9 @@ nav = [
   { "Collect - Gather and capture data" = "lifecycle-4-collect.md"},
   { "Store - Keep your data secure, backed up, and organised" = "lifecycle-5-store.md"},
   { "Process - Transform raw data into analysis-ready form" = "lifecycle-6-process.md"},
+  { "Analyse - Generate and document findings" = "lifecycle-7-analyse.md"},
+  { "Publish - Make outputs citable and discoverable" = "lifecycle-8-publish.md"},
+  { "Preserve - Ensure long-term accessibility" = "lifecycle-9-preserve.md"},
 ]
 
 
