@@ -80,12 +80,12 @@ The data inventory does not replace other project documentation. It complements 
 
 - The **DMP** describes policies and procedures; the inventory records the datasets those policies apply to.
 - The **README** in your project folder describes the naming convention and folder structure; the inventory records what is in those folders and why.
-- **Consent forms and participant information sheets** document what participants agreed to; the inventory records which datasets are covered by which consent arrangements.
+- **Participant information sheets** document what participants were told about the research and how their data would be used; the inventory records which datasets are covered by which information arrangements.
 - **Data processing agreements** specify the legal terms of data handling with third parties; the inventory records which datasets are subject to those agreements.
 
 If these documents contradict each other, something has gone wrong. The inventory is often the quickest way to spot the discrepancy.
 
-??? example "A data inventory in practice: a mixed-methods project"
+??? example "A data inventory in practice: multi-method fieldwork"
     A CMI project studying local governance in three East African countries might begin with an inventory listing four planned datasets: a household survey, key informant interviews, focus group discussions, and administrative records obtained from municipal authorities. By mid-project, the inventory has grown to include a fifth dataset (GPS coordinates of service delivery points, added after the first field visit revealed their relevance) and records that two of the original datasets required revised sensitivity classifications after a political crisis in one of the study countries. At project close, the inventory shows that the survey data was deposited in the Sikt Research Data Archive with a DOI and open access, the interview transcripts were deposited with restricted access and a five-year embargo, the GPS data was withheld entirely due to re-identification risk, and the administrative records were returned to the municipal authorities under the terms of the data sharing agreement.
 
 ??? example "A data inventory in practice: document-based research"
