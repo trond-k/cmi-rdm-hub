@@ -52,7 +52,10 @@ nav = [
   { "CMI's institutional context" = "cmi-institutional-context.md" },
   { "Name files and structure folders" = "file-and-folder-naming.md" },
   { "Build a data inventory" = "data-inventory.md" },
-  { "Frame - Design and conceptualise" = "lifecycle-frame.md"}
+  { "Frame - Design and conceptualise" = "lifecycle-1-frame.md"},
+  { "Fund - Align with funder requirements" = "lifecycle-2-fund.md"},
+  { "Plan - Formalise data handling" = "lifecycle-3-plan.md"},
+  { "Collect - Gather and capture data" = "lifecycle-4-collect.md"}
 ]
 
 
