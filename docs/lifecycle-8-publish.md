@@ -32,7 +32,7 @@ Code and scripts belong in a version-controlled repository such as [GitHub](http
 
 A deposit is only as useful as the documentation that accompanies it. Before uploading, check that your package includes:
 
-- The dataset itself, in open, preservation-friendly formats where possible (CSV rather than Excel, PDF/A rather than Word). See the [PROCESS](process.md) stage for format conversion guidance.
+- The dataset itself, in open, preservation-friendly formats where possible (CSV rather than Excel, PDF/A rather than Word). See the [PROCESS](lifecycle-6-process.md) stage for format conversion guidance.
 - A codebook or data dictionary describing every variable, its values, units, and coding scheme.
 - A README file explaining what the dataset contains, how it was collected, what processing was applied, and any known limitations.
 - Scripts or code used to produce derived datasets or results, with documentation of the software environment.
@@ -80,4 +80,4 @@ For qualitative and mixed-methods work, full computational reproducibility is ra
 
 ## Finalise the data inventory
 
-At this stage, the [data inventory](data-inventory.md) should be updated with publication details for each dataset and output: the repository, the persistent identifier, the access conditions, any embargo timelines, and the licence. The inventory now serves as the authoritative record of where every project output lives and how it can be accessed. If some datasets were not deposited (because they were destroyed, returned to partners, or withheld for justified reasons), record that too, with the rationale.
+Update the [data inventory](data-inventory.md) with publication details for each dataset: repository, persistent identifier, access conditions, embargo timelines, and licence. For datasets not deposited, record the rationale.

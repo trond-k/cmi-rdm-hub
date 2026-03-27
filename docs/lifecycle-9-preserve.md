@@ -14,7 +14,7 @@ date_updated: 2026-03-26
 
 # PRESERVE: long-term data preservation
 
-*Preservation is what keeps data usable after the project team has moved on. The good news is that trustworthy archives handle most of the technical work: format migration, integrity checks, and metadata curation. Your job is to choose the right archive (see the [PUBLISH](publish.md) stage), provide well-documented data in sustainable formats, and make deliberate decisions about what to keep, for how long, and what to destroy.*
+*Preservation is what keeps data usable after the project team has moved on. The good news is that trustworthy archives handle most of the technical work: format migration, integrity checks, and metadata curation. Your job is to choose the right archive (see the [PUBLISH](lifecycle-8-publish.md) stage), provide well-documented data in sustainable formats, and make deliberate decisions about what to keep, for how long, and what to destroy.*
 
 ## What the archive does for you
 
@@ -23,7 +23,7 @@ If you deposit your data in a trustworthy, certified archive such as the [Sikt R
 Understanding this division of labour matters because it tells you where to focus your effort. You do not need to become an expert in digital preservation standards. You need to provide data that is clean, well-documented, and in formats the archive can work with. The archive takes it from there.
 
 !!! tip "Choose the archive before you worry about preservation"
-    Most preservation decisions follow from the choice of archive. If you have not yet decided where to deposit, start with the [PUBLISH](publish.md) stage. The archive's deposit guidelines will tell you what formats it accepts, what metadata it requires, and what it will do with your data over time.
+    Most preservation decisions follow from the choice of archive. If you have not yet decided where to deposit, start with the [PUBLISH](lifecycle-8-publish.md) stage. The archive's deposit guidelines will tell you what formats it accepts, what metadata it requires, and what it will do with your data over time.
 
 ## Use sustainable formats
 
@@ -49,22 +49,22 @@ This does not mean you cannot work in Stata or SPSS during the project. It means
 
 Metadata is what makes a file interpretable rather than merely accessible. At the point of deposit, the archive will ask you to provide descriptive metadata (what the data is, who created it, when, under what conditions) and may apply its own preservation metadata (technical format details, provenance records, fixity information).
 
-Your contribution is the descriptive layer. Much of this should already exist if you have maintained a [data inventory](data-inventory.md) and documented your work through the [PROCESS](process.md) and [ANALYSE](analyse.md) stages. At deposit, check that the metadata you provide is accurate, complete, and consistent with the documentation accompanying the data. The metadata standards used depend on the archive and the discipline; common frameworks include DataCite, Dublin Core, and DDI (Data Documentation Initiative) for social science data.
+Your contribution is the descriptive layer. Much of this should already exist if you have maintained a [data inventory](data-inventory.md) and documented your work through the [PROCESS](lifecycle-6-process.md) and [ANALYSE](lifecycle-7-analyse.md) stages. At deposit, check that the metadata you provide is accurate, complete, and consistent with the documentation accompanying the data. The metadata standards used depend on the archive and the discipline; common frameworks include DataCite, Dublin Core, and DDI (Data Documentation Initiative) for social science data.
 
 ## Retention and destruction
 
 Not all data should be kept indefinitely. Retention decisions are shaped by legal obligations, funder requirements, institutional policy, and the commitments you made to participants.
 
-**Legal minimums.** The GDPR requires that personal data be kept no longer than necessary for the purpose of processing. For research, this means identifiable data should be anonymised or deleted once the research purpose is fulfilled, unless a specific legal basis permits longer retention. See [GDPR and legal compliance](gdpr-and-legal-compliance.md).
+**Legal minimums.** The GDPR requires that personal data be kept no longer than necessary for the purpose of processing. For research, this means identifiable data should be anonymised or deleted once the research purpose is fulfilled, unless a specific legal basis permits longer retention. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 
 **Funder requirements.** Most funders specify minimum retention periods. The Research Council of Norway and Horizon Europe typically expect data to be preserved for at least ten years after the end of the project, though the specific requirement varies by call. Check your grant agreement.
 
-**Participant commitments.** If your information letter promised participants that their data would be deleted after a specific date or event, you are bound by that promise. This is one reason to draft information letters carefully at the [PLAN](plan.md) stage; overly narrow retention promises can prevent you from archiving data that would otherwise have long-term value.
+**Participant commitments.** If your information letter promised participants that their data would be deleted after a specific date or event, you are bound by that promise. This is one reason to draft information letters carefully at the [PLAN](lifecycle-3-plan.md) stage; overly narrow retention promises can prevent you from archiving data that would otherwise have long-term value.
 
 When data must be destroyed, do it properly. For digital files, secure deletion means overwriting, not just moving to the recycle bin. For data held by an archive under embargo, confirm the destruction procedure with the archive. Document when destruction took place, what was destroyed, and by whom. A certificate of destruction (even a brief internal record) closes the loop and demonstrates compliance.
 
 !!! tip "Decide retention early, not at the end"
-    Retention periods should be specified in the DMP and the [data inventory](data-inventory.md) during the [PLAN](plan.md) stage, not improvised when the project winds down. If retention planning is left to the end, researchers face pressure to keep everything (creating GDPR risk) or delete everything (losing research value).
+    Retention periods should be specified in the DMP and the [data inventory](data-inventory.md) during the [PLAN](lifecycle-3-plan.md) stage, not improvised when the project winds down. If retention planning is left to the end, researchers face pressure to keep everything (creating GDPR risk) or delete everything (losing research value).
 
 ## Dark archiving
 
@@ -78,8 +78,8 @@ The Sikt Research Data Archive supports restricted and embargoed deposits. For d
 
 Long-term preservation costs money, even when the per-dataset cost is modest. Storage, integrity monitoring, format migration, and metadata curation are ongoing activities. For data deposited in publicly funded archives such as Sikt, these costs are covered by the archive's institutional funding. For data deposited elsewhere, check whether the archive charges deposit or maintenance fees and whether your funder permits these as eligible costs.
 
-If your project generates data that requires long-term preservation beyond what a standard archive provides (e.g., very large datasets, highly specialised formats, or data requiring active curation), factor this into the budget at the [FUND](fund.md) stage. Preservation that is not funded is preservation that depends on goodwill, and goodwill has a shorter shelf life than research data.
+If your project generates data that requires long-term preservation beyond what a standard archive provides (e.g., very large datasets, highly specialised formats, or data requiring active curation), factor this into the budget at the [FUND](lifecycle-2-fund.md) stage. Preservation that is not funded is preservation that depends on goodwill, and goodwill has a shorter shelf life than research data.
 
 ## Close the inventory loop
 
-By this stage, the [data inventory](data-inventory.md) should serve as the authoritative record of the project's entire data lifecycle. For each dataset, it should now document where the data has been preserved, under what access conditions, for how long, and with what persistent identifiers. For data that has been destroyed, it should record the date and method of destruction. The inventory links back through the full chain: what was collected, how it was processed, where it was published, and what was kept. For CMI, where projects span sensitive contexts and multiple jurisdictions, this record demonstrates compliance with the GDPR, funder mandates, and ethical commitments to participants.
+The [data inventory](data-inventory.md) should now document the full chain for each dataset: where it was preserved, under what access conditions, for how long, and with what persistent identifiers. For destroyed data, record the date and method. This record demonstrates compliance with the GDPR, funder mandates, and commitments to participants.

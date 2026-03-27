@@ -19,7 +19,7 @@ date_updated: 2026-03-26
 
 The analytical methods you use should follow from your research questions and the nature of your data, not from habit or convenience. This sounds obvious, but in practice the choice of method is often shaped more by what software the researcher already knows than by what the data requires.
 
-For quantitative work, specify your statistical approach before you begin. If you preregistered an analysis plan at the [PLAN](plan.md) stage, follow it; if you deviate, document the deviation and the reason. For qualitative work, name your analytical framework (thematic analysis, grounded theory, discourse analysis, process tracing, or whatever fits) and be explicit about how it guides your engagement with the data. For mixed-methods projects, describe how the qualitative and quantitative components relate to each other: do they converge on the same questions, or do they address different aspects of the problem?
+For quantitative work, specify your statistical approach before you begin. If you preregistered an analysis plan at the [PLAN](lifecycle-3-plan.md) stage, follow it; if you deviate, document the deviation and the reason. For qualitative work, name your analytical framework (thematic analysis, grounded theory, discourse analysis, process tracing, or whatever fits) and be explicit about how it guides your engagement with the data. For mixed-methods projects, describe how the qualitative and quantitative components relate to each other: do they converge on the same questions, or do they address different aspects of the problem?
 
 Whatever your approach, the tools you use to implement it should be recorded. Note the software (including version numbers), any packages or libraries, and relevant settings or parameters. This is not bureaucracy; it is the minimum needed for someone (including your future self) to understand how the findings were produced. See [Reproducibility and transparency](reproducibility-and-transparency.md) for broader guidance.
 
@@ -88,7 +88,7 @@ In both cases, the question is the same: would your conclusions survive a differ
 
 ## Research integrity and transparency
 
-If you preregistered an analysis plan at the [PLAN](plan.md) stage, follow it. If you deviate (and most projects do, to some extent), document the deviation clearly: what you planned, what you did instead, and why. Distinguish confirmatory analysis (testing pre-specified hypotheses) from exploratory analysis (investigating patterns that emerged from the data). Both are legitimate; presenting exploratory findings as if they were confirmatory is not.
+If you preregistered an analysis plan at the [PLAN](lifecycle-3-plan.md) stage, follow it. If you deviate (and most projects do, to some extent), document the deviation clearly: what you planned, what you did instead, and why. Distinguish confirmatory analysis (testing pre-specified hypotheses) from exploratory analysis (investigating patterns that emerged from the data). Both are legitimate; presenting exploratory findings as if they were confirmatory is not.
 
 Report negative results and null findings. A model that shows no effect is a finding, not a failure. Selective reporting, where only significant or supportive results are presented, distorts the evidence base and wastes the effort of future researchers who will not know that a particular approach has already been tried.
 

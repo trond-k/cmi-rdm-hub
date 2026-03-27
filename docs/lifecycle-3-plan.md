@@ -30,7 +30,7 @@ The pragmatic solution is to maintain both. Write the funder-facing DMP to meet 
 
 The specific headings vary by funder, but the core topics are consistent. Your DMP should address:
 
-- **What data you will collect or acquire**, including types, formats, and estimated volumes. This draws directly on the work you did at the [FRAME](frame.md) stage and is detailed in the data inventory.
+- **What data you will collect or acquire**, including types, formats, and estimated volumes. This draws directly on the work you did at the [FRAME](lifecycle-1-frame.md) stage and is detailed in the data inventory.
 - **How data will be documented**, including metadata standards, codebooks, README files, and naming conventions. See [Name files and structure folders](file-and-folder-naming.md) for the practical side of this.
 - **Where data will be stored** during the project, including backup arrangements and security measures.
 - **Who is responsible** for each aspect of data management (see below).
@@ -60,13 +60,13 @@ Not every project has a dedicated data manager. In smaller projects, the PI may 
 
 ## Legal and ethics planning
 
-By this stage, you need to move from the general awareness of the [FRAME](frame.md) stage to concrete planning.
+By this stage, you need to move from the general awareness of the [FRAME](lifecycle-1-frame.md) stage to concrete planning.
 
 ### GDPR and data protection
 
 If your project processes personal data (and most CMI projects do), you need to identify the lawful basis for processing, determine whether a notification to Sikt is required, and assess whether the nature and scale of processing triggers a Data Protection Impact Assessment (DPIA). International data transfers, particularly from the EU/EEA to countries without an adequacy decision, require additional legal mechanisms.
 
-These are not boxes to tick after the fact. They shape how you design participant information, structure storage, and negotiate collaboration agreements. Get advice from CMI's data protection contact early. For detailed guidance, see [GDPR and legal compliance](gdpr-and-legal-compliance.md).
+These are not boxes to tick after the fact. They shape how you design participant information, structure storage, and negotiate collaboration agreements. Get advice from CMI's data protection contact early. For detailed guidance, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 
 ### Ethics review
 

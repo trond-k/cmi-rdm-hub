@@ -95,4 +95,4 @@ Not every project can achieve full scripted reproducibility, and that is fine. Q
 
 ## Update the data inventory
 
-As you process data, the [data inventory](data-inventory.md) should reflect the new state of affairs. Record which datasets have been cleaned, what derived datasets have been created, and where processed versions are stored. If processing revealed new sensitivities (e.g., a transcript turned out to contain information that changes the risk profile), update the sensitivity classification. The inventory should always describe what you have now, not what you had at the start of the project.
+Record which datasets have been cleaned, what derived datasets exist, and where processed versions are stored in the [data inventory](data-inventory.md). If processing revealed new sensitivities, update the classification accordingly.

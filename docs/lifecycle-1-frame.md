@@ -78,6 +78,4 @@ For CMI projects in conflict-affected, authoritarian, or politically volatile se
 
 ## Sketch a preliminary data inventory
 
-By the end of this stage, you should have enough information to draft a preliminary [data inventory](data-inventory.md): a list of the datasets you expect to create or acquire, with a rough indication of their type, source, likely sensitivity, and purpose. This is not a formal deliverable; it is a thinking tool. It forces you to be concrete about what your project will actually involve in data terms, and it provides the foundation that the [FUND](fund.md) and [PLAN](plan.md) stages will build on.
-
-Even a brief inventory at this stage often surfaces questions that the concept note left implicit. How many interviews are you actually planning? What happens to the recordings after transcription? Who will hold the survey data during fieldwork? These are easier to answer now than six months into the project.
+By the end of this stage, you should have enough information to draft a preliminary [data inventory](data-inventory.md): a list of the datasets you expect to create or acquire, with a rough indication of their type, source, likely sensitivity, and purpose. This is not a formal deliverable; it is a thinking tool that provides the foundation the [FUND](lifecycle-2-fund.md) and [PLAN](lifecycle-3-plan.md) stages will build on.

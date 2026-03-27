@@ -14,7 +14,7 @@ date_updated: 2026-03-26
 
 # COLLECT: data gathering
 
-*Data quality is determined at the point of collection. Errors introduced here are the hardest to fix later, and ethical failures cannot be undone at all. Invest in protocols, pilot testing, and real-time documentation. The decisions you made at the [FRAME](frame.md), [FUND](fund.md), and [PLAN](plan.md) stages now meet reality.*
+*Data quality is determined at the point of collection. Errors introduced here are the hardest to fix later, and ethical failures cannot be undone at all. Invest in protocols, pilot testing, and real-time documentation. The decisions you made at the [FRAME](lifecycle-1-frame.md), [FUND](lifecycle-2-fund.md), and [PLAN](lifecycle-3-plan.md) stages now meet reality.*
 
 ## Instruments and protocols
 
@@ -110,4 +110,4 @@ Use these tools, but document them. Record which tool or service was used, the v
 
 ## Update the data inventory
 
-As data comes in, the [data inventory](data-inventory.md) shifts from planned to actual. Update it with each dataset as it is created: record collection dates, actual formats and volumes, source details, and any deviations from what was anticipated. If new datasets emerge that were not planned (as often happens in qualitative and mixed-methods research), add them. If sensitivity classifications need revising, revise them. The inventory should reflect what you have, not what you expected to have.
+As data comes in, update the [data inventory](data-inventory.md) to reflect what you actually have: collection dates, actual formats and volumes, and any new datasets or revised sensitivity classifications that emerged during fieldwork.

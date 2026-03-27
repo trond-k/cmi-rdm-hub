@@ -24,23 +24,23 @@ This is also the stage where mismatches become expensive. If you promise open ac
 
 ## Articulate a data management strategy
 
-Your proposal should describe, in concrete terms, how data will be managed across the project. This is not the full DMP (that comes at the [PLAN](plan.md) stage, usually after the grant is awarded), but it should demonstrate that you understand what is involved. Cover at minimum:
+Your proposal should describe, in concrete terms, how data will be managed across the project. This is not the full DMP (that comes at the [PLAN](lifecycle-3-plan.md) stage, usually after the grant is awarded), but it should demonstrate that you understand what is involved. Cover at minimum:
 
 - What types of data the project will generate or acquire, and in what approximate volume.
 - How data will be stored and protected during the project.
 - What metadata standards and documentation practices you will follow.
 - How and where data will be made available after the project, including any restrictions.
 
-Draw on the groundwork from the [FRAME](frame.md) stage. If you have already sketched a preliminary [data inventory](data-inventory.md), this section writes itself. If you have not, this is a strong incentive to do so.
+Draw on the groundwork from the [FRAME](lifecycle-1-frame.md) stage. If you have already sketched a preliminary [data inventory](data-inventory.md), this section writes itself. If you have not, this is a strong incentive to do so.
 
 ## Address ethics and sensitivity
 
 Most funders expect the proposal to address the ethical dimensions of data handling. For CMI projects, this typically means explaining how you will:
 
 - Protect participants, particularly in conflict-affected, authoritarian, or otherwise sensitive contexts.
-- Handle personal data in compliance with the GDPR and any applicable local frameworks. For detailed guidance, see [GDPR and legal compliance](gdpr-and-legal-compliance.md).
+- Handle personal data in compliance with the GDPR and any applicable local frameworks. For detailed guidance, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 - Manage risks of re-identification, especially where contextual variables, geospatial data, or small populations make standard de-identification insufficient.
-- Respect the rights and interests of communities from whom data originate, including questions of data sovereignty and governance. See [CMI's institutional context](cmi-institutional-context.md) and [Philosophical and epistemic foundations of data sharing](philosophical-foundations-of-data-sharing.md).
+- Respect the rights and interests of communities from whom data originate, including questions of data sovereignty and governance. See [CMI's institutional context](cmi-institutional-context.md) and [Foundations of knowledge and data sharing](foundations-of-data-sharing.md).
 
 Do not overcommit to openness and then rely on exceptions later. If you know from the outset that certain datasets cannot be shared openly, say so in the proposal and explain why. Funders understand legitimate restrictions; what they do not appreciate is discovering them at the reporting stage.
 
@@ -108,4 +108,4 @@ This is not about inflating the significance of your data. It is about being exp
 
 ## Refine the data inventory
 
-At this stage, the [data inventory](data-inventory.md) moves from the preliminary sketch of the FRAME stage to a more structured version. Map each anticipated dataset explicitly to a research question or work package. Increase the specificity of format, volume, and sensitivity estimates. The inventory now supports both the data management strategy and the ethics narrative in the proposal, and it provides the basis for realistic budgeting. It is not yet a formal deliverable; that comes at the [PLAN](plan.md) stage.
+At this stage, the [data inventory](data-inventory.md) moves from the preliminary sketch of the FRAME stage to a more structured version. Map each anticipated dataset explicitly to a research question or work package. Increase the specificity of format, volume, and sensitivity estimates. The inventory now supports both the data management strategy and the ethics narrative in the proposal, and it provides the basis for realistic budgeting. It is not yet a formal deliverable; that comes at the [PLAN](lifecycle-3-plan.md) stage.
