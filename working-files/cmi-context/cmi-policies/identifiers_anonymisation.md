@@ -1,0 +1,1 @@
+Data were de-identified using [methods]. Direct identifiers were removed; quasi-identifiers were generalised following [rules]. A risk assessment indicates low residual re-identification risk under the stated access conditions. 
