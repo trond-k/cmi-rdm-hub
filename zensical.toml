@@ -34,7 +34,7 @@ site_url = "https://trond-k.github.io/cmi-rdm-hub/"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+Copyright &copy; 2026 Chr Michelsen Institute
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -45,9 +45,10 @@ Copyright &copy; 2026 The authors
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
+  { "Start here" = "get-started.md" },
   { "Foundations" = [
     { "CMI's institutional context" = "cmi-institutional-context.md" },
-    { "Why and how we share data" = "foundations-of-data-sharing.md" },
+    { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
   ]},
   { "Before the project" = [
     { "Frame - Design and conceptualise" = "lifecycle-1-frame.md" },
