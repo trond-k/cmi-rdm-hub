@@ -1,0 +1,108 @@
+{
+    "sample_number": 1,
+    "remove_sample_link": "Remove sample",
+    "describe_the_sample": {
+      "instruction": "The characteristics of the sample that make them suitable for participation in the study. For example «students with dyslexia», «heart patients at x and y hospitals».",
+      "textbox": ""
+    },
+    "describe_how_identify_or_contact_sample": {
+      "instruction": "For instance, whether you will recruit from your own network, through advertisements, via social media, during fieldwork, or whether schools, organisations, etc., will recruit participants on behalf of the project. If the sample is drawn from a registry or patient administrative system, describe the criteria for the selection.",
+      "textbox": ""
+    },
+    "age_group": {
+      "instruction": "The lowest and highest age the sample can have.",
+      "from_age": {
+        "value": "",
+        "unit": "years"
+      },
+      "to_age": {
+        "value": "",
+        "unit": "years"
+      }
+    },
+    "included_groups": {
+      "instruction": "Are any of these groups included in the sample?",
+      "options": [
+        {
+          "label": "Patients, disabled people, or sick people"
+        },
+        {
+          "label": "Vulnerable groups",
+          "description": "For example, inmates in prison, benefit recipients, substance abusers, ethnic minorities, homeless individuals, asylum seekers, transgender individuals, people with intellectual disabilities, the elderly, individuals with dementia, or children."
+        },
+        {
+          "label": "Persons residing in countries outside the EU/EEA"
+        },
+        {
+          "label": "Adults (18 years +) who are not able to give consent",
+          "description": "Individuals who, for various reasons, have limited mental or cognitive abilities, significant physical or emotional distress, are under the influence of drug, unconscious, or in a coma."
+        }
+      ]
+    },
+    "which_data_will_be_processed": {
+      "instruction": "Which data relating to sample 1 will be processed?",
+      "note": "This refers to the categories of personal data selected on earlier pages of the form.",
+      "options": [
+        "Name",
+        "Health data"
+      ]
+    },
+    "how_data_collected": {
+        "question": "How will data relating to sample 1 be collected?",
+        "options": [
+          "Select...",
+          "Personal interview",
+          "Group interview",
+          "Online survey",
+          "Paper-based survey",
+          "Participant observation",
+          "Non-participant observation",
+          "Field experiment/field intervention",
+          "Web-based experiment",
+          "Tests for pedagogical research/psychological tests",
+          "Medical examination and/or physical tests",
+          "Human biological material",
+          "Social media – open forum",
+          "Social media – closed forum",
+          "Discussion board/forum for online newspapers/online debates",
+          "Register",
+          "Big data",
+          "Medical records",
+          "Biobank",
+          "Workshop",
+          "Reflection paper, student work etc.",
+          "Data from another research project",
+          "Other"
+        ]
+    },
+    "section": "Information for sample 1",
+    "question": "Will the sample receive information about the processing of personal data?",
+    "options": ["Yes", "No"],
+    "yes_branch": {
+        "how_does_sample_receive_information": {
+            "question": "How does the sample receive information about the processing?",
+            "options": [
+                "Written (on paper or electronically)",
+                "Oral"
+            ]
+        },
+        "written_branch": {
+            "note": "See our template for the information letter to ensure that data subjects receive all necessary information about the processing."
+        },
+        "oral_branch": {
+            "note": "Information should be given in writing or electronically. Only in special circumstances is oral information appropriate, for example if a participant requests it. See what information you must provide.",
+            "upload_documentation": {
+                "instruction": "Upload documentation of oral information",
+                "upload_field": "Select file..."
+            }
+        }
+    },
+    "no_branch": {
+        "how_will_sample_receive_information": {
+            "question": "How will the sample receive information about the processing?",
+            "description": "As a general rule, there is an obligation to inform the data subjects about the processing of their personal data. Exceptions can apply if it will be impossible to provide the information or it will involve a disproportionate amount of effort to provide the information, seen in relation to the benefit of being informed, providing information is likely to make it impossible or extremely difficult to achieve the purpose of the processing, the individual already has the information or obtaining or disclosure of personal data is expressly laid down by law.",
+            "textbox": ""
+        }
+    },
+    "add_sample_button": "+ Add sample"
+}

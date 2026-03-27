@@ -1,0 +1,107 @@
+{
+    "section": "End of project",
+    "project_start": {
+      "label": "Project start",
+      "description": "Estimated date for when the processing of personal data will begin. In qualitative studies, this is when contact is made with the sample.",
+      "date_field": "dd.mm.åååå"
+    },
+    "project_end": {
+      "label": "Project end",
+      "description": "Estimated date for when data will be anonymized, deleted or archived for reuse.",
+      "date_field": "dd.mm.åååå"
+    },
+    "what_happens_end": {
+      "question": "What happens to the data at the end of the project?",
+      "description": "Unless the personal data is to be used for additional purposes, the data should be anonymised or deleted when no longer necessary for the purposes for which they were collected. Personal data can be stored for reuse and future research if you have the necessary permissions.",
+      "options": [
+        "Personal data will be anonymised (deleting or rewriting identifiable data)",
+        "All data will be deleted (deleting raw data)",
+        "Personal data will be stored temporarily",
+        "Personal data will be stored long-term or permanently"
+      ],
+      "anonymisation_measures": {
+        "question": "Which anonymisation measures will be taken?",
+        "options": [
+          {
+            "label": "The identification key will be deleted"
+          },
+          {
+            "label": "Personally identifiable information will be removed, re-written or categorized"
+          },
+          {
+            "label": "Any sound or video recordings will be deleted"
+          },
+          {
+            "label": "Other",
+            "textbox": ""
+          }
+        ]
+      },
+      "temporary_storage_branch": {
+        "when_deleted": {
+          "question": "When will the personal data be anonymised/deleted?",
+          "date_field": "dd.mm.åååå"
+        },
+        "what_retained": {
+          "instruction": "Describe which personal data or parts of the dataset will be retained",
+          "textbox": ""
+        },
+        "purpose_of_storing": {
+          "question": "What is the purpose of storing personal data?",
+          "options": [
+            "Archiving for data sharing and reuse",
+            {
+              "label": "Documentation purposes",
+              "description": "Requirements from a journal, REC, the Norwegian Medicines Agency etc."
+            },
+            "Research purposes",
+            "Other"
+          ],
+          "other_description": {
+            "instruction": "Describe",
+            "textbox": ""
+          }
+        }
+      },
+      "long_term_storage_branch": {
+        "what_retained": {
+          "instruction": "Describe which personal data or parts of the dataset will be retained",
+          "textbox": ""
+        },
+        "purpose_of_storing": {
+          "question": "What is the purpose of storing personal data?",
+          "options": [
+            "Archiving for data sharing and reuse",
+            {
+              "label": "Documentation purposes",
+              "description": "Requirements from a journal, REC, the Norwegian Medicines Agency etc."
+            },
+            "Research purposes",
+            "Other"
+          ],
+          "other_description": {
+            "instruction": "Describe",
+            "textbox": ""
+          }
+        },
+        "data_controller_change": {
+          "question": "Does another institution take over the data controller responsibility?",
+          "description": "Sometimes when transferring data to an external archive the archive may assume the role of data processor, while the institution transferring the data still retains the responsibility for processing.",
+          "options": [
+            "No, there will be no change of data controller",
+            "Yes, the role of data controller will be transferred to another/a new institution"
+          ]
+        }
+      }
+    },
+    "identifiable_in_publications": {
+      "question": "Will the data subjects be identifiable in publications?",
+      "description": "Publications includes assignments, thesis, articles etc. Publication of personal data must have a scientific purpose.",
+      "options": ["Yes", "No"],
+      "yes_branch": {
+        "instruction": "Explain why",
+        "textbox": ""
+      }
+    }
+  }
+  

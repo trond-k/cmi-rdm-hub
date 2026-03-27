@@ -1,0 +1,29 @@
+{
+  "section": "Project information",
+  "title": "",
+  "summary": "",
+  "edit_link": "Edit project information on My Research →",
+  "project_description": {
+    "instruction": "Upload the project description if additional information is appropriate due to the project's complexity.",
+    "upload_field": "Select file..."
+  },
+  "external_funding": [
+    {
+      "label": "The Research Council of Norway/Norges forskningsråd (NFR)"
+    },
+    {
+      "label": "Public authorities",
+      "description": "E.g. research commissioned by a ministry."
+    },
+    {
+      "label": "Other",
+      "description": "E.g. funding from a pharmaceutical company or private actors."
+    }
+  ],
+  "academic_level": [
+    "Research/PhD project",
+    "Master's",
+    "Bachelor's",
+    "One-year programme"
+  ]
+}

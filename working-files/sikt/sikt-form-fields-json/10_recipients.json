@@ -1,0 +1,64 @@
+{
+    "section": "Recipients",
+    "who_has_access": {
+      "question": "Who has access to the personal data?",
+      "options": [
+        {
+          "label": "Project leader"
+        },
+        {
+          "label": "Student (student project)"
+        },
+        {
+          "label": "Internal co-workers",
+          "description": "Employees of the data controller."
+        },
+        {
+          "label": "External co-workers/collaborators inside the EU/EEA",
+          "description": "Employees of other institutions that have formalised cooperation with the data controller, or employees of other institutions that are joint data controllers."
+        },
+        {
+          "label": "Data processor",
+          "description": "For example, providers of external, online services or cloud storage, or a translator. NB! There must be a data processor agreement or other legal agreement between the data controller and the data processor."
+        },
+        {
+          "label": "Others with access to personal information"
+        }
+      ]
+    },
+  
+    "third_country_transfer": {
+      "question": "Will personal data be transferred to a third country?",
+      "help_text": "A transfer to a third country occurs when personal data physically leave the EU/EEA or are accessible to individuals located outside the EU/EEA.",
+      "options": ["Yes", "No"],
+  
+      "yes_branch": {
+        "organisation_entry": {
+          "title": "Organisation",
+          "fields": {
+            "name": "",
+            "country": "Select..."
+          },
+          "legal_basis": {
+            "question": "On what legal basis will the collected personal data be transferred?",
+            "options": [
+              "Decision on adequate level of protection (Art. 45(3))",
+              "Covered by necessary safeguards (Art. 46)",
+              "Derogations for specific situations (Art. 49)"
+            ]
+          },
+          "comment": {
+            "instruction": "Comment",
+            "textbox": ""
+          },
+          "remove_button": "Remove"
+        },
+        "add_organisation_button": "+ Add organisation"
+      }
+    },
+  
+    "navigation": {
+      "next_button": "Next"
+    }
+  }
+  

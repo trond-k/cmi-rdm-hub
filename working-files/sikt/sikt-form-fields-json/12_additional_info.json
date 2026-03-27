@@ -1,0 +1,12 @@
+{
+    "section": "Additional information",
+    "additional_information": {
+      "instruction": "Here you can provide information that may have significance for our assessment of the project, including more detailed information about points in the form and other information not covered in the form.",
+      "textbox": ""
+    },
+    "other_attachments": {
+      "label": "Other attachments",
+      "upload_field": "Select file..."
+    }
+  }
+  

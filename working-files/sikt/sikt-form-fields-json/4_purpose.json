@@ -1,0 +1,33 @@
+{
+    "section": "Purpose",
+    "primary_purpose_of_the_processing": [
+      "Research or studentpaper",
+      "Health research",
+      "Internal quality assurance in healthcare services",
+      "External quality assurance in healthcare services",
+      "Quality assurance in education",
+      "Establishing a clinical quality registry",
+      "Establishing a population-based health survey",
+      "Establishing other type of research registry",
+      "Other"
+    ],
+    "description_of_research_and_necessity": {
+      "instruction": "Describe what you will research and why it is necessary to process personal data to achieve the objective",
+      "textbox": ""
+    },
+    "other_purposes_description": {
+      "instruction": "If the personal data will be used for other purposes, describe which",
+      "examples": "Examples of other purposes include quality assurance, educational purposes or sharing the data with others.",
+      "textbox": ""
+    },
+    "total_number_of_data_subjects": [
+      "1-99",
+      "100-999",
+      "1000-4999",
+      "5000-9999",
+      "10.000-49.999",
+      "50.000-100.000",
+      "100.000+"
+    ]
+}
+  

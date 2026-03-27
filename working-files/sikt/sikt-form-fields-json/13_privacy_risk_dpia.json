@@ -1,0 +1,101 @@
+{
+  "section": "Privacy risk",
+  "dpia_required": {
+    "question": "Will the processing involve a high risk to personal privacy, requiring a DPIA?",
+    "description": "A Data Protection Impact Assessment (DPIA) is a more comprehensive assessment of privacy that is conducted when the risk to the rights and freedoms of individuals is higher than normal.",
+    "options": ["Yes", "No", "Not sure"]
+  },
+  "high_risk_entails": {
+    "instruction": "The processing has high risk because it entails",
+    "options": [
+      {
+        "label": "Highly personal information",
+        "description": "For example family relationships, finances, health, or political opinions."
+      },
+      {
+        "label": "A large scale",
+        "description": "For example many registered and/or a lot of information/variables about the individual."
+      },
+      {
+        "label": "Long duration",
+        "description": "For example processing of information for more than 10 years."
+      },
+      {
+        "label": "Regular processing",
+        "description": "Processing that is repeated multiple times, such as data collection every three years."
+      },
+      {
+        "label": "Hindering data subjects from exercising their rights",
+        "description": "For example if the data subject does not receive information about the processing, or if it is difficult to delete the information."
+      },
+      {
+        "label": "Matching or combining datasets beyond reasonable expectation",
+        "description": "For example the use of data collected by others/for other purposes, combined with data from registers."
+      },
+      {
+        "label": "Innovative use or application of new technology",
+        "description": "For example machine learning or welfare technology."
+      },
+      {
+        "label": "Systematic monitoring",
+        "description": "For example GPS data or observation over time."
+      },
+      {
+        "label": "Evaluation or profiling",
+        "description": "For example evaluation/assessment of job performance, finances, health, personal interests, and behavior."
+      },
+      {
+        "label": "Automated decision-making with legal implications",
+        "description": "For example when the purpose is to make a decision about the data subject that has legal consequences for the person."
+      }
+    ]
+  },
+  "advisor_note": {
+    "text": "If you cannot answer all the questions, you can leave the fields empty and send the form in to be assessed. An advisor will contact you and assist with the completion."
+  },
+  "consult_data_subjects": {
+    "question": "Is it relevant to consult the data subjects or their representatives?",
+    "description": "It is recommended to consult a relevant interest organization, a user panel, a focus group, or a patient ombudsman to gather their perspectives on the data processing. If consultation is not relevant, explain why.",
+    "textbox": ""
+  },
+  "transparent_and_fair": {
+    "question": "Is the data processing transparent and fair?",
+    "description": "Assess the data subjects’ ability to participate in the processing of their data. Do they receive clear information about the processing and its consequences? Is the information easy to understand, especially if the data subjects belong to a vulnerable group? Describe the measures taken to reduce risk. If the risk is low, explain why.",
+    "textbox": ""
+  },
+  "how_information_provided": {
+    "question": "How is information provided to the data subjects?",
+    "description": "Explain how the data subjects are informed about the processing of their data. If they do not receive individual notifications, describe the alternative methods used, such as newsletters, websites, or social media. If no information is provided, explain why.",
+    "textbox": ""
+  },
+  "purpose_clearly_defined": {
+    "question": "Is the purpose of the processing clearly defined?",
+    "description": "Purpose limitation means that personal data should only be used for the specific purpose for which it was collected. Assess whether the purpose of the processing is clearly explained or if the data is used in a way that may be unexpected for the data subjects. If the data is reused, describe whether the purpose of this project aligns with the original purpose for which the data was collected. Describe the measures taken to reduce risk. If the risk is low, explain why.",
+    "textbox": ""
+  },
+  "all_data_necessary": {
+    "question": "Are all collected data necessary?",
+    "description": "Data minimization means limiting the collection of personal data to what is necessary to achieve the intended purpose. Explain why the personal data is required and why the purpose cannot be achieved with less detailed or less sensitive data. Describe the measures taken to reduce risk. If the risk is low, explain why.",
+    "textbox": ""
+  },
+  "data_accuracy": {
+    "question": "How is data accuracy ensured?",
+    "description": "Assess the likelihood that the data is accurate. Describe the measures taken to ensure that the data is correct and up to date. If the risk is low, explain why.",
+    "textbox": ""
+  },
+  "how_long_stored": {
+    "question": "How long is the data stored?",
+    "description": "Storage limitation ensures that data is not kept longer than necessary. Assess whether the storage period aligns with the project's purpose and any other relevant requirements. Describe the measures taken to reduce risk. If the risk is low, explain why.",
+    "textbox": ""
+  },
+  "responsibility_roles": {
+    "question": "How are responsibility, collaboration, and roles distributed in the project?",
+    "description": "Describe whether you need to enter into a data processing agreement, a joint controllership agreement, or an agreement regarding data transfers outside the EU. Joint controllership means that two or more parties collaborate to determine how and why personal data is processed. A data processor is an entity that processes personal data on behalf of another (the data controller) and must follow its instructions.",
+    "textbox": ""
+  },
+  "how_many_and_which_systems": {
+    "question": "How many/who will have access to the data and through which systems?",
+    "description": "Provide an approximate number of people who will have access to the data, from which organization, in what role, and through which systems.",
+    "textbox": ""
+  }
+}

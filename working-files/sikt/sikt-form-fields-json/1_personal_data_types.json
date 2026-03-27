@@ -1,0 +1,89 @@
+{
+  "title": "Which personal data will be processed?",
+  "description": "Personal data refers to any information that can be traced back to an individual person, either directly, via a separate list of names or identifiers, or via a combination of background information. Processing refers to any handling of personal data. This includes every action performed on data such as collection, recording, storage, transfer, analysis, compilation, and anonymisation.",
+  "general_categories_of_personal_data": [
+    {
+      "label": "Name"
+    },
+    {
+      "label": "11-digit personal identifier or other national ID number"
+    },
+    {
+      "label": "Date of birth"
+    },
+    {
+      "label": "Contact information",
+      "description": "Address, email address or phone number"
+    },
+    {
+      "label": "Online identifiers",
+      "description": "For example, when using survey providers or other services that store an online identifier like e-mail address, IP address, cookies, unique device identifiers (e.g. IMEI numbers on mobile phones), and similar."
+    },
+    {
+      "label": "People in images or video recordings"
+    },
+    {
+      "label": "Voice on audio recordings"
+    },
+    {
+      "label": "Electronic location data",
+      "description": "Information that specifies a person’s geographical location through electronic traces such as GPS, sensors, or geographic data from apps and services."
+    },
+    {
+      "label": "Background information that, when combined, can be used to identify an individual"
+    },
+    {
+      "label": "Other personal information"
+    }
+  ],
+  "special_categories_of_personal_data": [
+    {
+      "label": "Health data",
+      "description": "Information about a person’s physical or mental health, such as dementia, dyslexia, depression, ADHD, injuries, accidents, rehabilitation, bullying, BMI, obesity, alcohol and substance use, self-harm, suicidal thoughts, receiving social security benefits, and being an asylum seeker, nursing home resident, foster child or child in the welfare system. Also includes information from workplace environment and satisfaction surveys."
+    },
+    {
+      "label": "Ethnicity",
+      "description": "Affiliation with an ethnic group or national minority."
+    },
+    {
+      "label": "Political opinions",
+      "description": "Information about a person’s political views, affiliation with political parties or organizations, or other politically related opinions or activities."
+    },
+    {
+      "label": "Religious beliefs",
+      "description": "Information about a person’s religious beliefs, religious affiliation, or participation in religious rituals and practices."
+    },
+    {
+      "label": "Philosophical beliefs",
+      "description": "Information about a person’s philosophical beliefs or worldview. This can include non-religious worldviews, ethical beliefs, political philosophies, and similar."
+    },
+    {
+      "label": "Sex life",
+      "description": "Information about a person’s sexual orientation, sexual preferences, sexual activity, or sexual relationships."
+    },
+    {
+      "label": "Trade Union Membership",
+      "description": "That a person is a member of a trade union, e.g. information about trade union fees collected from tax returns."
+    },
+    {
+      "label": "Genetic data",
+      "description": "Inherited or acquired genetic traits, often obtained through the analysis of biological samples."
+    },
+    {
+      "label": "Biometric data",
+      "description": "Information used to authenticate a person’s identity, such as fingerprints, facial or voice recognition, and iris scanning."
+    },
+    {
+      "label": "Criminal offences",
+      "description": "Information that someone has been suspected, charged, accused, or convicted."
+    }
+  ],
+  "project_section": {
+    "instruction": "Create a new project, or select an existing project you want to notify processing of personal data for.",
+    "options": [
+      "Select",
+      "New project >"
+    ]
+  }
+}
+

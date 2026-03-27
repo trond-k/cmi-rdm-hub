@@ -1,0 +1,49 @@
+{
+    "section": "Third persons",
+    "description": "Third persons are individuals who are not directly involved in the research project but about whom the research participants provide information. This could typically include the partner, immediate supervisor, coach, or teacher of the person participating in the study. Note that teachers, healthcare professionals, NAV employees etc. are bound by a duty of confidentiality and can therefore not disclose information about individual pupils, patients, cases etc. without the necessary permissions in place.",
+    "question_collect_information": {
+      "question": "Will the project collect information about third persons?",
+      "options": ["Yes", "No"],
+      "yes_branch": {
+        "describe_third_persons": {
+          "instruction": "Describe the third persons",
+          "textbox": ""
+        },
+        "personal_data_types": {
+          "instruction": "Which personal data relating to third persons will be processed?",
+          "options": [
+            "Name",
+            "Health data"
+          ]
+        },
+        "which_sample": {
+          "instruction": "Which sample will give information relating to third persons?",
+          "options": [
+            "Sample 1"
+          ]
+        },
+        "consent_question": {
+          "question": "Will third persons consent to the processing of their personal data?",
+          "options": ["Yes", "No"]
+        },
+        "information_question": {
+          "question": "Will third persons receive information about the processing of their personal data?",
+          "options": ["Yes", "No"],
+          "yes_branch": {
+            "upload_information_letter": {
+              "instruction": "Upload information letter",
+              "upload_field": "Select file..."
+            }
+          },
+          "no_branch": {
+            "explanation": {
+              "instruction": "Explain why third persons will not be informed",
+              "textbox": ""
+            }
+          }
+        }
+      },
+      "no_branch": {}
+    }
+  }
+  

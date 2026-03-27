@@ -1,0 +1,113 @@
+{
+  "section": "Legal basis for processing personal data",
+  "intro_text": "The main basis for research is «research in the public interest». In student projects, the most common basis is «consent». Read more about legal bases for processing.",
+  "legal_basis_general_gdpr_article_6": {
+    "title": "Legal basis for processing general categories of personal data (GDPR Article 6)",
+    "options": [
+      {
+        "label": "Consent",
+        "description": "For consent to be valid as a legal basis for processing, it must be voluntary, specific, informed, and unambiguous, provided through affirmative action, documented, and as easy to withdraw as to give."
+      },
+      {
+        "label": "Research in the public interest",
+        "description": "Applicable when measures are taken to reduce the risk for individuals whose personal data is being processed."
+      },
+      {
+        "label": "Legal obligation",
+        "description": "Applicable if the data controller institution is legally required, through special legislation, to process personal data, such as quality assurance in the healthcare sector."
+      },
+      {
+        "label": "Purposes of legitimate interests",
+        "description": "Applicable if the processing is necessary for the data controller to pursue its own interests."
+      }
+    ]
+  },
+  "legal_basis_special_gdpr_article_9": {
+    "title": "Legal basis for processing special categories of personal data (GDPR Article 9)",
+    "options": [
+      {
+        "label": "Explicit consent",
+        "description": "The sample must be informed that special personal data is being recorded, and consent must be given in an exceptionally clear manner."
+      },
+      {
+        "label": "Research in the public interest",
+        "description": "Requires a written assessment that the societal benefit of processing outweighs the risk to the data subjects."
+      },
+      {
+        "label": "Data which are manifestly made public by the data subject",
+        "description": "Information which data subjects themselves have made public or have publicly confirmed, for example in an authorised biography, newspaper article or online. Note that information published on Facebook or other internet forums do not necessarily have ‘expected publicness’. The information published in these forums is not necessarily understood by forum users as ‘public’ and free to be used for other purposes. This information can therefore not automatically be used in research without further consideration."
+      },
+      {
+        "label": "Purposes of preventative or occupational medicine (Quality Assurance)",
+        "description": "Can be used in the case of quality-assurance. For health/medical research you must chose another legal basis."
+      }
+    ]
+  },
+  "supplementary_legal_basis": {
+    "title": "Supplementary legal basis",
+    "options": [
+      {
+        "label": "Exemption from the duty of confidentiality from REK, cf. Health Personnel Act § 29",
+        "description": "Relevant in the context of accessing or otherwise processing information from sources such as patient records or health registries, regardless of the field or purpose, and when the legal basis is not consent."
+      },
+      {
+        "label": "Exception from the duty of confidentiality from the Health Data Service (FHI), cf. Health Register Act § 19 b",
+        "description": "Access to indirectly identifiable health data from the Health Data Service for a statutory health registry."
+      },
+      {
+        "label": "Exemption from the duty of confidentiality from the Health Data Service (FHI), cf. Health Register Act § 19 e, the Health Personnel Act § 29",
+        "description": "Exemption from the duty of confidentiality from the Health Data Service for health data from health registries, as well as patient records and treatment-related health registries."
+      },
+      {
+        "label": "Exemption from the duty of confidentiality from the Norwegian Directorate of Health, cf. Health Personnel Act § 29",
+        "description": "Exemption from the duty of confidentiality from the Norwegian Directorate of Health for health data from patient records or from treatment-related health registries for quality assurance purposes."
+      },
+      {
+        "label": "Permission for internal quality assurance, cf. Patient Records Act § 6, cf. the Health Personnel Act § 26",
+        "description": "Relevant in the context of accessing or otherwise processing information from patient records or patient administrative systems when the purpose is internal quality assurance of healthcare services within the healthcare institution."
+      },
+      {
+        "label": "Health Register Act §§ 9 and 10, cf. Regulation on Medical Quality Registers § 1-4",
+        "description": ""
+      },
+      {
+        "label": "Health Register Act § 9, cf. Regulation on Population-Based Health Surveys § 2-1",
+        "description": ""
+      }
+    ]
+  },
+  "approvals": {
+    "title": "Approvals",
+    "options": [
+      {
+        "label": "Exemption from the duty of confidentiality, cf. Public Administration Act § 13",
+        "description": "Relevant in the context of accessing or otherwise processing information from registries, records, and similar sources when the legal basis is not consent. Approval is sought from the department or directorate that is the granting authority."
+      },
+      {
+        "label": "Approval from REK to carry out health research, cf. Health Research Act § 10",
+        "description": "Relevant for medical and health research. If you are unsure whether you need prior approval from the Regional Committees for Medical and Health Research Ethics (REC), you can submit a preliminary assessment form."
+      },
+      {
+        "label": "Approval for testing of pharmaceuticals or medical devices",
+        "description": "Relevant for research involving clinical trials of medications."
+      },
+      {
+        "label": "Approval biobank (REK)",
+        "description": ""
+      },
+      {
+        "label": "Name list, access to SSB data",
+        "description": "Statistics Norway (SSB) requires that the data controller maintains a list of named individuals with access to the data set. Please upload the list of names, if applicable."
+      },
+      {
+        "label": "Other",
+        "description": ""
+      }
+    ]
+  },
+  "upload_permission_or_approval": {
+    "instruction": "Upload permission or approval",
+    "note": "Give the file a descriptive name before uploading it.",
+    "upload_field": "Select file..."
+  }
+}

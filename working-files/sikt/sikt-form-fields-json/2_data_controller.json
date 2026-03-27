@@ -1,0 +1,27 @@
+{
+  "section": "Data controller",
+  "institution_responsible_for_the_project": {
+    "description": "The data controller is the institution that determines why (purpose) and how (methods) personal data will be processed (legally responsible).",
+    "field": "Select..."
+  },
+  "project_leader": {
+    "description": "The project leader must be a supervisor, scientific staff member or a research fellow, formally affiliated with the data controller.",
+    "fields": {
+      "name": "",
+      "position": "",
+      "email_address": "",
+      "phone_number": ""
+    }
+  },
+  "joint_data_controller_question": {
+    "question": "Do multiple institutions share responsibility (joint data controllers)?",
+    "description": "The responsibility is shared if two or more institutions jointly determine why and how personal data will be processed.",
+    "options": ["Yes", "No"]
+  },
+  "joint_data_controllers_section": {
+    "title": "Joint data controllers",
+    "institution_field": "Select...",
+    "institution_not_found_link": "Institution not found in the list",
+    "actions": ["Remove", "Add"]
+  }
+}

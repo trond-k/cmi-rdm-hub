@@ -1,0 +1,76 @@
+{
+    "section": "Security measures",
+    "store_identifiable_separately": {
+      "question": "Will directly identifiable data be stored separately from other data?",
+      "help_text": "The use of a linkage key is recommended, especially when handling sensitive or information related to criminal offenses. Unless the linkage key is encrypted, it cannot be stored in the same system as other data.",
+      "options": ["Yes", "No"],
+      "yes_branch": {},
+      "no_branch": {
+        "instruction": "Provide a reason for why the personal data should not be stored separately",
+        "textbox": ""
+      }
+    },
+    "technical_and_practical_measures": {
+      "question": "Which technical and practical measures will be used to secure the personal data?",
+      "options": [
+        {
+          "label": "Continuous anonymisation",
+          "description": "Continuous processing of data to either delete, group, or rewrite identifying information, and editing or blurring recordings."
+        },
+        {
+          "label": "Encrypted transmission"
+        },
+        {
+          "label": "Encrypted storage"
+        },
+        {
+          "label": "Record of changes",
+          "description": "Logging of who has modified data and the timestamp of the modification."
+        },
+        {
+          "label": "Multi-factor authentication",
+          "description": "Using more than one method to confirm identity."
+        },
+        {
+          "label": "Restricted access",
+          "description": "Blocking or limiting access to the collected data for unauthorized individuals."
+        },
+        {
+          "label": "Access log",
+          "description": "Logging of who has accessed the data and the timestamp of the access."
+        },
+        {
+          "label": "Other security measures",
+          "description": "For example, locking physical documents, keypad locks on mobile devices, hard drive partitioning, checksum, or integrity checks."
+        }
+      ]
+    },
+    "where_data_processed": {
+      "question": "Where will the personal data be processed",
+      "description": "Including systems and storage solutions used during collection, transmission, storage, and analysis.",
+      "options": [
+        {
+          "label": "Hardware",
+          "description": "Collection, transmission, storage or analysis on the data controller's research server, designated area, etc."
+        },
+        {
+          "label": "Mobile devices",
+          "description": "Collection, storage, or analysis on the data controller's hardware without network or internet connection."
+        },
+        {
+          "label": "Physically isolated hardware",
+          "description": "Not connected to other computers or to a network, neither internally nor externally."
+        },
+        {
+          "label": "Private services",
+          "description": "For example, private OneDrive, Dropbox, iCloud, Google Drive, or similar platforms. The use of private services is only allowed if the data controller institution's guidelines for secure data management permit it."
+        }
+      ]
+    },
+    "data_flow_description": {
+      "question": "Describe the data flow and how the data is secured",
+      "instruction": "Describe where (different parts of) the data are stored and processed, how data is transferred from one device or system to another and how the data is secured along the way.",
+      "textbox": ""
+    }
+  }
+  
