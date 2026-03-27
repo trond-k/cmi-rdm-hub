@@ -62,6 +62,8 @@ nav = [
   { "Analyse - Generate and document findings" = "lifecycle-7-analyse.md"},
   { "Publish - Make outputs citable and discoverable" = "lifecycle-8-publish.md"},
   { "Preserve - Ensure long-term accessibility" = "lifecycle-9-preserve.md"},
+  { "Access - Define who can use your data" = "lifecycle-11-access.md"},
+  { "Share & Reuse - Enable responsible data reuse" = "lifecycle-12-share-and-reuse.md"},
 ]
 
 
