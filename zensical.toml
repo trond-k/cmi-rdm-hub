@@ -47,11 +47,12 @@ Copyright &copy; 2026 Chr Michelsen Institute
 nav = [
   { "Start here" = "get-started.md" },
   { "Foundations" = [
+    { "The elements of research data management" = "elements-of.md" },
     { "CMI's institutional context" = "cmi-institutional-context.md" },
     { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
+    { "The research data lifecycle" = "research-data-lifecycle.md" },
   ]},
   { "Before the project" = [
-    { "The research data lifecycle" = "research-data-lifecycle.md" },
     { "Frame - Design and conceptualise" = "lifecycle-1-frame.md" },
     { "Fund - Align with funder requirements" = "lifecycle-2-fund.md" },
     { "Plan - Formalise data handling" = "lifecycle-3-plan.md" },
