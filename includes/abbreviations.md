@@ -13,3 +13,15 @@
 *[PI]: Principal Investigator
 *[ODK]: Open Data Kit
 *[IT]: Information Technology
+*[GDPR]: General Data Protection Regulation
+*[DPO]: Data Protection Officer
+*[DPIA]: Data Protection Impact Assessment
+*[DPA]: Data Processing Agreement
+*[SCC]: Standard Contractual Clause
+*[SCCs]: Standard Contractual Clauses
+*[REK]: Regional Committees for Medical and Health Research Ethics
+*[EEA]: European Economic Area
+*[NESH]: National Committee for Research Ethics in the Social Sciences and the Humanities
+*[TSD]: Services for Sensitive Data (Tjenester for sensitive data)
+*[PI]: Principal Investigator
+*[RDM]: Research Data Management
