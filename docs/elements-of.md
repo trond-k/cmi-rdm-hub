@@ -17,9 +17,9 @@ date_updated: 2026-03-27
 
 ## Why a framework helps
 
-It is tempting to treat data management as a checklist: write a DMP, choose a storage solution, deposit the data. But checklists do not capture the fact that your choice of storage depends on jurisdiction, your jurisdiction depends on where your partners are, and your partners' expectations depend on institutional norms you may not share. A framework that shows these layers and their relationships helps you:
+It is tempting to treat data management as a checklist: write a Data Management Plan (DMP), choose a storage solution, deposit the data. But checklists do not capture the fact that your choice of storage depends on jurisdiction, your jurisdiction depends on where your partners are, and your partners' expectations depend on institutional norms you may not share. A framework that shows these layers and their relationships helps you:
 
-- **Spot constraints early.** If you know that cross-border data transfers require a legal basis under the GDPR, you can address this at the planning stage rather than discovering it when you try to move files between Oslo and Nairobi.
+- **Spot constraints early.** If you know that cross-border data transfers require a legal basis under the General Data Protection Regulation (GDPR), you can address this at the planning stage rather than discovering it when you try to move files between Oslo and Nairobi.
 - **Trace problems to their source.** When something goes wrong (a tool does not meet security requirements, a consent process does not cover future reuse), the framework helps you identify which layer the problem originates in and what else it affects.
 - **Communicate across roles.** A principal investigator, a data manager, and an IT administrator think about data management from different starting points. The framework provides shared vocabulary for aligning their perspectives.
 
@@ -73,8 +73,8 @@ This is where plans become operational. The choices here are the most visible, b
 
 | Element | What it covers | CMI examples |
 |---|---|---|
-| **Role** | Functions and responsibilities assigned to people and teams | Principal investigator (overall accountability), field researchers (data collection), data manager (processing and curation), IT support (infrastructure and security), [CMI's data protection contact](lifecycle-3-plan.md) (GDPR guidance) |
-| **Tool** | Software, hardware, methodological standards, and protocols | [KoBoToolbox and ODK](lifecycle-4-collect.md) for mobile collection, SharePoint for project storage, [Sikt Research Data Archive](lifecycle-8-publish.md) for long-term deposit, Git for version control of code |
+| **Role** | Functions and responsibilities assigned to people and teams | Principal investigator (PI) (overall accountability), field researchers (data collection), data manager (processing and curation), IT support (infrastructure and security), [CMI's data protection contact](lifecycle-3-plan.md) (GDPR guidance) |
+| **Tool** | Software, hardware, methodological standards, and protocols | [KoBoToolbox and Open Data Kit (ODK)](lifecycle-4-collect.md) for mobile collection, SharePoint for project storage, [Sikt Research Data Archive](lifecycle-8-publish.md) for long-term deposit, Git for version control of code |
 | **Data** | The information assets themselves, characterised by type, sensitivity, format, and lifecycle requirements | Quantitative datasets, qualitative transcripts, fieldwork materials, geospatial data, policy documents. See [CMI's data landscape](cmi-institutional-context.md#a-diverse-data-landscape) for the full picture. |
 
 Role clarity matters more than most teams expect. Data management fails most often not because of technical problems but because nobody was clearly responsible for a specific task. The [Plan](lifecycle-3-plan.md) stage addresses this directly.
@@ -109,4 +109,6 @@ This is a thinking tool, not a form to fill in. Use it when you need to:
 
 The framework does not replace the lifecycle model. The lifecycle tells you *when* to do things; this framework helps you understand *why* certain choices are constrained and *where* the dependencies lie. Together, they give you a map for navigating data management decisions from concept to long-term preservation.
 
-!!! info "Last reviewed: 27 March 2026"
+!!! info "Last reviewed"
+    This page was last reviewed on 27 March 2026. For rapidly changing
+    topics, verify against the latest source.

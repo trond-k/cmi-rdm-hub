@@ -10,6 +10,9 @@
 *[OECD]: Organisation for Economic Co-operation and Development
 *[BCE]: Before Common Era
 *[CE]: Common Era
+*[PI]: Principal Investigator
+*[ODK]: Open Data Kit
+*[IT]: Information Technology
 *[GDPR]: General Data Protection Regulation
 *[DPO]: Data Protection Officer
 *[DPIA]: Data Protection Impact Assessment
