@@ -74,6 +74,9 @@ nav = [
     { "Reproducibility and transparency" = "reproducibility-and-transparency.md" },
     { "Name files and structure folders" = "file-and-folder-naming.md" },
     { "Build a data inventory" = "data-inventory.md" },
+    { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
+    { "Informed consent and information letters" = "CROSS-ethics.md" },
+    { "GDPR concepts for researchers" = "CROSS-legal.md" },
   ]},
 ]
 
