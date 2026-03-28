@@ -6,7 +6,15 @@ tags:
   - AI governance
   - Transparency
   - Documentation
-notes: "Update with specific model versions and dates once confirmed"
+notes: >-
+  Before publishing: (1) Fill in actual AI tool names, model versions, and
+  dates in the table; (2) Confirm proportion of AI-drafted vs. human-drafted
+  content and add if appropriate; (3) Decide on nav placement in zensical.toml
+  (standalone item or under 'About this hub' section); (4) Add the page to
+  the nav array in zensical.toml; (5) Review for consistency with the
+  reproducibility page's AI documentation checklist; (6) Confirm whether
+  subject-matter experts reviewed any sections; (7) Add any new abbreviations
+  to includes/abbreviations.md if needed.
 date_updated: 2026-03-28
 ---
 
