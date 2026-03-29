@@ -47,7 +47,7 @@ A desk-based literature review and recorded interviews in a conflict zone don't 
 
 *No action, output, or outcome arising from your project should expose participants, communities, partners, or staff to foreseeable harm.*
 
-At CMI, risk often comes not just from direct identifiers like names or contact details, but from context. Political setting, geographic specificity, institutional affiliation, or combinations of details can make material sensitive even when the file itself looks innocuous. You should consider direct and indirect identification, social and political context, confidentiality commitments, power relations, and the possible consequences of exposure. See the discussion of [sensitivity and regulatory complexity](cmi-institutional-context.md#sensitivity-and-regulatory-complexity) in CMI's institutional context.
+At CMI, risk often comes not just from direct identifiers like names or contact details, but from context. Political setting, geographic specificity, institutional affiliation, or combinations of details can make material sensitive even when the file itself looks innocuous. You should consider direct and indirect identification, social and political context, confidentiality commitments, power relations, and the possible consequences of exposure. This also means practising sensitivity minimisation: collect and retain only data that is essential to the research objectives, especially when working with vulnerable populations or in conflict-affected settings where even seemingly innocuous details may carry risks. See the discussion of [sensitivity and regulatory complexity](cmi-institutional-context.md#sensitivity-and-regulatory-complexity) in CMI's institutional context.
 
 !!! warning "Context creates risk"
     A single interview transcript from a diaspora community or a set of field notes from a conflict zone may put people at risk in ways that standard anonymisation can't fully resolve. Think beyond the identifiers visible in the file itself.
@@ -62,7 +62,7 @@ Document what data the project collects, how it was created, how it has changed,
 
 *Security should reflect the data, the context, and who actually needs access.*
 
-Think not only about where files are stored, but also about who needs access, which files they need, whether all team members need the same level of access, and how identifying information is separated from research material. Good security isn't only technical. It also depends on clear routines, limited access, and good judgement in everyday work, especially during fieldwork, travel, or when external services are involved.
+The principle of least privilege applies: data access should be role-based and limited to individuals with a justified need. Not everyone on the team needs the same level of access, and identifying information should be separated from research material wherever possible. Good security isn't only technical. It also depends on clear routines, limited access, and good judgement in everyday work, especially during fieldwork, travel, or when external services are involved.
 
 ### 6. Treat data management as a shared responsibility
 
@@ -79,7 +79,7 @@ Some projects can share data openly. Others can only share metadata, documentati
 !!! info "A well-established principle"
     The formulation 'as open as possible, as closed as necessary' is used by the European Commission in its Horizon Europe programme guide and echoed in the UNESCO Recommendation on Open Science (2021).[^1] The burden of justification falls on closure, not on openness.
 
-The FAIR principles provide a practical framework for making data findable and interpretable even when access must be restricted.[^2] The CARE Principles complement FAIR by foregrounding the rights of communities over data that describes or originates from them, including questions of data sovereignty, collective benefit, and who has authority to govern how data is used.[^3] For the epistemic and ethical arguments behind these frameworks, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md).
+The FAIR principles provide a practical framework for making data findable, accountable, and interpretable even when access must be restricted; they are tools for transparency and accountability, not compliance targets to be met in the abstract.[^2] The CARE Principles complement FAIR by foregrounding the rights of communities over data that describes or originates from them, including questions of data sovereignty, collective benefit, and who has authority to govern how data is used.[^3] For the epistemic and ethical arguments behind these frameworks, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md).
 
 ### 8. Plan for the full lifecycle
 
