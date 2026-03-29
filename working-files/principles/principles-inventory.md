@@ -299,3 +299,36 @@ The eight core principles (B1) are the most developed CMI-specific articulation 
 5. **Proportionality** is a strong and distinctive CMI position (given GDPR + sensitive contexts) but appears only in working-files and the GDPR page.
 
 6. **Trust** as the overarching purpose is stated beautifully in `foundations-of-data-sharing.md` but not foregrounded as a principle.
+
+---
+
+## F. DMP gap analysis (added 29 March 2026)
+
+Eight real DMPs in `working-files/early-operational-docs/` were reviewed: Fisher of Corpses, ATTACH, CoM-Financing, ENVPEACE, LANDAPT, StaR, RETURNEC, and the truth commissions DMPs. All use a consistent set of guiding principles in their Section 1.2.
+
+### Principles used in DMPs vs. the eight core principles
+
+| Principle in DMPs | Frequency | Covered by B1? | Notes |
+|---|---|---|---|
+| FAIR | All DMPs | Yes (Principle 7) | DMPs frame as top-level; B1 integrates into Principle 7 |
+| 'As open as possible, as closed as necessary' | All DMPs | Yes (Principle 7) | Direct match |
+| Do-No-Harm | All DMPs | Partially (Principle 3) | DMPs use 'Do-No-Harm' as an explicit named principle. B1 subsumes under 'Protect people' but does not use the phrase. **Gap addressed in published page.** |
+| Sensitivity minimisation / Data minimisation | All DMPs | Implicit (Principles 2, 5) | Covered through proportionality and access/security |
+| Proportionality | All DMPs | Yes (Principle 2) | Direct match |
+| Access control / Least privilege | All DMPs | Yes (Principle 5) | Direct match |
+| Shared responsibility | All DMPs | Yes (Principle 6) | Direct match |
+| Conflict sensitivity | 3 DMPs | Not explicitly | Project-specific; appropriate for individual DMPs, not institutional principles |
+| Data sovereignty | 1 DMP (ENVPEACE) | Via CARE in Principle 7 | **Gap addressed in published page** with explicit mention in Principle 7 |
+| DMP as living document | All DMPs | Yes (Principle 8) | Implicit in lifecycle planning |
+
+### Conclusions
+
+1. **No missing principles.** Everything in the DMPs maps to the eight core principles. The DMPs use more specific operational language that sits underneath the eight principles.
+2. **Two gaps addressed.** The published page (`docs/rdm-principles.md`) adds 'Do no harm' to Principle 3's heading and makes data sovereignty explicit in Principle 7.
+3. **The eight core principles are the right level of abstraction** for an institutional page. DMP sub-principles (sensitivity minimisation, conflict sensitivity, least privilege) are project-specific operationalisations.
+
+---
+
+## G. Published page
+
+The principles have been published as `docs/rdm-principles.md`, added to the Foundations section in navigation. The page consolidates B1 (eight core principles) with a framing section drawn from B2 (four data principles), addresses the two DMP gaps, and includes a section on referencing the principles in DMPs with example boilerplate text.
