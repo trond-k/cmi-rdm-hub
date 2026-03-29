@@ -39,9 +39,9 @@ Your data should be organised clearly, documented as the project develops, under
 
 ### 2. Apply proportionality
 
-*Not every project needs the same level of control. But none should rely on minimal routines when the data or context demands more.*
+*Security measures, access controls, and documentation should be calibrated to the actual sensitivity and risk level of each dataset.*
 
-Your data management measures should match the nature of the project and the sensitivity of the material. Ask yourself: what kinds of data are involved? How sensitive is the material? How many people need access? What would happen if data were lost, overshared, misunderstood, or misused? The aim is a level of care that fits the actual project, not over-control or under-management.
+A desk-based literature review and recorded interviews in a conflict zone don't need the same protections. Proportionality means heightened controls where the data demands it (encrypted storage, restricted access, careful separation of identifiers) and a lighter approach where it doesn't. The question isn't whether to manage your data carefully, but how carefully, and where to focus that effort. Ask yourself: what kinds of data are involved? How sensitive is the material? Who needs access, and to what? What would happen if it were lost, overshared, or misused? The aim is adequate protection without unnecessary restrictions.
 
 ### 3. Do no harm: protect people, relationships, and context
 
