@@ -13,71 +13,79 @@ date_updated: 2026-03-29
 
 # Principles for research data management
 
-*These eight principles guide data-related decisions across the project lifecycle at CMI. They are not a compliance checklist; they are a common institutional frame for making consistent, responsible choices about data that involves real trade-offs between quality, protection, openness, and practical constraints. You can reference this page in your Data Management Plan to demonstrate CMI's institutional approach to funders.*
+*These eight principles describe how CMI approaches data across the research lifecycle. They're not a compliance checklist. They're a shared frame for making consistent, responsible decisions about data that involves real trade-offs between quality, protection, openness, and practical constraints.*
 
-## How CMI thinks about data
+Data decisions at CMI touch research quality, participant safety, legal obligations, collaboration, and long-term preservation. A principles-based approach helps you navigate these concerns together, rather than treating them as separate boxes to tick. The principles apply whether you're designing a new study, managing fieldwork, preparing data for archiving, or writing a Data Management Plan for a funder.
 
-Data is never a neutral technical object. Decisions about what is collected, how it is described, which materials are retained, and what can be shared all shape how research evidence enters public debate, policy processes, and institutional memory. At CMI, where projects often work in politically sensitive settings, careful attention to transparency, accountability, and context is part of the work.
+??? info "Why data decisions matter at CMI"
 
-Data also affects whose experiences and perspectives become visible in research. Good data management helps ensure that qualitative, contextual, and less standardised forms of material are documented and handled with the same care as more formal datasets. For the broader arguments behind these claims, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md) and the discussion of [CMI's institutional context](cmi-institutional-context.md).
+    **Data is political.** Decisions about what gets collected, described, retained, and shared shape how research evidence enters public debate, policy, and institutional memory. At CMI, where projects often work in politically sensitive settings, this demands careful attention to transparency, accountability, and context.
 
-Data outlasts individual projects, funding cycles, and careers. The datasets, instruments, and documentation that CMI produces today are the foundation for questions that have not been asked yet. Treating data as a core institutional resource, worth curating, preserving, and making findable, is an investment in CMI's future relevance and credibility.
+    **Data is voice.** Data affects whose experiences and perspectives become visible. Good data management ensures that qualitative, contextual, and less standardised material is handled with the same care as formal datasets. Frameworks like the CARE Principles emphasise that communities should retain authority over how their knowledge is used.
+
+    **Data is memory.** Datasets, instruments, and documentation produced today are the foundation for questions that haven't been asked yet. If material is lost, poorly documented, or locked in one person's folders, future researchers can't build on it.
+
+    **Data is value.** An RCT in Tanzania, ethnographic fieldwork in Myanmar, and a policy evaluation for a Norwegian ministry differ in method and audience, but they all produce material that carries meaning beyond the original study. Treating data as a core institutional resource is an investment in CMI's future relevance and credibility.
+
+    For the broader arguments behind these claims, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md) and the discussion of [CMI's institutional context](cmi-institutional-context.md).
 
 ## Eight principles for research data
 
 ### 1. Manage data in ways that support good research
 
-Research data management is part of research quality. Your data should be organised clearly, documented as the project develops, understandable to others who are authorised to work with it, and linked to the methods and decisions that shaped it.
+*Data management is part of research quality, not a separate administrative task.*
 
-Poorly managed data creates practical and analytical problems. Files become difficult to interpret, versions get confused, decisions are not traceable, and continuity depends too heavily on individual memory. Setting up a clear [file and folder naming convention](file-and-folder-naming.md) at the start of your project is one of the simplest ways to avoid these problems.
+Your data should be organised clearly, documented as the project develops, understandable to others who are authorised to work with it, and linked to the methods and decisions that shaped it. Poorly managed data creates real problems: files become hard to interpret, versions get confused, decisions aren't traceable, and continuity depends too heavily on individual memory. A clear [file and folder naming convention](file-and-folder-naming.md) at the start of a project is one of the simplest ways to avoid this.
 
 ### 2. Apply proportionality
 
-Your data management measures should be proportionate to the nature of the project and the sensitivity of the material. Not every project needs the same level of control, documentation, or restriction. At the same time, you should not rely on minimal routines where the data or context requires more careful handling.
+*Not every project needs the same level of control. But none should rely on minimal routines when the data or context demands more.*
 
-Ask yourself: what kinds of data are involved? How sensitive is the material? How many people need access? What would be the main risk if data were lost, overshared, misunderstood, or misused? The aim is a level of care that matches the actual project, not over-control or under-management.
+Your data management measures should match the nature of the project and the sensitivity of the material. Ask yourself: what kinds of data are involved? How sensitive is the material? How many people need access? What would happen if data were lost, overshared, misunderstood, or misused? The aim is a level of care that fits the actual project, not over-control or under-management.
 
 ### 3. Do no harm: protect people, relationships, and context
 
-Your data management should help protect participants, collaborators, and others affected by the research. No action, output, or outcome arising from your project should expose participants, communities, partners, or staff to foreseeable harm. At CMI, risk often arises not only from direct identifiers such as names or contact details, but also from context. Political setting, geographic specificity, institutional affiliation, or combinations of details may make material sensitive even where the file itself appears limited.
+*No action, output, or outcome arising from your project should expose participants, communities, partners, or staff to foreseeable harm.*
 
-This means you should consider direct and indirect identification, social and political context, confidentiality commitments, unequal power relations, and the possible consequences of exposure. For a fuller treatment of these dynamics, see the discussion of [sensitivity and regulatory complexity](cmi-institutional-context.md#sensitivity-and-regulatory-complexity) in CMI's institutional context.
+At CMI, risk often comes not just from direct identifiers like names or contact details, but from context. Political setting, geographic specificity, institutional affiliation, or combinations of details can make material sensitive even when the file itself looks innocuous. You should consider direct and indirect identification, social and political context, confidentiality commitments, power relations, and the possible consequences of exposure. See the discussion of [sensitivity and regulatory complexity](cmi-institutional-context.md#sensitivity-and-regulatory-complexity) in CMI's institutional context.
 
 !!! warning "Context creates risk"
-    A single interview transcript from a diaspora community or a set of field notes from a conflict zone may put people at risk in ways that standard anonymisation cannot fully resolve. Think beyond the identifiers visible in the file itself.
+    A single interview transcript from a diaspora community or a set of field notes from a conflict zone may put people at risk in ways that standard anonymisation can't fully resolve. Think beyond the identifiers visible in the file itself.
 
 ### 4. Document decisions as you go
 
-Documentation is part of responsible data management, not something to add at the end. You should document what data the project collects, how it was created, how it has changed, and how it should be interpreted. This may include descriptions of data types and sources, collection methods, file naming conventions, transcription or translation decisions, processing steps, access decisions, and retention plans.
+*Documentation is part of responsible data management, not something to add at the end.*
 
-Without documentation, even well-stored files may become difficult to interpret or reuse. A simple README file at the top of your project folder can capture much of this; see the [file and folder naming guide](file-and-folder-naming.md#document-the-pattern-once) for an example.
+Document what data the project collects, how it was created, how it has changed, and how it should be interpreted. This includes descriptions of data types and sources, collection methods, file naming conventions, transcription or translation decisions, processing steps, access decisions, and retention plans. Without documentation, even well-stored files become hard to interpret or reuse. A simple README file at the top of your project folder can capture much of this; see the [file and folder naming guide](file-and-folder-naming.md#document-the-pattern-once) for an example.
 
 ### 5. Match access and security to sensitivity
 
-Security should reflect the data, the project context, and the access needs of the people involved. Think not only about where files are stored, but also about who needs access, which files they need, whether all team members need the same level of access, and how identifying information is separated from research material.
+*Security should reflect the data, the context, and who actually needs access.*
 
-Good security is not only technical. It also depends on clear routines, limited access, and good judgement in everyday work, especially when fieldwork, travel, or external services are involved.
+Think not only about where files are stored, but also about who needs access, which files they need, whether all team members need the same level of access, and how identifying information is separated from research material. Good security isn't only technical. It also depends on clear routines, limited access, and good judgement in everyday work, especially during fieldwork, travel, or when external services are involved.
 
 ### 6. Treat data management as a shared responsibility
 
-Research data management is a shared institutional task. You understand your project, your methods, and your material better than anyone. But you should not be expected to carry all legal, technical, or organisational responsibility alone.
+*You shouldn't carry all legal, technical, and organisational responsibility alone.*
 
-This means responsibilities should be clarified early, support functions should be used where they exist, and data-related problems should not be handled informally when they require institutional input. Shared responsibility does not remove individual responsibility; it makes it clearer and more workable.
+You understand your project, methods, and material better than anyone. But data management is an institutional task, not a solo burden. Responsibilities should be clarified early, support functions should be used where they exist, and data-related problems shouldn't be handled informally when they require institutional input. Shared responsibility doesn't remove individual responsibility; it makes it clearer and more workable.
 
 ### 7. Be as open as possible, as closed as necessary
 
-You should support openness where appropriate, but not treat openness as automatic. Some projects can share data openly. Others may only be able to share metadata, documentation, code, instruments, or selected outputs. Some data may need restricted access, long embargoes, or no sharing beyond the project team.
+*Openness is the default aspiration. Legitimate restrictions are respected and expected.*
+
+Some projects can share data openly. Others can only share metadata, documentation, code, instruments, or selected outputs. Some data needs restricted access, long embargoes, or no sharing beyond the project team. The point is to avoid both extremes: promising openness your project can't responsibly deliver, and closing everything by default without considering what could in fact be shared.
 
 !!! info "A well-established principle"
-    The formulation 'as open as possible, as closed as necessary' is used by the European Commission in its Horizon Europe programme guide and echoed in the UNESCO Recommendation on Open Science (2021).[^1] It means that openness is the default aspiration, but legitimate restrictions based on privacy, safety, confidentiality, or intellectual property are respected and expected.
+    The formulation 'as open as possible, as closed as necessary' is used by the European Commission in its Horizon Europe programme guide and echoed in the UNESCO Recommendation on Open Science (2021).[^1] The burden of justification falls on closure, not on openness.
 
-This principle means you should avoid both extremes: promising openness that your project cannot responsibly deliver, and closing everything by default without considering what could in fact be documented or shared. The FAIR principles provide a practical framework for making your data findable and interpretable even when access must be restricted.[^2] The CARE Principles complement FAIR by foregrounding the rights of communities over data that describes or originates from them, including questions of data sovereignty, collective benefit, and who has authority to govern how data is used.[^3] For the epistemic and ethical arguments behind these frameworks, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md).
+The FAIR principles provide a practical framework for making data findable and interpretable even when access must be restricted.[^2] The CARE Principles complement FAIR by foregrounding the rights of communities over data that describes or originates from them, including questions of data sovereignty, collective benefit, and who has authority to govern how data is used.[^3] For the epistemic and ethical arguments behind these frameworks, see the [foundations of knowledge and data sharing](foundations-of-data-sharing.md).
 
 ### 8. Plan for the full lifecycle
 
-Data-related decisions should not be postponed until the end of the project. Important choices are made early: what data to collect, how to organise it, how access is structured, how documentation is maintained, and what future sharing or retention may be possible.
+*Decisions made early cascade through the whole project. Don't postpone them until the end.*
 
-You should plan not only for collection and analysis, but also for ongoing documentation, staff changes, publication and reporting, retention or deletion, and project closure and handover. Your Data Management Plan is a living document that should evolve as the project develops. A lifecycle approach helps avoid last-minute confusion and makes later stages easier to manage.
+Important choices happen early: what data to collect, how to organise it, how access is structured, how documentation is maintained, and what future sharing or retention may be possible. Plan not only for collection and analysis, but also for ongoing documentation, staff changes, publication, retention or deletion, and project closure and handover. Your Data Management Plan is a living document that should evolve as the project develops.
 
 ??? question "Quick check: applying the principles"
     Use these questions when making a data-related decision:
@@ -88,15 +96,6 @@ You should plan not only for collection and analysis, but also for ongoing docum
     4. Is the level of control proportionate to the sensitivity and context?
     5. Has the decision been documented clearly enough for others to understand it later?
     6. Could any part of this material be prepared for later sharing, archiving, or preservation?
-
-## Referencing these principles in a DMP
-
-When a funder asks you to describe your institutional approach to data management, you can link to this page. Here is an example text you can adapt for your Data Management Plan:
-
-??? tip "Example text for Data Management Plans"
-    *CMI's approach to research data management is guided by eight institutional principles covering research quality, proportionality, participant protection, documentation, security, shared responsibility, responsible openness, and lifecycle planning. These principles are aligned with the FAIR and CARE frameworks and inform all data-related decisions across the project. For details, see: [https://trond-k.github.io/cmi-rdm-hub/rdm-principles/](https://trond-k.github.io/cmi-rdm-hub/rdm-principles/)*
-
-    You should then specify how these principles apply to your particular project: what data is involved, what the main sensitivities are, and what level of openness is realistic. The principles page provides the institutional frame; your DMP provides the project-specific detail.
 
 [^1]: UNESCO (2021). *UNESCO Recommendation on Open Science*. 41st General Conference, 41 C/Res. 24. Available at [unesco.org](https://www.unesco.org/en/open-science/about). The European Commission uses the same formulation in its *Horizon Europe Programme Guide*. Available at [ec.europa.eu](https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf).
 

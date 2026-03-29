@@ -1,6 +1,6 @@
 # Principles inventory — all principle and principle-adjacent statements across the CMI RDM Hub
 
-*Compiled 28 March 2026. Sources: `docs/`, `working-files/`, `base-content-architecture.md`.*
+*Compiled 28 March 2026; updated 29 March 2026. Sources: `docs/`, `working-files/`, `base-content-architecture.md`.*
 
 This document inventories every principle framework, institutional principle, and principle-adjacent statement found across the codebase. It is organised in three tiers: (A) external/international frameworks CMI draws on, (B) CMI's own institutional principles, and (C) operational and epistemic commitments embedded in guidance pages. Each entry notes where it appears and how it currently functions in the site.
 
@@ -290,9 +290,9 @@ The eight core principles (B1) are the most developed CMI-specific articulation 
 
 1. **Overlap between B1, B2, and B3.** The eight core principles, four data principles, and five open science principles share concepts (proportionality, protection, openness, FAIR, CARE) but are structured differently and live in different working-files. A published page should consolidate rather than duplicate.
 
-2. **No single published principles page exists.** The closest is `docs/foundations-of-data-sharing.md`, which covers the *why* but not a concise *what we commit to* statement.
+2. **~~No single published principles page exists.~~** Resolved: `docs/rdm-principles.md` was published on 29 March 2026. It consolidates the eight core principles (B1) with a framing drawn from the four data principles (B2). A tone revision is underway to make the page work better as a clear institutional statement for both internal and external audiences.
 
-3. **Linkability for DMPs.** Funders (RCN, Horizon Europe, ERC) increasingly expect DMPs to reference institutional positions on data management, FAIR, openness, and ethics. A single, stable, citable page would serve this need.
+3. **Linkability for DMPs.** Resolved in practice: `docs/rdm-principles.md` is now the stable, citable page. Funders (RCN, Horizon Europe, ERC) can be pointed to it directly from a DMP.
 
 4. **CARE is well integrated** across the site but never given a standalone, concise summary with CMI-specific application.
 
@@ -300,11 +300,13 @@ The eight core principles (B1) are the most developed CMI-specific articulation 
 
 6. **Trust** as the overarching purpose is stated beautifully in `foundations-of-data-sharing.md` but not foregrounded as a principle.
 
+7. **Tone.** The initial published version of `docs/rdm-principles.md` was substantively complete but read too much like academic guidance. A rewrite (29 March 2026) targets a clearer institutional statement: authoritative but readable, suitable for both CMI researchers and external stakeholders (funders, partners) who access the page via DMP links. Structural changes include moving the philosophical framing into a collapsible section and removing the DMP referencing boilerplate (since the page itself is the linkable resource).
+
 ---
 
 ## F. DMP gap analysis (added 29 March 2026)
 
-Eight real DMPs in `working-files/early-operational-docs/` were reviewed: Fisher of Corpses, ATTACH, CoM-Financing, ENVPEACE, LANDAPT, StaR, RETURNEC, and the truth commissions DMPs. All use a consistent set of guiding principles in their Section 1.2.
+Fourteen documents in `working-files/early-operational-docs/` were reviewed. These include DMPs for Fisher of Corpses, ATTACH (two versions), CoM-Financing (two versions), ENVPEACE, LANDAPT, StaR, RETURNEC, Invisible Ceiling, Mozambique War, and Truth Commissions (two versions), plus a master data description template. All DMPs use a consistent set of guiding principles in their Section 1.2.
 
 ### Principles used in DMPs vs. the eight core principles
 
@@ -331,4 +333,11 @@ Eight real DMPs in `working-files/early-operational-docs/` were reviewed: Fisher
 
 ## G. Published page
 
-The principles have been published as `docs/rdm-principles.md`, added to the Foundations section in navigation. The page consolidates B1 (eight core principles) with a framing section drawn from B2 (four data principles), addresses the two DMP gaps, and includes a section on referencing the principles in DMPs with example boilerplate text.
+The principles were first published as `docs/rdm-principles.md` on 29 March 2026, added to the Foundations section in navigation. The page consolidates B1 (eight core principles) with a framing section drawn from B2 (four data principles) and addresses the two DMP gaps identified in section F.
+
+**Revision (29 March 2026).** The page is being rewritten to work better as a clear institutional statement. Changes:
+
+- **Tone:** Shifted from academic guidance toward a confident, readable institutional frame. Professional but approachable; plain language; occasional contractions. Suitable for both CMI researchers and external readers (funders, partners) accessing the page via a DMP link.
+- **Structure:** Philosophical framing ('How CMI thinks about data') moved into a collapsible admonition. Each principle now leads with an italic one-sentence summary for scannability.
+- **DMP section removed.** The earlier version included boilerplate text for referencing the principles in a DMP. This was removed because the page itself is the linkable institutional reference; a separate 'how to link to us' section was redundant.
+- **Substance unchanged.** The eight principles, their content, the admonitions, the footnotes, and the quick-check questions are all retained.
