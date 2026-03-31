@@ -52,8 +52,8 @@ Several platforms serve as registries, each with a different audience and discip
 
 For most CMI researchers, **OSF** will be the natural choice. Economists running randomised evaluations should use the **AEA RCT Registry**, which is the disciplinary standard.
 
-!!! warning "EGAP Registry no longer active"
-    The [EGAP](https://egap.org/) (Evidence in Governance and Politics) registry, previously a standard platform for governance and political science pre-registrations, is no longer accepting new registrations. If you previously used EGAP, OSF Registries or the AEA RCT Registry are the recommended alternatives.
+!!! warning "EGAP Registry closed to new submissions"
+    The [EGAP](https://egap.org/) (Evidence in Governance and Politics) registry stopped accepting new submissions on 15 October 2023. EGAP concluded that its registry substantially overlapped with the main OSF Registry (within which it was hosted) and the AEA RCT Registry. All previously registered designs remain archived on OSF with working links, and registered authors can still upload updated pre-analysis plans and other documents. If you previously used EGAP, register new projects on OSF Registries or the AEA RCT Registry (which accepts most political science experiments).
 
 !!! note "CMI researchers already using these platforms"
     Several CMI researchers have active registrations on the AEA RCT Registry, including trials on poverty targeting in Bangladesh, development aid and democratisation in Sub-Saharan Africa, and preferences in the Indian marriage market. Others combine OSF for replication data, Harvard Dataverse for archiving, and the AEA RCT Registry for pre-analysis plans. These examples show that CMI researchers are already engaging with open science infrastructure; the question is how to make this more systematic. See [CMI research data in external repositories](CROSS-cmi-research-data.md) for details.
