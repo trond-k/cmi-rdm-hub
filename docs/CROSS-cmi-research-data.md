@@ -26,7 +26,7 @@ This is not unusual for an institute of CMI's size and disciplinary profile. It 
 
 ### ICTD datasets
 
-The most substantial collection of openly available data connected to CMI is hosted by the [International Centre for Tax and Development](https://www.ictd.ac/) (ICTD), which CMI co-founded and co-directs. CMI researcher Odd-Helge Fjeldstad is a Research Director of ICTD. The ICTD hosts eight major open datasets:
+The most substantial collection of openly available data connected to CMI is hosted by the [International Centre for Tax and Development](https://www.ictd.ac/) (ICTD), which CMI co-founded and co-directs. The ICTD hosts eight major open datasets:
 
 | Dataset | Description | Status |
 |---|---|---|
@@ -43,19 +43,21 @@ These datasets are openly accessible through the [ICTD dataset page](https://www
 
 CMI does not have an institutional presence on [OSF](https://osf.io/). There is no branded CMI portal aggregating researcher projects, and OSF is not widely used across the institute. Individual researchers have, however, deposited data and pre-registrations:
 
-- **Charlotte Ringdal** hosts replication data for 'Who decides in the household when risk preferences conflict?' (with Ben D'Exelle, *Review of Economics of the Household*, 2025) at [osf.io/wqhyb](https://osf.io/wqhyb).
-- **Viola Asri** has a pre-registration at [osf.io/wsxd9](https://osf.io/wsxd9) for a study tracking publication outcomes of trials registered on the AEA RCT Registry.
+- Replication data for 'Who decides in the household when risk preferences conflict?' (*Review of Economics of the Household*, 2025) at [osf.io/wqhyb](https://osf.io/wqhyb).
+- A pre-registration at [osf.io/wsxd9](https://osf.io/wsxd9) for a study tracking publication outcomes of trials registered on the AEA RCT Registry.
 
 ### Harvard Dataverse
 
-- **Charlotte Ringdal** deposited replication data for 'Household bargaining and spending on children' (with Ingrid Hoem Sjursen, *Economica*, 2021) at [Harvard Dataverse](https://dataverse.harvard.edu/) (DOI: 10.7910/DVN/TX2N3C).
+- Replication data for 'Household bargaining and spending on children' (*Economica*, 2021) at [Harvard Dataverse](https://dataverse.harvard.edu/) (DOI: 10.7910/DVN/TX2N3C).
 
 ### AEA RCT Registry
 
 Several CMI researchers have registered randomised trials with pre-analysis plans:
 
-- **Viola Asri:** Trial AEARCTR-0004510, evaluating a state-capacity-building intervention for targeting extreme poverty in Bangladesh (80 unions, approximately 4,400 observations). A second trial (AEARCTR-0008717) examines preferences in the Indian marriage market.
-- **Carlo Koos:** Trial AEARCTR-0005525, a cluster-randomised trial on whether development aid affects local democratisation in Sub-Saharan Africa (with Anselm Hager). A second trial (AEARCTR-0009818) studies the effects of information on development interventions in fragile states.
+- Trial AEARCTR-0004510, evaluating a state-capacity-building intervention for targeting extreme poverty in Bangladesh (80 unions, approximately 4,400 observations).
+- Trial AEARCTR-0008717, a correspondence experiment examining preferences in the Indian marriage market.
+- Trial AEARCTR-0005525, a cluster-randomised trial on whether development aid affects local democratisation in Sub-Saharan Africa.
+- Trial AEARCTR-0009818, studying the effects of information on development interventions in fragile states.
 
 ### RePEc / IDEAS
 

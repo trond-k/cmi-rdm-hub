@@ -54,7 +54,7 @@ Several platforms serve as registries, each with a different audience and discip
 For most CMI researchers, **OSF** or **EGAP** will be the natural choice. Economists running randomised evaluations should use the **AEA RCT Registry**, which is the disciplinary standard.
 
 !!! note "CMI researchers already using these platforms"
-    Several CMI researchers have active registrations. Viola Asri has pre-registrations on OSF and the AEA RCT Registry, including trials on poverty targeting in Bangladesh and preferences in the Indian marriage market. Carlo Koos has registered cluster-randomised trials on the AEA RCT Registry studying development aid and democratisation in Sub-Saharan Africa. Charlotte Ringdal combines OSF for replication data, Harvard Dataverse for archiving, and the AEA RCT Registry for pre-analysis plans. These examples show that CMI researchers are already engaging with open science infrastructure; the question is how to make this more systematic.
+    Several CMI researchers have active registrations on the AEA RCT Registry, including trials on poverty targeting in Bangladesh, development aid and democratisation in Sub-Saharan Africa, and preferences in the Indian marriage market. Others combine OSF for replication data, Harvard Dataverse for archiving, and the AEA RCT Registry for pre-analysis plans. These examples show that CMI researchers are already engaging with open science infrastructure; the question is how to make this more systematic. See [CMI research data in external repositories](CROSS-cmi-research-data.md) for details.
 
 ## What to include in a pre-registration
 
