@@ -87,7 +87,7 @@ If you are planning to share data from a CMI project, the choice of repository d
 | Consideration | Recommended repository |
 |---|---|
 | Economics, randomised evaluations | [AEA RCT Registry](https://www.socialscienceregistry.org/) for registrations; discipline-specific repository for data |
-| Governance, political science experiments | [EGAP Registry](https://egap.org/registry/) for registrations |
+| Governance, political science experiments | [OSF Registries](https://osf.io/registries) or [AEA RCT Registry](https://www.socialscienceregistry.org/) for registrations |
 | Norwegian-funded projects | [DataverseNO](https://dataverse.no/) or [Sikt Research Data Archive](https://sikt.no/en/tjenester/arkivere-data) |
 | Replication data for publications | [OSF](https://osf.io/), [Harvard Dataverse](https://dataverse.harvard.edu/), or [Zenodo](https://zenodo.org/) |
 | Sensitive social science data | [Sikt Research Data Archive](https://sikt.no/en/tjenester/arkivere-data) (supports restricted access) |

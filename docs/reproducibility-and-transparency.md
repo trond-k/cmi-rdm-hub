@@ -50,7 +50,7 @@ These are not a lesser standard than scripted reproducibility. They are the appr
 
 Preregistration means lodging your research design and analysis plan in a public registry before data collection begins. The purpose is to distinguish confirmatory analysis (testing pre-specified hypotheses) from exploratory analysis (investigating patterns that emerged from the data). Both are legitimate; the problem arises when exploratory findings are presented as confirmatory.
 
-For quantitative work, registries such as [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/), and [EGAP](https://egap.org/registry/) (relevant for governance and development research) provide templates and time-stamped records. Over 800,000 registrations are now held on OSF alone.
+For quantitative work, registries such as [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/), and the [AEA RCT Registry](https://www.socialscienceregistry.org/) (the standard for randomised evaluations in economics and development) provide templates and time-stamped records. Over 800,000 registrations are now held on OSF alone.
 
 For qualitative work, preregistration is more contested. The emerging distinction is between a 'constraining' model that commits to specific procedures and a 'transparency' model that documents the starting point without restricting methodological emergence.[^2] The transparency model is gaining traction because it respects the iterative nature of qualitative inquiry while still providing an auditable record.
 

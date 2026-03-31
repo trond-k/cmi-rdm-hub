@@ -47,11 +47,13 @@ Several platforms serve as registries, each with a different audience and discip
 |---|---|---|
 | [OSF Registries](https://osf.io/registries) | All disciplines | Templates for many study types; over 800,000 registrations; links to data, code, and materials |
 | [AEA RCT Registry](https://www.socialscienceregistry.org/) | Economics, development | Standard for randomised evaluations; requires pre-analysis plans for trials |
-| [EGAP Registry](https://egap.org/registry/) | Governance, political science, development | Relevant for CMI's governance and political economy research |
 | [AsPredicted](https://aspredicted.org/) | All disciplines | Lightweight; nine-question template; private until you choose to make it public |
 | [ClinicalTrials.gov](https://clinicaltrials.gov/) | Health, clinical research | Legally required for many clinical trials; less relevant for most CMI work |
 
-For most CMI researchers, **OSF** or **EGAP** will be the natural choice. Economists running randomised evaluations should use the **AEA RCT Registry**, which is the disciplinary standard.
+For most CMI researchers, **OSF** will be the natural choice. Economists running randomised evaluations should use the **AEA RCT Registry**, which is the disciplinary standard.
+
+!!! warning "EGAP Registry no longer active"
+    The [EGAP](https://egap.org/) (Evidence in Governance and Politics) registry, previously a standard platform for governance and political science pre-registrations, is no longer accepting new registrations. If you previously used EGAP, OSF Registries or the AEA RCT Registry are the recommended alternatives.
 
 !!! note "CMI researchers already using these platforms"
     Several CMI researchers have active registrations on the AEA RCT Registry, including trials on poverty targeting in Bangladesh, development aid and democratisation in Sub-Saharan Africa, and preferences in the Indian marriage market. Others combine OSF for replication data, Harvard Dataverse for archiving, and the AEA RCT Registry for pre-analysis plans. These examples show that CMI researchers are already engaging with open science infrastructure; the question is how to make this more systematic. See [CMI research data in external repositories](CROSS-cmi-research-data.md) for details.
