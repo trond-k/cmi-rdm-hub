@@ -77,6 +77,8 @@ nav = [
     { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
     { "Informed consent and information letters" = "CROSS-ethics.md" },
     { "GDPR concepts for researchers" = "CROSS-legal.md" },
+    { "Pre-registration and Registered Reports" = "CROSS-preregistration.md" },
+    { "CMI research data in external repositories" = "CROSS-cmi-research-data.md" },
   ]},
 ]
 

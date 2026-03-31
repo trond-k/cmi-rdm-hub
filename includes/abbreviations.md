@@ -25,3 +25,7 @@
 *[TSD]: Services for Sensitive Data (Tjenester for sensitive data)
 *[PI]: Principal Investigator
 *[RDM]: Research Data Management
+*[ICTD]: International Centre for Tax and Development
+*[IPA]: In-Principle Acceptance
+*[OLS]: Ordinary Least Squares
+*[RCT]: Randomised Controlled Trial

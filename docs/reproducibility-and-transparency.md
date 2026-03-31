@@ -54,7 +54,7 @@ For quantitative work, registries such as [OSF](https://osf.io/), [AsPredicted](
 
 For qualitative work, preregistration is more contested. The emerging distinction is between a 'constraining' model that commits to specific procedures and a 'transparency' model that documents the starting point without restricting methodological emergence.[^2] The transparency model is gaining traction because it respects the iterative nature of qualitative inquiry while still providing an auditable record.
 
-Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory.
+Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory. For a fuller treatment of platforms, what to include, and how pre-registration works for qualitative research, see the dedicated [pre-registration and Registered Reports](CROSS-preregistration.md) page.
 
 ### Registered Reports
 
