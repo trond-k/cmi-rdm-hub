@@ -1,33 +1,40 @@
-# Blueprint: Cross-cutting guidance on metadata
+# Blueprint: Cross-cutting guidance on metadata, FAIR, CARE, and repository-specific pages
 
 *Status: Draft blueprint for discussion*
-*Date: 31 March 2026*
+*Date: 1 April 2026*
 
 ---
 
-## Purpose of this page in the hub
+## Purpose of these pages in the hub
 
 Metadata is referenced throughout the hub but never consolidated. The lifecycle pages address metadata in context (planning metadata standards in Stage 3, writing codebooks in Stage 6, rich metadata for discoverability in Stage 10, metadata persistence in Stage 11), and the FAIR working file (`working-files/open-science/fair-principles.md`) treats metadata extensively under F2, F3, R1, and R1.2. But no page answers the researcher's basic question: *What is metadata, what kinds do I need, and how do I create it well?*
 
-This blueprint proposes **two pages** rather than one:
+This blueprint proposes **five or more pages**:
 
 1. **CROSS-metadata.md** (new) — practical guidance on creating, managing, and sustaining metadata across the research lifecycle
-2. **CROSS-fair.md** (publish the existing working file) — the FAIR principles at CMI, adapted from the mature draft in `working-files/open-science/fair-principles.md`
+2. **CROSS-fair.md** (publish the existing working file) — the FAIR principles at CMI, refocused on how archives and repositories implement FAIR; links to unpublished institutional pages removed
+3. **CROSS-care.md** (new) — dedicated page for the CARE principles (Collective benefit, Authority to control, Responsibility, Ethics), operationalised for CMI's research context
+4. **Repository-specific pages** (new, one per repository) — practical guidance for depositing data in each CMI-recommended repository, with repository-specific metadata fields, access options, and workflows:
+    - **CROSS-repo-zenodo.md** — Zenodo
+    - **CROSS-repo-sikt.md** — Sikt (Norwegian Agency for Shared Services in Education and Research)
+    - **CROSS-repo-qdr.md** — QDR (Qualitative Data Repository)
+    - **CROSS-repo-openicpsr.md** — openICPSR
+    - **CROSS-repo-osf.md** — OSF (Open Science Framework)
 
-The two pages are tightly connected: FAIR provides the *why* (especially F2, R1), and the metadata page provides the *how*. Each links to the other. This avoids a single page exceeding 3,000 words and allows researchers to find what they need: those who want the governance framework go to FAIR; those who need practical metadata guidance go to the metadata page.
+The pages are connected: FAIR provides the *why* (especially F2, R1) with a focus on what repositories provide; the metadata page provides the *how*; CARE addresses the *who benefits and who decides*; and the repository pages give concrete, platform-specific guidance. This avoids bloated pages and allows researchers to find exactly what they need.
 
 ---
 
-## Relationship between the two pages
+## Relationship between the pages
 
-| Question | FAIR page answers | Metadata page answers |
-|---|---|---|
-| Why does metadata matter? | Findability, reusability, persistence principles | (Links to FAIR) |
-| What metadata do I need? | Principle-level (F2: "rich metadata") | Concrete: descriptive, structural, administrative, provenance |
-| What standards exist? | Mentions DDI, DataCite in passing | Dedicated comparison of standards relevant to CMI |
-| How do I write good metadata? | General principle (R1: "richly described") | Step-by-step, with examples and templates |
-| What about restricted data? | A2: metadata persists; metadata-only records | How to create a metadata-only deposit |
-| What do repositories expect? | Table of principles mapped to repositories | Specific metadata fields per repository |
+| Question | FAIR page answers | Metadata page answers | CARE page answers | Repository pages answer |
+|---|---|---|---|---|
+| Why does metadata matter? | Findability, reusability, persistence principles | (Links to FAIR) | Community benefit from well-described data | (Links to FAIR/metadata) |
+| What metadata do I need? | Principle-level (F2: "rich metadata") | Concrete: descriptive, structural, administrative, provenance | Metadata that respects community authority | Specific fields per repository |
+| What standards exist? | Mentions DDI, DataCite in passing | Dedicated comparison of standards relevant to CMI | Community-defined standards | Repository-native standards |
+| How do archives implement FAIR? | How each principle is supported by repositories | (Links to FAIR) | CARE-informed access decisions | Step-by-step deposit workflows |
+| What about restricted data? | A2: metadata persists; metadata-only records | How to create a metadata-only deposit | Who decides access? | Repository-specific access controls |
+| Who benefits from data sharing? | (Mentions briefly) | (Links to CARE) | Full treatment: community rights, reciprocity | Repository features for controlled access |
 
 ---
 
@@ -200,9 +207,13 @@ Examples:
 
 ---
 
-## Page 2: CROSS-fair.md — Publishing the existing draft
+## Page 2: CROSS-fair.md — Publishing the existing draft, refocused on repository implementation
 
-The FAIR principles working file (`working-files/open-science/fair-principles.md`) is comprehensive, well-structured, and closely follows the style guide. Publishing it requires:
+The FAIR principles working file (`working-files/open-science/fair-principles.md`) is comprehensive and well-structured. Publishing it requires significant editorial changes: refocusing on how archives and repositories implement FAIR, removing broken links to unpublished institutional pages, and extracting CARE content into its own page.
+
+### Editorial direction: focus on repositories
+
+The published FAIR page should emphasise **how archives and repositories provide FAIR compliance**. For each principle, the page should explain what the repository does automatically and what the researcher must do. This shifts the framing from abstract principles to practical infrastructure. The "What CMI provides" column in the summary table becomes "What repositories provide", grounded in the five CMI-recommended repositories (Zenodo, Sikt, QDR, openICPSR, OSF). Detailed repository-specific guidance belongs on the individual repository pages (see Page 4 onwards), not here.
 
 ### Changes needed
 
@@ -212,48 +223,419 @@ The FAIR principles working file (`working-files/open-science/fair-principles.md
 ---
 icon: lucide/diamond
 title: "The FAIR principles at CMI"
-description: "A practical guide to making research data Findable, Accessible, Interoperable, and Reusable, grounded in CMI's research context."
+description: "A practical guide to making research data Findable, Accessible, Interoperable, and Reusable, with a focus on how archives and repositories support each principle."
 tags:
   - FAIR data
   - Open Science
   - Data sharing
   - Metadata
   - Data management
+  - Repositories
 notes: ""
-date_updated: 2026-03-31
+date_updated: 2026-04-01
 ---
 ```
 
-2. **Fix internal links** — The working file contains relative links to `../../institutional/...` paths that do not exist in the `docs/` directory. These need to be updated or removed. Options:
-    - Replace with links to the published lifecycle and cross-cutting pages that cover the same topics
-    - Remove links to unpublished institutional pages and note them for future addition
-    - Check which institutional pages (open-science.md, data-security.md, data-classification.md, sharing-and-archiving.md, rdm-and-sharing-policy.md) exist in docs/ or should be created
+2. **Remove all links to unpublished institutional pages.** The working file contains links to paths that do not exist in `docs/`:
+    - `../../institutional/policies/rdm-and-sharing-policy.md` — referenced in the CARE admonition, F2, common questions. **Remove these links.** Where the linked content is essential, rewrite the sentence to be self-contained (e.g., "CMI's RDM and Sharing Policy commits to FAIR as an institutional principle" needs no link).
+    - `../../institutional/open-science.md` — referenced in F1 ("repository defaults"), F4, A1.2 ("five sharing pathways"), A2, R1.1 ("licensing"). **Remove these links.** Replace with references to the repository-specific pages where appropriate (e.g., "See the repository-specific guidance pages for details on each platform's access and licensing options").
+    - `../../institutional/data-security.md` — referenced in "Further reading". **Remove.**
+    - `../../institutional/data-classification.md` — referenced in "Further reading". **Remove.**
+    - `../../institutional/sharing-and-archiving.md` — referenced in "Further reading". **Remove.**
+    - `open-science.md` — referenced in the CARE admonition. **Remove** (this page does not exist in `docs/` either).
+    - **Replace the "Further reading" section** with links to published pages: the metadata page, the CARE page, and the repository-specific pages.
 
-3. **Add cross-reference to the metadata page** — Insert a link to `CROSS-metadata.md` in the sections on F2 (rich metadata) and R1 (rich description), e.g., "For practical guidance on creating metadata, see [Document your data with metadata](CROSS-metadata.md)."
+3. **Refocus each principle section on repository implementation.** For each FAIR principle:
+    - Lead with what the principle means.
+    - Explain how CMI-recommended repositories implement it (e.g., F1: "Zenodo, Sikt, QDR, openICPSR, and OSF all assign DOIs automatically on deposit").
+    - State what the researcher must do beyond what the repository provides.
+    - Link to the relevant repository page(s) for platform-specific detail.
 
-4. **Move local abbreviation definitions to `includes/abbreviations.md`** — The working file defines abbreviations at the bottom of the file. These should be moved to the global abbreviations file (or confirmed as already present there).
+4. **Extract CARE content.** The CARE admonition and the "What about the CARE principles?" FAQ answer should be replaced with a brief cross-reference: "For guidance on the CARE principles (Collective benefit, Authority to control, Responsibility, Ethics), see [The CARE principles at CMI](CROSS-care.md)." Keep CARE to a single sentence or short paragraph on the FAIR page.
 
-5. **Review the "What CMI provides" references** — Several sections reference CMI's "DMP Generator", "repository defaults", "documentation standards", and "open science guidance". Verify that these either exist as published pages or are rewritten as general guidance.
+5. **Add cross-reference to the metadata page** — Insert a link to `CROSS-metadata.md` in the sections on F2 (rich metadata) and R1 (rich description).
 
-6. **Add pyramid summary** — The current opening paragraph is close but should be reformatted as the standard italic pyramid summary (2-4 sentences).
+6. **Move local abbreviation definitions to `includes/abbreviations.md`** — The working file defines abbreviations at the bottom of the file. These should be moved to the global abbreviations file (or confirmed as already present there).
 
-### Issues to discuss
+7. **Review the "What CMI provides" references** — Rewrite references to "DMP Generator", "repository defaults", "documentation standards", and "open science guidance" as general guidance or link to published pages.
 
-- **Broken internal links:** The working file references several `../../institutional/...` pages. Are any of these planned for publication? If not, the FAIR page needs to be self-contained or reference lifecycle pages instead.
-- **CARE principles section:** The FAIR page mentions CARE but does not fully operationalise it. Should CARE get its own cross-cutting page, or is the treatment in the FAIR page sufficient?
-- **Length:** At approximately 1,800 words (excluding collapsible FAQ sections), the FAIR page exceeds the 1,500-word target for reference pages. The collapsible "Common questions" section helps, but consider whether any sections can be shortened.
+8. **Add pyramid summary** — Reformat the opening paragraph as the standard italic pyramid summary (2-4 sentences).
+
+### Summary table revision
+
+The existing summary table maps principles to "What CMI provides" and "What researchers should do." Revise this to three columns:
+
+| Principle | What repositories provide | What you need to do |
+|---|---|---|
+
+This reinforces the page's focus on repository implementation and gives researchers a practical checklist.
+
+---
+
+## Page 3: CROSS-care.md — The CARE principles at CMI
+
+**Proposed file:** `docs/CROSS-care.md`
+**Navigation placement:** Under "Cross-cutting guidance", after FAIR
+**Word count target:** 800-1,200 words
+
+### Rationale for a separate page
+
+The FAIR page currently mentions CARE in an admonition and a FAQ answer, but does not operationalise it. CARE deserves dedicated treatment because:
+
+- CMI works extensively with Global South partners, Indigenous communities, and marginalised populations.
+- CARE principles shape *who benefits* from data sharing and *who controls* access decisions, which are distinct from the technical FAIR questions of *how* data is managed.
+- Funders (including the RCN and Horizon Europe) increasingly expect researchers to address both FAIR and CARE.
+- Combining CARE with FAIR on a single page would make that page too long and blur the distinction between technical data management and ethical data governance.
+
+### Suggested frontmatter
+
+```yaml
+---
+icon: lucide/heart-handshake
+title: "The CARE principles for research data"
+description: "Guidance on applying the CARE principles — Collective benefit, Authority to control, Responsibility, and Ethics — to research data management at CMI."
+tags:
+  - CARE principles
+  - Indigenous data
+  - Data governance
+  - Ethics
+  - Global South
+  - Data sovereignty
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+### Proposed heading structure
+
+```
+# The CARE principles for research data
+
+[Italic pyramid summary: 2-4 sentences — CARE as a complement to FAIR;
+addresses who benefits and who decides; essential for CMI's partnerships
+with Global South communities and research on marginalised populations]
+
+## What the CARE principles are
+
+## Collective benefit
+### Data ecosystems should benefit Indigenous and local communities
+### How this applies at CMI
+
+## Authority to control
+### Communities have the right to govern data about them
+### How this applies at CMI
+
+## Responsibility
+### Those working with data have a responsibility to support community rights
+### How this applies at CMI
+
+## Ethics
+### Data practices should align with community values and minimise harm
+### How this applies at CMI
+
+## CARE and FAIR together
+
+## Practical steps for CMI researchers
+
+## Further reading
+```
+
+### Section-by-section blueprint
+
+#### 1. What the CARE principles are
+
+**Content:** Plain-language introduction to the CARE principles (Research Data Alliance, 2019). CARE stands for Collective benefit, Authority to control, Responsibility, and Ethics. While FAIR addresses how data should be technically managed, CARE addresses the rights and interests of the people and communities the data describes or affects. Frame as complementary to FAIR, not competing.
+
+#### 2. Each CARE principle (four sections)
+
+**Content for each principle:**
+- Definition and scope (drawing on the RDA CARE Principles)
+- What it means in CMI's research context, with concrete examples from development economics, governance research, and qualitative fieldwork in the Global South
+- Practical implications for data management decisions: who is consulted during project design, who controls access, who benefits from reuse, how community norms shape licensing and sharing
+
+**Key examples to include:**
+- **Collective benefit:** Data collected in partnership with a local institution should be available to that institution on equal terms, not only accessible through a European repository.
+- **Authority to control:** A community that participated in a study about land rights should have a say in whether the data is shared openly, restricted, or embargoed.
+- **Responsibility:** Researchers collecting data in conflict-affected settings have a responsibility to ensure that data cannot be used to identify or harm participants, even indirectly.
+- **Ethics:** Depositing interview data from a marginalised community in an open repository without consent, even if anonymised, may violate community expectations about knowledge sharing.
+
+#### 3. CARE and FAIR together
+
+**Content:** How CARE-informed decisions interact with FAIR implementation. For example:
+- FAIR says metadata should be rich (F2); CARE may require that certain descriptive metadata is withheld to protect community identity.
+- FAIR says data should be accessible (A1); CARE may require that access is mediated through community representatives.
+- FAIR says data should be reusable (R1); CARE may require that reuse conditions include benefit-sharing agreements.
+- Show how repositories support CARE-informed access: QDR's mediated access, data use agreements in Zenodo and openICPSR.
+
+#### 4. Practical steps for CMI researchers
+
+**Content:** A concise checklist (6-8 items) for researchers to apply CARE in their projects:
+- Discuss data governance with partners and communities during project design
+- Include community representatives in decisions about data sharing and access
+- Document community consent and governance arrangements in the DMP
+- Choose repositories and access levels that respect community authority
+- Include benefit-sharing provisions in data use agreements
+- Ensure metadata does not expose community identity where this could cause harm
+- Review data sharing decisions with partners before deposit
+- Revisit governance arrangements if research context changes
+
+#### 5. Further reading
+
+Links to the RDA CARE Principles, the FAIR page, relevant lifecycle pages, and external resources (e.g., GIDA, Local Contexts, Traditional Knowledge Labels).
+
+---
+
+## Page 4 onwards: Repository-specific pages — One page per repository
+
+Each CMI-recommended repository gets its own page with practical, platform-specific guidance. These pages answer the question: *I need to deposit data in [repository]. What do I need to know?*
+
+### General structure for all repository pages
+
+Each repository page follows the same structure for consistency:
+
+```
+# Depositing data in [Repository name]
+
+[Italic pyramid summary: 2-4 sentences — what the repository is,
+who it serves, and when CMI researchers should use it]
+
+## When to use [Repository]
+
+## What [Repository] provides for FAIR compliance
+
+## Metadata fields and requirements
+
+## Access options and restrictions
+
+## Step-by-step deposit workflow
+
+## Tips and common issues
+
+## Further reading
+```
+
+### Section-by-section blueprint (applies to all repository pages)
+
+#### 1. When to use this repository
+
+**Content:** Clear guidance on when this repository is the right choice for CMI researchers. What types of data, disciplines, and access requirements make it appropriate. When to choose a different repository instead.
+
+#### 2. What this repository provides for FAIR compliance
+
+**Content:** Map the repository's features to FAIR principles. What does the repository handle automatically (DOI assignment, metadata indexing, protocol compliance) and what does the researcher need to provide? This reinforces the FAIR page's focus on repository implementation.
+
+#### 3. Metadata fields and requirements
+
+**Content:** The specific metadata fields the repository requires or supports, with guidance on how to fill them in well. Distinguish between required fields and optional-but-recommended fields. Include CMI-relevant examples for each field.
+
+#### 4. Access options and restrictions
+
+**Content:** The access levels the repository supports (open, embargoed, restricted, closed/metadata-only). How to set up mediated access, data use agreements, or embargo periods. How this relates to CARE principles where relevant.
+
+#### 5. Step-by-step deposit workflow
+
+**Content:** A practical walkthrough of the deposit process, from account creation to publication. Screenshots or detailed descriptions of each step. Note any CMI-specific considerations (institutional affiliation, funder acknowledgement, linking to CMI's community/collection if applicable).
+
+#### 6. Tips and common issues
+
+**Content:** Practical advice based on common mistakes or questions. File size limits, format restrictions, versioning, DOI reservation, linking to publications, etc.
+
+---
+
+### Page 4a: CROSS-repo-zenodo.md — Zenodo
+
+**Proposed file:** `docs/CROSS-repo-zenodo.md`
+**Word count target:** 800-1,200 words
+
+```yaml
+---
+icon: lucide/archive
+title: "Depositing data in Zenodo"
+description: "Practical guidance for CMI researchers depositing data in Zenodo, including metadata fields, access options, and a step-by-step deposit workflow."
+tags:
+  - Zenodo
+  - Data deposit
+  - Repository
+  - FAIR data
+  - DOI
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+**Key content specific to Zenodo:**
+- General-purpose repository hosted by CERN; suitable for any data type and discipline
+- When to use: default choice for CMI researchers when no discipline-specific repository is more appropriate; good for supplementary materials, mixed-method datasets, code, and replication packages
+- DOI assignment is automatic; supports DOI reservation before publication
+- Metadata schema based on DataCite; supports communities and collections
+- Access options: open, embargoed, restricted (request-based), closed
+- Supports versioning (new DOI per version, concept DOI for all versions)
+- Integration with GitHub for code archiving
+- File size limit: 50 GB per record (can be increased on request)
+- Zenodo Communities: CMI could set up a community page to group all CMI deposits
+- Licence selection: supports CC0, CC BY, and custom licences
+- Linking to publications, funders (OpenAIRE integration), and grants
+
+---
+
+### Page 4b: CROSS-repo-sikt.md — Sikt
+
+**Proposed file:** `docs/CROSS-repo-sikt.md`
+**Word count target:** 800-1,200 words
+
+```yaml
+---
+icon: lucide/archive
+title: "Depositing data in Sikt"
+description: "Practical guidance for CMI researchers depositing data in Sikt's research data archive, with a focus on survey data and mediated access."
+tags:
+  - Sikt
+  - Data deposit
+  - Repository
+  - FAIR data
+  - Survey data
+  - Norway
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+**Key content specific to Sikt:**
+- Norwegian national archive for research data; strong support for social science survey data
+- When to use: quantitative survey data, especially when Norwegian funder requirements apply (RCN); preferred for data requiring mediated access with institutional oversight
+- Supports DDI metadata standard natively; DDI codebook import
+- Mediated access: applicants must apply and be approved; Sikt manages the process
+- Norwegian-language interface (with English option); may require liaison with Sikt staff
+- Long-term preservation commitment; part of CESSDA network
+- Integration with NSD (now Sikt) data collection and archiving workflows
+- Specific metadata fields: study description, universe, sampling, data collection methods, weighting, response rates
+- Access categories: open, restricted (with application), by special permission only
+- CMI's relationship with Sikt: institutional account, contact procedures
+
+---
+
+### Page 4c: CROSS-repo-qdr.md — QDR (Qualitative Data Repository)
+
+**Proposed file:** `docs/CROSS-repo-qdr.md`
+**Word count target:** 800-1,200 words
+
+```yaml
+---
+icon: lucide/archive
+title: "Depositing data in QDR"
+description: "Practical guidance for CMI researchers depositing qualitative data in the Qualitative Data Repository, including mediated access and disclosure risk evaluation."
+tags:
+  - QDR
+  - Qualitative data
+  - Data deposit
+  - Repository
+  - FAIR data
+  - Mediated access
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+**Key content specific to QDR:**
+- Specialist repository for qualitative and multi-method data; based at Syracuse University
+- When to use: interview transcripts, ethnographic field notes, focus group data, case study materials, and other qualitative data; strongest option for sensitive qualitative data requiring expert curation
+- Expert-curated mediated access: QDR staff evaluate disclosure risk and advise on what can be shared and how
+- Per-deposit fees apply (note current fee structure or link to QDR's pricing page)
+- Annotation for Transparent Inquiry (ATI): linking qualitative data to specific claims in publications
+- Data use agreements: QDR can enforce custom access conditions
+- Metadata fields: study description, data type, geographic scope, temporal coverage, access conditions, related publications
+- Supports both full data deposit and metadata-only records
+- Particularly valuable for CARE-sensitive data: mediated access allows community or partner input on access decisions
+
+---
+
+### Page 4d: CROSS-repo-openicpsr.md — openICPSR
+
+**Proposed file:** `docs/CROSS-repo-openicpsr.md`
+**Word count target:** 800-1,200 words
+
+```yaml
+---
+icon: lucide/archive
+title: "Depositing data in openICPSR"
+description: "Practical guidance for CMI researchers depositing data in openICPSR, with a focus on quantitative social science data and replication packages."
+tags:
+  - openICPSR
+  - ICPSR
+  - Data deposit
+  - Repository
+  - FAIR data
+  - Replication
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+**Key content specific to openICPSR:**
+- Self-service deposit platform for ICPSR; focused on quantitative social science data
+- When to use: quantitative social science data, especially replication packages for journal publications; required or recommended by many economics and political science journals (AEA, APSR, etc.)
+- No deposit fees for basic deposits
+- Supports restricted access with data use agreements
+- Metadata fields: study-level metadata, variable-level metadata, geographic and temporal coverage
+- Integration with journal submission workflows (AEA Data Editor, etc.)
+- DOI assignment; DataCite metadata
+- Curation: openICPSR provides light-touch curation; full ICPSR curation available for higher tiers
+- File format recommendations: prefers open formats (CSV, Stata .dta with documentation)
+- Versioning support
+
+---
+
+### Page 4e: CROSS-repo-osf.md — OSF (Open Science Framework)
+
+**Proposed file:** `docs/CROSS-repo-osf.md`
+**Word count target:** 800-1,200 words
+
+```yaml
+---
+icon: lucide/archive
+title: "Depositing data in OSF"
+description: "Practical guidance for CMI researchers using OSF for data sharing, preregistration, and project management."
+tags:
+  - OSF
+  - Open Science Framework
+  - Data deposit
+  - Repository
+  - FAIR data
+  - Preregistration
+notes: ""
+date_updated: 2026-04-01
+---
+```
+
+**Key content specific to OSF:**
+- Multifunctional platform: project management, preregistration, data sharing, and archiving; run by the Center for Open Science
+- When to use: preregistration of studies, project-level file management and collaboration, supplementary materials; also suitable as a general-purpose data repository when Zenodo is not preferred
+- Assigns DOIs or ARK identifiers (DOI available for public registrations and files)
+- Supports add-on integrations (Dropbox, Google Drive, GitHub, etc.)
+- Access options: public or private (project-level or component-level); no built-in mediated access workflow (unlike QDR or Sikt)
+- Metadata is lighter than discipline-specific repositories; researchers must provide rich documentation via README and supplementary files
+- Preregistration: OSF is the standard platform for preregistering study designs; relevant for CMI researchers doing experimental or quasi-experimental work
+- File storage: 5 GB per file (private), 50 GB per project (public); larger files via add-ons
+- Licensing: supports standard licences (CC0, CC BY, etc.)
+- Note: OSF is a good complement to a discipline-specific repository, not always a replacement; for archival purposes, a dedicated archive (Zenodo, Sikt, QDR) may be more appropriate
 
 ---
 
 ## Navigation placement
 
-Add both pages to the nav in `zensical.toml` under "Cross-cutting guidance":
+Add all pages to the nav in `zensical.toml` under "Cross-cutting guidance":
 
 ```toml
 { "Cross-cutting guidance" = [
     { "Reproducibility and transparency" = "reproducibility-and-transparency.md" },
     { "The FAIR principles at CMI" = "CROSS-fair.md" },
+    { "The CARE principles for research data" = "CROSS-care.md" },
     { "Document your data with metadata" = "CROSS-metadata.md" },
+    { "Depositing data in Zenodo" = "CROSS-repo-zenodo.md" },
+    { "Depositing data in Sikt" = "CROSS-repo-sikt.md" },
+    { "Depositing data in QDR" = "CROSS-repo-qdr.md" },
+    { "Depositing data in openICPSR" = "CROSS-repo-openicpsr.md" },
+    { "Depositing data in OSF" = "CROSS-repo-osf.md" },
     { "Name files and structure folders" = "file-and-folder-naming.md" },
     { "Build a data inventory" = "data-inventory.md" },
     { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
@@ -262,23 +644,24 @@ Add both pages to the nav in `zensical.toml` under "Cross-cutting guidance":
 ]}
 ```
 
-**Rationale for placement:** FAIR and metadata sit after Reproducibility (which they complement) and before File naming and Data inventory (which are more operational). FAIR comes first because the metadata page references FAIR principles; a reader encountering them in order gets the framework before the practice.
+**Rationale for placement:** FAIR and CARE sit after Reproducibility (which they complement). CARE follows FAIR because it builds on the access and governance decisions FAIR raises. The metadata page follows because it provides the practical *how* for the principles. Repository pages come next as the most concrete, platform-specific guidance. The remaining operational pages (file naming, inventory, GDPR, ethics, legal) follow after.
 
 ---
 
 ## Cross-references to existing pages
 
-The metadata page should link to (not duplicate) content in:
+The new pages should link to (not duplicate) content in:
 
-| Existing page | What it already covers | What the metadata page adds |
+| Existing page | What it already covers | What the new pages add |
 |---|---|---|
-| lifecycle-3-plan.md | Metadata standards in the DMP; data inventory | When and how to choose a standard |
+| lifecycle-3-plan.md | Metadata standards in the DMP; data inventory | Metadata page: when and how to choose a standard |
 | lifecycle-6-process.md | Codebooks, data dictionaries | (Links only; no new content) |
-| lifecycle-8-publish.md | README files, supplementary materials | Repository-specific metadata walkthrough |
-| lifecycle-10-discover.md | Rich metadata, metadata schemas, multilingual metadata | Consolidated comparison of standards; practical examples |
-| lifecycle-11-access.md | Metadata persistence for restricted data | How to create a metadata-only deposit |
-| data-inventory.md | Structured inventory with per-record metadata | Metadata page focuses on *external* metadata (repository deposits); inventory focuses on *internal* metadata (project management) |
-| CROSS-fair.md | FAIR principles (F2, R1, A2) | Practical implementation of those principles |
+| lifecycle-8-publish.md | README files, supplementary materials | Repository pages: platform-specific deposit walkthroughs |
+| lifecycle-10-discover.md | Rich metadata, metadata schemas, multilingual metadata | Metadata page: consolidated comparison of standards |
+| lifecycle-11-access.md | Metadata persistence for restricted data | Metadata page: how to create a metadata-only deposit |
+| data-inventory.md | Structured inventory with per-record metadata | Metadata page: *external* metadata (repository deposits) vs. *internal* metadata (project management) |
+| CROSS-fair.md | FAIR principles (F2, R1, A2) | Metadata page: practical implementation; repository pages: platform-specific FAIR support |
+| CROSS-care.md | CARE principles and ethical data governance | FAIR page: brief cross-reference; repository pages: CARE-informed access options |
 
 ---
 
@@ -296,33 +679,44 @@ Confirm the following are in `includes/abbreviations.md` (add any that are missi
 *[DOI]: Digital Object Identifier
 *[ORCID]: Open Researcher and Contributor ID
 *[FAIR]: Findable, Accessible, Interoperable, Reusable
+*[CARE]: Collective benefit, Authority to control, Responsibility, Ethics
 *[DMP]: Data Management Plan
+*[GIDA]: Global Indigenous Data Alliance
+*[UNDRIP]: United Nations Declaration on the Rights of Indigenous Peoples
+*[ATI]: Annotation for Transparent Inquiry
+*[ARK]: Archival Resource Key
+*[ICPSR]: Inter-university Consortium for Political and Social Research
+*[QDR]: Qualitative Data Repository
+*[OSF]: Open Science Framework
 ```
 
 ---
 
 ## Open questions for discussion
 
-1. **One page or two?** This blueprint proposes two (metadata + FAIR). An alternative is a single combined page, but at 2,500+ words it would be long. A third option is three pages: FAIR, metadata basics, and metadata standards. Two pages seems the right balance. What do you think?
+1. **Metadata template:** Should the metadata page include a downloadable template (spreadsheet or structured text file) that researchers fill in before depositing? This would complement the data inventory template.
 
-2. **Metadata template:** Should the metadata page include a downloadable template (spreadsheet or structured text file) that researchers fill in before depositing? This would complement the data inventory template.
+2. **Preservation metadata:** Should the metadata page cover PREMIS and digital preservation metadata, or leave that to the Preserve lifecycle page (lifecycle-9-preserve.md)?
 
-3. **Repository-specific guidance:** How deep should the metadata page go on repository-specific fields? A general walkthrough (as proposed) or separate tabs for Zenodo, Sikt, QDR, and openICPSR?
+3. **Repository page depth:** The repository pages are blueprinted at 800-1,200 words each. Should they include screenshots of the deposit interface, or is text description sufficient? Screenshots risk becoming outdated when repositories update their interfaces.
 
-4. **FAIR page internal links:** The working file references several unpublished institutional pages. Should we publish those pages first, rewrite the links, or simply remove them?
+4. **Repository page grouping:** Should the five repository pages be grouped under a sub-navigation heading (e.g., "Repository guides") or listed individually under "Cross-cutting guidance"? A sub-heading keeps the nav cleaner but adds a nesting level.
 
-5. **CARE as a separate page:** The FAIR page references CARE but does not operationalise it fully. Is a dedicated CARE cross-cutting page needed, or is the current treatment sufficient?
+5. **Additional repositories:** Are there other repositories CMI researchers use that should get their own page? Candidates might include: DANS (Dutch data archive), UK Data Service, Harvard Dataverse, or Figshare.
 
-6. **Preservation metadata:** Should the metadata page cover PREMIS and digital preservation metadata, or leave that to the Preserve lifecycle page (lifecycle-9-preserve.md)?
+6. **CARE depth:** How much detail should the CARE page include on specific legal frameworks (UNDRIP, Nagoya Protocol, national legislation in CMI partner countries)? Should this be a dedicated section or a collapsible "Legal context" admonition?
+
+7. **CARE and repository pages:** Should each repository page include a section on CARE-relevant features (mediated access, community governance), or should the CARE page handle all repository-CARE connections centrally?
 
 ---
 
 ## Next steps
 
-1. **Discuss this blueprint** to confirm the two-page approach and resolve open questions.
-2. **Audit internal links** in the FAIR working file to determine which can be redirected to published pages.
-3. **Draft CROSS-metadata.md** following the structure above.
-4. **Adapt and publish CROSS-fair.md** from the working file, with updated links and frontmatter.
-5. **Update `zensical.toml`** navigation to include both pages.
-6. **Update `includes/abbreviations.md`** with any missing terms.
-7. **Preview locally** with `uv run zensical serve` before committing.
+1. **Discuss this blueprint** to confirm the multi-page approach and resolve open questions.
+2. **Adapt and publish CROSS-fair.md** from the working file: remove institutional links, refocus on repository implementation, extract CARE content.
+3. **Draft CROSS-care.md** following the structure above.
+4. **Draft CROSS-metadata.md** following the structure above.
+5. **Draft repository pages** (Zenodo, Sikt, QDR, openICPSR, OSF) following the common structure.
+6. **Update `zensical.toml`** navigation to include all new pages.
+7. **Update `includes/abbreviations.md`** with any missing terms.
+8. **Preview locally** with `uv run zensical serve` before committing.
