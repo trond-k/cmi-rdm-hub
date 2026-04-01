@@ -8,7 +8,7 @@ tags:
   - FAIR
   - CARE
 notes: ""
-date_updated: 2026-03-29
+date_updated: 2026-04-01
 ---
 # CMI Data Management Principles
 
