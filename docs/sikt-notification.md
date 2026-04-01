@@ -13,9 +13,9 @@ date_updated: 2026-04-01
 
 # Prepare a Sikt notification
 
-*Use this guide when your project processes personal data and you need to submit or update a [Sikt notification](https://sikt.no/en/study-or-research/notification-form-personal-data) before data collection begins. Submit at least 30 days before data collection starts.*
+*Use this guide when your project processes personal data and you need to submit or update a [Sikt notification](https://sikt.no/en/study-or-research/notification-form-personal-data) before data collection begins. The notification is part of [formalising your data handling](lifecycle-3-plan.md) during project setup. Submit at least 30 days before data collection starts.*
 
-If you are still unsure whether the project involves personal data at all, start with the [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) page or the [GDPR concepts for researchers](CROSS-legal.md) page first.
+If you are still unsure whether the project involves personal data at all, start with [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) or [GDPR concepts for researchers](CROSS-legal.md) first.
 
 [Open the Sikt portal :lucide-arrow-right:](https://minforskning.sikt.no){ .md-button }
 
@@ -25,15 +25,28 @@ The Sikt notification is not a research ethics approval and it is not a barrier 
 
 For most CMI projects, the challenge is not whether the form can be completed. The challenge is keeping the answers coherent across the whole form: participant groups, legal basis, storage, transfers, and project end need to line up.
 
+!!! info "Do you need Sikt, REK, or both?"
+    Sikt assesses data protection compliance for research involving personal data. [REK](https://www.forskningsetikk.no/en/about-us/our-committees-and-commission/rek/) (Regional Committees for Medical and Health Research Ethics) provides ethical approval for medical and health research under the Health Research Act. Most CMI projects need only Sikt. If your project falls under the Health Research Act (clinical trials, health registries, research primarily aimed at new knowledge about health and disease), you need REK, and the REK approval should be referenced in the Sikt notification. See [GDPR concepts for researchers](CROSS-legal.md) for more on how the two relate.
+
+## The process from start to finish
+
+1. Prepare your materials: project description, information letter, storage plan, partner details.
+2. Fill in the form section by section (use the [Sikt form walkthrough](sikt-form-walkthrough.md)).
+3. Submit at least 30 days before data collection.
+4. Respond to any clarification requests from your assigned adviser.
+5. Receive the assessment; begin data collection.
+6. [Amend the notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) if the project changes materially.
+7. Report completion through the portal when the project ends.
+
 ## Before you open the form
 
 Have these ready ([Sikt's own checklist](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form)):
 
 - a short project description with title, methods, and participant groups
-- a clear view of which personal data categories you will process
-- a draft participant information sheet or adapted oral script (see Sikt's official page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
-- your project data workflow, including storage and access arrangements
-- details of partners, processors, and any organisations outside the EU/EEA that will access the data
+- a clear view of which personal data categories you will process (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) if you are unsure about categories)
+- a draft participant information sheet or adapted oral script (see [Informed consent and information letters](CROSS-ethics.md) and Sikt's page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
+- your project data workflow, including [storage](lifecycle-5-store.md) and access arrangements
+- details of partners, processors, and any organisations outside the EU/EEA that will access the data (see [GDPR concepts for researchers](CROSS-legal.md) for definitions of these roles)
 - project dates, including when personal data processing starts and when identifiable data will be deleted or anonymised
 - any questionnaires or interview guides you plan to upload
 
