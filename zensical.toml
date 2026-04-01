@@ -77,6 +77,8 @@ nav = [
     { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
     { "Informed consent and information letters" = "CROSS-ethics.md" },
     { "GDPR concepts for researchers" = "CROSS-legal.md" },
+    { "Prepare a Sikt notification" = "sikt-notification.md" },
+    { "Sikt form walkthrough" = "sikt-form-walkthrough.md" },
   ]},
 ]
 

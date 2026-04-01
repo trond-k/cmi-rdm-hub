@@ -25,3 +25,6 @@
 *[TSD]: Services for Sensitive Data (Tjenester for sensitive data)
 *[PI]: Principal Investigator
 *[RDM]: Research Data Management
+*[NSD]: Norwegian Social Science Data Services (now Sikt)
+*[MFA]: Multi-factor authentication
+*[M365]: Microsoft 365
