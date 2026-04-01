@@ -49,6 +49,7 @@ nav = [
   { "Foundations" = [
     { "The elements of research data management" = "elements-of.md" },
     { "CMI's institutional context" = "cmi-institutional-context.md" },
+    { "Principles for research data management" = "rdm-principles.md" },
     { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
     { "The research data lifecycle" = "research-data-lifecycle.md" },
   ]},
