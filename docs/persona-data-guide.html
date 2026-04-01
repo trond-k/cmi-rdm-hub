@@ -1,0 +1,344 @@
+<!--
+  Personal Data Decision Tree — CMI RDM Hub
+  
+  Embeddable widget for Zensical / GitHub Pages.
+  
+  OPTION A — Inline in markdown:
+    Copy everything below into your .md file inside a raw HTML block.
+    Wrap in <div class="pd-decision-tree"> to namespace styles.
+  
+  OPTION B — Standalone page:
+    Save this file as e.g. docs/tools/personal-data-check.html
+    Embed via iframe: <iframe src="tools/personal-data-check.html" 
+    style="width:100%;border:none;min-height:500px"></iframe>
+    
+  OPTION C — Include via Zensical/MkDocs snippets:
+    Save as an include file and use --8<-- syntax.
+    
+  No external dependencies. Pure HTML/CSS/JS.
+  Colours use CSS custom properties with safe fallbacks.
+-->
+
+<div class="pd-decision-tree">
+<style>
+.pd-decision-tree {
+  --pd-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
+  --pd-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
+  --pd-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
+  --pd-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
+  --pd-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
+  --pd-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
+  --pd-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
+  --pd-accent: var(--md-primary-fg-color, #4051b5);
+  --pd-warn-bg: #faeeda;
+  --pd-warn-border: #e8b54a;
+  --pd-warn-text: #854f0b;
+  --pd-ok-bg: #eaf3de;
+  --pd-ok-border: #7db832;
+  --pd-ok-text: #3b6d11;
+  --pd-radius: 8px;
+  font-family: inherit;
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+[data-md-color-scheme="default"] .pd-decision-tree {
+  --pd-warn-bg: #faeeda;
+  --pd-warn-border: #e8b54a;
+  --pd-warn-text: #854f0b;
+  --pd-ok-bg: #eaf3de;
+  --pd-ok-border: #7db832;
+  --pd-ok-text: #3b6d11;
+}
+
+[data-md-color-scheme="slate"] .pd-decision-tree {
+  --pd-warn-bg: #412402;
+  --pd-warn-border: #854f0b;
+  --pd-warn-text: #fac775;
+  --pd-ok-bg: #173404;
+  --pd-ok-border: #3b6d11;
+  --pd-ok-text: #c0dd97;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pd-decision-tree {
+    --pd-warn-bg: #412402;
+    --pd-warn-border: #854f0b;
+    --pd-warn-text: #fac775;
+    --pd-ok-bg: #173404;
+    --pd-ok-border: #3b6d11;
+    --pd-ok-text: #c0dd97;
+  }
+}
+
+.pd-decision-tree * { box-sizing: border-box; margin: 0; }
+
+.pd-step { display: none; }
+.pd-step.active { display: block; }
+
+.pd-progress { display: flex; gap: 6px; margin: 0 0 20px; }
+.pd-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--pd-border);
+  transition: background 0.2s;
+}
+.pd-dot.done { background: var(--pd-accent); }
+.pd-dot.cur { background: var(--pd-accent); box-shadow: 0 0 0 3px rgba(64,81,181,0.2); }
+
+.pd-q {
+  font-size: 1.05em; font-weight: 500;
+  color: var(--pd-text);
+  margin: 0 0 6px;
+}
+.pd-hint {
+  font-size: 0.85em;
+  color: var(--pd-muted);
+  margin: 0 0 20px;
+}
+.pd-opts { display: flex; flex-direction: column; gap: 8px; }
+.pd-opt {
+  background: var(--pd-bg);
+  border: 1px solid var(--pd-border);
+  border-radius: var(--pd-radius);
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  color: var(--pd-text);
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s, background 0.15s;
+}
+.pd-opt:hover {
+  border-color: var(--pd-border-hover);
+  background: var(--pd-bg2);
+}
+
+.pd-result {
+  border-radius: var(--pd-radius);
+  padding: 20px 24px;
+  margin: 0 0 16px;
+}
+.pd-result-pd {
+  background: var(--pd-warn-bg);
+  border: 1px solid var(--pd-warn-border);
+}
+.pd-result-anon {
+  background: var(--pd-ok-bg);
+  border: 1px solid var(--pd-ok-border);
+}
+.pd-result-title {
+  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
+}
+.pd-result-pd .pd-result-title { color: var(--pd-warn-text); }
+.pd-result-anon .pd-result-title { color: var(--pd-ok-text); }
+.pd-result-body {
+  font-size: 0.9em;
+  color: var(--pd-muted);
+  line-height: 1.6;
+}
+.pd-result-body p { margin: 0 0 10px; }
+.pd-result-body p:last-child { margin: 0; }
+
+.pd-trade {
+  background: var(--pd-bg2);
+  border-radius: var(--pd-radius);
+  padding: 16px 20px;
+  margin: 12px 0 0;
+}
+.pd-trade-title {
+  font-size: 0.9em; font-weight: 500;
+  color: var(--pd-text);
+  margin: 0 0 6px;
+}
+.pd-trade-body {
+  font-size: 0.85em;
+  color: var(--pd-muted);
+  line-height: 1.6;
+}
+.pd-trade-body b { font-weight: 500; color: var(--pd-text); }
+
+.pd-nav { display: flex; gap: 8px; margin: 16px 0 0; }
+.pd-nav button {
+  font-size: 0.85em;
+  font-family: inherit;
+  background: var(--pd-bg);
+  border: 1px solid var(--pd-border);
+  border-radius: var(--pd-radius);
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--pd-text);
+  transition: border-color 0.15s, background 0.15s;
+}
+.pd-nav button:hover {
+  border-color: var(--pd-border-hover);
+  background: var(--pd-bg2);
+}
+</style>
+
+<div class="pd-progress" id="pd-dots"></div>
+<div id="pd-steps"></div>
+
+<script>
+(function() {
+  const steps = [
+    {
+      q: "Will you record audio or video of people?",
+      hint: "A voice on a recording is personal data, even if you never ask the participant\u2019s name. Video where someone is recognisable is also personal data.",
+      opts: [
+        { text: "Yes \u2014 we will make audio or video recordings", goto: "pd", reason: "Audio and video recordings of identifiable people are personal data." },
+        { text: "No \u2014 we will take written notes only", goto: 1 }
+      ]
+    },
+    {
+      q: "Will you collect names, national ID numbers, email addresses, or recognisable photographs?",
+      hint: "This includes contact information gathered for recruitment, consent documentation signed by name, or photographs where individuals can be identified.",
+      opts: [
+        { text: "Yes", goto: "pd", reason: "Directly identifying information like names, ID numbers, and email addresses is personal data." },
+        { text: "No \u2014 none of these will be recorded at any point", goto: 2 }
+      ]
+    },
+    {
+      q: "Will your survey or data collection platform log respondent email or IP addresses?",
+      hint: "Most online survey tools link responses to an email or IP address by default. A genuinely anonymous survey solution must never record these \u2014 not even temporarily. If you are unsure, check with the platform provider.",
+      opts: [
+        { text: "Yes, or I\u2019m not sure", goto: "pd", reason: "If a survey platform logs email or IP addresses linked to responses, the data is personal \u2014 even if the survey questions contain nothing identifying." },
+        { text: "No \u2014 we are using a verified anonymous solution", goto: 3 }
+      ]
+    },
+    {
+      q: "Will you maintain a code list or key linking data to real identities?",
+      hint: "If participants are given pseudonyms but a separate list connects those pseudonyms to their real names, the entire dataset is personal data \u2014 regardless of who holds the key.",
+      opts: [
+        { text: "Yes \u2014 we will use pseudonyms with a key", goto: "pd", reason: "A code list or scrambling key that links data to identities means the data is personal, even if the research team never sees the key." },
+        { text: "No \u2014 there will be no link between data and identities", goto: 4 }
+      ]
+    },
+    {
+      q: "Could combinations of background variables identify someone in your study population?",
+      hint: "In a small community, the combination of age, gender, village, and occupation may be enough to single out an individual \u2014 even without a name. Consider the size of your study population and how specific your background variables are.",
+      opts: [
+        { text: "Yes, or possibly \u2014 the population is small and variables are specific", goto: "pd", reason: "Indirectly identifying combinations of background information count as personal data when they can single out an individual in the relevant population." },
+        { text: "No \u2014 the population is large enough and variables are broad", goto: 5 }
+      ]
+    },
+    {
+      q: "Will you collect or analyse data from social media or the internet that includes usernames or searchable quotes?",
+      hint: "Usernames, profile information, and directly searchable quotes from online sources can identify individuals. Even publicly posted content is personal data if it is linked to an identifiable person.",
+      opts: [
+        { text: "Yes \u2014 we will use data linked to online identities", goto: "pd", reason: "Online content linked to identifiable usernames or profiles is personal data, even if it was publicly posted." },
+        { text: "No", goto: "anon" }
+      ]
+    }
+  ];
+
+  let cur = 0, history = [];
+  const stepsEl = document.getElementById("pd-steps");
+  const dotsEl = document.getElementById("pd-dots");
+
+  function renderDots() {
+    dotsEl.innerHTML = "";
+    for (let i = 0; i < steps.length; i++) {
+      const d = document.createElement("div");
+      d.className = "pd-dot";
+      if (i < cur) d.classList.add("done");
+      if (i === cur) d.classList.add("cur");
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function showStep(i) {
+    cur = i;
+    renderDots();
+    const s = steps[i];
+    let h = '<div class="pd-step active">';
+    h += '<p class="pd-q">' + s.q + '</p>';
+    h += '<p class="pd-hint">' + s.hint + '</p>';
+    h += '<div class="pd-opts">';
+    s.opts.forEach(function(o, j) {
+      h += '<button class="pd-opt" data-idx="' + j + '">' + o.text + '</button>';
+    });
+    h += '</div>';
+    if (history.length > 0) {
+      h += '<div class="pd-nav"><button data-action="back">Back</button></div>';
+    }
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelectorAll(".pd-opt").forEach(function(btn) {
+      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
+    });
+    var backBtn = stepsEl.querySelector('[data-action="back"]');
+    if (backBtn) backBtn.addEventListener("click", goBack);
+  }
+
+  function pick(j) {
+    var o = steps[cur].opts[j];
+    history.push({ step: cur, choice: j });
+    if (o.goto === "pd") showPD(o.reason);
+    else if (o.goto === "anon") showAnon();
+    else showStep(o.goto);
+  }
+
+  function goBack() {
+    if (history.length === 0) return;
+    var prev = history.pop();
+    showStep(prev.step);
+  }
+
+  function showPD(reason) {
+    dotsEl.innerHTML = "";
+    var h = '<div class="pd-step active">';
+    h += '<div class="pd-result pd-result-pd">';
+    h += '<p class="pd-result-title">Your project will involve personal data</p>';
+    h += '<div class="pd-result-body">';
+    h += '<p>' + reason + '</p>';
+    h += '<p>You will need to: notify Sikt before data collection begins, establish a legal basis for processing, prepare an information letter for participants, set up secure storage, and plan for anonymisation or deletion at the end of the project.</p>';
+    h += '</div></div>';
+    h += '<div class="pd-trade">';
+    h += '<p class="pd-trade-title">But do you need personal data?</p>';
+    h += '<div class="pd-trade-body">';
+    h += 'Before proceeding, consider whether your research questions genuinely require identifiable data \u2014 or whether an anonymous design could work. Reasons you might want personal data include:';
+    h += '<br><br><b>Richer data</b> \u2014 Audio recordings capture tone, hesitation, and nuance that notes cannot. Depth often depends on identifiability.';
+    h += '<br><b>Follow-up</b> \u2014 Longitudinal work, member-checking, and clarification all require knowing who participants are.';
+    h += '<br><b>Data linkage</b> \u2014 Linking your data to registries or other datasets requires identifiers, at least temporarily.';
+    h += '<br><b>Verification</b> \u2014 Checking for duplicates, validating inclusion criteria, and quality control depend on some identifying information.';
+    h += '<br><b>Archiving and reuse</b> \u2014 De-identified data retains more analytical value than data that was anonymous from the start.';
+    h += '<br><br>Data minimisation does not mean collecting no personal data. It means being deliberate about what you collect and why.';
+    h += '</div></div>';
+    h += '<div class="pd-nav"><button data-action="restart">Start over</button></div>';
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
+  }
+
+  function showAnon() {
+    dotsEl.innerHTML = "";
+    var h = '<div class="pd-step active">';
+    h += '<div class="pd-result pd-result-anon">';
+    h += '<p class="pd-result-title">Your project likely does not involve personal data</p>';
+    h += '<div class="pd-result-body">';
+    h += '<p>Based on your answers, your data collection appears to be anonymous throughout. You do not need a Sikt notification, and privacy regulations for personal data do not apply.</p>';
+    h += '<p>However, you still have ethical obligations: inform participants about the research and obtain their agreement to take part, even when data is anonymous.</p>';
+    h += '</div></div>';
+    h += '<div class="pd-trade">';
+    h += '<p class="pd-trade-title">Are you sure you don\u2019t want personal data?</p>';
+    h += '<div class="pd-trade-body">';
+    h += 'Anonymous data is simpler to manage \u2014 but consider what you give up:';
+    h += '<br><br><b>No audio or video</b> \u2014 Written notes lose tone, emphasis, and non-verbal cues. Qualitative richness depends on recording.';
+    h += '<br><b>No follow-up possible</b> \u2014 You cannot return to participants for clarification, member-checking, or additional waves.';
+    h += '<br><b>No linkage</b> \u2014 Anonymous data cannot be linked to registries, administrative records, or prior datasets.';
+    h += '<br><b>No de-duplication</b> \u2014 You cannot check whether the same person responded twice.';
+    h += '<br><b>Limited reuse value</b> \u2014 Heavily stripped data may not be useful enough for other researchers to build on.';
+    h += '<br><br>If any of these matter for your research, it may be worth designing the project with personal data and the appropriate safeguards, rather than constraining your methodology to avoid it.';
+    h += '</div></div>';
+    h += '<div class="pd-nav"><button data-action="restart">Start over</button></div>';
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
+  }
+
+  function restart() { history = []; showStep(0); }
+  showStep(0);
+})();
+</script>
+</div>
