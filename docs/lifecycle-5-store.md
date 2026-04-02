@@ -16,330 +16,84 @@ date_updated: 2026-03-26
 
 *Where your data lives during the project determines how secure it is, how easily your team can collaborate, and how smoothly you can preserve and share it later. CMI's default infrastructure covers most needs, but sensitive data, large files, and multi-site collaboration all require deliberate choices. Get storage right early; retrofitting security or reorganising a chaotic folder structure mid-project is far more expensive than setting things up properly from the start.*
 
-<!-- widget: storage-chooser.html -->
+## Start with the CMI default
 
-<!--
-  Storage Chooser — CMI RDM Hub
+CMI provides Microsoft 365 E5 as its standard working environment. For most projects, this is where your data should live during the active research phase. OneDrive handles individual working files, SharePoint provides shared project spaces, and Teams integrates communication with document collaboration. The E5 licence includes built-in access controls, multi-factor authentication, versioning, and endpoint security.
 
-  Embeddable widget for Zensical / GitHub Pages.
+This default handles a broad range of research data, from non-sensitive project documents to data with moderate sensitivity, provided that access permissions are configured correctly and limited to those who need them. The E5 security features, including conditional access policies and multi-factor authentication, give you meaningful control over who can reach what. Before looking elsewhere, check whether the standard setup meets your needs. Adding tools without a clear reason creates complexity and fragments your data across platforms.
 
-  LOCATION: includes/storage-chooser.html
+!!! tip "Set up the SharePoint site before collection starts"
+    Create a dedicated SharePoint site for the project with an agreed folder structure and permissions before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
 
-  EMBEDDING — Include via Zensical/MkDocs snippets:
-    In your .md file, use the snippet syntax:
-    --8<-- "storage-chooser.html"
+## When you need something more
 
-  No external dependencies. Pure HTML/CSS/JS.
-  Colours use CSS custom properties with safe fallbacks.
--->
+Some data cannot or should not be stored in the standard MS365 environment. The most common reasons are data sensitivity, regulatory requirements, and the need for end-to-end encryption that the institution does not control.
 
-<div class="sc-decision-tree" role="region" aria-label="Storage chooser decision tree">
-<style>
-.sc-decision-tree {
-  --sc-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
-  --sc-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
-  --sc-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
-  --sc-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
-  --sc-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
-  --sc-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
-  --sc-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
-  --sc-accent: var(--md-primary-fg-color, #4051b5);
-  --sc-rec-bg: #eaf3de;
-  --sc-rec-border: #7db832;
-  --sc-rec-text: #3b6d11;
-  --sc-warn-bg: #faeeda;
-  --sc-warn-border: #e8b54a;
-  --sc-warn-text: #854f0b;
-  --sc-radius: 8px;
-  font-family: inherit;
-  max-width: 640px;
-  line-height: 1.6;
-}
+### Sensitive personal data
 
-[data-md-color-scheme="slate"] .sc-decision-tree {
-  --sc-rec-bg: #173404;
-  --sc-rec-border: #3b6d11;
-  --sc-rec-text: #c0dd97;
-  --sc-warn-bg: #412402;
-  --sc-warn-border: #854f0b;
-  --sc-warn-text: #fac775;
-}
+If your project processes personal data that falls into the GDPR's special categories (health data, political opinions, ethnic origin, biometric data), or if the risk profile is elevated because of the research context (conflict zones, authoritarian settings, vulnerable populations), consider a dedicated secure environment.
 
-@media (prefers-color-scheme: dark) {
-  .sc-decision-tree {
-    --sc-rec-bg: #173404;
-    --sc-rec-border: #3b6d11;
-    --sc-rec-text: #c0dd97;
-    --sc-warn-bg: #412402;
-    --sc-warn-border: #854f0b;
-    --sc-warn-text: #fac775;
-  }
-}
+[TSD (Tjenester for Sensitive Data)](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your Data Protection Impact Assessment (DPIA) or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
 
-.sc-decision-tree * { box-sizing: border-box; margin: 0; }
+For projects involving encrypted file sharing with external partners, particularly in contexts where participants or collaborators face surveillance risks, [Tresorit](https://tresorit.com/) and [ProtonDrive](https://proton.me/drive) offer end-to-end encryption. These are useful for transit and collaboration, but they are not a substitute for a managed research environment like TSD for long-term storage of sensitive data.
 
-.sc-step { display: none; }
-.sc-step.active { display: block; }
+### Large files and specialist formats
 
-.sc-progress {
-  display: flex; gap: 6px; margin: 0 0 20px;
-}
-.sc-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--sc-border);
-  transition: background 0.2s;
-}
-.sc-dot.done { background: var(--sc-accent); }
-.sc-dot.cur { background: var(--sc-accent); box-shadow: 0 0 0 3px rgba(64,81,181,0.2); }
+Audio and video recordings, geospatial datasets, and high-resolution imagery can exceed the practical limits of cloud-synced storage. If your project generates large volumes of binary data, plan for where these will live. SharePoint has per-file and per-library size limits that may not accommodate raw video or satellite imagery. Discuss options with CMI's IT team early, before collection produces files that have nowhere to go.
 
-.sc-q {
-  font-size: 1.05em; font-weight: 500;
-  color: var(--sc-text);
-  margin: 0 0 6px;
-}
-.sc-hint {
-  font-size: 0.85em;
-  color: var(--sc-muted);
-  margin: 0 0 20px;
-}
-.sc-opts { display: flex; flex-direction: column; gap: 8px; }
-.sc-opt {
-  background: var(--sc-bg);
-  border: 1px solid var(--sc-border);
-  border-radius: var(--sc-radius);
-  padding: 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  font-size: 0.9em;
-  color: var(--sc-text);
-  font-family: inherit;
-  line-height: 1.5;
-  transition: border-color 0.15s, background 0.15s;
-}
-.sc-opt:hover {
-  border-color: var(--sc-border-hover);
-  background: var(--sc-bg2);
-}
-.sc-opt:focus-visible {
-  outline: 2px solid var(--sc-accent);
-  outline-offset: 2px;
-}
+## Separate identifiers from research data
 
-.sc-result {
-  border-radius: var(--sc-radius);
-  padding: 20px 24px;
-  margin: 0 0 16px;
-}
-.sc-result-rec {
-  background: var(--sc-rec-bg);
-  border: 1px solid var(--sc-rec-border);
-}
-.sc-result-warn {
-  background: var(--sc-warn-bg);
-  border: 1px solid var(--sc-warn-border);
-}
-.sc-result h3 {
-  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
-}
-.sc-result-rec h3 { color: var(--sc-rec-text); }
-.sc-result-warn h3 { color: var(--sc-warn-text); }
-.sc-result-body {
-  font-size: 0.9em;
-  color: var(--sc-muted);
-  line-height: 1.6;
-}
-.sc-result-body p { margin: 0 0 10px; }
-.sc-result-body p:last-child { margin: 0; }
+For projects involving personal data, store direct identifiers (names, contact details, ID numbers) separately from the research data itself. A linking key file connects the two; this file should be stored in a different location with more restrictive access than the main dataset.
 
-.sc-extra {
-  background: var(--sc-bg2);
-  border-radius: var(--sc-radius);
-  padding: 16px 20px;
-  margin: 12px 0 0;
-}
-.sc-extra h4 {
-  font-size: 0.9em; font-weight: 500;
-  color: var(--sc-text);
-  margin: 0 0 6px;
-}
-.sc-extra-body {
-  font-size: 0.85em;
-  color: var(--sc-muted);
-  line-height: 1.6;
-}
-.sc-extra-body b { font-weight: 500; color: var(--sc-text); }
+This principle of data compartmentalisation reduces the impact of a breach. If someone gains access to the research data, they find pseudonymised records. If they access the key file, they find identifiers without context. Neither is useful alone. Document where each component is stored and who has access in the [data inventory](data-inventory.md).
 
-.sc-nav { display: flex; gap: 8px; margin: 16px 0 0; }
-.sc-nav button {
-  font-size: 0.85em;
-  font-family: inherit;
-  background: var(--sc-bg);
-  border: 1px solid var(--sc-border);
-  border-radius: var(--sc-radius);
-  padding: 8px 16px;
-  cursor: pointer;
-  color: var(--sc-text);
-  transition: border-color 0.15s, background 0.15s;
-}
-.sc-nav button:hover {
-  border-color: var(--sc-border-hover);
-  background: var(--sc-bg2);
-}
-.sc-nav button:focus-visible {
-  outline: 2px solid var(--sc-accent);
-  outline-offset: 2px;
-}
-</style>
+!!! warning "Do not store key files alongside research data"
+    Keeping the linking key in the same folder, drive, or environment as the pseudonymised data defeats the purpose of separation. If both are compromised together, pseudonymisation offers no protection. Store the key file in a separate, more restricted location, and limit access to those who genuinely need it.
 
-<div class="sc-progress" id="sc-dots" role="group" aria-label="Progress: question steps"></div>
-<div id="sc-steps" aria-live="polite"></div>
+## Back up deliberately
 
-<script>
-(function() {
-  var steps = [
-    {
-      q: "Does your project process personal data?",
-      hint: "Personal data is any information that can identify a living person, directly or indirectly. This includes names, recordings, IP addresses, and combinations of background variables that could single someone out. If unsure, err on the side of yes.",
-      opts: [
-        { text: "Yes, or I think so", goto: 1 },
-        { text: "No, all data is fully anonymous from the start", goto: "ms365-basic" }
-      ]
-    },
-    {
-      q: "Does the personal data include GDPR special categories?",
-      hint: "Special categories are: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data used for identification, health data, and data about sex life or sexual orientation.",
-      opts: [
-        { text: "Yes, one or more of these apply", goto: 2 },
-        { text: "No, only ordinary personal data (names, contact details, background variables)", goto: "ms365-controlled" }
-      ]
-    },
-    {
-      q: "Is the risk profile elevated by the research context?",
-      hint: "Consider whether participants face risks beyond those of a typical research project: conflict zones, authoritarian regimes, surveillance contexts, vulnerable populations (refugees, minors, people in detention), or politically sensitive topics where a breach could cause harm.",
-      opts: [
-        { text: "Yes, participants could face real harm if data were exposed", goto: "tsd-plus" },
-        { text: "No, the sensitivity is in the data category, not the context", goto: "tsd" }
-      ]
-    }
-  ];
+MS365 provides built-in versioning and retention policies that protect against accidental deletion and overwrites. For most project files stored in SharePoint or OneDrive, this is sufficient as a day-to-day safeguard.
 
-  var results = {
-    "ms365-basic": {
-      type: "rec",
-      title: "CMI Microsoft 365 (standard setup)",
-      body: "<p>Your data does not require special protections beyond what the standard CMI environment provides. Store project files on SharePoint (shared) or OneDrive (individual working files). Teams integrates communication with documents.</p><p>Set up the SharePoint site and folder structure before collection starts. Use access controls to limit who can reach what.</p>",
-      extra: {
-        title: "Still worth doing",
-        body: "<b>Folder structure</b>: agree on a layout before files start accumulating. See <em>Name files and structure folders</em> for conventions.<br><b>Backup</b>: MS365 versioning covers most day-to-day risks, but data on local devices (field laptops, recording equipment) needs a transfer routine."
-      }
-    },
-    "ms365-controlled": {
-      type: "rec",
-      title: "CMI Microsoft 365 with tightened access controls",
-      body: "<p>Ordinary personal data (names, contact details, identifiers) can be stored in the standard MS365 environment, provided you configure access permissions carefully and limit them to those who genuinely need the data.</p><p>Store direct identifiers (names, contact details, ID numbers) separately from the research data. Keep the linking key in a different location with more restrictive access.</p>",
-      extra: {
-        title: "Key actions",
-        body: "<b>Separate identifiers</b>: store the linking key file in a different SharePoint library or OneDrive folder with restricted permissions.<br><b>Sikt notification</b>: you will need to notify Sikt before data collection begins. See <em>Prepare a Sikt notification</em>.<br><b>Access audit</b>: review who has access to the project SharePoint site and remove anyone who does not need it."
-      }
-    },
-    "tsd": {
-      type: "warn",
-      title: "TSD (Tjenester for Sensitive Data)",
-      body: "<p>Special-category personal data typically requires a higher level of protection than the standard MS365 configuration offers. TSD provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway.</p><p>Use TSD as the primary storage environment for the sensitive data. You may still use MS365 for non-sensitive project documents (meeting notes, literature reviews, administrative files).</p>",
-      extra: {
-        title: "Before you set up TSD",
-        body: "<b>DPIA</b>: a Data Protection Impact Assessment is likely required for special-category data. Complete this before setting up storage.<br><b>Sikt notification</b>: submit at least 30 days before data collection. See <em>Prepare a Sikt notification</em>.<br><b>Access planning</b>: TSD access must be set up per user. Plan who needs access and at what level before requesting the environment."
-      }
-    },
-    "tsd-plus": {
-      type: "warn",
-      title: "TSD plus end-to-end encrypted tools for transit",
-      body: "<p>When the research context creates elevated risk (conflict zones, surveillance, vulnerable populations), you need both a secure storage environment and secure channels for data in transit.</p><p>Use TSD as the primary storage for sensitive data. For sharing files with external partners or field teams in high-risk settings, use end-to-end encrypted tools such as Tresorit or ProtonDrive. These protect data during transfer and collaboration, but they are not a substitute for TSD as the long-term storage environment.</p>",
-      extra: {
-        title: "Additional safeguards to consider",
-        body: "<b>Threat model</b>: identify specifically who could access the data and what harm that would cause. This shapes your security decisions.<br><b>Field protocols</b>: establish routines for transferring data from devices to secure storage at the end of each collection day, or more frequently if conditions allow.<br><b>Encrypted portable storage</b>: carry as a fallback when internet access is unreliable.<br><b>Partner agreements</b>: if partners access data, formalise security expectations in a data sharing agreement."
-      }
-    }
-  };
+However, built-in cloud versioning is not a comprehensive backup strategy. Consider whether your project needs additional protection in the following situations:
 
-  var cur = 0, history = [];
-  var stepsEl = document.getElementById("sc-steps");
-  var dotsEl = document.getElementById("sc-dots");
+- Data that exists only on local devices (field laptops, recording equipment) before it has been uploaded.
+- Data stored in environments outside MS365 (TSD, external partner systems, specialist databases).
+- Data where loss would be catastrophic and reconstruction impossible (unique field recordings, one-time survey responses).
 
-  function renderDots() {
-    dotsEl.innerHTML = "";
-    for (var i = 0; i < steps.length; i++) {
-      var d = document.createElement("div");
-      d.className = "sc-dot";
-      d.setAttribute("aria-label", "Step " + (i + 1) + " of " + steps.length);
-      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": completed"); }
-      if (i === cur) { d.classList.add("cur"); d.setAttribute("aria-label", "Step " + (i + 1) + ": current"); }
-      dotsEl.appendChild(d);
-    }
-  }
+For field collection, the most vulnerable period is between the moment data is created and the moment it reaches secure storage. Establish a routine for transferring data from devices to the project's storage environment at the end of each collection day, or more frequently if conditions allow. Carry encrypted portable storage as a fallback when internet access is unreliable.
 
-  function showStep(i) {
-    cur = i;
-    renderDots();
-    var s = steps[i];
-    var h = '<div class="sc-step active">';
-    h += '<p class="sc-q">' + s.q + '</p>';
-    h += '<p class="sc-hint">' + s.hint + '</p>';
-    h += '<div class="sc-opts" role="group" aria-label="Answer options">';
-    s.opts.forEach(function(o, j) {
-      h += '<button class="sc-opt" data-idx="' + j + '">' + o.text + '</button>';
-    });
-    h += '</div>';
-    if (history.length > 0) {
-      h += '<div class="sc-nav"><button data-action="back" aria-label="Go back to previous question">Back</button></div>';
-    }
-    h += '</div>';
-    stepsEl.innerHTML = h;
-    stepsEl.querySelectorAll(".sc-opt").forEach(function(btn) {
-      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
-    });
-    var backBtn = stepsEl.querySelector('[data-action="back"]');
-    if (backBtn) backBtn.addEventListener("click", goBack);
-  }
+!!! tip "Test your recovery, not just your backup"
+    A backup that has never been tested is a hope, not a plan. Periodically verify that you can actually restore a file from your backup arrangement. This is especially important before major fieldwork phases.
 
-  function pick(j) {
-    var o = steps[cur].opts[j];
-    history.push({ step: cur, choice: j });
-    if (typeof o.goto === "string") showResult(o.goto);
-    else showStep(o.goto);
-  }
+## Organise for your future self
 
-  function goBack() {
-    if (history.length === 0) return;
-    var prev = history.pop();
-    showStep(prev.step);
-  }
+Storage is not just about where files live; it is about whether anyone can find them six months from now. The folder structure and naming conventions described in [Name files and structure folders](file-and-folder-naming.md) are your primary tools here. The key structural principle is to separate raw data from derived and working files:
 
-  function showResult(key) {
-    dotsEl.innerHTML = "";
-    var r = results[key];
-    var cls = r.type === "warn" ? "sc-result-warn" : "sc-result-rec";
-    var h = '<div class="sc-step active">';
-    h += '<div class="sc-result ' + cls + '">';
-    h += '<h3>' + r.title + '</h3>';
-    h += '<div class="sc-result-body">' + r.body + '</div>';
-    h += '</div>';
-    if (r.extra) {
-      h += '<div class="sc-extra">';
-      h += '<h4>' + r.extra.title + '</h4>';
-      h += '<div class="sc-extra-body">' + r.extra.body + '</div>';
-      h += '</div>';
-    }
-    h += '<div class="sc-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
-    h += '</div>';
-    stepsEl.innerHTML = h;
-    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
-  }
+- `raw/` for untouched source material.
+- `processed/` for cleaned or transformed versions.
+- `analysis/` for scripts, coding frameworks, and working outputs.
+- `outputs/` for deliverables.
 
-  function restart() { history = []; showStep(0); }
-  showStep(0);
-})();
-</script>
-</div>
+Never edit raw files in place. If a recording needs trimming or a dataset needs cleaning, save the result in `processed/` and leave the original intact. This preserves the chain of evidence and makes it possible to retrace your steps.
 
-<!-- widget-end -->
+## Collaborate without chaos
+
+Shared storage only works if the team agrees on how to use it. Common problems include conflicting edits on the same file, documents saved to personal drives instead of the shared space, and folders created outside the agreed structure.
+
+For text documents and spreadsheets, MS365's real-time co-authoring and version history handle most collaboration needs. For code and scripts, use [Git](https://git-scm.com/) (with a remote repository on GitHub, GitLab, or a CMI-hosted instance) rather than relying on file naming to track versions. For projects with external partners who do not have access to CMI's MS365 environment, agree on a shared platform and transfer protocol before data starts flowing.
+
+!!! warning "Sync conflicts are data risks"
+    When files are edited offline and synced later, conflicting versions can be created. Cloud platforms usually flag these, but they do not resolve them automatically. If your project involves frequent offline work (common in field settings with intermittent connectivity), establish a protocol for checking and resolving sync conflicts after each reconnection.
+
+## Meet compliance requirements
+
+Your storage arrangements may be subject to external requirements beyond your own preferences:
+
+- **GDPR data residency.** Microsoft stores CMI's MS365 data in EU/EEA data centres, which satisfies GDPR residency requirements for most purposes. The question becomes relevant when you move data outside the default infrastructure: sharing files through a non-EU cloud service, transferring data to a partner institution in a country without an EU adequacy decision (i.e. one whose data protection standards the EU has not recognised as essentially equivalent to the GDPR), or using a specialist platform hosted outside Europe. If your project involves any of these, check the legal basis for the transfer before data moves. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
+- **Funder mandates.** Some funders specify that data must be stored on institutional or national infrastructure during the project. Check the grant agreement.
+- **Contractual obligations.** Commissioned research may include clauses on data handling, storage location, or access that constrain your choices.
+
+Document your storage arrangements in the DMP and the [data inventory](data-inventory.md), and revisit them if circumstances change (a new partner joins, a dataset turns out to be more sensitive than anticipated, or a provider changes its terms of service).
+
+!!! info "Last reviewed"
+    This page was last reviewed on 26 March 2026. Storage services, pricing, and compliance features change frequently. Verify current capabilities against the provider's documentation before making decisions.
