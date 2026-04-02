@@ -15,12 +15,11 @@
   Colours use CSS custom properties with safe fallbacks.
 -->
 
-<div class="pd-decision-tree" role="region" aria-label="Personal data decision tree">
+<div class="pd-decision-tree" role="region" aria-label="Personal data assessment">
 <style>
 .pd-decision-tree {
   --pd-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
   --pd-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
-  --pd-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
   --pd-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
   --pd-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
   --pd-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
@@ -74,7 +73,6 @@
 
 .pd-progress {
   display: flex; gap: 6px; margin: 0 0 20px;
-  role: group;
 }
 .pd-dot {
   width: 8px; height: 8px; border-radius: 50%;
@@ -142,24 +140,13 @@
 }
 .pd-result-body p { margin: 0 0 10px; }
 .pd-result-body p:last-child { margin: 0; }
-
-.pd-trade {
-  background: var(--pd-bg2);
-  border-radius: var(--pd-radius);
-  padding: 16px 20px;
-  margin: 12px 0 0;
+.pd-result-body ul {
+  margin: 8px 0 12px;
+  padding-left: 20px;
 }
-.pd-trade h4 {
-  font-size: 0.9em; font-weight: 500;
-  color: var(--pd-text);
-  margin: 0 0 6px;
+.pd-result-body li {
+  margin: 4px 0;
 }
-.pd-trade-body {
-  font-size: 0.85em;
-  color: var(--pd-muted);
-  line-height: 1.6;
-}
-.pd-trade-body b { font-weight: 500; color: var(--pd-text); }
 
 .pd-nav { display: flex; gap: 8px; margin: 16px 0 0; }
 .pd-nav button {
@@ -183,7 +170,7 @@
 }
 </style>
 
-<div class="pd-progress" id="pd-dots" role="group" aria-label="Progress: question steps"></div>
+<div class="pd-progress" id="pd-dots" role="group" aria-label="Progress: assessment steps"></div>
 <div id="pd-steps" aria-live="polite"></div>
 
 <script>
@@ -191,71 +178,63 @@
   var steps = [
     {
       q: "Will you record audio or video of people?",
-      hint: "A voice on a recording is personal data, even if you never ask the participant\u2019s name. Video where someone is recognisable is also personal data.",
-      opts: [
-        { text: "Yes, we will make audio or video recordings", goto: "pd", reason: "Audio and video recordings of identifiable people are personal data." },
-        { text: "No, we will take written notes only", goto: 1 }
-      ]
+      hint: "A voice on a recording is personal data even if you never ask the participant\u2019s name. The voice itself can identify the speaker.",
+      yes: "Yes, we will make audio or video recordings",
+      no: "No",
+      tag: "Audio or video recordings of identifiable people"
     },
     {
       q: "Will you collect names, national ID numbers, email addresses, or recognisable photographs?",
-      hint: "This includes contact information gathered for recruitment, consent documentation signed by name, or photographs where individuals can be identified.",
-      opts: [
-        { text: "Yes", goto: "pd", reason: "Directly identifying information like names, ID numbers, and email addresses is personal data." },
-        { text: "No, none of these will be recorded at any point", goto: 2 }
-      ]
+      hint: "This includes contact details gathered for recruitment, consent forms signed by name, or photographs where someone can be identified.",
+      yes: "Yes",
+      no: "No, none of these will be recorded at any point",
+      tag: "Direct identifiers (names, ID numbers, email, photographs)"
     },
     {
       q: "Will your survey or data collection platform log respondent email or IP addresses?",
-      hint: "Most online survey tools link responses to an email or IP address by default. A genuinely anonymous survey solution must never record these, not even temporarily. If you are unsure, check with the platform provider.",
-      opts: [
-        { text: "Yes, or I\u2019m not sure", goto: "pd", reason: "If a survey platform logs email or IP addresses linked to responses, the data is personal, even if the survey questions contain nothing identifying." },
-        { text: "No, we are using a verified anonymous solution", goto: 3 }
-      ]
+      hint: "Most survey tools do this by default. A genuinely anonymous solution must never record these, not even temporarily.",
+      yes: "Yes, or I\u2019m not sure",
+      no: "No, we have verified the platform does not log these",
+      tag: "Platform-logged identifiers (email or IP addresses)"
     },
     {
       q: "Will you maintain a code list or key linking data to real identities?",
-      hint: "If participants are given pseudonyms but a separate list connects those pseudonyms to their real names, the entire dataset is personal data, regardless of who holds the key.",
-      opts: [
-        { text: "Yes, we will use pseudonyms with a key", goto: "pd", reason: "A code list or scrambling key that links data to identities means the data is personal, even if the research team never sees the key." },
-        { text: "No, there will be no link between data and identities", goto: 4 }
-      ]
+      hint: "Pseudonymised data is still personal data. If a key exists that connects codes to real identities, the entire dataset is personal data, regardless of who holds the key.",
+      yes: "Yes, we will use pseudonyms with a key",
+      no: "No, there will be no link between data and identities",
+      tag: "Pseudonymised data with a re-identification key"
     },
     {
       q: "Could combinations of background variables identify someone in your study population?",
-      hint: "In a small community, the combination of age, gender, village, and occupation may be enough to single out an individual, even without a name. Consider the size of your study population and how specific your background variables are.",
-      opts: [
-        { text: "Yes, or possibly: the population is small and variables are specific", goto: "pd", reason: "Indirectly identifying combinations of background information count as personal data when they can single out an individual in the relevant population." },
-        { text: "No, the population is large enough and variables are broad", goto: 5 }
-      ]
+      hint: "In a small community, age, gender, village, and occupation together may single out an individual. The smaller your population and the more specific the variables, the higher the risk.",
+      yes: "Yes, or possibly",
+      no: "No, the population is large enough and the variables are broad",
+      tag: "Indirectly identifying combinations of background variables"
     },
     {
-      q: "Could your participants mention third parties (colleagues, officials, family members) who become identifiable in the data?",
-      hint: "If an interviewee names a local official, describes a family member\u2019s health condition, or refers to a colleague in a way that makes them recognisable, those third parties become data subjects too. This applies even if you never meet or recruit them directly.",
-      opts: [
-        { text: "Yes, or possibly: participants are likely to discuss identifiable individuals", goto: "pd", reason: "When participants mention identifiable third parties, those individuals become data subjects. The data is personal data with respect to them, even if they are not direct participants in the research." },
-        { text: "No, the data will not include identifiable references to third parties", goto: 6 }
-      ]
+      q: "Could participants mention third parties who become identifiable in the data?",
+      hint: "If an interviewee names a local official, describes a colleague\u2019s behaviour, or discusses a family member\u2019s health, those third parties become data subjects even though they never took part in the research.",
+      yes: "Yes, or likely",
+      no: "No, the data will not include identifiable references to others",
+      tag: "Identifiable third parties mentioned by participants"
     },
     {
-      q: "Will you collect GPS coordinates, geotagged photographs, or other location data that could identify where participants live or work?",
-      hint: "Precise location data, such as GPS coordinates from a household survey or geotagged photographs, can identify individuals when combined with other information. A GPS point near a homestead in a rural area may be as identifying as a name.",
-      opts: [
-        { text: "Yes, we will collect precise location data linked to participants", goto: "pd", reason: "Precise location data linked to participants can identify them, especially in rural or sparsely populated areas. GPS coordinates, geotagged images, and similar data are personal data when they can be connected to identifiable individuals." },
-        { text: "No, we will not collect location data, or it will be at a level too broad to identify anyone", goto: 7 }
-      ]
+      q: "Will you collect GPS coordinates, geotagged photographs, or other precise location data linked to participants?",
+      hint: "A GPS point near a homestead in a rural area can be as identifying as a name. Location data is personal data when it can be connected to identifiable individuals.",
+      yes: "Yes",
+      no: "No, or only at a level too broad to identify anyone",
+      tag: "Precise location data linked to participants"
     },
     {
-      q: "Will you collect or analyse data from social media or the internet that includes usernames or searchable quotes?",
-      hint: "Usernames, profile information, and directly searchable quotes from online sources can identify individuals. Even publicly posted content is personal data if it is linked to an identifiable person.",
-      opts: [
-        { text: "Yes, we will use data linked to online identities", goto: "pd", reason: "Online content linked to identifiable usernames or profiles is personal data, even if it was publicly posted." },
-        { text: "No", goto: "anon" }
-      ]
+      q: "Will you collect or analyse social media or internet data that includes usernames or searchable quotes?",
+      hint: "Publicly posted content is personal data if it is linked to an identifiable person. Public availability does not exempt it from data protection requirements.",
+      yes: "Yes, we will use data linked to online identities",
+      no: "No",
+      tag: "Online content linked to identifiable users"
     }
   ];
 
-  var cur = 0, history = [];
+  var cur = 0, answers = [];
   var stepsEl = document.getElementById("pd-steps");
   var dotsEl = document.getElementById("pd-dots");
 
@@ -265,7 +244,7 @@
       var d = document.createElement("div");
       d.className = "pd-dot";
       d.setAttribute("aria-label", "Step " + (i + 1) + " of " + steps.length);
-      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": completed"); }
+      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": answered"); }
       if (i === cur) { d.classList.add("cur"); d.setAttribute("aria-label", "Step " + (i + 1) + ": current"); }
       dotsEl.appendChild(d);
     }
@@ -279,90 +258,76 @@
     h += '<p class="pd-q">' + s.q + '</p>';
     h += '<p class="pd-hint">' + s.hint + '</p>';
     h += '<div class="pd-opts" role="group" aria-label="Answer options">';
-    s.opts.forEach(function(o, j) {
-      h += '<button class="pd-opt" data-idx="' + j + '">' + o.text + '</button>';
-    });
+    h += '<button class="pd-opt" data-answer="yes">' + s.yes + '</button>';
+    h += '<button class="pd-opt" data-answer="no">' + s.no + '</button>';
     h += '</div>';
-    if (history.length > 0) {
+    if (i > 0) {
       h += '<div class="pd-nav"><button data-action="back" aria-label="Go back to previous question">Back</button></div>';
     }
     h += '</div>';
     stepsEl.innerHTML = h;
     stepsEl.querySelectorAll(".pd-opt").forEach(function(btn) {
-      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
+      btn.addEventListener("click", function() { answer(this.dataset.answer === "yes"); });
     });
     var backBtn = stepsEl.querySelector('[data-action="back"]');
     if (backBtn) backBtn.addEventListener("click", goBack);
   }
 
-  function pick(j) {
-    var o = steps[cur].opts[j];
-    history.push({ step: cur, choice: j });
-    if (o.goto === "pd") showPD(o.reason);
-    else if (o.goto === "anon") showAnon();
-    else showStep(o.goto);
+  function answer(isYes) {
+    answers[cur] = isYes;
+    if (cur < steps.length - 1) {
+      showStep(cur + 1);
+    } else {
+      showResult();
+    }
   }
 
   function goBack() {
-    if (history.length === 0) return;
-    var prev = history.pop();
-    showStep(prev.step);
+    if (cur === 0) return;
+    showStep(cur - 1);
   }
 
-  function showPD(reason) {
+  function showResult() {
     dotsEl.innerHTML = "";
+    var triggers = [];
+    for (var i = 0; i < steps.length; i++) {
+      if (answers[i]) triggers.push(steps[i].tag);
+    }
+
     var h = '<div class="pd-step active">';
-    h += '<div class="pd-result pd-result-pd">';
-    h += '<h3>Your project will involve personal data</h3>';
-    h += '<div class="pd-result-body">';
-    h += '<p>' + reason + '</p>';
-    h += '<p>You will need to notify Sikt before data collection begins, establish a legal basis for processing (public interest is the recommended default at CMI), prepare an information letter for participants, set up secure storage, and plan for anonymisation or deletion at the end of the project.</p>';
-    h += '<p>If your data includes special categories (health, political opinions, ethnic origin, religious beliefs), you will also need an additional legal basis under Article 9.</p>';
-    h += '</div></div>';
-    h += '<div class="pd-trade">';
-    h += '<h4>But do you need personal data?</h4>';
-    h += '<div class="pd-trade-body">';
-    h += 'Before proceeding, consider whether your research questions genuinely require identifiable data, or whether an anonymous design could work. Reasons you might want personal data include:';
-    h += '<br><br><b>Richer data</b>: audio recordings capture tone, hesitation, and nuance that notes cannot. Depth often depends on identifiability.';
-    h += '<br><b>Follow-up</b>: longitudinal work, member-checking, and clarification all require knowing who participants are.';
-    h += '<br><b>Data linkage</b>: linking your data to registries or other datasets requires identifiers, at least temporarily.';
-    h += '<br><b>Verification</b>: checking for duplicates, validating inclusion criteria, and quality control depend on some identifying information.';
-    h += '<br><b>Archiving and reuse</b>: de-identified data retains more analytical value than data that was anonymous from the start.';
-    h += '<br><br>Data minimisation does not mean collecting no personal data. It means being deliberate about what you collect and why.';
-    h += '</div></div>';
-    h += '<div class="pd-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
+
+    if (triggers.length > 0) {
+      h += '<div class="pd-result pd-result-pd">';
+      h += '<h3>Your project involves personal data</h3>';
+      h += '<div class="pd-result-body">';
+      if (triggers.length === 1) {
+        h += '<p>Based on your answers, your project will process personal data in one way:</p>';
+      } else {
+        h += '<p>Based on your answers, your project will process personal data in ' + triggers.length + ' ways:</p>';
+      }
+      h += '<ul>';
+      for (var j = 0; j < triggers.length; j++) {
+        h += '<li>' + triggers[j] + '</li>';
+      }
+      h += '</ul>';
+      h += '<p>You will need a Sikt notification before data collection begins, a legal basis for processing (public interest is the recommended default at CMI), an information letter for participants, secure storage, and a plan for anonymisation or deletion at the end of the project.</p>';
+      h += '</div></div>';
+    } else {
+      h += '<div class="pd-result pd-result-anon">';
+      h += '<h3>Your project likely does not involve personal data</h3>';
+      h += '<div class="pd-result-body">';
+      h += '<p>Based on your answers, your data collection appears to be anonymous throughout. You do not need a Sikt notification, and GDPR requirements for personal data do not apply.</p>';
+      h += '<p>You still have ethical obligations to inform participants and obtain their voluntary agreement to take part.</p>';
+      h += '</div></div>';
+    }
+
+    h += '<div class="pd-nav"><button data-action="restart" aria-label="Start the assessment again">Start over</button></div>';
     h += '</div>';
     stepsEl.innerHTML = h;
     stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
   }
 
-  function showAnon() {
-    dotsEl.innerHTML = "";
-    var h = '<div class="pd-step active">';
-    h += '<div class="pd-result pd-result-anon">';
-    h += '<h3>Your project likely does not involve personal data</h3>';
-    h += '<div class="pd-result-body">';
-    h += '<p>Based on your answers, your data collection appears to be anonymous throughout. You do not need a Sikt notification, and GDPR requirements for personal data processing do not apply.</p>';
-    h += '<p>You still have ethical obligations to inform participants about the research and obtain their voluntary agreement to take part, even when data is anonymous.</p>';
-    h += '</div></div>';
-    h += '<div class="pd-trade">';
-    h += '<h4>Are you sure you don\u2019t want personal data?</h4>';
-    h += '<div class="pd-trade-body">';
-    h += 'Anonymous data is simpler to manage, but consider what you give up:';
-    h += '<br><br><b>No audio or video</b>: written notes lose tone, emphasis, and non-verbal cues. Qualitative richness depends on recording.';
-    h += '<br><b>No follow-up possible</b>: you cannot return to participants for clarification, member-checking, or additional waves.';
-    h += '<br><b>No linkage</b>: anonymous data cannot be linked to registries, administrative records, or prior datasets.';
-    h += '<br><b>No de-duplication</b>: you cannot check whether the same person responded twice.';
-    h += '<br><b>Limited reuse value</b>: heavily stripped data may not be useful enough for other researchers to build on.';
-    h += '<br><br>If any of these matter for your research, it may be worth designing the project with personal data and the appropriate safeguards, rather than constraining your methodology to avoid it.';
-    h += '</div></div>';
-    h += '<div class="pd-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
-    h += '</div>';
-    stepsEl.innerHTML = h;
-    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
-  }
-
-  function restart() { history = []; showStep(0); }
+  function restart() { answers = []; showStep(0); }
   showStep(0);
 })();
 </script>
