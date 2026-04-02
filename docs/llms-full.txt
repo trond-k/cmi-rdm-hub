@@ -1134,87 +1134,333 @@ As data comes in, update the [data inventory](data-inventory.md) to reflect what
 
 *Where your data lives during the project determines how secure it is, how easily your team can collaborate, and how smoothly you can preserve and share it later. CMI's default infrastructure covers most needs, but sensitive data, large files, and multi-site collaboration all require deliberate choices. Get storage right early; retrofitting security or reorganising a chaotic folder structure mid-project is far more expensive than setting things up properly from the start.*
 
-## Start with the CMI default
+<!-- widget: storage-chooser.html -->
 
-CMI provides Microsoft 365 E5 as its standard working environment. For most projects, this is where your data should live during the active research phase. OneDrive handles individual working files, SharePoint provides shared project spaces, and Teams integrates communication with document collaboration. The E5 licence includes built-in access controls, multi-factor authentication, versioning, and endpoint security.
+<!--
+  Storage Chooser — CMI RDM Hub
 
-This default handles a broad range of research data, from non-sensitive project documents to data with moderate sensitivity, provided that access permissions are configured correctly and limited to those who need them. The E5 security features, including conditional access policies and multi-factor authentication, give you meaningful control over who can reach what. Before looking elsewhere, check whether the standard setup meets your needs. Adding tools without a clear reason creates complexity and fragments your data across platforms.
+  Embeddable widget for Zensical / GitHub Pages.
 
-!!! tip "Set up the SharePoint site before collection starts"
-    Create a dedicated SharePoint site for the project with an agreed folder structure and permissions before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
+  LOCATION: includes/storage-chooser.html
 
-## When you need something more
+  EMBEDDING — Include via Zensical/MkDocs snippets:
+    In your .md file, use the snippet syntax:
+    --8<-- "storage-chooser.html"
 
-Some data cannot or should not be stored in the standard MS365 environment. The most common reasons are data sensitivity, regulatory requirements, and the need for end-to-end encryption that the institution does not control.
+  No external dependencies. Pure HTML/CSS/JS.
+  Colours use CSS custom properties with safe fallbacks.
+-->
 
-### Sensitive personal data
+<div class="sc-decision-tree" role="region" aria-label="Storage chooser decision tree">
+<style>
+.sc-decision-tree {
+  --sc-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
+  --sc-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
+  --sc-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
+  --sc-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
+  --sc-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
+  --sc-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
+  --sc-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
+  --sc-accent: var(--md-primary-fg-color, #4051b5);
+  --sc-rec-bg: #eaf3de;
+  --sc-rec-border: #7db832;
+  --sc-rec-text: #3b6d11;
+  --sc-warn-bg: #faeeda;
+  --sc-warn-border: #e8b54a;
+  --sc-warn-text: #854f0b;
+  --sc-radius: 8px;
+  font-family: inherit;
+  max-width: 640px;
+  line-height: 1.6;
+}
 
-If your project processes personal data that falls into the GDPR's special categories (health data, political opinions, ethnic origin, biometric data), or if the risk profile is elevated because of the research context (conflict zones, authoritarian settings, vulnerable populations), consider a dedicated secure environment.
+[data-md-color-scheme="slate"] .sc-decision-tree {
+  --sc-rec-bg: #173404;
+  --sc-rec-border: #3b6d11;
+  --sc-rec-text: #c0dd97;
+  --sc-warn-bg: #412402;
+  --sc-warn-border: #854f0b;
+  --sc-warn-text: #fac775;
+}
 
-[TSD (Tjenester for Sensitive Data)](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your Data Protection Impact Assessment (DPIA) or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
+@media (prefers-color-scheme: dark) {
+  .sc-decision-tree {
+    --sc-rec-bg: #173404;
+    --sc-rec-border: #3b6d11;
+    --sc-rec-text: #c0dd97;
+    --sc-warn-bg: #412402;
+    --sc-warn-border: #854f0b;
+    --sc-warn-text: #fac775;
+  }
+}
 
-For projects involving encrypted file sharing with external partners, particularly in contexts where participants or collaborators face surveillance risks, [Tresorit](https://tresorit.com/) and [ProtonDrive](https://proton.me/drive) offer end-to-end encryption. These are useful for transit and collaboration, but they are not a substitute for a managed research environment like TSD for long-term storage of sensitive data.
+.sc-decision-tree * { box-sizing: border-box; margin: 0; }
 
-### Large files and specialist formats
+.sc-step { display: none; }
+.sc-step.active { display: block; }
 
-Audio and video recordings, geospatial datasets, and high-resolution imagery can exceed the practical limits of cloud-synced storage. If your project generates large volumes of binary data, plan for where these will live. SharePoint has per-file and per-library size limits that may not accommodate raw video or satellite imagery. Discuss options with CMI's IT team early, before collection produces files that have nowhere to go.
+.sc-progress {
+  display: flex; gap: 6px; margin: 0 0 20px;
+}
+.sc-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--sc-border);
+  transition: background 0.2s;
+}
+.sc-dot.done { background: var(--sc-accent); }
+.sc-dot.cur { background: var(--sc-accent); box-shadow: 0 0 0 3px rgba(64,81,181,0.2); }
 
-## Separate identifiers from research data
+.sc-q {
+  font-size: 1.05em; font-weight: 500;
+  color: var(--sc-text);
+  margin: 0 0 6px;
+}
+.sc-hint {
+  font-size: 0.85em;
+  color: var(--sc-muted);
+  margin: 0 0 20px;
+}
+.sc-opts { display: flex; flex-direction: column; gap: 8px; }
+.sc-opt {
+  background: var(--sc-bg);
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  color: var(--sc-text);
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s, background 0.15s;
+}
+.sc-opt:hover {
+  border-color: var(--sc-border-hover);
+  background: var(--sc-bg2);
+}
+.sc-opt:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: 2px;
+}
 
-For projects involving personal data, store direct identifiers (names, contact details, ID numbers) separately from the research data itself. A linking key file connects the two; this file should be stored in a different location with more restrictive access than the main dataset.
+.sc-result {
+  border-radius: var(--sc-radius);
+  padding: 20px 24px;
+  margin: 0 0 16px;
+}
+.sc-result-rec {
+  background: var(--sc-rec-bg);
+  border: 1px solid var(--sc-rec-border);
+}
+.sc-result-warn {
+  background: var(--sc-warn-bg);
+  border: 1px solid var(--sc-warn-border);
+}
+.sc-result h3 {
+  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
+}
+.sc-result-rec h3 { color: var(--sc-rec-text); }
+.sc-result-warn h3 { color: var(--sc-warn-text); }
+.sc-result-body {
+  font-size: 0.9em;
+  color: var(--sc-muted);
+  line-height: 1.6;
+}
+.sc-result-body p { margin: 0 0 10px; }
+.sc-result-body p:last-child { margin: 0; }
 
-This principle of data compartmentalisation reduces the impact of a breach. If someone gains access to the research data, they find pseudonymised records. If they access the key file, they find identifiers without context. Neither is useful alone. Document where each component is stored and who has access in the [data inventory](data-inventory.md).
+.sc-extra {
+  background: var(--sc-bg2);
+  border-radius: var(--sc-radius);
+  padding: 16px 20px;
+  margin: 12px 0 0;
+}
+.sc-extra h4 {
+  font-size: 0.9em; font-weight: 500;
+  color: var(--sc-text);
+  margin: 0 0 6px;
+}
+.sc-extra-body {
+  font-size: 0.85em;
+  color: var(--sc-muted);
+  line-height: 1.6;
+}
+.sc-extra-body b { font-weight: 500; color: var(--sc-text); }
 
-!!! warning "Do not store key files alongside research data"
-    Keeping the linking key in the same folder, drive, or environment as the pseudonymised data defeats the purpose of separation. If both are compromised together, pseudonymisation offers no protection. Store the key file in a separate, more restricted location, and limit access to those who genuinely need it.
+.sc-nav { display: flex; gap: 8px; margin: 16px 0 0; }
+.sc-nav button {
+  font-size: 0.85em;
+  font-family: inherit;
+  background: var(--sc-bg);
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--sc-text);
+  transition: border-color 0.15s, background 0.15s;
+}
+.sc-nav button:hover {
+  border-color: var(--sc-border-hover);
+  background: var(--sc-bg2);
+}
+.sc-nav button:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: 2px;
+}
+</style>
 
-## Back up deliberately
+<div class="sc-progress" id="sc-dots" role="group" aria-label="Progress: question steps"></div>
+<div id="sc-steps" aria-live="polite"></div>
 
-MS365 provides built-in versioning and retention policies that protect against accidental deletion and overwrites. For most project files stored in SharePoint or OneDrive, this is sufficient as a day-to-day safeguard.
+<script>
+(function() {
+  var steps = [
+    {
+      q: "Does your project process personal data?",
+      hint: "Personal data is any information that can identify a living person, directly or indirectly. This includes names, recordings, IP addresses, and combinations of background variables that could single someone out. If unsure, err on the side of yes.",
+      opts: [
+        { text: "Yes, or I think so", goto: 1 },
+        { text: "No, all data is fully anonymous from the start", goto: "ms365-basic" }
+      ]
+    },
+    {
+      q: "Does the personal data include GDPR special categories?",
+      hint: "Special categories are: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data used for identification, health data, and data about sex life or sexual orientation.",
+      opts: [
+        { text: "Yes, one or more of these apply", goto: 2 },
+        { text: "No, only ordinary personal data (names, contact details, background variables)", goto: "ms365-controlled" }
+      ]
+    },
+    {
+      q: "Is the risk profile elevated by the research context?",
+      hint: "Consider whether participants face risks beyond those of a typical research project: conflict zones, authoritarian regimes, surveillance contexts, vulnerable populations (refugees, minors, people in detention), or politically sensitive topics where a breach could cause harm.",
+      opts: [
+        { text: "Yes, participants could face real harm if data were exposed", goto: "tsd-plus" },
+        { text: "No, the sensitivity is in the data category, not the context", goto: "tsd" }
+      ]
+    }
+  ];
 
-However, built-in cloud versioning is not a comprehensive backup strategy. Consider whether your project needs additional protection in the following situations:
+  var results = {
+    "ms365-basic": {
+      type: "rec",
+      title: "CMI Microsoft 365 (standard setup)",
+      body: "<p>Your data does not require special protections beyond what the standard CMI environment provides. Store project files on SharePoint (shared) or OneDrive (individual working files). Teams integrates communication with documents.</p><p>Set up the SharePoint site and folder structure before collection starts. Use access controls to limit who can reach what.</p>",
+      extra: {
+        title: "Still worth doing",
+        body: "<b>Folder structure</b>: agree on a layout before files start accumulating. See <em>Name files and structure folders</em> for conventions.<br><b>Backup</b>: MS365 versioning covers most day-to-day risks, but data on local devices (field laptops, recording equipment) needs a transfer routine."
+      }
+    },
+    "ms365-controlled": {
+      type: "rec",
+      title: "CMI Microsoft 365 with tightened access controls",
+      body: "<p>Ordinary personal data (names, contact details, identifiers) can be stored in the standard MS365 environment, provided you configure access permissions carefully and limit them to those who genuinely need the data.</p><p>Store direct identifiers (names, contact details, ID numbers) separately from the research data. Keep the linking key in a different location with more restrictive access.</p>",
+      extra: {
+        title: "Key actions",
+        body: "<b>Separate identifiers</b>: store the linking key file in a different SharePoint library or OneDrive folder with restricted permissions.<br><b>Sikt notification</b>: you will need to notify Sikt before data collection begins. See <em>Prepare a Sikt notification</em>.<br><b>Access audit</b>: review who has access to the project SharePoint site and remove anyone who does not need it."
+      }
+    },
+    "tsd": {
+      type: "warn",
+      title: "TSD (Tjenester for Sensitive Data)",
+      body: "<p>Special-category personal data typically requires a higher level of protection than the standard MS365 configuration offers. TSD provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway.</p><p>Use TSD as the primary storage environment for the sensitive data. You may still use MS365 for non-sensitive project documents (meeting notes, literature reviews, administrative files).</p>",
+      extra: {
+        title: "Before you set up TSD",
+        body: "<b>DPIA</b>: a Data Protection Impact Assessment is likely required for special-category data. Complete this before setting up storage.<br><b>Sikt notification</b>: submit at least 30 days before data collection. See <em>Prepare a Sikt notification</em>.<br><b>Access planning</b>: TSD access must be set up per user. Plan who needs access and at what level before requesting the environment."
+      }
+    },
+    "tsd-plus": {
+      type: "warn",
+      title: "TSD plus end-to-end encrypted tools for transit",
+      body: "<p>When the research context creates elevated risk (conflict zones, surveillance, vulnerable populations), you need both a secure storage environment and secure channels for data in transit.</p><p>Use TSD as the primary storage for sensitive data. For sharing files with external partners or field teams in high-risk settings, use end-to-end encrypted tools such as Tresorit or ProtonDrive. These protect data during transfer and collaboration, but they are not a substitute for TSD as the long-term storage environment.</p>",
+      extra: {
+        title: "Additional safeguards to consider",
+        body: "<b>Threat model</b>: identify specifically who could access the data and what harm that would cause. This shapes your security decisions.<br><b>Field protocols</b>: establish routines for transferring data from devices to secure storage at the end of each collection day, or more frequently if conditions allow.<br><b>Encrypted portable storage</b>: carry as a fallback when internet access is unreliable.<br><b>Partner agreements</b>: if partners access data, formalise security expectations in a data sharing agreement."
+      }
+    }
+  };
 
-- Data that exists only on local devices (field laptops, recording equipment) before it has been uploaded.
-- Data stored in environments outside MS365 (TSD, external partner systems, specialist databases).
-- Data where loss would be catastrophic and reconstruction impossible (unique field recordings, one-time survey responses).
+  var cur = 0, history = [];
+  var stepsEl = document.getElementById("sc-steps");
+  var dotsEl = document.getElementById("sc-dots");
 
-For field collection, the most vulnerable period is between the moment data is created and the moment it reaches secure storage. Establish a routine for transferring data from devices to the project's storage environment at the end of each collection day, or more frequently if conditions allow. Carry encrypted portable storage as a fallback when internet access is unreliable.
+  function renderDots() {
+    dotsEl.innerHTML = "";
+    for (var i = 0; i < steps.length; i++) {
+      var d = document.createElement("div");
+      d.className = "sc-dot";
+      d.setAttribute("aria-label", "Step " + (i + 1) + " of " + steps.length);
+      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": completed"); }
+      if (i === cur) { d.classList.add("cur"); d.setAttribute("aria-label", "Step " + (i + 1) + ": current"); }
+      dotsEl.appendChild(d);
+    }
+  }
 
-!!! tip "Test your recovery, not just your backup"
-    A backup that has never been tested is a hope, not a plan. Periodically verify that you can actually restore a file from your backup arrangement. This is especially important before major fieldwork phases.
+  function showStep(i) {
+    cur = i;
+    renderDots();
+    var s = steps[i];
+    var h = '<div class="sc-step active">';
+    h += '<p class="sc-q">' + s.q + '</p>';
+    h += '<p class="sc-hint">' + s.hint + '</p>';
+    h += '<div class="sc-opts" role="group" aria-label="Answer options">';
+    s.opts.forEach(function(o, j) {
+      h += '<button class="sc-opt" data-idx="' + j + '">' + o.text + '</button>';
+    });
+    h += '</div>';
+    if (history.length > 0) {
+      h += '<div class="sc-nav"><button data-action="back" aria-label="Go back to previous question">Back</button></div>';
+    }
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelectorAll(".sc-opt").forEach(function(btn) {
+      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
+    });
+    var backBtn = stepsEl.querySelector('[data-action="back"]');
+    if (backBtn) backBtn.addEventListener("click", goBack);
+  }
 
-## Organise for your future self
+  function pick(j) {
+    var o = steps[cur].opts[j];
+    history.push({ step: cur, choice: j });
+    if (typeof o.goto === "string") showResult(o.goto);
+    else showStep(o.goto);
+  }
 
-Storage is not just about where files live; it is about whether anyone can find them six months from now. The folder structure and naming conventions described in [Name files and structure folders](file-and-folder-naming.md) are your primary tools here. The key structural principle is to separate raw data from derived and working files:
+  function goBack() {
+    if (history.length === 0) return;
+    var prev = history.pop();
+    showStep(prev.step);
+  }
 
-- `raw/` for untouched source material.
-- `processed/` for cleaned or transformed versions.
-- `analysis/` for scripts, coding frameworks, and working outputs.
-- `outputs/` for deliverables.
+  function showResult(key) {
+    dotsEl.innerHTML = "";
+    var r = results[key];
+    var cls = r.type === "warn" ? "sc-result-warn" : "sc-result-rec";
+    var h = '<div class="sc-step active">';
+    h += '<div class="sc-result ' + cls + '">';
+    h += '<h3>' + r.title + '</h3>';
+    h += '<div class="sc-result-body">' + r.body + '</div>';
+    h += '</div>';
+    if (r.extra) {
+      h += '<div class="sc-extra">';
+      h += '<h4>' + r.extra.title + '</h4>';
+      h += '<div class="sc-extra-body">' + r.extra.body + '</div>';
+      h += '</div>';
+    }
+    h += '<div class="sc-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
+  }
 
-Never edit raw files in place. If a recording needs trimming or a dataset needs cleaning, save the result in `processed/` and leave the original intact. This preserves the chain of evidence and makes it possible to retrace your steps.
+  function restart() { history = []; showStep(0); }
+  showStep(0);
+})();
+</script>
+</div>
 
-## Collaborate without chaos
-
-Shared storage only works if the team agrees on how to use it. Common problems include conflicting edits on the same file, documents saved to personal drives instead of the shared space, and folders created outside the agreed structure.
-
-For text documents and spreadsheets, MS365's real-time co-authoring and version history handle most collaboration needs. For code and scripts, use [Git](https://git-scm.com/) (with a remote repository on GitHub, GitLab, or a CMI-hosted instance) rather than relying on file naming to track versions. For projects with external partners who do not have access to CMI's MS365 environment, agree on a shared platform and transfer protocol before data starts flowing.
-
-!!! warning "Sync conflicts are data risks"
-    When files are edited offline and synced later, conflicting versions can be created. Cloud platforms usually flag these, but they do not resolve them automatically. If your project involves frequent offline work (common in field settings with intermittent connectivity), establish a protocol for checking and resolving sync conflicts after each reconnection.
-
-## Meet compliance requirements
-
-Your storage arrangements may be subject to external requirements beyond your own preferences:
-
-- **GDPR data residency.** Microsoft stores CMI's MS365 data in EU/EEA data centres, which satisfies GDPR residency requirements for most purposes. The question becomes relevant when you move data outside the default infrastructure: sharing files through a non-EU cloud service, transferring data to a partner institution in a country without an EU adequacy decision (i.e. one whose data protection standards the EU has not recognised as essentially equivalent to the GDPR), or using a specialist platform hosted outside Europe. If your project involves any of these, check the legal basis for the transfer before data moves. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
-- **Funder mandates.** Some funders specify that data must be stored on institutional or national infrastructure during the project. Check the grant agreement.
-- **Contractual obligations.** Commissioned research may include clauses on data handling, storage location, or access that constrain your choices.
-
-Document your storage arrangements in the DMP and the [data inventory](data-inventory.md), and revisit them if circumstances change (a new partner joins, a dataset turns out to be more sensitive than anticipated, or a provider changes its terms of service).
-
-!!! info "Last reviewed"
-    This page was last reviewed on 26 March 2026. Storage services, pricing, and compliance features change frequently. Verify current capabilities against the provider's documentation before making decisions.
+<!-- widget-end -->
 
 ---
 
@@ -1400,70 +1646,360 @@ Where AI tools have been used in the analysis (classification, pattern detection
 
 *Publishing research data is not the same as uploading files. It means depositing well-documented datasets in trustworthy archives that assign persistent identifiers, enforce metadata standards, and provide access controls and long-term preservation by design. The single most impactful decision you make for the findability, accessibility, and longevity of your data is where you deposit it. Get that right, provide rich metadata, and the archive does much of the rest.*
 
-## Choose the right archive
+<!-- widget: repository-chooser.html -->
 
-A trustworthy archive is one that commits to long-term stewardship: it assigns persistent identifiers, curates metadata, migrates formats, enforces access controls, and remains operational independently of any single funder or project. Certification schemes such as [CoreTrustSeal](https://www.coretrustseal.org/ "A certification for trustworthy data repositories") provide a formal benchmark, but the practical test is simpler. Does the repository assign DOIs? Does it require structured metadata? Does it support access restrictions where needed? Will it still exist in ten years?
+<!--
+  Repository Chooser — CMI RDM Hub
 
-For most CMI projects, the default choice is the [Sikt Research Data Archive](https://sikt.no/en/tjenester/arkivering-av-forskningsdata), which provides curation support, handles sensitive data under Norwegian and EU frameworks, and meets funder requirements for the Research Council of Norway and Horizon Europe. For projects that need a generalist alternative, [Zenodo](https://zenodo.org/) and the [Open Science Framework (OSF)](https://osf.io/) accept all data types and assign DOIs on deposit.
+  Embeddable widget for Zensical / GitHub Pages.
 
-Code and scripts belong in a version-controlled repository such as [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/), with a snapshot archived in Zenodo to generate a citable DOI. Articles and other text outputs should be registered in [NVA (Nasjonalt vitenarkiv)](https://sikt.no/en/tjenester/nasjonalt-vitenarkiv-nva), Norway's national research output archive.
+  LOCATION: includes/repository-chooser.html
 
-!!! tip "One decision, many benefits"
-    Choosing a trustworthy archive is not just about compliance. It gives you persistent identifiers, standardised metadata, access controls, preservation, and discoverability in a single step. Much of what the FAIR principles require is handled by the archive itself. Your most important contributions are selecting the right repository for each dataset and providing thorough, accurate metadata and documentation.
+  EMBEDDING — Include via Zensical/MkDocs snippets:
+    In your .md file, use the snippet syntax:
+    --8<-- "repository-chooser.html"
 
-## Prepare your deposit
+  No external dependencies. Pure HTML/CSS/JS.
+  Colours use CSS custom properties with safe fallbacks.
+-->
 
-A deposit is only as useful as the documentation that accompanies it. Before uploading, check that your package includes:
+<div class="rc-decision-tree" role="region" aria-label="Repository chooser decision tree">
+<style>
+.rc-decision-tree {
+  --rc-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
+  --rc-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
+  --rc-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
+  --rc-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
+  --rc-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
+  --rc-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
+  --rc-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
+  --rc-accent: var(--md-primary-fg-color, #4051b5);
+  --rc-rec-bg: #eaf3de;
+  --rc-rec-border: #7db832;
+  --rc-rec-text: #3b6d11;
+  --rc-info-bg: #e3edf9;
+  --rc-info-border: #4a7ab5;
+  --rc-info-text: #1a3d5c;
+  --rc-radius: 8px;
+  font-family: inherit;
+  max-width: 640px;
+  line-height: 1.6;
+}
 
-- The dataset itself, in open, preservation-friendly formats where possible (CSV rather than Excel, PDF/A rather than Word). See the [PROCESS](lifecycle-6-process.md) stage for format conversion guidance.
-- A codebook or data dictionary describing every variable, its values, units, and coding scheme.
-- A README file explaining what the dataset contains, how it was collected, what processing was applied, and any known limitations.
-- Scripts or code used to produce derived datasets or results, with documentation of the software environment.
-- Any supplementary materials needed for interpretation: interview guides, survey instruments, sampling documentation.
+[data-md-color-scheme="slate"] .rc-decision-tree {
+  --rc-rec-bg: #173404;
+  --rc-rec-border: #3b6d11;
+  --rc-rec-text: #c0dd97;
+  --rc-info-bg: #0d1f33;
+  --rc-info-border: #2a5a8a;
+  --rc-info-text: #8cb8e0;
+}
 
-Archives vary in what they require and what they accept. Check the repository's deposit guidelines before packaging your data. Sikt, for instance, provides curation support and will work with you on metadata and documentation; Zenodo accepts deposits with minimal review but places more responsibility on the depositor to get things right.
+@media (prefers-color-scheme: dark) {
+  .rc-decision-tree {
+    --rc-rec-bg: #173404;
+    --rc-rec-border: #3b6d11;
+    --rc-rec-text: #c0dd97;
+    --rc-info-bg: #0d1f33;
+    --rc-info-border: #2a5a8a;
+    --rc-info-text: #8cb8e0;
+  }
+}
 
-!!! warning "Do not deposit and forget"
-    Depositing data is not the end of your responsibility. If you discover an error after publication, most repositories support versioning and corrections. If access conditions need to change (an embargo expires, a restriction is no longer justified), update the record. A deposit that is never maintained becomes misleading.
+.rc-decision-tree * { box-sizing: border-box; margin: 0; }
 
-## Assign persistent identifiers and cite data properly
+.rc-step { display: none; }
+.rc-step.active { display: block; }
 
-A Digital Object Identifier (DOI) makes your dataset permanently findable and citable, regardless of where it moves. Trustworthy archives assign DOIs automatically on deposit. If you are archiving code through Zenodo's GitHub integration, the DOI is generated when you create a release.
+.rc-progress {
+  display: flex; gap: 6px; margin: 0 0 20px;
+}
+.rc-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--rc-border);
+  transition: background 0.2s;
+}
+.rc-dot.done { background: var(--rc-accent); }
+.rc-dot.cur { background: var(--rc-accent); box-shadow: 0 0 0 3px rgba(64,81,181,0.2); }
 
-Use DOIs consistently. Cite your own data in your publications, just as you would cite someone else's. Follow the [FORCE11 data citation principles](https://force11.org/info/joint-declaration-of-data-citation-principles-final/ "Joint Declaration of Data Citation Principles"): include the creator, title, year, repository, and identifier. Link datasets to the articles that use them, and link articles back to the datasets. This bidirectional linking is what makes the relationship between outputs visible to readers, indexers, and funders.
+.rc-q {
+  font-size: 1.05em; font-weight: 500;
+  color: var(--rc-text);
+  margin: 0 0 6px;
+}
+.rc-hint {
+  font-size: 0.85em;
+  color: var(--rc-muted);
+  margin: 0 0 20px;
+}
+.rc-opts { display: flex; flex-direction: column; gap: 8px; }
+.rc-opt {
+  background: var(--rc-bg);
+  border: 1px solid var(--rc-border);
+  border-radius: var(--rc-radius);
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  color: var(--rc-text);
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s, background 0.15s;
+}
+.rc-opt:hover {
+  border-color: var(--rc-border-hover);
+  background: var(--rc-bg2);
+}
+.rc-opt:focus-visible {
+  outline: 2px solid var(--rc-accent);
+  outline-offset: 2px;
+}
 
-Beyond DOIs for datasets, use [ORCIDs](https://orcid.org/) for researchers and [ROR IDs](https://ror.org/) for institutions. These identifiers connect your outputs to the people and organisations that produced them, reducing ambiguity and ensuring credit flows to the right place.
+.rc-result {
+  border-radius: var(--rc-radius);
+  padding: 20px 24px;
+  margin: 0 0 12px;
+}
+.rc-result-rec {
+  background: var(--rc-rec-bg);
+  border: 1px solid var(--rc-rec-border);
+}
+.rc-result-info {
+  background: var(--rc-info-bg);
+  border: 1px solid var(--rc-info-border);
+}
+.rc-result h3 {
+  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
+}
+.rc-result-rec h3 { color: var(--rc-rec-text); }
+.rc-result-info h3 { color: var(--rc-info-text); }
+.rc-result-body {
+  font-size: 0.9em;
+  color: var(--rc-muted);
+  line-height: 1.6;
+}
+.rc-result-body p { margin: 0 0 10px; }
+.rc-result-body p:last-child { margin: 0; }
 
-## Write a clear data availability statement
+.rc-extra {
+  background: var(--rc-bg2);
+  border-radius: var(--rc-radius);
+  padding: 16px 20px;
+  margin: 12px 0 0;
+}
+.rc-extra h4 {
+  font-size: 0.9em; font-weight: 500;
+  color: var(--rc-text);
+  margin: 0 0 6px;
+}
+.rc-extra-body {
+  font-size: 0.85em;
+  color: var(--rc-muted);
+  line-height: 1.6;
+}
+.rc-extra-body b { font-weight: 500; color: var(--rc-text); }
 
-Most journals now require a data availability statement in published articles. This is not a formality; it is the point at which a reader learns whether they can access your data, where it is, and what conditions apply.
+.rc-nav { display: flex; gap: 8px; margin: 16px 0 0; }
+.rc-nav button {
+  font-size: 0.85em;
+  font-family: inherit;
+  background: var(--rc-bg);
+  border: 1px solid var(--rc-border);
+  border-radius: var(--rc-radius);
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--rc-text);
+  transition: border-color 0.15s, background 0.15s;
+}
+.rc-nav button:hover {
+  border-color: var(--rc-border-hover);
+  background: var(--rc-bg2);
+}
+.rc-nav button:focus-visible {
+  outline: 2px solid var(--rc-accent);
+  outline-offset: 2px;
+}
+</style>
 
-A good statement is specific. It names the repository, provides the DOI or accession number, and states the access conditions. If the data are restricted, it explains why and describes what is available instead (metadata, summary statistics, anonymised subsets). If different datasets have different access levels, the statement should distinguish them.
+<div class="rc-progress" id="rc-dots" role="group" aria-label="Progress: question steps"></div>
+<div id="rc-steps" aria-live="polite"></div>
 
-=== "Open access"
+<script>
+(function() {
+  var steps = [
+    {
+      q: "What is the primary output you want to publish?",
+      hint: "If your project has multiple output types (data and code, for example), run through this tool once for each type.",
+      opts: [
+        { text: "A research dataset (survey data, interview transcripts, measurements)", goto: 1 },
+        { text: "Code or analysis scripts", goto: "code" },
+        { text: "An article, report, or other text output", goto: "article" }
+      ]
+    },
+    {
+      q: "Does the dataset contain sensitive or restricted data?",
+      hint: "Restricted data includes personal data that cannot be fully anonymised, data collected under confidentiality agreements, data from conflict-affected settings, or any data where open publication would pose risks to participants.",
+      opts: [
+        { text: "Yes, access needs to be restricted", goto: 2 },
+        { text: "No, it can be openly available", goto: 3 }
+      ]
+    },
+    {
+      q: "Is the project funded by a Norwegian funder (Research Council of Norway, Norad)?",
+      hint: "Norwegian funders typically expect data to be deposited in Norwegian national infrastructure. Horizon Europe projects may also benefit from Sikt as a certified repository.",
+      opts: [
+        { text: "Yes, Norwegian or Horizon Europe funding", goto: "sikt-restricted" },
+        { text: "No, or other international funding", goto: "zenodo-restricted" }
+      ]
+    },
+    {
+      q: "Is the project funded by a Norwegian funder (Research Council of Norway, Norad)?",
+      hint: "Norwegian funders typically expect data to be deposited in Norwegian national infrastructure. Sikt is the standard choice and meets funder requirements directly.",
+      opts: [
+        { text: "Yes, Norwegian or Horizon Europe funding", goto: "sikt-open" },
+        { text: "No, or other international funding", goto: "zenodo-open" }
+      ]
+    }
+  ];
 
-    The dataset supporting this study is available in the Sikt Research Data Archive at https://doi.org/10.xxxxx. The data are released under a CC BY 4.0 licence.
+  var results = {
+    "sikt-open": {
+      type: "rec",
+      title: "Sikt Research Data Archive (open access)",
+      body: "<p>Deposit your dataset in the <b>Sikt Research Data Archive</b>. Sikt provides curation support, assigns DOIs, enforces metadata standards, and meets the requirements of Norwegian funders and Horizon Europe.</p><p>Release under a <b>CC BY 4.0</b> licence unless you have a specific reason to choose otherwise. Provide a codebook, README, and any scripts needed to interpret the data.</p>",
+      extra: {
+        title: "After deposit",
+        body: "<b>Cite your data</b>: use the DOI in your publications, following the FORCE11 data citation principles.<br><b>Link outputs</b>: connect the dataset record to your article DOI and any associated code repositories.<br><b>Register in NVA</b>: register the article itself in Nasjonalt vitenarkiv (NVA) and link it to the dataset."
+      }
+    },
+    "sikt-restricted": {
+      type: "info",
+      title: "Sikt Research Data Archive (restricted access)",
+      body: "<p>Deposit your dataset in the <b>Sikt Research Data Archive</b> with restricted access. Sikt supports managed access where qualified researchers can apply to use the data under conditions you define.</p><p>Even restricted datasets should have <b>openly available metadata</b> so others can discover that the data exist and understand what access conditions apply.</p>",
+      extra: {
+        title: "What to include",
+        body: "<b>Access conditions</b>: specify who can apply, what criteria they must meet, and what agreement they must sign.<br><b>Data availability statement</b>: write a clear statement for your article explaining that data are restricted, why, and how to request access.<br><b>Metadata</b>: provide thorough metadata even if the data themselves are not openly available. Discoverability matters."
+      }
+    },
+    "zenodo-open": {
+      type: "rec",
+      title: "Zenodo (open access)",
+      body: "<p>Deposit your dataset in <b>Zenodo</b>, a generalist repository hosted by CERN. Zenodo accepts all data types, assigns DOIs, and provides long-term preservation. It is widely used across disciplines and recognised by most funders.</p><p>Release under a <b>CC BY 4.0</b> licence. Provide a codebook, README, and documentation sufficient for a researcher unfamiliar with the project to understand and use the data.</p>",
+      extra: {
+        title: "Good to know",
+        body: "<b>Less curation support</b>: unlike Sikt, Zenodo does not review or curate deposits. You are responsible for metadata quality and documentation completeness.<br><b>Communities</b>: consider adding your deposit to a relevant Zenodo community for better discoverability.<br><b>Versioning</b>: Zenodo supports versioned deposits. If you update the data later, create a new version rather than replacing the original."
+      }
+    },
+    "zenodo-restricted": {
+      type: "info",
+      title: "Zenodo (restricted access) or discipline-specific archive",
+      body: "<p>For restricted datasets outside the Norwegian funding context, <b>Zenodo</b> supports restricted access with embargo periods and access request workflows. Alternatively, check whether your discipline has a specialist repository that handles restricted data (e.g. UK Data Service, ICPSR, DANS).</p><p>Publish <b>metadata openly</b> even if the data are restricted, so the dataset is discoverable.</p>",
+      extra: {
+        title: "Consider also",
+        body: "<b>OSF</b>: the Open Science Framework can host restricted datasets with access controls, and integrates with preregistration and preprint workflows.<br><b>Institutional repository</b>: some institutions maintain their own archives for restricted data. Check whether this applies to your collaborating partners."
+      }
+    },
+    "code": {
+      type: "rec",
+      title: "GitHub or GitLab, archived via Zenodo",
+      body: "<p>Keep your code in a version-controlled repository on <b>GitHub</b> or <b>GitLab</b> during the project. When you are ready to publish, create a release and archive a snapshot in <b>Zenodo</b> to generate a citable DOI.</p><p>Zenodo's GitHub integration can do this automatically: link your repository, and each release creates a new Zenodo deposit with a DOI.</p>",
+      extra: {
+        title: "Documentation checklist",
+        body: "<b>README</b>: describe what the code does, how to run it, and what dependencies it requires.<br><b>Licence</b>: choose an open-source licence (MIT, Apache 2.0, or GPL depending on your needs). Code without a licence is not reusable.<br><b>Environment</b>: document the software environment (language version, package versions) so others can reproduce your setup.<br><b>Link to data</b>: reference the dataset DOI in your code repository, and vice versa."
+      }
+    },
+    "article": {
+      type: "rec",
+      title: "NVA (Nasjonalt vitenarkiv)",
+      body: "<p>Register your article, report, or text output in <b>NVA</b> (Nasjonalt vitenarkiv), Norway's national research output archive. NVA is the standard channel for registering CMI publications and making them discoverable through CRIStin/NVA.</p><p>If the article is open access, upload the full text. If it is behind a paywall, deposit the accepted manuscript (post-print) after any embargo period specified by the publisher.</p>",
+      extra: {
+        title: "Link your outputs",
+        body: "<b>Data DOI</b>: link the article record to the dataset DOI in the repository where you deposited the data.<br><b>Code DOI</b>: if you archived code in Zenodo, link that too.<br><b>ORCID</b>: ensure your ORCID is connected to your NVA profile so outputs are linked to you across systems."
+      }
+    }
+  };
 
-=== "Restricted access"
+  var cur = 0, history = [];
+  var stepsEl = document.getElementById("rc-steps");
+  var dotsEl = document.getElementById("rc-dots");
 
-    Interview transcripts are deposited in the Sikt Research Data Archive at https://doi.org/10.xxxxx with restricted access to protect participant confidentiality. Access is available to qualified researchers on application to the archive. Survey data are available without restriction at the same DOI.
+  function renderDots() {
+    dotsEl.innerHTML = "";
+    for (var i = 0; i < steps.length; i++) {
+      var d = document.createElement("div");
+      d.className = "rc-dot";
+      d.setAttribute("aria-label", "Step " + (i + 1) + " of " + steps.length);
+      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": completed"); }
+      if (i === cur) { d.classList.add("cur"); d.setAttribute("aria-label", "Step " + (i + 1) + ": current"); }
+      dotsEl.appendChild(d);
+    }
+  }
 
-=== "Data not available"
+  function showStep(i) {
+    cur = i;
+    renderDots();
+    var s = steps[i];
+    var h = '<div class="rc-step active">';
+    h += '<p class="rc-q">' + s.q + '</p>';
+    h += '<p class="rc-hint">' + s.hint + '</p>';
+    h += '<div class="rc-opts" role="group" aria-label="Answer options">';
+    s.opts.forEach(function(o, j) {
+      h += '<button class="rc-opt" data-idx="' + j + '">' + o.text + '</button>';
+    });
+    h += '</div>';
+    if (history.length > 0) {
+      h += '<div class="rc-nav"><button data-action="back" aria-label="Go back to previous question">Back</button></div>';
+    }
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelectorAll(".rc-opt").forEach(function(btn) {
+      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
+    });
+    var backBtn = stepsEl.querySelector('[data-action="back"]');
+    if (backBtn) backBtn.addEventListener("click", goBack);
+  }
 
-    The data supporting this study cannot be made publicly available because they contain sensitive personal information collected under conditions of confidentiality in a conflict-affected setting. Metadata describing the dataset are available at https://doi.org/10.xxxxx. Enquiries about access may be directed to the corresponding author.
+  function pick(j) {
+    var o = steps[cur].opts[j];
+    history.push({ step: cur, choice: j });
+    if (typeof o.goto === "string") showResult(o.goto);
+    else showStep(o.goto);
+  }
 
-!!! warning "Do not promise what you cannot deliver"
-    If your data availability statement says the data are openly available and they are not, you have a problem with both the journal and the funder. If restrictions apply, state them honestly. It is far better to publish a clear, justified restriction than to claim openness and fail to provide it.
+  function goBack() {
+    if (history.length === 0) return;
+    var prev = history.pop();
+    showStep(prev.step);
+  }
 
-## Reproducibility packages
+  function showResult(key) {
+    dotsEl.innerHTML = "";
+    var r = results[key];
+    var cls = r.type === "info" ? "rc-result-info" : "rc-result-rec";
+    var h = '<div class="rc-step active">';
+    h += '<div class="rc-result ' + cls + '">';
+    h += '<h3>' + r.title + '</h3>';
+    h += '<div class="rc-result-body">' + r.body + '</div>';
+    h += '</div>';
+    if (r.extra) {
+      h += '<div class="rc-extra">';
+      h += '<h4>' + r.extra.title + '</h4>';
+      h += '<div class="rc-extra-body">' + r.extra.body + '</div>';
+      h += '</div>';
+    }
+    h += '<div class="rc-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
+    h += '</div>';
+    stepsEl.innerHTML = h;
+    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
+  }
 
-For quantitative and computational work, consider publishing a reproducibility package alongside the article: a bundled deposit containing the data, code, and documentation needed for an independent researcher to reproduce your results. At minimum, this includes the analysis scripts, the input data (or a pointer to it, if the data are restricted), a description of the software environment, and instructions for running the code.
+  function restart() { history = []; showStep(0); }
+  showStep(0);
+})();
+</script>
+</div>
 
-For qualitative and mixed-methods work, full computational reproducibility is rarely possible or appropriate. The equivalent is thorough documentation: a clear account of the analytical process, the coding framework, and the relationship between evidence and interpretation. What matters is that another researcher can understand what you did, assess your reasoning, and build on your work, even if they cannot press a button and regenerate your output.
-
-## Finalise the data inventory
-
-Update the [data inventory](data-inventory.md) with publication details for each dataset: repository, persistent identifier, access conditions, embargo timelines, and licence. For datasets not deposited, record the rationale.
+<!-- widget-end -->
 
 ---
 
@@ -2550,77 +3086,355 @@ For most CMI projects, the challenge is not whether the form can be completed. T
 6. [Amend the notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) if the project changes materially.
 7. Report completion through the portal when the project ends.
 
-## Before you open the form
+## Are you ready to file?
 
-Have these ready ([Sikt's own checklist](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form)):
+Use this checklist to see whether you have everything you need before opening the Sikt form.
 
-- a short project description with title, methods, and participant groups
-- a clear view of which personal data categories you will process (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) if you are unsure about categories)
-- a draft participant information sheet or adapted oral script (see [Informed consent and information letters](CROSS-ethics.md) and Sikt's page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
-- your project data workflow, including [storage](lifecycle-5-store.md) and access arrangements
-- details of partners, processors, and any organisations outside the EU/EEA that will access the data (see [GDPR concepts for researchers](CROSS-legal.md) for definitions of these roles)
-- project dates, including when personal data processing starts and when identifiable data will be deleted or anonymised
-- any questionnaires or interview guides you plan to upload
+<!-- widget: sikt-readiness-checker.html -->
 
-If those pieces are still vague, tighten them first. Most trouble in the Sikt form comes from trying to answer precise questions with an unfinished project setup.
+<!--
+  Sikt Readiness Checker — CMI RDM Hub
 
-## CMI quick defaults
+  Embeddable widget for Zensical / GitHub Pages.
 
-These are the standard answers for a typical CMI research project. Use them as defaults, then adjust where your project genuinely differs.
+  LOCATION: includes/sikt-readiness-checker.html
 
-| Form field | Typical CMI answer |
-|---|---|
-| Data controller | CMI |
-| Project leader | The PI or formally affiliated project lead |
-| Primary purpose | Research or student paper |
-| Article 6 legal basis | Research in the public interest |
-| Article 9 legal basis | Research in the public interest |
-| Information to participants | Yes |
-| Main storage | CMI-managed systems such as Teams, SharePoint, or approved secure alternatives |
-| Security measures | Encrypted storage, encrypted transmission, restricted access, MFA |
-| Default publication approach | Participants are not identifiable in publications |
-| End of project | Personal data is anonymised or deleted as described in the notification |
+  EMBEDDING — Include via Zensical/MkDocs snippets:
+    In your .md file, use the snippet syntax:
+    --8<-- "sikt-readiness-checker.html"
 
-For the section-by-section walkthrough you can use with the form open, see the [Sikt form walkthrough](sikt-form-walkthrough.md).
+  No external dependencies. Pure HTML/CSS/JS.
+  Colours use CSS custom properties with safe fallbacks.
+-->
 
-## Common mistakes
+<div class="sk-readiness" role="region" aria-label="Sikt readiness checker">
+<style>
+.sk-readiness {
+  --sk-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
+  --sk-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
+  --sk-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
+  --sk-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
+  --sk-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
+  --sk-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
+  --sk-accent: var(--md-primary-fg-color, #4051b5);
+  --sk-ok-bg: #eaf3de;
+  --sk-ok-border: #7db832;
+  --sk-ok-text: #3b6d11;
+  --sk-partial-bg: #faeeda;
+  --sk-partial-border: #e8b54a;
+  --sk-partial-text: #854f0b;
+  --sk-skip-bg: #e3edf9;
+  --sk-skip-border: #4a7ab5;
+  --sk-skip-text: #1a3d5c;
+  --sk-radius: 8px;
+  font-family: inherit;
+  max-width: 640px;
+  line-height: 1.6;
+}
 
-- Under-reporting personal data categories, especially contextual identifiers in qualitative material.
-- Using a participant-information sheet that does not match the real method or storage setup.
-- Treating all participants as one sample when they clearly belong to different groups.
-- Confusing participant agreement to take part with the [legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) for processing.
-- Giving a vague data-flow description that never says where the data actually goes.
-- Forgetting to declare third-country recipients or processors outside the EU/EEA.
-- Using a project end date that matches the last publication instead of the end of personal data processing.
+[data-md-color-scheme="slate"] .sk-readiness {
+  --sk-ok-bg: #173404;
+  --sk-ok-border: #3b6d11;
+  --sk-ok-text: #c0dd97;
+  --sk-partial-bg: #412402;
+  --sk-partial-border: #854f0b;
+  --sk-partial-text: #fac775;
+  --sk-skip-bg: #0d1f33;
+  --sk-skip-border: #2a5a8a;
+  --sk-skip-text: #8cb8e0;
+}
 
-## After you submit
+@media (prefers-color-scheme: dark) {
+  .sk-readiness {
+    --sk-ok-bg: #173404;
+    --sk-ok-border: #3b6d11;
+    --sk-ok-text: #c0dd97;
+    --sk-partial-bg: #412402;
+    --sk-partial-border: #854f0b;
+    --sk-partial-text: #fac775;
+    --sk-skip-bg: #0d1f33;
+    --sk-skip-border: #2a5a8a;
+    --sk-skip-text: #8cb8e0;
+  }
+}
 
-Sikt aims to complete [standard assessments within 30 days](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types). Low-risk projects without special-category data may receive an automatic same-day assessment. The busiest period is November through February, so filing early gives you a buffer.
+.sk-readiness * { box-sizing: border-box; margin: 0; }
 
-Sikt may come back with requests for clarification. That is normal. The response is meant to tighten the notification, not challenge the existence of the research. You can message the assigned adviser directly through the [portal](https://minforskning.sikt.no), call Sikt on +47 73 98 40 40 (Monday, Tuesday, and Thursday, 10:00–12:00), or use the chat (weekdays 12:00–14:00, except Wednesday).
+.sk-intro {
+  font-size: 0.9em;
+  color: var(--sk-muted);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
 
-If the project changes later, [amend the existing notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) rather than starting over. Typical triggers are:
+.sk-items { display: flex; flex-direction: column; gap: 10px; margin: 0 0 20px; }
+.sk-item {
+  background: var(--sk-bg);
+  border: 1px solid var(--sk-border);
+  border-radius: var(--sk-radius);
+  padding: 12px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: border-color 0.15s;
+}
+.sk-item:has(input:checked) {
+  border-color: var(--sk-ok-border);
+  background: color-mix(in srgb, var(--sk-ok-bg) 40%, var(--sk-bg));
+}
 
-- new data types or special categories
-- new partners or processors
-- new transfer destinations
-- changed timeline or retention period
-- a materially different participant or risk profile
+.sk-item input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--sk-accent);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
 
-When the project ends, report completion through the portal so the notification is closed in line with what you described.
+.sk-item-content { flex: 1; }
+.sk-item-label {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--sk-text);
+  cursor: pointer;
+  display: block;
+  margin: 0 0 2px;
+}
+.sk-item-hint {
+  font-size: 0.8em;
+  color: var(--sk-muted);
+  line-height: 1.5;
+}
 
-## Sources and further reading
+.sk-result {
+  border-radius: var(--sk-radius);
+  padding: 20px 24px;
+  margin: 0 0 12px;
+  display: none;
+}
+.sk-result.visible { display: block; }
+.sk-result-ok {
+  background: var(--sk-ok-bg);
+  border: 1px solid var(--sk-ok-border);
+}
+.sk-result-partial {
+  background: var(--sk-partial-bg);
+  border: 1px solid var(--sk-partial-border);
+}
+.sk-result-skip {
+  background: var(--sk-skip-bg);
+  border: 1px solid var(--sk-skip-border);
+}
+.sk-result h3 {
+  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
+}
+.sk-result-ok h3 { color: var(--sk-ok-text); }
+.sk-result-partial h3 { color: var(--sk-partial-text); }
+.sk-result-skip h3 { color: var(--sk-skip-text); }
+.sk-result-body {
+  font-size: 0.9em;
+  color: var(--sk-muted);
+  line-height: 1.6;
+}
+.sk-result-body p { margin: 0 0 8px; }
+.sk-result-body p:last-child { margin: 0; }
 
-- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
-- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
-- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
-- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
-- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx) — downloadable Word template for the most common CMI scenario
-- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
-- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
-- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
-- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
-- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+.sk-counter {
+  font-size: 0.85em;
+  color: var(--sk-muted);
+  margin: 0 0 12px;
+}
+.sk-counter b { color: var(--sk-text); font-weight: 500; }
+
+.sk-first-q {
+  margin: 0 0 16px;
+}
+.sk-first-q p {
+  font-size: 1.05em; font-weight: 500;
+  color: var(--sk-text);
+  margin: 0 0 6px;
+}
+.sk-first-q .sk-hint-text {
+  font-size: 0.85em;
+  color: var(--sk-muted);
+  margin: 0 0 12px;
+}
+.sk-first-opts { display: flex; flex-direction: column; gap: 8px; }
+.sk-first-opt {
+  background: var(--sk-bg);
+  border: 1px solid var(--sk-border);
+  border-radius: var(--sk-radius);
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  color: var(--sk-text);
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s, background 0.15s;
+}
+.sk-first-opt:hover {
+  border-color: var(--sk-border-hover);
+  background: var(--sk-bg2);
+}
+.sk-first-opt:focus-visible {
+  outline: 2px solid var(--sk-accent);
+  outline-offset: 2px;
+}
+
+.sk-nav { display: flex; gap: 8px; margin: 16px 0 0; }
+.sk-nav button {
+  font-size: 0.85em;
+  font-family: inherit;
+  background: var(--sk-bg);
+  border: 1px solid var(--sk-border);
+  border-radius: var(--sk-radius);
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--sk-text);
+  transition: border-color 0.15s, background 0.15s;
+}
+.sk-nav button:hover {
+  border-color: var(--sk-border-hover);
+  background: var(--sk-bg2);
+}
+.sk-nav button:focus-visible {
+  outline: 2px solid var(--sk-accent);
+  outline-offset: 2px;
+}
+</style>
+
+<div id="sk-content" aria-live="polite"></div>
+
+<script>
+(function() {
+  var items = [
+    {
+      id: "description",
+      label: "Project description with title, methods, and participant groups",
+      hint: "A short summary of what the project is about, how data will be collected, and who the participants are."
+    },
+    {
+      id: "categories",
+      label: "Clear view of which personal data categories you will process",
+      hint: "Ordinary personal data (names, contact details) and any special categories (health, ethnicity, political opinions). See GDPR and legal compliance if unsure."
+    },
+    {
+      id: "information",
+      label: "Draft participant information sheet or adapted oral script",
+      hint: "Must match what you describe in the Sikt form: purpose, legal basis, data types, storage, rights, and project end date."
+    },
+    {
+      id: "storage",
+      label: "Data workflow, storage, and access arrangements decided",
+      hint: "Where data will be stored during the project (MS365, TSD, other), who has access, and how data is transferred from collection points."
+    },
+    {
+      id: "partners",
+      label: "Details of partners, processors, and third-country recipients",
+      hint: "Any organisations outside CMI that will access the data, especially those outside the EU/EEA. Include their role (joint controller, processor, recipient)."
+    },
+    {
+      id: "dates",
+      label: "Project dates: start of processing, end of identifiable data",
+      hint: "When personal data processing begins and when identifiable data will be deleted or anonymised. The end date is when processing stops, not when the last article is published."
+    },
+    {
+      id: "instruments",
+      label: "Questionnaires or interview guides ready to upload",
+      hint: "Sikt may ask to see these. Having them ready avoids a back-and-forth that delays the assessment."
+    }
+  ];
+
+  var contentEl = document.getElementById("sk-content");
+
+  function showFirstQuestion() {
+    var h = '<div class="sk-first-q">';
+    h += '<p>Does your project process personal data?</p>';
+    h += '<p class="sk-hint-text">Personal data is any information relating to an identified or identifiable living person. This includes names, recordings, IP addresses, and combinations of background variables. If you are unsure, use the personal data decision tree above or see GDPR and legal compliance.</p>';
+    h += '<div class="sk-first-opts">';
+    h += '<button class="sk-first-opt" data-answer="yes">Yes, or I think so</button>';
+    h += '<button class="sk-first-opt" data-answer="no">No, all data is anonymous from the start</button>';
+    h += '</div>';
+    h += '</div>';
+    contentEl.innerHTML = h;
+
+    contentEl.querySelectorAll(".sk-first-opt").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        if (this.dataset.answer === "yes") showChecklist();
+        else showNoNotification();
+      });
+    });
+  }
+
+  function showNoNotification() {
+    var h = '<div class="sk-result sk-result-skip visible">';
+    h += '<h3>You probably do not need a Sikt notification</h3>';
+    h += '<div class="sk-result-body">';
+    h += '<p>If your project does not process personal data at any stage, a Sikt notification is not required. You still have ethical obligations to inform participants and obtain agreement, even with anonymous data.</p>';
+    h += '<p>If you later discover that your data is not as anonymous as you thought (for example, combinations of background variables could identify individuals in a small population), you will need to reassess and may need to notify Sikt at that point.</p>';
+    h += '</div></div>';
+    h += '<div class="sk-nav"><button data-action="restart" aria-label="Start over">Start over</button></div>';
+    contentEl.innerHTML = h;
+    contentEl.querySelector('[data-action="restart"]').addEventListener("click", showFirstQuestion);
+  }
+
+  function showChecklist() {
+    var h = '<p class="sk-intro">Your project processes personal data, so you need a Sikt notification. Check off each item below as you prepare it. The form is much easier to complete when all materials are ready beforehand.</p>';
+    h += '<div class="sk-counter" id="sk-counter"><b>0</b> of ' + items.length + ' items ready</div>';
+    h += '<div class="sk-items">';
+    items.forEach(function(item, i) {
+      h += '<div class="sk-item">';
+      h += '<input type="checkbox" id="sk-check-' + i + '" aria-label="' + item.label + '">';
+      h += '<div class="sk-item-content">';
+      h += '<label class="sk-item-label" for="sk-check-' + i + '">' + item.label + '</label>';
+      h += '<div class="sk-item-hint">' + item.hint + '</div>';
+      h += '</div></div>';
+    });
+    h += '</div>';
+    h += '<div class="sk-result sk-result-ok" id="sk-result-ok"><h3>You are ready to fill in the Sikt form</h3><div class="sk-result-body"><p>You have all the materials you need. Open the Sikt portal and use the form walkthrough as a section-by-section companion. Submit at least 30 days before data collection starts.</p></div></div>';
+    h += '<div class="sk-result sk-result-partial" id="sk-result-partial"><h3>Almost there</h3><div class="sk-result-body"><p>You can start filling in the form with what you have, but missing items may cause Sikt to request clarification, which delays the assessment. Consider preparing the remaining items first.</p></div></div>';
+    h += '<div class="sk-nav"><button data-action="restart" aria-label="Start over">Start over</button></div>';
+    contentEl.innerHTML = h;
+
+    var checkboxes = contentEl.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(function(cb) {
+      cb.addEventListener("change", updateStatus);
+    });
+    contentEl.querySelector('[data-action="restart"]').addEventListener("click", showFirstQuestion);
+    updateStatus();
+  }
+
+  function updateStatus() {
+    var checkboxes = contentEl.querySelectorAll('input[type="checkbox"]');
+    var checked = 0;
+    checkboxes.forEach(function(cb) { if (cb.checked) checked++; });
+
+    var counter = document.getElementById("sk-counter");
+    if (counter) counter.innerHTML = '<b>' + checked + '</b> of ' + items.length + ' items ready';
+
+    var okEl = document.getElementById("sk-result-ok");
+    var partialEl = document.getElementById("sk-result-partial");
+
+    if (checked === items.length) {
+      okEl.classList.add("visible");
+      partialEl.classList.remove("visible");
+    } else if (checked >= 4) {
+      okEl.classList.remove("visible");
+      partialEl.classList.add("visible");
+    } else {
+      okEl.classList.remove("visible");
+      partialEl.classList.remove("visible");
+    }
+  }
+
+  showFirstQuestion();
+})();
+</script>
+</div>
+
+<!-- widget-end -->
 
 ---
 
