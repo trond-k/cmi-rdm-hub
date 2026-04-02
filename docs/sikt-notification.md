@@ -38,352 +38,74 @@ For most CMI projects, the challenge is not whether the form can be completed. T
 6. [Amend the notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) if the project changes materially.
 7. Report completion through the portal when the project ends.
 
-## Are you ready to file?
+## Before you open the form
 
-Use this checklist to see whether you have everything you need before opening the Sikt form.
+Have these ready ([Sikt's own checklist](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form)):
 
-<!-- widget: sikt-readiness-checker.html -->
+- a short project description with title, methods, and participant groups
+- a clear view of which personal data categories you will process (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) if you are unsure about categories)
+- a draft participant information sheet or adapted oral script (see [Informed consent and information letters](CROSS-ethics.md) and Sikt's page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
+- your project data workflow, including [storage](lifecycle-5-store.md) and access arrangements
+- details of partners, processors, and any organisations outside the EU/EEA that will access the data (see [GDPR concepts for researchers](CROSS-legal.md) for definitions of these roles)
+- project dates, including when personal data processing starts and when identifiable data will be deleted or anonymised
+- any questionnaires or interview guides you plan to upload
 
-<!--
-  Sikt Readiness Checker — CMI RDM Hub
+If those pieces are still vague, tighten them first. Most trouble in the Sikt form comes from trying to answer precise questions with an unfinished project setup.
 
-  Embeddable widget for Zensical / GitHub Pages.
+## CMI quick defaults
 
-  LOCATION: includes/sikt-readiness-checker.html
+These are the standard answers for a typical CMI research project. Use them as defaults, then adjust where your project genuinely differs.
 
-  EMBEDDING — Include via Zensical/MkDocs snippets:
-    In your .md file, use the snippet syntax:
-    --8<-- "sikt-readiness-checker.html"
+| Form field | Typical CMI answer |
+|---|---|
+| Data controller | CMI |
+| Project leader | The PI or formally affiliated project lead |
+| Primary purpose | Research or student paper |
+| Article 6 legal basis | Research in the public interest |
+| Article 9 legal basis | Research in the public interest |
+| Information to participants | Yes |
+| Main storage | CMI-managed systems such as Teams, SharePoint, or approved secure alternatives |
+| Security measures | Encrypted storage, encrypted transmission, restricted access, MFA |
+| Default publication approach | Participants are not identifiable in publications |
+| End of project | Personal data is anonymised or deleted as described in the notification |
 
-  No external dependencies. Pure HTML/CSS/JS.
-  Colours use CSS custom properties with safe fallbacks.
--->
+For the section-by-section walkthrough you can use with the form open, see the [Sikt form walkthrough](sikt-form-walkthrough.md).
 
-<div class="sk-readiness" role="region" aria-label="Sikt readiness checker">
-<style>
-.sk-readiness {
-  --sk-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
-  --sk-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
-  --sk-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
-  --sk-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
-  --sk-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
-  --sk-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
-  --sk-accent: var(--md-primary-fg-color, #4051b5);
-  --sk-ok-bg: #eaf3de;
-  --sk-ok-border: #7db832;
-  --sk-ok-text: #3b6d11;
-  --sk-partial-bg: #faeeda;
-  --sk-partial-border: #e8b54a;
-  --sk-partial-text: #854f0b;
-  --sk-skip-bg: #e3edf9;
-  --sk-skip-border: #4a7ab5;
-  --sk-skip-text: #1a3d5c;
-  --sk-radius: 8px;
-  font-family: inherit;
-  max-width: 640px;
-  line-height: 1.6;
-}
+## Common mistakes
 
-[data-md-color-scheme="slate"] .sk-readiness {
-  --sk-ok-bg: #173404;
-  --sk-ok-border: #3b6d11;
-  --sk-ok-text: #c0dd97;
-  --sk-partial-bg: #412402;
-  --sk-partial-border: #854f0b;
-  --sk-partial-text: #fac775;
-  --sk-skip-bg: #0d1f33;
-  --sk-skip-border: #2a5a8a;
-  --sk-skip-text: #8cb8e0;
-}
+- Under-reporting personal data categories, especially contextual identifiers in qualitative material.
+- Using a participant-information sheet that does not match the real method or storage setup.
+- Treating all participants as one sample when they clearly belong to different groups.
+- Confusing participant agreement to take part with the [legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) for processing.
+- Giving a vague data-flow description that never says where the data actually goes.
+- Forgetting to declare third-country recipients or processors outside the EU/EEA.
+- Using a project end date that matches the last publication instead of the end of personal data processing.
 
-@media (prefers-color-scheme: dark) {
-  .sk-readiness {
-    --sk-ok-bg: #173404;
-    --sk-ok-border: #3b6d11;
-    --sk-ok-text: #c0dd97;
-    --sk-partial-bg: #412402;
-    --sk-partial-border: #854f0b;
-    --sk-partial-text: #fac775;
-    --sk-skip-bg: #0d1f33;
-    --sk-skip-border: #2a5a8a;
-    --sk-skip-text: #8cb8e0;
-  }
-}
+## After you submit
 
-.sk-readiness * { box-sizing: border-box; margin: 0; }
+Sikt aims to complete [standard assessments within 30 days](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types). Low-risk projects without special-category data may receive an automatic same-day assessment. The busiest period is November through February, so filing early gives you a buffer.
 
-.sk-intro {
-  font-size: 0.9em;
-  color: var(--sk-muted);
-  margin: 0 0 20px;
-  line-height: 1.6;
-}
+Sikt may come back with requests for clarification. That is normal. The response is meant to tighten the notification, not challenge the existence of the research. You can message the assigned adviser directly through the [portal](https://minforskning.sikt.no), call Sikt on +47 73 98 40 40 (Monday, Tuesday, and Thursday, 10:00–12:00), or use the chat (weekdays 12:00–14:00, except Wednesday).
 
-.sk-items { display: flex; flex-direction: column; gap: 10px; margin: 0 0 20px; }
-.sk-item {
-  background: var(--sk-bg);
-  border: 1px solid var(--sk-border);
-  border-radius: var(--sk-radius);
-  padding: 12px 16px;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  transition: border-color 0.15s;
-}
-.sk-item:has(input:checked) {
-  border-color: var(--sk-ok-border);
-  background: color-mix(in srgb, var(--sk-ok-bg) 40%, var(--sk-bg));
-}
+If the project changes later, [amend the existing notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) rather than starting over. Typical triggers are:
 
-.sk-item input[type="checkbox"] {
-  margin-top: 3px;
-  flex-shrink: 0;
-  accent-color: var(--sk-accent);
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
+- new data types or special categories
+- new partners or processors
+- new transfer destinations
+- changed timeline or retention period
+- a materially different participant or risk profile
 
-.sk-item-content { flex: 1; }
-.sk-item-label {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: var(--sk-text);
-  cursor: pointer;
-  display: block;
-  margin: 0 0 2px;
-}
-.sk-item-hint {
-  font-size: 0.8em;
-  color: var(--sk-muted);
-  line-height: 1.5;
-}
+When the project ends, report completion through the portal so the notification is closed in line with what you described.
 
-.sk-result {
-  border-radius: var(--sk-radius);
-  padding: 20px 24px;
-  margin: 0 0 12px;
-  display: none;
-}
-.sk-result.visible { display: block; }
-.sk-result-ok {
-  background: var(--sk-ok-bg);
-  border: 1px solid var(--sk-ok-border);
-}
-.sk-result-partial {
-  background: var(--sk-partial-bg);
-  border: 1px solid var(--sk-partial-border);
-}
-.sk-result-skip {
-  background: var(--sk-skip-bg);
-  border: 1px solid var(--sk-skip-border);
-}
-.sk-result h3 {
-  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
-}
-.sk-result-ok h3 { color: var(--sk-ok-text); }
-.sk-result-partial h3 { color: var(--sk-partial-text); }
-.sk-result-skip h3 { color: var(--sk-skip-text); }
-.sk-result-body {
-  font-size: 0.9em;
-  color: var(--sk-muted);
-  line-height: 1.6;
-}
-.sk-result-body p { margin: 0 0 8px; }
-.sk-result-body p:last-child { margin: 0; }
+## Sources and further reading
 
-.sk-counter {
-  font-size: 0.85em;
-  color: var(--sk-muted);
-  margin: 0 0 12px;
-}
-.sk-counter b { color: var(--sk-text); font-weight: 500; }
-
-.sk-first-q {
-  margin: 0 0 16px;
-}
-.sk-first-q p {
-  font-size: 1.05em; font-weight: 500;
-  color: var(--sk-text);
-  margin: 0 0 6px;
-}
-.sk-first-q .sk-hint-text {
-  font-size: 0.85em;
-  color: var(--sk-muted);
-  margin: 0 0 12px;
-}
-.sk-first-opts { display: flex; flex-direction: column; gap: 8px; }
-.sk-first-opt {
-  background: var(--sk-bg);
-  border: 1px solid var(--sk-border);
-  border-radius: var(--sk-radius);
-  padding: 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  font-size: 0.9em;
-  color: var(--sk-text);
-  font-family: inherit;
-  line-height: 1.5;
-  transition: border-color 0.15s, background 0.15s;
-}
-.sk-first-opt:hover {
-  border-color: var(--sk-border-hover);
-  background: var(--sk-bg2);
-}
-.sk-first-opt:focus-visible {
-  outline: 2px solid var(--sk-accent);
-  outline-offset: 2px;
-}
-
-.sk-nav { display: flex; gap: 8px; margin: 16px 0 0; }
-.sk-nav button {
-  font-size: 0.85em;
-  font-family: inherit;
-  background: var(--sk-bg);
-  border: 1px solid var(--sk-border);
-  border-radius: var(--sk-radius);
-  padding: 8px 16px;
-  cursor: pointer;
-  color: var(--sk-text);
-  transition: border-color 0.15s, background 0.15s;
-}
-.sk-nav button:hover {
-  border-color: var(--sk-border-hover);
-  background: var(--sk-bg2);
-}
-.sk-nav button:focus-visible {
-  outline: 2px solid var(--sk-accent);
-  outline-offset: 2px;
-}
-</style>
-
-<div id="sk-content" aria-live="polite"></div>
-
-<script>
-(function() {
-  var items = [
-    {
-      id: "description",
-      label: "Project description with title, methods, and participant groups",
-      hint: "A short summary of what the project is about, how data will be collected, and who the participants are."
-    },
-    {
-      id: "categories",
-      label: "Clear view of which personal data categories you will process",
-      hint: "Ordinary personal data (names, contact details) and any special categories (health, ethnicity, political opinions). See GDPR and legal compliance if unsure."
-    },
-    {
-      id: "information",
-      label: "Draft participant information sheet or adapted oral script",
-      hint: "Must match what you describe in the Sikt form: purpose, legal basis, data types, storage, rights, and project end date."
-    },
-    {
-      id: "storage",
-      label: "Data workflow, storage, and access arrangements decided",
-      hint: "Where data will be stored during the project (MS365, TSD, other), who has access, and how data is transferred from collection points."
-    },
-    {
-      id: "partners",
-      label: "Details of partners, processors, and third-country recipients",
-      hint: "Any organisations outside CMI that will access the data, especially those outside the EU/EEA. Include their role (joint controller, processor, recipient)."
-    },
-    {
-      id: "dates",
-      label: "Project dates: start of processing, end of identifiable data",
-      hint: "When personal data processing begins and when identifiable data will be deleted or anonymised. The end date is when processing stops, not when the last article is published."
-    },
-    {
-      id: "instruments",
-      label: "Questionnaires or interview guides ready to upload",
-      hint: "Sikt may ask to see these. Having them ready avoids a back-and-forth that delays the assessment."
-    }
-  ];
-
-  var contentEl = document.getElementById("sk-content");
-
-  function showFirstQuestion() {
-    var h = '<div class="sk-first-q">';
-    h += '<p>Does your project process personal data?</p>';
-    h += '<p class="sk-hint-text">Personal data is any information relating to an identified or identifiable living person. This includes names, recordings, IP addresses, and combinations of background variables. If you are unsure, use the personal data decision tree above or see GDPR and legal compliance.</p>';
-    h += '<div class="sk-first-opts">';
-    h += '<button class="sk-first-opt" data-answer="yes">Yes, or I think so</button>';
-    h += '<button class="sk-first-opt" data-answer="no">No, all data is anonymous from the start</button>';
-    h += '</div>';
-    h += '</div>';
-    contentEl.innerHTML = h;
-
-    contentEl.querySelectorAll(".sk-first-opt").forEach(function(btn) {
-      btn.addEventListener("click", function() {
-        if (this.dataset.answer === "yes") showChecklist();
-        else showNoNotification();
-      });
-    });
-  }
-
-  function showNoNotification() {
-    var h = '<div class="sk-result sk-result-skip visible">';
-    h += '<h3>You probably do not need a Sikt notification</h3>';
-    h += '<div class="sk-result-body">';
-    h += '<p>If your project does not process personal data at any stage, a Sikt notification is not required. You still have ethical obligations to inform participants and obtain agreement, even with anonymous data.</p>';
-    h += '<p>If you later discover that your data is not as anonymous as you thought (for example, combinations of background variables could identify individuals in a small population), you will need to reassess and may need to notify Sikt at that point.</p>';
-    h += '</div></div>';
-    h += '<div class="sk-nav"><button data-action="restart" aria-label="Start over">Start over</button></div>';
-    contentEl.innerHTML = h;
-    contentEl.querySelector('[data-action="restart"]').addEventListener("click", showFirstQuestion);
-  }
-
-  function showChecklist() {
-    var h = '<p class="sk-intro">Your project processes personal data, so you need a Sikt notification. Check off each item below as you prepare it. The form is much easier to complete when all materials are ready beforehand.</p>';
-    h += '<div class="sk-counter" id="sk-counter"><b>0</b> of ' + items.length + ' items ready</div>';
-    h += '<div class="sk-items">';
-    items.forEach(function(item, i) {
-      h += '<div class="sk-item">';
-      h += '<input type="checkbox" id="sk-check-' + i + '" aria-label="' + item.label + '">';
-      h += '<div class="sk-item-content">';
-      h += '<label class="sk-item-label" for="sk-check-' + i + '">' + item.label + '</label>';
-      h += '<div class="sk-item-hint">' + item.hint + '</div>';
-      h += '</div></div>';
-    });
-    h += '</div>';
-    h += '<div class="sk-result sk-result-ok" id="sk-result-ok"><h3>You are ready to fill in the Sikt form</h3><div class="sk-result-body"><p>You have all the materials you need. Open the Sikt portal and use the form walkthrough as a section-by-section companion. Submit at least 30 days before data collection starts.</p></div></div>';
-    h += '<div class="sk-result sk-result-partial" id="sk-result-partial"><h3>Almost there</h3><div class="sk-result-body"><p>You can start filling in the form with what you have, but missing items may cause Sikt to request clarification, which delays the assessment. Consider preparing the remaining items first.</p></div></div>';
-    h += '<div class="sk-nav"><button data-action="restart" aria-label="Start over">Start over</button></div>';
-    contentEl.innerHTML = h;
-
-    var checkboxes = contentEl.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(function(cb) {
-      cb.addEventListener("change", updateStatus);
-    });
-    contentEl.querySelector('[data-action="restart"]').addEventListener("click", showFirstQuestion);
-    updateStatus();
-  }
-
-  function updateStatus() {
-    var checkboxes = contentEl.querySelectorAll('input[type="checkbox"]');
-    var checked = 0;
-    checkboxes.forEach(function(cb) { if (cb.checked) checked++; });
-
-    var counter = document.getElementById("sk-counter");
-    if (counter) counter.innerHTML = '<b>' + checked + '</b> of ' + items.length + ' items ready';
-
-    var okEl = document.getElementById("sk-result-ok");
-    var partialEl = document.getElementById("sk-result-partial");
-
-    if (checked === items.length) {
-      okEl.classList.add("visible");
-      partialEl.classList.remove("visible");
-    } else if (checked >= 4) {
-      okEl.classList.remove("visible");
-      partialEl.classList.add("visible");
-    } else {
-      okEl.classList.remove("visible");
-      partialEl.classList.remove("visible");
-    }
-  }
-
-  showFirstQuestion();
-})();
-</script>
-</div>
-
-<!-- widget-end -->
+- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
+- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
+- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
+- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
+- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx) — downloadable Word template for the most common CMI scenario
+- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
+- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
+- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
+- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
+- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers

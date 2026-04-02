@@ -17,357 +17,67 @@ date_updated: 2026-03-26
 
 *Publishing research data is not the same as uploading files. It means depositing well-documented datasets in trustworthy archives that assign persistent identifiers, enforce metadata standards, and provide access controls and long-term preservation by design. The single most impactful decision you make for the findability, accessibility, and longevity of your data is where you deposit it. Get that right, provide rich metadata, and the archive does much of the rest.*
 
-<!-- widget: repository-chooser.html -->
+## Choose the right archive
 
-<!--
-  Repository Chooser — CMI RDM Hub
+A trustworthy archive is one that commits to long-term stewardship: it assigns persistent identifiers, curates metadata, migrates formats, enforces access controls, and remains operational independently of any single funder or project. Certification schemes such as [CoreTrustSeal](https://www.coretrustseal.org/ "A certification for trustworthy data repositories") provide a formal benchmark, but the practical test is simpler. Does the repository assign DOIs? Does it require structured metadata? Does it support access restrictions where needed? Will it still exist in ten years?
 
-  Embeddable widget for Zensical / GitHub Pages.
+For most CMI projects, the default choice is the [Sikt Research Data Archive](https://sikt.no/en/tjenester/arkivering-av-forskningsdata), which provides curation support, handles sensitive data under Norwegian and EU frameworks, and meets funder requirements for the Research Council of Norway and Horizon Europe. For projects that need a generalist alternative, [Zenodo](https://zenodo.org/) and the [Open Science Framework (OSF)](https://osf.io/) accept all data types and assign DOIs on deposit.
 
-  LOCATION: includes/repository-chooser.html
+Code and scripts belong in a version-controlled repository such as [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/), with a snapshot archived in Zenodo to generate a citable DOI. Articles and other text outputs should be registered in [NVA (Nasjonalt vitenarkiv)](https://sikt.no/en/tjenester/nasjonalt-vitenarkiv-nva), Norway's national research output archive.
 
-  EMBEDDING — Include via Zensical/MkDocs snippets:
-    In your .md file, use the snippet syntax:
-    --8<-- "repository-chooser.html"
+!!! tip "One decision, many benefits"
+    Choosing a trustworthy archive is not just about compliance. It gives you persistent identifiers, standardised metadata, access controls, preservation, and discoverability in a single step. Much of what the FAIR principles require is handled by the archive itself. Your most important contributions are selecting the right repository for each dataset and providing thorough, accurate metadata and documentation.
 
-  No external dependencies. Pure HTML/CSS/JS.
-  Colours use CSS custom properties with safe fallbacks.
--->
+## Prepare your deposit
 
-<div class="rc-decision-tree" role="region" aria-label="Repository chooser decision tree">
-<style>
-.rc-decision-tree {
-  --rc-text: var(--md-typeset-color, var(--color-text-primary, #2c2c2a));
-  --rc-muted: var(--md-default-fg-color--light, var(--color-text-secondary, #5f5e5a));
-  --rc-hint: var(--md-default-fg-color--lighter, var(--color-text-tertiary, #888780));
-  --rc-bg: var(--md-default-bg-color, var(--color-background-primary, #fff));
-  --rc-bg2: var(--md-code-bg-color, var(--color-background-secondary, #f5f5f0));
-  --rc-border: var(--md-default-fg-color--lightest, var(--color-border-tertiary, rgba(0,0,0,0.12)));
-  --rc-border-hover: var(--md-default-fg-color--lighter, var(--color-border-secondary, rgba(0,0,0,0.25)));
-  --rc-accent: var(--md-primary-fg-color, #4051b5);
-  --rc-rec-bg: #eaf3de;
-  --rc-rec-border: #7db832;
-  --rc-rec-text: #3b6d11;
-  --rc-info-bg: #e3edf9;
-  --rc-info-border: #4a7ab5;
-  --rc-info-text: #1a3d5c;
-  --rc-radius: 8px;
-  font-family: inherit;
-  max-width: 640px;
-  line-height: 1.6;
-}
+A deposit is only as useful as the documentation that accompanies it. Before uploading, check that your package includes:
 
-[data-md-color-scheme="slate"] .rc-decision-tree {
-  --rc-rec-bg: #173404;
-  --rc-rec-border: #3b6d11;
-  --rc-rec-text: #c0dd97;
-  --rc-info-bg: #0d1f33;
-  --rc-info-border: #2a5a8a;
-  --rc-info-text: #8cb8e0;
-}
+- The dataset itself, in open, preservation-friendly formats where possible (CSV rather than Excel, PDF/A rather than Word). See the [PROCESS](lifecycle-6-process.md) stage for format conversion guidance.
+- A codebook or data dictionary describing every variable, its values, units, and coding scheme.
+- A README file explaining what the dataset contains, how it was collected, what processing was applied, and any known limitations.
+- Scripts or code used to produce derived datasets or results, with documentation of the software environment.
+- Any supplementary materials needed for interpretation: interview guides, survey instruments, sampling documentation.
 
-@media (prefers-color-scheme: dark) {
-  .rc-decision-tree {
-    --rc-rec-bg: #173404;
-    --rc-rec-border: #3b6d11;
-    --rc-rec-text: #c0dd97;
-    --rc-info-bg: #0d1f33;
-    --rc-info-border: #2a5a8a;
-    --rc-info-text: #8cb8e0;
-  }
-}
+Archives vary in what they require and what they accept. Check the repository's deposit guidelines before packaging your data. Sikt, for instance, provides curation support and will work with you on metadata and documentation; Zenodo accepts deposits with minimal review but places more responsibility on the depositor to get things right.
 
-.rc-decision-tree * { box-sizing: border-box; margin: 0; }
+!!! warning "Do not deposit and forget"
+    Depositing data is not the end of your responsibility. If you discover an error after publication, most repositories support versioning and corrections. If access conditions need to change (an embargo expires, a restriction is no longer justified), update the record. A deposit that is never maintained becomes misleading.
 
-.rc-step { display: none; }
-.rc-step.active { display: block; }
+## Assign persistent identifiers and cite data properly
 
-.rc-progress {
-  display: flex; gap: 6px; margin: 0 0 20px;
-}
-.rc-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--rc-border);
-  transition: background 0.2s;
-}
-.rc-dot.done { background: var(--rc-accent); }
-.rc-dot.cur { background: var(--rc-accent); box-shadow: 0 0 0 3px rgba(64,81,181,0.2); }
+A Digital Object Identifier (DOI) makes your dataset permanently findable and citable, regardless of where it moves. Trustworthy archives assign DOIs automatically on deposit. If you are archiving code through Zenodo's GitHub integration, the DOI is generated when you create a release.
 
-.rc-q {
-  font-size: 1.05em; font-weight: 500;
-  color: var(--rc-text);
-  margin: 0 0 6px;
-}
-.rc-hint {
-  font-size: 0.85em;
-  color: var(--rc-muted);
-  margin: 0 0 20px;
-}
-.rc-opts { display: flex; flex-direction: column; gap: 8px; }
-.rc-opt {
-  background: var(--rc-bg);
-  border: 1px solid var(--rc-border);
-  border-radius: var(--rc-radius);
-  padding: 12px 16px;
-  cursor: pointer;
-  text-align: left;
-  font-size: 0.9em;
-  color: var(--rc-text);
-  font-family: inherit;
-  line-height: 1.5;
-  transition: border-color 0.15s, background 0.15s;
-}
-.rc-opt:hover {
-  border-color: var(--rc-border-hover);
-  background: var(--rc-bg2);
-}
-.rc-opt:focus-visible {
-  outline: 2px solid var(--rc-accent);
-  outline-offset: 2px;
-}
+Use DOIs consistently. Cite your own data in your publications, just as you would cite someone else's. Follow the [FORCE11 data citation principles](https://force11.org/info/joint-declaration-of-data-citation-principles-final/ "Joint Declaration of Data Citation Principles"): include the creator, title, year, repository, and identifier. Link datasets to the articles that use them, and link articles back to the datasets. This bidirectional linking is what makes the relationship between outputs visible to readers, indexers, and funders.
 
-.rc-result {
-  border-radius: var(--rc-radius);
-  padding: 20px 24px;
-  margin: 0 0 12px;
-}
-.rc-result-rec {
-  background: var(--rc-rec-bg);
-  border: 1px solid var(--rc-rec-border);
-}
-.rc-result-info {
-  background: var(--rc-info-bg);
-  border: 1px solid var(--rc-info-border);
-}
-.rc-result h3 {
-  font-size: 1.05em; font-weight: 500; margin: 0 0 8px;
-}
-.rc-result-rec h3 { color: var(--rc-rec-text); }
-.rc-result-info h3 { color: var(--rc-info-text); }
-.rc-result-body {
-  font-size: 0.9em;
-  color: var(--rc-muted);
-  line-height: 1.6;
-}
-.rc-result-body p { margin: 0 0 10px; }
-.rc-result-body p:last-child { margin: 0; }
+Beyond DOIs for datasets, use [ORCIDs](https://orcid.org/) for researchers and [ROR IDs](https://ror.org/) for institutions. These identifiers connect your outputs to the people and organisations that produced them, reducing ambiguity and ensuring credit flows to the right place.
 
-.rc-extra {
-  background: var(--rc-bg2);
-  border-radius: var(--rc-radius);
-  padding: 16px 20px;
-  margin: 12px 0 0;
-}
-.rc-extra h4 {
-  font-size: 0.9em; font-weight: 500;
-  color: var(--rc-text);
-  margin: 0 0 6px;
-}
-.rc-extra-body {
-  font-size: 0.85em;
-  color: var(--rc-muted);
-  line-height: 1.6;
-}
-.rc-extra-body b { font-weight: 500; color: var(--rc-text); }
+## Write a clear data availability statement
 
-.rc-nav { display: flex; gap: 8px; margin: 16px 0 0; }
-.rc-nav button {
-  font-size: 0.85em;
-  font-family: inherit;
-  background: var(--rc-bg);
-  border: 1px solid var(--rc-border);
-  border-radius: var(--rc-radius);
-  padding: 8px 16px;
-  cursor: pointer;
-  color: var(--rc-text);
-  transition: border-color 0.15s, background 0.15s;
-}
-.rc-nav button:hover {
-  border-color: var(--rc-border-hover);
-  background: var(--rc-bg2);
-}
-.rc-nav button:focus-visible {
-  outline: 2px solid var(--rc-accent);
-  outline-offset: 2px;
-}
-</style>
+Most journals now require a data availability statement in published articles. This is not a formality; it is the point at which a reader learns whether they can access your data, where it is, and what conditions apply.
 
-<div class="rc-progress" id="rc-dots" role="group" aria-label="Progress: question steps"></div>
-<div id="rc-steps" aria-live="polite"></div>
+A good statement is specific. It names the repository, provides the DOI or accession number, and states the access conditions. If the data are restricted, it explains why and describes what is available instead (metadata, summary statistics, anonymised subsets). If different datasets have different access levels, the statement should distinguish them.
 
-<script>
-(function() {
-  var steps = [
-    {
-      q: "What is the primary output you want to publish?",
-      hint: "If your project has multiple output types (data and code, for example), run through this tool once for each type.",
-      opts: [
-        { text: "A research dataset (survey data, interview transcripts, measurements)", goto: 1 },
-        { text: "Code or analysis scripts", goto: "code" },
-        { text: "An article, report, or other text output", goto: "article" }
-      ]
-    },
-    {
-      q: "Does the dataset contain sensitive or restricted data?",
-      hint: "Restricted data includes personal data that cannot be fully anonymised, data collected under confidentiality agreements, data from conflict-affected settings, or any data where open publication would pose risks to participants.",
-      opts: [
-        { text: "Yes, access needs to be restricted", goto: 2 },
-        { text: "No, it can be openly available", goto: 3 }
-      ]
-    },
-    {
-      q: "Is the project funded by a Norwegian funder (Research Council of Norway, Norad)?",
-      hint: "Norwegian funders typically expect data to be deposited in Norwegian national infrastructure. Horizon Europe projects may also benefit from Sikt as a certified repository.",
-      opts: [
-        { text: "Yes, Norwegian or Horizon Europe funding", goto: "sikt-restricted" },
-        { text: "No, or other international funding", goto: "zenodo-restricted" }
-      ]
-    },
-    {
-      q: "Is the project funded by a Norwegian funder (Research Council of Norway, Norad)?",
-      hint: "Norwegian funders typically expect data to be deposited in Norwegian national infrastructure. Sikt is the standard choice and meets funder requirements directly.",
-      opts: [
-        { text: "Yes, Norwegian or Horizon Europe funding", goto: "sikt-open" },
-        { text: "No, or other international funding", goto: "zenodo-open" }
-      ]
-    }
-  ];
+=== "Open access"
 
-  var results = {
-    "sikt-open": {
-      type: "rec",
-      title: "Sikt Research Data Archive (open access)",
-      body: "<p>Deposit your dataset in the <b>Sikt Research Data Archive</b>. Sikt provides curation support, assigns DOIs, enforces metadata standards, and meets the requirements of Norwegian funders and Horizon Europe.</p><p>Release under a <b>CC BY 4.0</b> licence unless you have a specific reason to choose otherwise. Provide a codebook, README, and any scripts needed to interpret the data.</p>",
-      extra: {
-        title: "After deposit",
-        body: "<b>Cite your data</b>: use the DOI in your publications, following the FORCE11 data citation principles.<br><b>Link outputs</b>: connect the dataset record to your article DOI and any associated code repositories.<br><b>Register in NVA</b>: register the article itself in Nasjonalt vitenarkiv (NVA) and link it to the dataset."
-      }
-    },
-    "sikt-restricted": {
-      type: "info",
-      title: "Sikt Research Data Archive (restricted access)",
-      body: "<p>Deposit your dataset in the <b>Sikt Research Data Archive</b> with restricted access. Sikt supports managed access where qualified researchers can apply to use the data under conditions you define.</p><p>Even restricted datasets should have <b>openly available metadata</b> so others can discover that the data exist and understand what access conditions apply.</p>",
-      extra: {
-        title: "What to include",
-        body: "<b>Access conditions</b>: specify who can apply, what criteria they must meet, and what agreement they must sign.<br><b>Data availability statement</b>: write a clear statement for your article explaining that data are restricted, why, and how to request access.<br><b>Metadata</b>: provide thorough metadata even if the data themselves are not openly available. Discoverability matters."
-      }
-    },
-    "zenodo-open": {
-      type: "rec",
-      title: "Zenodo (open access)",
-      body: "<p>Deposit your dataset in <b>Zenodo</b>, a generalist repository hosted by CERN. Zenodo accepts all data types, assigns DOIs, and provides long-term preservation. It is widely used across disciplines and recognised by most funders.</p><p>Release under a <b>CC BY 4.0</b> licence. Provide a codebook, README, and documentation sufficient for a researcher unfamiliar with the project to understand and use the data.</p>",
-      extra: {
-        title: "Good to know",
-        body: "<b>Less curation support</b>: unlike Sikt, Zenodo does not review or curate deposits. You are responsible for metadata quality and documentation completeness.<br><b>Communities</b>: consider adding your deposit to a relevant Zenodo community for better discoverability.<br><b>Versioning</b>: Zenodo supports versioned deposits. If you update the data later, create a new version rather than replacing the original."
-      }
-    },
-    "zenodo-restricted": {
-      type: "info",
-      title: "Zenodo (restricted access) or discipline-specific archive",
-      body: "<p>For restricted datasets outside the Norwegian funding context, <b>Zenodo</b> supports restricted access with embargo periods and access request workflows. Alternatively, check whether your discipline has a specialist repository that handles restricted data (e.g. UK Data Service, ICPSR, DANS).</p><p>Publish <b>metadata openly</b> even if the data are restricted, so the dataset is discoverable.</p>",
-      extra: {
-        title: "Consider also",
-        body: "<b>OSF</b>: the Open Science Framework can host restricted datasets with access controls, and integrates with preregistration and preprint workflows.<br><b>Institutional repository</b>: some institutions maintain their own archives for restricted data. Check whether this applies to your collaborating partners."
-      }
-    },
-    "code": {
-      type: "rec",
-      title: "GitHub or GitLab, archived via Zenodo",
-      body: "<p>Keep your code in a version-controlled repository on <b>GitHub</b> or <b>GitLab</b> during the project. When you are ready to publish, create a release and archive a snapshot in <b>Zenodo</b> to generate a citable DOI.</p><p>Zenodo's GitHub integration can do this automatically: link your repository, and each release creates a new Zenodo deposit with a DOI.</p>",
-      extra: {
-        title: "Documentation checklist",
-        body: "<b>README</b>: describe what the code does, how to run it, and what dependencies it requires.<br><b>Licence</b>: choose an open-source licence (MIT, Apache 2.0, or GPL depending on your needs). Code without a licence is not reusable.<br><b>Environment</b>: document the software environment (language version, package versions) so others can reproduce your setup.<br><b>Link to data</b>: reference the dataset DOI in your code repository, and vice versa."
-      }
-    },
-    "article": {
-      type: "rec",
-      title: "NVA (Nasjonalt vitenarkiv)",
-      body: "<p>Register your article, report, or text output in <b>NVA</b> (Nasjonalt vitenarkiv), Norway's national research output archive. NVA is the standard channel for registering CMI publications and making them discoverable through CRIStin/NVA.</p><p>If the article is open access, upload the full text. If it is behind a paywall, deposit the accepted manuscript (post-print) after any embargo period specified by the publisher.</p>",
-      extra: {
-        title: "Link your outputs",
-        body: "<b>Data DOI</b>: link the article record to the dataset DOI in the repository where you deposited the data.<br><b>Code DOI</b>: if you archived code in Zenodo, link that too.<br><b>ORCID</b>: ensure your ORCID is connected to your NVA profile so outputs are linked to you across systems."
-      }
-    }
-  };
+    The dataset supporting this study is available in the Sikt Research Data Archive at https://doi.org/10.xxxxx. The data are released under a CC BY 4.0 licence.
 
-  var cur = 0, history = [];
-  var stepsEl = document.getElementById("rc-steps");
-  var dotsEl = document.getElementById("rc-dots");
+=== "Restricted access"
 
-  function renderDots() {
-    dotsEl.innerHTML = "";
-    for (var i = 0; i < steps.length; i++) {
-      var d = document.createElement("div");
-      d.className = "rc-dot";
-      d.setAttribute("aria-label", "Step " + (i + 1) + " of " + steps.length);
-      if (i < cur) { d.classList.add("done"); d.setAttribute("aria-label", "Step " + (i + 1) + ": completed"); }
-      if (i === cur) { d.classList.add("cur"); d.setAttribute("aria-label", "Step " + (i + 1) + ": current"); }
-      dotsEl.appendChild(d);
-    }
-  }
+    Interview transcripts are deposited in the Sikt Research Data Archive at https://doi.org/10.xxxxx with restricted access to protect participant confidentiality. Access is available to qualified researchers on application to the archive. Survey data are available without restriction at the same DOI.
 
-  function showStep(i) {
-    cur = i;
-    renderDots();
-    var s = steps[i];
-    var h = '<div class="rc-step active">';
-    h += '<p class="rc-q">' + s.q + '</p>';
-    h += '<p class="rc-hint">' + s.hint + '</p>';
-    h += '<div class="rc-opts" role="group" aria-label="Answer options">';
-    s.opts.forEach(function(o, j) {
-      h += '<button class="rc-opt" data-idx="' + j + '">' + o.text + '</button>';
-    });
-    h += '</div>';
-    if (history.length > 0) {
-      h += '<div class="rc-nav"><button data-action="back" aria-label="Go back to previous question">Back</button></div>';
-    }
-    h += '</div>';
-    stepsEl.innerHTML = h;
-    stepsEl.querySelectorAll(".rc-opt").forEach(function(btn) {
-      btn.addEventListener("click", function() { pick(parseInt(this.dataset.idx)); });
-    });
-    var backBtn = stepsEl.querySelector('[data-action="back"]');
-    if (backBtn) backBtn.addEventListener("click", goBack);
-  }
+=== "Data not available"
 
-  function pick(j) {
-    var o = steps[cur].opts[j];
-    history.push({ step: cur, choice: j });
-    if (typeof o.goto === "string") showResult(o.goto);
-    else showStep(o.goto);
-  }
+    The data supporting this study cannot be made publicly available because they contain sensitive personal information collected under conditions of confidentiality in a conflict-affected setting. Metadata describing the dataset are available at https://doi.org/10.xxxxx. Enquiries about access may be directed to the corresponding author.
 
-  function goBack() {
-    if (history.length === 0) return;
-    var prev = history.pop();
-    showStep(prev.step);
-  }
+!!! warning "Do not promise what you cannot deliver"
+    If your data availability statement says the data are openly available and they are not, you have a problem with both the journal and the funder. If restrictions apply, state them honestly. It is far better to publish a clear, justified restriction than to claim openness and fail to provide it.
 
-  function showResult(key) {
-    dotsEl.innerHTML = "";
-    var r = results[key];
-    var cls = r.type === "info" ? "rc-result-info" : "rc-result-rec";
-    var h = '<div class="rc-step active">';
-    h += '<div class="rc-result ' + cls + '">';
-    h += '<h3>' + r.title + '</h3>';
-    h += '<div class="rc-result-body">' + r.body + '</div>';
-    h += '</div>';
-    if (r.extra) {
-      h += '<div class="rc-extra">';
-      h += '<h4>' + r.extra.title + '</h4>';
-      h += '<div class="rc-extra-body">' + r.extra.body + '</div>';
-      h += '</div>';
-    }
-    h += '<div class="rc-nav"><button data-action="restart" aria-label="Start the decision tree again">Start over</button></div>';
-    h += '</div>';
-    stepsEl.innerHTML = h;
-    stepsEl.querySelector('[data-action="restart"]').addEventListener("click", restart);
-  }
+## Reproducibility packages
 
-  function restart() { history = []; showStep(0); }
-  showStep(0);
-})();
-</script>
-</div>
+For quantitative and computational work, consider publishing a reproducibility package alongside the article: a bundled deposit containing the data, code, and documentation needed for an independent researcher to reproduce your results. At minimum, this includes the analysis scripts, the input data (or a pointer to it, if the data are restricted), a description of the software environment, and instructions for running the code.
 
-<!-- widget-end -->
+For qualitative and mixed-methods work, full computational reproducibility is rarely possible or appropriate. The equivalent is thorough documentation: a clear account of the analytical process, the coding framework, and the relationship between evidence and interpretation. What matters is that another researcher can understand what you did, assess your reasoning, and build on your work, even if they cannot press a button and regenerate your output.
+
+## Finalise the data inventory
+
+Update the [data inventory](data-inventory.md) with publication details for each dataset: repository, persistent identifier, access conditions, embargo timelines, and licence. For datasets not deposited, record the rationale.
