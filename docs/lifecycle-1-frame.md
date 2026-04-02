@@ -65,7 +65,7 @@ Data sensitivity is not binary. A dataset that seems straightforward in one cont
 
 Ask yourself:
 
-- Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)?
+- Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)? Use the [Personal Data Decider](personal-data-decider.md) for a structured initial assessment.
 - Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious beliefs, health data, trade union membership, genetic or biometric data?
 - Could disclosure cause harm to participants, their families, or their communities, whether through legal repercussions, social stigma, political retaliation, or physical danger?
 - Does the data involve indigenous or community knowledge where governance rights may apply?

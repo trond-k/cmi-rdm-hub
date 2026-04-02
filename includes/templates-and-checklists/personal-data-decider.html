@@ -230,6 +230,22 @@
       ]
     },
     {
+      q: "Could your participants mention third parties (colleagues, officials, family members) who become identifiable in the data?",
+      hint: "If an interviewee names a local official, describes a family member\u2019s health condition, or refers to a colleague in a way that makes them recognisable, those third parties become data subjects too. This applies even if you never meet or recruit them directly.",
+      opts: [
+        { text: "Yes, or possibly: participants are likely to discuss identifiable individuals", goto: "pd", reason: "When participants mention identifiable third parties, those individuals become data subjects. The data is personal data with respect to them, even if they are not direct participants in the research." },
+        { text: "No, the data will not include identifiable references to third parties", goto: 6 }
+      ]
+    },
+    {
+      q: "Will you collect GPS coordinates, geotagged photographs, or other location data that could identify where participants live or work?",
+      hint: "Precise location data, such as GPS coordinates from a household survey or geotagged photographs, can identify individuals when combined with other information. A GPS point near a homestead in a rural area may be as identifying as a name.",
+      opts: [
+        { text: "Yes, we will collect precise location data linked to participants", goto: "pd", reason: "Precise location data linked to participants can identify them, especially in rural or sparsely populated areas. GPS coordinates, geotagged images, and similar data are personal data when they can be connected to identifiable individuals." },
+        { text: "No, we will not collect location data, or it will be at a level too broad to identify anyone", goto: 7 }
+      ]
+    },
+    {
       q: "Will you collect or analyse data from social media or the internet that includes usernames or searchable quotes?",
       hint: "Usernames, profile information, and directly searchable quotes from online sources can identify individuals. Even publicly posted content is personal data if it is linked to an identifiable person.",
       opts: [
@@ -300,7 +316,8 @@
     h += '<h3>Your project will involve personal data</h3>';
     h += '<div class="pd-result-body">';
     h += '<p>' + reason + '</p>';
-    h += '<p>You will need to: notify Sikt before data collection begins, establish a legal basis for processing, prepare an information letter for participants, set up secure storage, and plan for anonymisation or deletion at the end of the project.</p>';
+    h += '<p>You will need to: notify Sikt before data collection begins, establish a legal basis for processing (public interest is the recommended default at CMI), prepare an information letter for participants, set up secure storage, and plan for anonymisation or deletion at the end of the project.</p>';
+    h += '<p>Also consider whether your data includes special category data (health, political opinions, ethnic origin, religious beliefs, etc.), which requires an additional legal basis. See the guidance sections above the tool for next steps and links.</p>';
     h += '</div></div>';
     h += '<div class="pd-trade">';
     h += '<h4>But do you need personal data?</h4>';
@@ -325,8 +342,8 @@
     h += '<div class="pd-result pd-result-anon">';
     h += '<h3>Your project likely does not involve personal data</h3>';
     h += '<div class="pd-result-body">';
-    h += '<p>Based on your answers, your data collection appears to be anonymous throughout. You do not need a Sikt notification, and privacy regulations for personal data do not apply.</p>';
-    h += '<p>However, you still have ethical obligations: inform participants about the research and obtain their agreement to take part, even when data is anonymous.</p>';
+    h += '<p>Based on your answers, your data collection appears to be anonymous throughout. You do not need a Sikt notification, and GDPR requirements for personal data processing do not apply.</p>';
+    h += '<p>You still have ethical obligations: inform participants about the research and obtain their voluntary agreement to take part, even when data is anonymous. See the guidance sections above the tool for details on ethical consent and information letters.</p>';
     h += '</div></div>';
     h += '<div class="pd-trade">';
     h += '<h4>Are you sure you don\u2019t want personal data?</h4>';
