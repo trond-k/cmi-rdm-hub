@@ -73,6 +73,10 @@ Your entry point depends on where you are right now.
 
 **Curious about the bigger picture?** [CMI's institutional context](cmi-institutional-context.md) explains how CMI's research portfolio shapes its approach to data management. [Foundations of data sharing](foundations-of-data-sharing.md) covers the historical and ethical arguments underpinning open science and data governance.
 
+## Using this hub with AI assistants
+
+You can also [use this hub with an AI assistant](using-this-hub-with-ai.md). Give your assistant the hub's content as context and ask questions about data management in your specific project situation. The page includes ready-made prompts for common scenarios.
+
 ## Two things worth doing early
 
 Whatever stage you are at, two actions pay for themselves quickly:

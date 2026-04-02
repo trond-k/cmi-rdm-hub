@@ -1,0 +1,43 @@
+# CMI Research Data Management Hub
+
+> A hub for research data management resources and best practices at CMI - Chr. Michelsen Institute.
+
+- [Start here](https://trond-k.github.io/cmi-rdm-hub/get-started/): A quick orientation to the RDM Hub: what it covers, how it is structured, and where to go depending on where you are in your project.
+## Foundations
+
+- [The elements of research data management](https://trond-k.github.io/cmi-rdm-hub/elements-of/): A four-layer framework for understanding how external constraints, institutional structures, temporal stages, and implementation choices interact in research data management.
+- [CMI's institutional context](https://trond-k.github.io/cmi-rdm-hub/cmi-institutional-context/): How CMI's research portfolio, partnerships, and operating contexts shape its approach to data management.
+- [Principles for research data management](https://trond-k.github.io/cmi-rdm-hub/rdm-principles/): CMI's eight principles for planning, handling, documenting, securing, and sharing research data. A practical reference for researchers and a citable resource for Data Management Plans.
+- [Foundations of data sharing](https://trond-k.github.io/cmi-rdm-hub/foundations-of-data-sharing/): Why sharing research data matters: the historical, epistemic, ethical, and political arguments that underpin open science and responsible data governance.
+- [The research data lifecycle](https://trond-k.github.io/cmi-rdm-hub/research-data-lifecycle/): How the twelve-stage lifecycle model works, why it matters, and how to use it as a practical framework for managing research data at CMI.
+## Before the project
+
+- [Frame - Design and conceptualise](https://trond-k.github.io/cmi-rdm-hub/lifecycle-1-frame/): Define what data your project needs, whether it already exists, and what challenges collection will involve.
+- [Fund - Align with funder requirements](https://trond-k.github.io/cmi-rdm-hub/lifecycle-2-fund/): Align your data plans with funder requirements, budget for data management, and make binding commitments you can actually keep.
+- [Plan - Formalise data handling](https://trond-k.github.io/cmi-rdm-hub/lifecycle-3-plan/): Formalise how your project will handle data: who is responsible, what legal frameworks apply, and how the DMP will evolve.
+## During the project
+
+- [Collect - Gather and capture data](https://trond-k.github.io/cmi-rdm-hub/lifecycle-4-collect/): Gather data carefully: test your instruments, document as you go, and protect participants from the first recording onward.
+- [Store - Keep data secure and organised](https://trond-k.github.io/cmi-rdm-hub/lifecycle-5-store/): Keep your data secure, backed up, and organised while the project is active: choose the right storage, separate sensitive material, and make sure the whole team can find what they need.
+- [Process - Transform raw data](https://trond-k.github.io/cmi-rdm-hub/lifecycle-6-process/): Transform raw data into analysis-ready form: clean, convert, pseudonymise, and document every step so the chain from source to result is traceable.
+- [Analyse - Generate and document findings](https://trond-k.github.io/cmi-rdm-hub/lifecycle-7-analyse/): Generate findings from your processed data: choose methods deliberately, document every analytical decision, and ensure that you can reproduce your own work.
+## After the project
+
+- [Publish - Make outputs citable](https://trond-k.github.io/cmi-rdm-hub/lifecycle-8-publish/): Make your data, code, and outputs formally citable through trustworthy archives: choose the right repository, provide rich metadata, and link everything together.
+- [Preserve - Ensure long-term accessibility](https://trond-k.github.io/cmi-rdm-hub/lifecycle-9-preserve/): Ensure your data remains intact, interpretable, and accessible long after the project ends: choose sustainable formats, plan retention, and let trustworthy archives do the heavy lifting.
+- [Discover - Make data findable](https://trond-k.github.io/cmi-rdm-hub/lifecycle-10-discover/): Make your data findable: provide rich metadata, use persistent identifiers, and ensure that even restricted datasets are visible to those who need them.
+- [Access - Define who can use your data](https://trond-k.github.io/cmi-rdm-hub/lifecycle-11-access/): Decide who can use your data, under what terms, and through what mechanisms: define access levels, set governance conditions, and plan for eventual withdrawal.
+- [Share & Reuse - Enable responsible reuse](https://trond-k.github.io/cmi-rdm-hub/lifecycle-12-share-and-reuse/): Enable others to use your data responsibly: choose the right licence, document for a stranger, and think about who will reuse your data and what they need.
+## Using this hub
+
+- [Using this hub with AI assistants](https://trond-k.github.io/cmi-rdm-hub/using-this-hub-with-ai/): How to use AI tools to get more out of this hub: giving your assistant CMI context, ready-made prompts, and honest guidance on what works.
+## Cross-cutting guidance
+
+- [Reproducibility and transparency](https://trond-k.github.io/cmi-rdm-hub/reproducibility-and-transparency/): Make your research traceable: document tools, decisions, and AI use so that others can follow the path from raw data to findings.
+- [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/): Agree on a simple naming pattern and folder layout before the project drifts into confusion.
+- [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/): A running register of every dataset in your project: what it is, where it lives, who is responsible, and how sensitive it is.
+- [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): How the GDPR applies to CMI research, and the recommended interpretive approach: proportionality, lawful basis, special categories, cross-border transfers, and data subject rights.
+- [Informed consent and information letters](https://trond-k.github.io/cmi-rdm-hub/CROSS-ethics/): Practical guidance on drafting information letters, documenting ethical consent, and adapting consent procedures for fieldwork contexts.
+- [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/): A plain-language reference to GDPR terminology and concepts as they apply to CMI research: roles, personal data, legal basis, principles, safeguards, transfers, rights, and Norwegian institutions.
+- [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/): What the Sikt notification is, what to have ready, and what CMI's standard answers are.
+- [Sikt form walkthrough](https://trond-k.github.io/cmi-rdm-hub/sikt-form-walkthrough/): Section-by-section companion for filling in the Sikt notification form, with all form options and CMI-specific guidance.

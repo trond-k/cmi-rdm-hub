@@ -28,3 +28,4 @@
 *[NSD]: Norwegian Social Science Data Services (now Sikt)
 *[MFA]: Multi-factor authentication
 *[M365]: Microsoft 365
+*[LLM]: Large Language Model
