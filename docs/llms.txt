@@ -34,6 +34,7 @@
 ## Cross-cutting guidance
 
 - [Reproducibility and transparency](https://trond-k.github.io/cmi-rdm-hub/reproducibility-and-transparency/): Make your research traceable: document tools, decisions, and AI use so that others can follow the path from raw data to findings.
+- [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/): The 2026 SCORE project tested thousands of social-science claims. Half did not replicate. Here is what the findings mean for how you plan, document, and share your work.
 - [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/): Agree on a simple naming pattern and folder layout before the project drifts into confusion.
 - [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/): A running register of every dataset in your project: what it is, where it lives, who is responsible, and how sensitive it is.
 - [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): How the GDPR applies to CMI research, and the recommended interpretive approach: proportionality, lawful basis, special categories, cross-border transfers, and data subject rights.
@@ -41,3 +42,6 @@
 - [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/): A plain-language reference to GDPR terminology and concepts as they apply to CMI research: roles, personal data, legal basis, principles, safeguards, transfers, rights, and Norwegian institutions.
 - [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/): What the Sikt notification is, what to have ready, and what CMI's standard answers are.
 - [Sikt form walkthrough](https://trond-k.github.io/cmi-rdm-hub/sikt-form-walkthrough/): Section-by-section companion for filling in the Sikt notification form, with all form options and CMI-specific guidance.
+## Guides, tools and templates
+
+- [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/): A guide to understanding what counts as personal data in CMI research, where the boundary lies, and what the distinction means for your project design.
