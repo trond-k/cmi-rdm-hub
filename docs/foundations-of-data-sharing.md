@@ -10,7 +10,7 @@ tags:
   - CARE
   - History
 notes: ""
-date_updated: 2026-03-27
+date_updated: 2026-04-03
 ---
 
 # Foundations of knowledge and data sharing
@@ -43,7 +43,7 @@ The journal solved the problem of disseminating findings but left the underlying
 2. **Computing.** Digital data could be copied without degradation and transmitted without physical transport. The technical barrier to sharing dropped dramatically from the 1960s onward.
 3. **Public accountability.** As public funding of research grew, so did the argument that publicly funded data should be publicly accessible.
 
-The Bermuda Principles of 1996 marked a turning point: participants in the Human Genome Project agreed to release all sequence data within 24 hours of generation, before publication. The Fort Lauderdale Agreement (2003) and Toronto Statement (2009) extended this norm.[^8] Meanwhile, evidence that many published findings could not be reproduced (only 36% of 100 psychology studies replicated in a landmark 2015 project) gave funders a powerful argument for requiring data to be shared alongside results.[^9]
+The Bermuda Principles of 1996 marked a turning point: participants in the Human Genome Project agreed to release all sequence data within 24 hours of generation, before publication. The Fort Lauderdale Agreement (2003) and Toronto Statement (2009) extended this norm.[^8] Meanwhile, evidence that many published findings could not be reproduced (only 36% of 100 psychology studies replicated in a landmark 2015 project) gave funders a powerful argument for requiring data to be shared alongside results.[^9] In 2026, the SCORE programme confirmed and extended these findings across 11 social-science disciplines and ~3,900 papers: only half of the studies tested replicated, and data availability was the single strongest predictor of whether results could be reproduced.[^18] For a full summary of the SCORE findings, see [What the largest replication study means for your research](CROSS-replication-evidence.md).
 
 ## Knowledge as a collective enterprise
 
@@ -102,3 +102,4 @@ The tools and expectations will continue to evolve. What remains constant is the
 [^15]: Linda Tuhiwai Smith, *Decolonizing Methodologies: Research and Indigenous Peoples* (Zed Books, 1999; 3rd ed. Otago University Press, 2021).
 [^16]: Carroll, S. R. et al. (2020). 'The CARE Principles for Indigenous Data Governance.' *Data Science Journal*, 19(1), 43. See also Carroll, S. R. et al. (2021). 'Operationalizing the CARE and FAIR Principles for Indigenous data futures.' *Scientific Data*, 8, 108.
 [^17]: Suchikova, Y. and Nazarovets, S. (2025). 'Extending the CARE Principles: managing data for vulnerable communities in wartime and humanitarian crises'. *Scientific Data*, 12, 413.
+[^18]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y).

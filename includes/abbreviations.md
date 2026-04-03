@@ -29,3 +29,4 @@
 *[MFA]: Multi-factor authentication
 *[M365]: Microsoft 365
 *[LLM]: Large Language Model
+*[SCORE]: Systematizing Confidence in Open Research and Evidence

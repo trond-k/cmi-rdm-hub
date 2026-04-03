@@ -77,6 +77,7 @@ nav = [
   ]},
   { "Cross-cutting guidance" = [
     { "Reproducibility and transparency" = "reproducibility-and-transparency.md" },
+    { "What the largest replication study means for your research" = "CROSS-replication-evidence.md" },
     { "Name files and structure folders" = "file-and-folder-naming.md" },
     { "Build a data inventory" = "data-inventory.md" },
     { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },

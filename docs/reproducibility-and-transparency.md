@@ -11,7 +11,7 @@ tags:
   - CARE
   - Preregistration
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-04-03
 ---
 
 # Reproducibility and transparency
@@ -20,7 +20,7 @@ date_updated: 2026-03-26
 
 ## Why this matters now
 
-Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
+Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. In April 2026, the largest replication project to date confirmed the scale of the problem: the SCORE programme found that only 49% of 164 social-science studies replicated, with effect sizes more than halving on average, and that data availability was the only reliable predictor of reproducibility.[^8] But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
 
 ## What reproducibility requires
 
@@ -54,7 +54,7 @@ For quantitative work, registries such as [OSF](https://osf.io/), [AsPredicted](
 
 For qualitative work, preregistration is more contested. The emerging distinction is between a 'constraining' model that commits to specific procedures and a 'transparency' model that documents the starting point without restricting methodological emergence.[^2] The transparency model is gaining traction because it respects the iterative nature of qualitative inquiry while still providing an auditable record.
 
-Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory.
+Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory. For a summary of the 2026 SCORE evidence on replicability, reproducibility, and the role of data sharing, see [What the largest replication study means for your research](CROSS-replication-evidence.md).
 
 ### Registered Reports
 
@@ -153,6 +153,7 @@ The shift in research assessment matters too. Initiatives such as [DORA](https:/
 [^5]: Datatilsynet. [NTNU/Copilot regulatory sandbox exit report](https://www.datatilsynet.no/en/regulations-and-tools/sandbox-for-artificial-intelligence/reports/ntnu-exit-report-copilot-through-the-lens-of-data-protection/), November 2024.
 [^6]: GPTZero. [Hallucinated citations in NeurIPS 2025 papers](https://gptzero.me/news/neurips/), January 2026.
 [^7]: Carroll, S.R. et al. (2020). [The CARE Principles for Indigenous Data Governance](https://doi.org/10.5334/dsj-2020-043). *Data Science Journal*, 19(1), 43.
+[^8]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y). See also [What the largest replication study means for your research](CROSS-replication-evidence.md) for a full summary.
 
 !!! info "Last reviewed"
-    This page was last reviewed on 26 March 2026. AI governance, funder policies, and Norwegian research infrastructure are evolving rapidly; verify against the latest source.
+    This page was last reviewed on 3 April 2026. AI governance, funder policies, and Norwegian research infrastructure are evolving rapidly; verify against the latest source.

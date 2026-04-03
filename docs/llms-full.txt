@@ -606,7 +606,7 @@ The journal solved the problem of disseminating findings but left the underlying
 2. **Computing.** Digital data could be copied without degradation and transmitted without physical transport. The technical barrier to sharing dropped dramatically from the 1960s onward.
 3. **Public accountability.** As public funding of research grew, so did the argument that publicly funded data should be publicly accessible.
 
-The Bermuda Principles of 1996 marked a turning point: participants in the Human Genome Project agreed to release all sequence data within 24 hours of generation, before publication. The Fort Lauderdale Agreement (2003) and Toronto Statement (2009) extended this norm.[^8] Meanwhile, evidence that many published findings could not be reproduced (only 36% of 100 psychology studies replicated in a landmark 2015 project) gave funders a powerful argument for requiring data to be shared alongside results.[^9]
+The Bermuda Principles of 1996 marked a turning point: participants in the Human Genome Project agreed to release all sequence data within 24 hours of generation, before publication. The Fort Lauderdale Agreement (2003) and Toronto Statement (2009) extended this norm.[^8] Meanwhile, evidence that many published findings could not be reproduced (only 36% of 100 psychology studies replicated in a landmark 2015 project) gave funders a powerful argument for requiring data to be shared alongside results.[^9] In 2026, the SCORE programme confirmed and extended these findings across 11 social-science disciplines and ~3,900 papers: only half of the studies tested replicated, and data availability was the single strongest predictor of whether results could be reproduced.[^18] For a full summary of the SCORE findings, see [What the largest replication study means for your research](CROSS-replication-evidence.md).
 
 ## Knowledge as a collective enterprise
 
@@ -665,6 +665,7 @@ The tools and expectations will continue to evolve. What remains constant is the
 [^15]: Linda Tuhiwai Smith, *Decolonizing Methodologies: Research and Indigenous Peoples* (Zed Books, 1999; 3rd ed. Otago University Press, 2021).
 [^16]: Carroll, S. R. et al. (2020). 'The CARE Principles for Indigenous Data Governance.' *Data Science Journal*, 19(1), 43. See also Carroll, S. R. et al. (2021). 'Operationalizing the CARE and FAIR Principles for Indigenous data futures.' *Scientific Data*, 8, 108.
 [^17]: Suchikova, Y. and Nazarovets, S. (2025). 'Extending the CARE Principles: managing data for vulnerable communities in wartime and humanitarian crises'. *Scientific Data*, 12, 413.
+[^18]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y).
 
 ---
 
@@ -807,7 +808,7 @@ Data sensitivity is not binary. A dataset that seems straightforward in one cont
 
 Ask yourself:
 
-- Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)?
+- Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)? Use the [Personal Data Decider](personal-data-decider.md) for a structured initial assessment.
 - Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious beliefs, health data, trade union membership, genetic or biometric data?
 - Could disclosure cause harm to participants, their families, or their communities, whether through legal repercussions, social stigma, political retaliation, or physical danger?
 - Does the data involve indigenous or community knowledge where governance rights may apply?
@@ -1876,7 +1877,7 @@ Be cautious with:
 
 ## Why this matters now
 
-Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
+Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. In April 2026, the largest replication project to date confirmed the scale of the problem: the SCORE programme found that only 49% of 164 social-science studies replicated, with effect sizes more than halving on average, and that data availability was the only reliable predictor of reproducibility.[^8] But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
 
 ## What reproducibility requires
 
@@ -1910,7 +1911,7 @@ For quantitative work, registries such as [OSF](https://osf.io/), [AsPredicted](
 
 For qualitative work, preregistration is more contested. The emerging distinction is between a 'constraining' model that commits to specific procedures and a 'transparency' model that documents the starting point without restricting methodological emergence.[^2] The transparency model is gaining traction because it respects the iterative nature of qualitative inquiry while still providing an auditable record.
 
-Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory.
+Preregistration does not lock you in. If your plan changes, update the record and document the deviation. Be aware, however, that preregistration addresses one specific threat (post-hoc hypothesis framing) and does not substitute for good design, measurement, or theory. For a summary of the 2026 SCORE evidence on replicability, reproducibility, and the role of data sharing, see [What the largest replication study means for your research](CROSS-replication-evidence.md).
 
 ### Registered Reports
 
@@ -2009,9 +2010,77 @@ The shift in research assessment matters too. Initiatives such as [DORA](https:/
 [^5]: Datatilsynet. [NTNU/Copilot regulatory sandbox exit report](https://www.datatilsynet.no/en/regulations-and-tools/sandbox-for-artificial-intelligence/reports/ntnu-exit-report-copilot-through-the-lens-of-data-protection/), November 2024.
 [^6]: GPTZero. [Hallucinated citations in NeurIPS 2025 papers](https://gptzero.me/news/neurips/), January 2026.
 [^7]: Carroll, S.R. et al. (2020). [The CARE Principles for Indigenous Data Governance](https://doi.org/10.5334/dsj-2020-043). *Data Science Journal*, 19(1), 43.
+[^8]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y). See also [What the largest replication study means for your research](CROSS-replication-evidence.md) for a full summary.
 
 !!! info "Last reviewed"
-    This page was last reviewed on 26 March 2026. AI governance, funder policies, and Norwegian research infrastructure are evolving rapidly; verify against the latest source.
+    This page was last reviewed on 3 April 2026. AI governance, funder policies, and Norwegian research infrastructure are evolving rapidly; verify against the latest source.
+
+---
+
+## [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/)
+
+# What the largest replication study means for your research
+
+*In April 2026, the SCORE programme published the most comprehensive assessment of research credibility in the social and behavioural sciences to date. Across 865 researchers, ~3,900 papers, and 11 disciplines, the results confirmed what smaller studies had suggested: roughly half of published findings do not replicate, and effect sizes shrink substantially when they do. The single strongest predictor of whether a study's results could be reproduced was whether the authors had shared their data. These findings have direct implications for how you plan, document, and share your own work.*
+
+## What the SCORE programme found
+
+The Systematizing Confidence in Open Research and Evidence (SCORE) programme, led by the Center for Open Science, examined papers published between 2009 and 2018 in 62 journals spanning criminology, economics, educational science, health sciences, leadership, marketing, organisational behaviour, political science, psychology, public administration, and sociology. Four coordinated studies tested three dimensions of research credibility: reproducibility, replicability, and analytical robustness.[^1]
+
+### Replicability
+
+Independent teams attempted to replicate 274 claims from 164 quantitative papers, using high-powered designs (median power of 99.6% to detect the original effect size), original materials where available, and peer-reviewed protocols. Only 49.3% of the papers replicated with a statistically significant result in the same direction as the original.[^2] The median effect size dropped from r = 0.25 in the originals to r = 0.10 in the replications, an 82.4% reduction in shared variance. Replication rates varied modestly across disciplines (42.5–63.1%), though some estimates carried high uncertainty.
+
+### Reproducibility
+
+A separate study tested whether the same data and code could reproduce the original results for 143 papers. Only 54% were precisely reproducible; 74% were at least approximately reproducible.[^3] A critical finding: just 24% of the papers in the sample had made their data and code readily available. Those that did had substantially higher reproduction rates. Data availability was, in fact, the only factor that correlated strongly with reproducibility.
+
+### Analytical robustness
+
+When multiple independent teams reanalysed 100 social and behavioural science studies, 34% of the reanalyses closely matched the original results and 74% reached the same overall conclusion.[^4] A focused study of 110 economics and political science papers found higher rates: 85% were computationally reproducible, and 72% of statistically significant results survived robustness checks.[^5]
+
+### Predicting replicability
+
+The SCORE team tested whether replicability could be predicted in advance, using AI tools, prediction markets (where researchers bet on which studies would replicate), and study characteristics. No marker stood out as reliable.[^2] Neither machine learning models nor expert forecasters could consistently distinguish studies that would replicate from those that would not. The only strong correlate was data availability.
+
+!!! note "Not a verdict on individual studies"
+    These are aggregate findings. A 49% replication rate does not mean that any particular study in the sample is wrong. Some failures to replicate reflect limitations of the replication design, not flaws in the original. The findings are a diagnostic of systemic patterns, not a scorecard for individual papers.
+
+## What this means for CMI researchers
+
+The SCORE results are not abstract. They speak directly to decisions you make during every phase of a research project.
+
+**Share your data and code.** Data availability was the only factor reliably associated with reproducibility. This is not just a funder compliance issue; it is the single most effective thing you can do to make your work credible and verifiable. For guidance on how to deposit data, choose repositories, and handle sensitive material, see [PUBLISH](lifecycle-8-publish.md) and [PLAN](lifecycle-3-plan.md).
+
+**Preregister confirmatory studies.** Preregistration separates hypothesis-testing from exploration and reduces the temptation to present post-hoc findings as planned. The SCORE findings reinforce the value of this practice. Over 300 journals now accept Registered Reports, where peer review happens before data collection and publication is guaranteed regardless of outcome.[^6] See [Reproducibility and transparency](reproducibility-and-transparency.md) for details on preregistration and Registered Reports.
+
+**Document your analytical decisions.** When multiple teams analysed the same data, they often reached different conclusions. This underlines the importance of recording not just what you did but why: which model specifications you tried, which you chose, and what your reasoning was. For scripted work, share the code. For qualitative work, maintain analytical memos and versioned codebooks. See [ANALYSE](lifecycle-7-analyse.md) and [Reproducibility and transparency](reproducibility-and-transparency.md).
+
+**Plan for smaller effects.** Effect sizes shrank by more than half on replication. If you are designing a quantitative study, power it for a realistic effect size, not the one reported in a single prior study. The SCORE data suggest that published effect sizes are systematically inflated.
+
+**Recognise that qualitative research faces different challenges.** The SCORE programme tested quantitative claims. For interpretive and qualitative work, the relevant standard is not identical replication but transparency of process: can others trace how you moved from data to conclusions? The hub's guidance on [transparency in qualitative research](reproducibility-and-transparency.md#transparency-in-qualitative-and-fieldwork-based-research) addresses this directly.
+
+## What you can do now
+
+- **Default to sharing.** Deposit data and code in a [trustworthy archive](lifecycle-8-publish.md) unless there is a documented reason not to (participant protection, legal restriction, data sovereignty). Justify exceptions; do not treat them as the default.
+- **Preregister.** Use [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/), or [EGAP](https://egap.org/registry/) for quantitative and mixed-methods work. Consider the [transparency model](reproducibility-and-transparency.md#preregistration) for qualitative studies.
+- **Consider Registered Reports.** If your study tests a pre-specified hypothesis and null findings would be informative, the format eliminates publication bias by design. Over 300 journals now offer it, including *Nature* for social and behavioural research.
+- **Record your decisions.** Keep a decision log or analytical memo throughout the project. This is the single cheapest investment in long-term credibility.
+- **Use the hub.** The [Reproducibility and transparency](reproducibility-and-transparency.md) page covers practical implementation in detail, including tools, infrastructure, and funder expectations.
+
+!!! tip "The SCORE collection in Nature"
+    The full set of SCORE papers, editorials, and commentary is available as a curated collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (*Nature*, April 2026).[^7]
+
+[^1]: The four SCORE studies and related commentary were published in *Nature*, volume 652, issue 8108 (2 April 2026). For a news summary, see Sanderson, K. (2026). 'Half of social-science studies fail replication test in years-long project'. *Nature*. [doi:10.1038/d41586-026-00955-5](https://doi.org/10.1038/d41586-026-00955-5).
+[^2]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y).
+[^3]: 'Investigating the reproducibility of the social and behavioural sciences'. *Nature* (2026). [doi:10.1038/s41586-026-10203-5](https://doi.org/10.1038/s41586-026-10203-5).
+[^4]: Aczel, B. et al. (2026). Analytical robustness study within the SCORE programme. Reported in 'Huge meta-research project puts claims in social-science papers to the test'. *Nature* (2026). [doi:10.1038/d41586-026-00805-4](https://doi.org/10.1038/d41586-026-00805-4).
+[^5]: Brodeur, A. et al. (2026). 'Reproducibility and robustness of economics and political science research'. *Nature* (2026). [doi:10.1038/s41586-026-10251-x](https://doi.org/10.1038/s41586-026-10251-x).
+[^6]: 'More self-reflection in research can lead to better science'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00965-3](https://doi.org/10.1038/d41586-026-00965-3). See also 'Why science has a credibility problem, and how to address it'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00972-4](https://doi.org/10.1038/d41586-026-00972-4).
+[^7]: Nature collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (April 2026).
+
+!!! info "Last reviewed"
+    This page was last reviewed on 3 April 2026.
 
 ---
 
@@ -2992,3 +3061,92 @@ The following is a condensed extract from a real Sikt notification for a CMI pro
 - [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
 - [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
 - [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+
+---
+
+## [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/)
+
+# Decide whether your project uses personal data
+
+*Personal data is any information that can identify a person, directly or through context. The definition is broader than most researchers expect, and the boundary between personal and anonymous data is often blurrier than it appears. This page explains what counts, where CMI projects commonly misjudge, and why the distinction matters for your project design.*
+
+## The definition
+
+Personal data is any information relating to an identified or identifiable natural person. The key word is *identifiable*. A person is identifiable if they can be singled out, directly or indirectly, by anyone with access to the data and reasonably available means.
+
+The test is not whether you intend to identify anyone. It is whether identification is *possible*. This applies regardless of the format (audio, text, numbers, images), the source (interviews, surveys, registers, social media), or whether the data was collected by you or obtained from others.
+
+## Direct identifiers
+
+Some data elements identify a person on their own: names, national identity numbers, email addresses, telephone numbers, photographs where someone is recognisable, voice recordings. If your project records any of these, even temporarily, it involves personal data.
+
+Voice recordings deserve particular attention. A voice on an audio recording is personal data even if you never ask the participant's name, because the voice itself can identify the speaker. The same applies to video where a person is recognisable. Audio-recorded interviews are always personal data.
+
+## Indirect identification
+
+This is where CMI projects most often misjudge. Data that contains no names or direct identifiers can still be personal data if combinations of variables could single someone out:
+
+- In a small community, age, gender, village, and occupation together may identify an individual.
+- A district-level health worker described by role, district, and years of service may be the only person fitting that description.
+- GPS coordinates from a household survey in a sparsely populated area can locate a specific homestead.
+- A detailed account of events in a qualitative interview may point to one person, even without a name.
+
+The question is always whether someone, using this data together with other reasonably available information, could identify a specific person. In small study populations, the answer is more often yes than researchers expect.
+
+## Pseudonymised data is still personal data
+
+If participants are given codes or pseudonyms but a separate key links those codes back to real identities, the data is personal data. This is true regardless of who holds the key, where it is stored, or how restricted access is. Pseudonymisation reduces risk, but it does not change the legal classification.
+
+The corollary: data is only truly anonymous if re-identification is no longer possible by any reasonable means. Removing names from interview transcripts is not enough if the content and context could still point to a specific person. True anonymisation is harder than it appears, particularly for qualitative data from small populations.
+
+!!! warning "Collecting anonymously is different from anonymising afterwards"
+    If you collect personal data and anonymise it later, the collection itself is still processing personal data and requires a Sikt notification. Anonymisation is something you do *to* personal data; it does not retroactively make the collection anonymous. If you want anonymous data, the entire collection process must be designed that way from the start.
+
+## Survey platforms and digital traces
+
+Most online survey tools log respondent email addresses or IP addresses by default. If a platform links responses to identifying information at any point, even temporarily, the responses are personal data. This is true even if the survey questions themselves contain nothing identifying.
+
+A genuinely anonymous survey requires a platform configured to never record respondent identity or network address. If you are unsure whether your platform does this, assume it does until you verify otherwise.
+
+## Third parties in your data
+
+Personal data is not limited to your direct participants. If an interviewee names a local official, describes a colleague's behaviour, or discusses a family member's health, those third parties may become identifiable in the data. When they do, they are data subjects under GDPR, even though they never participated in the research.
+
+This is common in qualitative research at CMI. Interviews about governance, service delivery, or community dynamics routinely produce identifiable references to people who are not present. You cannot seek consent from third parties you did not anticipate. What you can do is recognise that this material is personal data and handle it with the same care.
+
+## Social media and publicly available data
+
+Publicly posted content is personal data if it is linked to an identifiable person. A username, a profile photograph, a searchable quote: these all connect data to an individual. The fact that content was posted publicly does not exempt it from data protection requirements. Research involving social media scraping, online ethnography, or analysis of public discourse typically involves personal data.
+
+## Special categories
+
+Some personal data is treated as particularly sensitive under GDPR: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation.
+
+In CMI's research profile, special categories arise frequently and often incidentally. An interview about governance may capture political opinions. Ethnographic fieldwork in a multi-ethnic context captures ethnic origin. Health research captures health data. If your project involves personal data, consider whether any of it falls into these categories, because special categories require an additional legal basis for processing. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for how this works in practice.
+
+## Making the choice
+
+The personal data question is not a bureaucratic hurdle. It is a design decision with real consequences for methodology, data quality, and administrative effort.
+
+Collecting personal data gives you richer material. Audio recordings preserve nuance that notes cannot. Follow-up interviews, data linkage, and quality control all require identifiers. De-identified data can be archived for reuse in ways that anonymous data sometimes cannot. The cost is a Sikt notification, a legal basis for processing (public interest is the recommended default at CMI), an information letter for participants, and a plan for anonymisation or deletion at the end of the project.
+
+Avoiding personal data is simpler to manage but constrains your methods. You cannot follow up with participants, link to other datasets, or check for duplicates.
+
+Data minimisation does not mean avoiding personal data. It means being deliberate about what you collect and why. If your research questions require identifiable data, collect it with appropriate safeguards. If they do not, design for anonymity from the start rather than retrofitting it later.
+
+!!! tip "If you are unsure"
+    Err on the side of assuming your project involves personal data. Sikt's advisers assess over ten thousand projects a year and can tell you quickly whether your design crosses the threshold.
+
+!!! info "Review date"
+    This page was last reviewed on 2 April 2026. Data protection guidance evolves as regulatory interpretations and institutional practice develop. Verify against current Sikt and Datatilsynet guidance for your specific situation.
+
+
+<div style="border: 2px solid var(--md-primary-fg-color, #4051b5); border-radius: 12px; padding: 1.5em 2em; margin: 1.5em 0; background: color-mix(in srgb, var(--md-primary-fg-color, #4051b5) 6%, var(--md-default-bg-color, #fff));" markdown>
+
+## :lucide-user-search: Quick check: will your project involve personal data?
+
+Work through the questions below to get an initial indication. This is a starting point for reflection, not a legal determination.
+
+--8<-- "templates-and-checklists/personal-data-decider.html"
+
+</div>
