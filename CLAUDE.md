@@ -22,6 +22,7 @@ uv run zensical serve            # Dev server at http://localhost:8000
 uv run zensical serve -a localhost:3000  # Custom port
 uv run zensical serve -o         # Auto-open in browser
 uv run zensical build            # Build static site to site/
+python scripts/generate_llms_txt.py   # Regenerate docs/llms.txt and docs/llms-full.txt
 ```
 
 ## Repository structure
@@ -30,13 +31,20 @@ uv run zensical build            # Build static site to site/
 docs/                  Published content pages (Markdown)
   images/              Embedded images and diagrams
   stylesheets/         Custom CSS (hero.css)
-  CROSS-*.md           Cross-cutting guidance pages (not yet in nav)
+  llms.txt             Auto-generated LLM page index (do not edit)
+  llms-full.txt        Auto-generated full-content LLM file (do not edit)
+  CROSS-*.md           Cross-cutting guidance pages
   lifecycle-*.md       12 lifecycle stage pages
+  personal-data-decider.md  Interactive assessment tool (linked from pages)
   index.md             Homepage
 includes/              Shared snippets
   abbreviations.md     Global abbreviation definitions (rendered as hover tooltips)
+  templates-and-checklists/  Interactive HTML widget files (4 decision tools)
 overrides/             Zensical theme template overrides
   home.html            Custom homepage template
+scripts/               Build-time utility scripts
+  generate_llms_txt.py Generates llms.txt and llms-full.txt from zensical.toml nav
+  inject_widgets.py    Injects interactive widgets into content pages
 reports/               Funder requirement reports (ERC, Horizon Europe, Norad, RCN)
   themes-reports/      Theme-specific reports
 working-files/         Drafts, research notes, and work-in-progress (not published)
@@ -47,20 +55,25 @@ zensical.toml          Site configuration (navigation, theme, features)
 pyproject.toml         Python project metadata
 STYLE-GUIDE.md         Content style and tone guidelines (MUST READ)
 REVIEW-CHECKLIST.md    Pre-publication quality checklist (MUST READ)
+DOCS-AUDIT.md          Content audit and development planning tracker
 base-content-architecture.md  Content strategy and lifecycle stage details
 ```
 
 ## Content architecture
 
-The site follows a **12-stage research data lifecycle** in three phases:
+The site is organised into seven navigation sections defined in `zensical.toml` under the `nav` key:
 
-| Phase | Stages |
-|-------|--------|
-| Before the project | Frame, Fund, Plan |
+| Section | Content |
+|---------|---------|
+| Start here | Landing page (`get-started.md`) |
+| Foundations | Core concepts: elements of RDM, CMI context, principles, data sharing, lifecycle overview |
+| Before the project | Phase landing page + Frame, Fund, Plan |
 | During the project | Collect, Store, Process, Analyse |
 | After the project | Publish, Preserve, Discover, Access, Share & Reuse |
+| Using this hub | AI assistant usage guidance |
+| Cross-cutting guidance | Reproducibility, file naming, data inventory, GDPR/legal, ethics, Sikt notifications |
 
-Cross-cutting guidance (reproducibility, file naming, data inventory) applies across all stages. Navigation is defined explicitly in `zensical.toml` under the `nav` key.
+The 12 lifecycle stages follow three phases (Before / During / After the project). Cross-cutting guidance applies across all stages. Interactive tools (e.g. `personal-data-decider.md`) are linked from content pages but may not appear directly in the nav.
 
 ## Critical style and content rules
 
@@ -121,6 +134,7 @@ The `.github/workflows/docs.yml` workflow:
 - `uv.lock` — managed automatically by uv
 - `site/` — generated build output
 - `working-files/` — drafts and research notes; do not publish these directly without review
+- `docs/llms.txt` and `docs/llms-full.txt` — auto-generated; run `scripts/generate_llms_txt.py` to regenerate
 - `overrides/home.html` — custom homepage template; modify with care
 
 ## Common tasks
@@ -130,11 +144,13 @@ The `.github/workflows/docs.yml` workflow:
 2. Add the page to the `nav` array in `zensical.toml`
 3. Follow the style guide for tone, structure, and formatting
 4. Add any new abbreviations to `includes/abbreviations.md`
-5. Preview with `uv run zensical serve` before committing
+5. Run `python scripts/generate_llms_txt.py` to update llms.txt files
+6. Preview with `uv run zensical serve` before committing
 
 ### Editing existing content
 1. Read `STYLE-GUIDE.md` and `REVIEW-CHECKLIST.md` first
 2. Maintain British English spelling
 3. Keep the pyramid summary up to date
 4. Update `date_updated` in frontmatter
-5. Preview locally before committing
+5. If you changed a page title or description, run `python scripts/generate_llms_txt.py`
+6. Preview locally before committing
