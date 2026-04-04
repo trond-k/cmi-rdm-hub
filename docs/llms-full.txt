@@ -26,7 +26,7 @@ You are designing, applying for funding, or setting up the project.
 
 - [**Frame**](lifecycle-1-frame.md) – define what data you need, check what already exists, and screen for sensitivity
 - [**Fund**](lifecycle-2-fund.md) – align your data plans with funder requirements and budget for data management
-- [**Plan**](lifecycle-3-plan.md) – formalise data handling in a Data Management Plan, assign roles, and address legal and ethical requirements
+- [**Plan**](lifecycle-3-plan.md) – formalise data handling in a Data Management Plan (DMP), assign roles, and address legal and ethical requirements
 
 ### During the project
 
@@ -51,23 +51,33 @@ You are wrapping up, publishing, and ensuring long-term access.
 
 Some topics run across multiple stages. These pages address them in one place rather than repeating the same advice throughout:
 
-- [Reproducibility and transparency](reproducibility-and-transparency.md) – documenting tools, decisions, and AI use; preregistration
+- [Reproducibility and transparency](reproducibility-and-transparency.md) – documenting tools, decisions, and AI use; preregistration. See also [what the largest replication study means for your research](CROSS-replication-evidence.md)
 - [File and folder naming](file-and-folder-naming.md) – conventions that prevent confusion as files multiply
 - [The data inventory](data-inventory.md) – a running register of every dataset in your project
+- [Data classification](data-classification.md) – categorising data by sensitivity to determine how it should be handled
+- [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) – data protection obligations, with supporting pages on [GDPR concepts for researchers](CROSS-legal.md) and [informed consent](CROSS-ethics.md)
+- [Sikt notification](sikt-notification.md) – when and how to notify the Norwegian data protection authority, with a [form walkthrough](sikt-form-walkthrough.md)
+- [Project closure](project-closure.md) – wrapping up data responsibilities when a project ends
+
+### Interactive tools
+
+The hub includes decision tools to help with common assessment tasks:
+
+- [Personal data decider](personal-data-decider.md) – work out whether your project involves personal data under GDPR
 
 ## Where to start
 
 Your entry point depends on where you are right now.
 
-**Starting a new project?** Begin with [Frame](lifecycle-1-frame.md). It will help you think through what data you actually need and flag potential problems before they become expensive. Then move to [Fund](lifecycle-2-fund.md) and [Plan](lifecycle-3-plan.md) as the project takes shape.
+**Starting a new project?** Begin with [Frame](lifecycle-1-frame.md). It will help you think through what data you actually need and flag potential problems before they become expensive. Then move to [Fund](lifecycle-2-fund.md) and [Plan](lifecycle-3-plan.md) as the project takes shape. If your project may involve personal data, run through the [personal data decider](personal-data-decider.md) early.
 
 **Already collecting data?** Go to [Store](lifecycle-5-store.md) and [Process](lifecycle-6-process.md) to check that your current setup is sound. If you don't yet have a [data inventory](data-inventory.md), now is a good time to build one; it gets harder the longer you wait.
 
-**Approaching the end of a project?** Start with [Publish](lifecycle-8-publish.md) and [Preserve](lifecycle-9-preserve.md). These stages have dependencies on earlier decisions, so you may need to work backwards through [Access](lifecycle-11-access.md) and [Discover](lifecycle-10-discover.md) to fill gaps.
+**Approaching the end of a project?** Start with [Publish](lifecycle-8-publish.md) and [Preserve](lifecycle-9-preserve.md). These stages have dependencies on earlier decisions, so you may need to work backwards through [Access](lifecycle-11-access.md) and [Discover](lifecycle-10-discover.md) to fill gaps. The [project closure](project-closure.md) page covers how to wrap up data responsibilities systematically.
 
 **Writing a funding application?** [Fund](lifecycle-2-fund.md) covers what funders expect and how to budget for data management. You will also want to skim [Frame](lifecycle-1-frame.md) to make sure your data strategy is realistic before you commit to it in a proposal.
 
-**Curious about the bigger picture?** [CMI's institutional context](cmi-institutional-context.md) explains how CMI's research portfolio shapes its approach to data management. [Foundations of data sharing](foundations-of-data-sharing.md) covers the historical and ethical arguments underpinning open science and data governance.
+**Curious about the bigger picture?** The Foundations section covers the conceptual underpinnings: [what the elements of RDM are](elements-of.md), [CMI's institutional context](cmi-institutional-context.md), [core principles](rdm-principles.md), [foundations of data sharing](foundations-of-data-sharing.md), and the [research data lifecycle](research-data-lifecycle.md) as a whole.
 
 ## Using this hub with AI assistants
 
@@ -81,7 +91,8 @@ Whatever stage you are at, two actions pay for themselves quickly:
 
 2. **Adopt a [file naming convention](file-and-folder-naming.md).** Agree on it with your team before files start multiplying. Renaming hundreds of files later is tedious work that nobody wants to do.
 
-!!! info "Last reviewed: 27 March 2026"
+!!! info "Last reviewed: 4 April 2026"
+    This page was last reviewed on 4 April 2026. Cross-cutting guidance links updated to reflect the full site structure.
 
 ---
 
