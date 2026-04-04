@@ -85,14 +85,3 @@ Data minimisation does not mean avoiding personal data. It means being deliberat
 
 !!! info "Review date"
     This page was last reviewed on 2 April 2026. Data protection guidance evolves as regulatory interpretations and institutional practice develop. Verify against current Sikt and Datatilsynet guidance for your specific situation.
-
-
-<div style="border: 2px solid var(--md-primary-fg-color, #4051b5); border-radius: 12px; padding: 1.5em 2em; margin: 1.5em 0; background: color-mix(in srgb, var(--md-primary-fg-color, #4051b5) 6%, var(--md-default-bg-color, #fff));" markdown>
-
-## :lucide-user-search: Quick check: will your project involve personal data?
-
-Work through the questions below to get an initial indication. This is a starting point for reflection, not a legal determination.
-
---8<-- "templates-and-checklists/personal-data-decider.html"
-
-</div>

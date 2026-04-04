@@ -35,21 +35,20 @@ docs/                  Published content pages (Markdown)
   llms-full.txt        Auto-generated full-content LLM file (do not edit)
   CROSS-*.md           Cross-cutting guidance pages
   lifecycle-*.md       12 lifecycle stage pages
-  personal-data-decider.md  Interactive assessment tool (linked from pages)
+  personal-data-decider.md  Personal data guidance (linked from pages)
   index.md             Homepage
 includes/              Shared snippets
   abbreviations.md     Global abbreviation definitions (rendered as hover tooltips)
-  templates-and-checklists/  Interactive HTML widget files (4 decision tools)
 overrides/             Zensical theme template overrides
   home.html            Custom homepage template
 scripts/               Build-time utility scripts
   generate_llms_txt.py Generates llms.txt and llms-full.txt from zensical.toml nav
-  inject_widgets.py    Injects interactive widgets into content pages
 reports/               Funder requirement reports (ERC, Horizon Europe, Norad, RCN)
   themes-reports/      Theme-specific reports
 working-files/         Drafts, research notes, and work-in-progress (not published)
   blueprints/          AI blueprints for content generation
   prompts/             Prompt templates
+  widgets/             Archived interactive HTML widget files and injection script
   (+ 13 other topic subdirectories)
 zensical.toml          Site configuration (navigation, theme, features)
 pyproject.toml         Python project metadata
