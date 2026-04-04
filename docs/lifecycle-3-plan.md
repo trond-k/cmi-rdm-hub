@@ -10,7 +10,7 @@ tags:
   - Ethics
   - Preregistration
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-04-04
 ---
 
 # PLAN: data management planning
@@ -57,6 +57,10 @@ Not every project has a dedicated data manager. In smaller projects, the PI may 
 
 !!! warning "Departures and handovers"
     People leave projects. A postdoc finishes their contract; a field coordinator moves to another organisation. If data responsibilities are not documented and handed over, institutional memory walks out the door. The DMP should include a brief note on how handovers will be managed, and the [data inventory](data-inventory.md) should be kept current enough that a successor can pick it up without starting from scratch.
+
+## Classify your data and identify compliance requirements
+
+Before you can plan storage, access, and documentation, you need to know what you are dealing with. Classify each anticipated dataset using CMI's [four-tier classification scheme](data-classification.md) (Green, Yellow, Red, Black) and assess your project's overall risk level. These classifications determine which compliance documents you need: every project needs at least a Light-DMP, but projects involving personal data will also need a Sikt notification, and high-risk projects may require a DPIA or ethics review. See [Data classification](data-classification.md) for the full framework and compliance mapping.
 
 ## Legal and ethics planning
 

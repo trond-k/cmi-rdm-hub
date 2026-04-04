@@ -8,7 +8,7 @@ tags:
   - Data inventory
   - DMP
 notes: ""
-date_updated: 2026-03-25
+date_updated: 2026-04-04
 ---
 
 # The data inventory
@@ -40,6 +40,7 @@ A useful inventory does not need to be elaborate, but it does need to be specifi
 | Responsible person | Who manages this dataset day to day |
 | Access restrictions | Who can access it and under what conditions |
 | Retention plan | How long the data will be kept and what happens afterwards |
+| Status | Current state of the dataset: Planned, Collecting, Processing, Complete, Archived, or Deleted |
 | Persistent identifier | DOI or other identifier, once assigned |
 
 You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
@@ -67,6 +68,20 @@ The inventory should be reviewed at the same milestones you use to review the DM
 
 !!! warning "Do not let the inventory go stale"
     An outdated inventory is worse than no inventory at all, because it creates false confidence. If the document says a dataset is on SharePoint but it has since been moved to a secure storage environment, anyone relying on the inventory will look in the wrong place. Schedule regular reviews rather than treating the inventory as a one-off task.
+
+### When to update and how long it takes
+
+The inventory does not need continuous attention. Update it at key milestones, not every time a file changes.
+
+| Milestone | What to do | Typical time |
+|-----------|-----------|--------------|
+| **Project initiation** | Create entries for anticipated datasets; set status to Planned | ~30 minutes |
+| **Data collection start** | Update status to Collecting; confirm storage locations; link documentation (information letters, consent forms, Sikt reference) | ~15 minutes |
+| **Mid-project review** | Verify entries; add any new datasets; update statuses and classifications | ~15 minutes |
+| **Data collection complete** | Update status to Processing or Complete; verify all documentation is linked | ~15 minutes |
+| **Project closure** | Finalise status for all datasets; confirm retention or deletion decisions; see [project closure](project-closure.md) | ~30 minutes |
+
+The initial setup takes the most time. After that, milestone updates are brief because you are confirming and adjusting, not starting from scratch. The inventory tracks categories of data (e.g. "interview transcripts from local officials"), not individual files, so the scope remains manageable regardless of how much data the project generates.
 
 ### After the project
 
