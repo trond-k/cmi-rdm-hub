@@ -974,6 +974,10 @@ Not every project has a dedicated data manager. In smaller projects, the PI may 
 !!! warning "Departures and handovers"
     People leave projects. A postdoc finishes their contract; a field coordinator moves to another organisation. If data responsibilities are not documented and handed over, institutional memory walks out the door. The DMP should include a brief note on how handovers will be managed, and the [data inventory](data-inventory.md) should be kept current enough that a successor can pick it up without starting from scratch.
 
+## Classify your data and identify compliance requirements
+
+Before you can plan storage, access, and documentation, you need to know what you are dealing with. Classify each anticipated dataset using CMI's [four-tier classification scheme](data-classification.md) (Green, Yellow, Red, Black) and assess your project's overall risk level. These classifications determine which compliance documents you need: every project needs at least a Light-DMP, but projects involving personal data will also need a Sikt notification, and high-risk projects may require a DPIA or ethics review. See [Data classification](data-classification.md) for the full framework and compliance mapping.
+
 ## Legal and ethics planning
 
 By this stage, you need to move from the general awareness of the [FRAME](lifecycle-1-frame.md) stage to concrete planning.
@@ -1041,6 +1045,20 @@ Design your instruments with downstream use in mind. Interview guides should inc
     Test instruments, protocols, and workflows before full-scale collection. A pilot reveals ambiguous questions, technical failures, unrealistic time estimates, and gaps in your documentation plan. It is far cheaper to discover that your recording equipment cannot handle background noise, or that a survey question is consistently misunderstood, before you are in the field with fifty participants scheduled.
 
 For multi-site projects, harmonisation matters. If different teams are collecting data in different locations, agree on shared instruments, coding schemes, and quality thresholds before collection begins. Minor variations in question wording, response categories, or data entry conventions can make datasets incomparable. Document any site-specific adaptations and the reasons for them.
+
+## Confirm your documentation is in place
+
+Before data collection begins, verify that the documentation prepared at the [PLAN](lifecycle-3-plan.md) stage is complete and ready to use:
+
+- **Information letters** (privacy notices) for each category of participant, in the relevant languages. These should describe what data you collect, why, how long you keep it, and what rights participants have.
+- **Consent forms** linked to the information letters, with clear checkboxes for each element of consent.
+- **Sikt notification** submitted and acknowledged, if your project processes personal data in a Norwegian context.
+- **Storage arrangements** confirmed and tested: the project workspace exists, permissions are set, and the team knows where to put what.
+
+These are not formalities to complete after the fact. Collecting personal data without a submitted Sikt notification, or without information letters available in the field, creates compliance problems that are difficult to resolve retrospectively.
+
+!!! tip "Update the data inventory when collection starts"
+    As you begin collecting data, update the [data inventory](data-inventory.md): change dataset statuses from Planned to Collecting, confirm storage locations, and link the documentation (information letters, consent forms, Sikt reference number) to the relevant datasets. This takes roughly 15 minutes and keeps the inventory accurate from the start.
 
 ## Ethical conduct in the field
 
@@ -1141,8 +1159,20 @@ CMI provides Microsoft 365 E5 as its standard working environment. For most proj
 
 This default handles a broad range of research data, from non-sensitive project documents to data with moderate sensitivity, provided that access permissions are configured correctly and limited to those who need them. The E5 security features, including conditional access policies and multi-factor authentication, give you meaningful control over who can reach what. Before looking elsewhere, check whether the standard setup meets your needs. Adding tools without a clear reason creates complexity and fragments your data across platforms.
 
-!!! tip "Set up the SharePoint site before collection starts"
-    Create a dedicated SharePoint site for the project with an agreed folder structure and permissions before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
+CMI organises each research project as a dedicated Microsoft Team with a standard channel structure:
+
+| Channel | What goes here |
+|---------|----------------|
+| **General** | Project-wide announcements, key links, quick-access documents |
+| **Admin** | Contracts, proposals, project management documents, meeting notes |
+| **RDM** | Data management documentation, templates, compliance records |
+| **Research** | Working documents, data files, analysis, fieldwork materials |
+| **Outputs** | Publications, reports, deliverables, dissemination materials |
+
+This structure means your project data has a defined home from the start, with access controls managed at the Team level. The PI is the Team owner and controls who has access. External collaborators are added as guests to specific channels rather than given access to the entire workspace.
+
+!!! tip "Set up the project Team before collection starts"
+    Ensure the project Team exists, the channel structure is in place, and permissions are set before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
 
 ## When you need something more
 
@@ -2263,6 +2293,7 @@ A useful inventory does not need to be elaborate, but it does need to be specifi
 | Responsible person | Who manages this dataset day to day |
 | Access restrictions | Who can access it and under what conditions |
 | Retention plan | How long the data will be kept and what happens afterwards |
+| Status | Current state of the dataset: Planned, Collecting, Processing, Complete, Archived, or Deleted |
 | Persistent identifier | DOI or other identifier, once assigned |
 
 You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
@@ -2291,6 +2322,20 @@ The inventory should be reviewed at the same milestones you use to review the DM
 !!! warning "Do not let the inventory go stale"
     An outdated inventory is worse than no inventory at all, because it creates false confidence. If the document says a dataset is on SharePoint but it has since been moved to a secure storage environment, anyone relying on the inventory will look in the wrong place. Schedule regular reviews rather than treating the inventory as a one-off task.
 
+### When to update and how long it takes
+
+The inventory does not need continuous attention. Update it at key milestones, not every time a file changes.
+
+| Milestone | What to do | Typical time |
+|-----------|-----------|--------------|
+| **Project initiation** | Create entries for anticipated datasets; set status to Planned | ~30 minutes |
+| **Data collection start** | Update status to Collecting; confirm storage locations; link documentation (information letters, consent forms, Sikt reference) | ~15 minutes |
+| **Mid-project review** | Verify entries; add any new datasets; update statuses and classifications | ~15 minutes |
+| **Data collection complete** | Update status to Processing or Complete; verify all documentation is linked | ~15 minutes |
+| **Project closure** | Finalise status for all datasets; confirm retention or deletion decisions; see [project closure](project-closure.md) | ~30 minutes |
+
+The initial setup takes the most time. After that, milestone updates are brief because you are confirming and adjusting, not starting from scratch. The inventory tracks categories of data (e.g. "interview transcripts from local officials"), not individual files, so the scope remains manageable regardless of how much data the project generates.
+
 ### After the project
 
 When you publish or deposit data, update the inventory with persistent identifiers (DOIs), access conditions, embargo timelines, and the repository where each dataset has been deposited. When data is destroyed at the end of its retention period, record the date and method of destruction.
@@ -2317,6 +2362,384 @@ If these documents contradict each other, something has gone wrong. The inventor
 ## Start now
 
 If your project is already under way and you do not yet have a data inventory, start one today. Retrofitting is less convenient than building from scratch, but the alternative, continuing without a clear record of what you have, is riskier. List what you know, flag what you are unsure about, and fill in the gaps as you go. A partial inventory that you maintain is more valuable than a perfect template that nobody updates.
+
+---
+
+## [Data classification](https://trond-k.github.io/cmi-rdm-hub/data-classification/)
+
+# Data classification
+
+*Every dataset in a research project needs to be stored somewhere, shared with someone, and eventually deleted or preserved. The right decisions depend on how sensitive the data is. CMI uses a four-tier classification scheme to make those decisions consistent and proportionate: security measures should match actual risk, not worst-case imagination. Classification is per dataset, not per project. A single project will typically contain data at different tiers.*
+
+## The four tiers
+
+Classification reflects the data's current state, not its origin or intended destination. Raw interview recordings start at Red or Black. Anonymised transcripts may move to Yellow. A published, de-identified dataset moves to Green. Reassess classification at project milestones and when circumstances change.
+
+=== ":green_circle: Green (Open)"
+
+    Data that can be freely shared. No personal data, no contractual restrictions, no institutional sensitivity.
+
+    At CMI this includes published datasets and their codebooks, publicly available documents collected for analysis, project metadata, methodology documentation, de-identified aggregate statistics, literature reviews, and published reports.
+
+    Green is the target end-state for much of CMI's research output. During active projects, most data starts at a higher tier and arrives here through anonymisation, aggregation, or publication.
+
+    **Storage:** CMI M365 environment (OneDrive, SharePoint) during active work. Can be published to repositories such as Sikt, OSF, or Zenodo with open Creative Commons licences.
+
+    **Access:** Unrestricted, beyond any contractual or funder terms.
+
+    **Tools:** Any tool can be used without restriction.
+
+=== ":yellow_circle: Yellow (Internal)"
+
+    Data not intended for public sharing but where exposure would not cause significant harm. This includes working documents, pre-publication material, institutional records, and, in limited circumstances, personal data that meets the conditions described below.
+
+    At CMI this includes draft manuscripts and working papers, internal project reports, project budgets and administrative records, anonymised working datasets, general project correspondence, meeting notes without sensitive content, and workshop logistics.
+
+    **Storage:** CMI M365 environment with standard access controls. At the end of the project, delete or anonymise any personal data that is no longer needed.
+
+    **Access:** Limited to the project team and relevant CMI staff. Not shared externally without review.
+
+    **Tools:** Enterprise tools within CMI's M365 ecosystem are preferred. General-purpose tools are acceptable for non-sensitive tasks, but internal documents should not be uploaded to consumer AI tools.
+
+    ??? info "Personal data at Yellow"
+
+        Personal data defaults to Red. Yellow is available only when **all three** of the following conditions are met:
+
+        1. The data contains only **limited identifiers**: names, institutional email addresses, professional titles, institutional affiliations. No private contact details unless freely given for logistical purposes.
+        2. The research context is **non-sensitive**: a person's participation or association with the project would not cause embarrassment, reputational risk, or harm if it became known.
+        3. The individuals are **not in a vulnerable position**: they are not research participants in a sensitive study, not in a dependent relationship with the data controller, and not in a context where being identified could create risk.
+
+        If any of these conditions is not met, the data is Red.
+
+        Yellow classification does not reduce GDPR obligations. Personal data at Yellow still requires a legal basis for processing, must be included in your Sikt notification, and must be deleted or anonymised when no longer needed. The tier affects storage requirements and access controls, not whether privacy rules apply.
+
+=== ":red_circle: Red (Confidential)"
+
+    Data containing personal data or sensitive institutional information where exposure could cause harm or distress. This is the default tier for personal data in active research projects at CMI, and the most common classification for research data overall.
+
+    At CMI this includes interview recordings and transcripts, survey datasets with direct or indirect identifiers, signed consent forms, participant contact lists, fieldwork notes with identifiable information, correspondence with research participants, key informant details, data shared under confidentiality agreements, and draft reports containing identifiable participant data.
+
+    This is not an unusual or burdensome classification. CMI's M365 infrastructure is set up to handle Red-tier data as standard.
+
+    **Storage:** CMI M365 environment with restricted access (named project members only). External collaborator access requires explicit arrangement. Additional M365 E5 controls may be appropriate depending on the project: conditional access policies, restricted SharePoint sharing settings, information barriers, or audit logging. Contact [help@cmi.no](mailto:help@cmi.no) (IT Helpdesk) to set these up.
+
+    For projects where the risk profile is elevated, particularly research involving sensitive personal information in politically sensitive contexts, or where US jurisdiction over cloud infrastructure is a specific concern, external high-security services are available. These include TSD/Nettskjema (Norwegian sovereign infrastructure), Tresorit and Proton Drive (Swiss jurisdiction, outside CLOUD Act reach). These involve additional project costs and should be budgeted in the proposal if anticipated.
+
+    **Access:** Restricted to named project members approved by the PI.
+
+    At the end of the project, anonymise or delete identifiable data. Anonymised versions may move to Green for archiving and reuse.
+
+    !!! danger "Tool restrictions at Red"
+
+        Do not upload, paste, or input identifiable personal data into general-purpose consumer AI tools (ChatGPT, Claude consumer, Google Translate, or similar). Only enterprise tools with a Data Processing Agreement and a no-training guarantee are acceptable for Red-tier data. This includes transcription and translation services: if you are transcribing recordings containing personal data, the service must have a DPA and must not use uploaded audio for training.
+
+    A DPIA may be required for Red-tier data, particularly when the data includes sensitive personal information (health, ethnicity, political opinion), when the research context is politically sensitive, or when the processing is large-scale (hundreds of participants or more). Contact [dpo@cmi.no](mailto:dpo@cmi.no) for DPIA guidance.
+
+=== ":black_circle: Black (Strictly confidential)"
+
+    Data where exposure could cause serious harm to participants or others. This applies to a small proportion of CMI data but is disproportionately important to get right.
+
+    At CMI this includes data from research in conflict-affected or authoritarian settings where participants could face arrest, violence, or persecution if identified; sensitive personal information (health, ethnicity, political opinion) collected in high-risk political contexts; and large-scale datasets combining sensitive personal information with contextual risk.
+
+    **Storage:** Determined case-by-case. Options include TSD (Norwegian sovereign infrastructure), air-gapped systems, or encrypted local storage depending on the threat model. M365 may be appropriate with additional controls for some Black-tier data. Contact [help@cmi.no](mailto:help@cmi.no) (IT Helpdesk) for secure storage setup. These solutions involve additional costs; budget for them in the project proposal.
+
+    **Access:** Strictly limited to named individuals with a demonstrated need.
+
+    !!! danger "No external cloud tools for Black-tier data"
+
+        Data remains within the approved secure infrastructure determined for the project. No AI tools, no cloud-based transcription, no external survey platforms unless they are part of the approved infrastructure.
+
+    A DPIA is almost certainly required. Contact [dpo@cmi.no](mailto:dpo@cmi.no) before data collection begins.
+
+    For fieldwork involving Black-tier data, develop explicit data handling protocols: device encryption, transfer procedures, and deletion schedules for field devices. Do not proceed with data collection until storage and handling arrangements have been confirmed.
+
+
+## How to classify
+
+Classification is the responsibility of the principal investigator. It should happen early, ideally when you build your [data inventory](data-inventory.md) at the [FRAME](lifecycle-1-frame.md) or [PLAN](lifecycle-3-plan.md) stage, and be reviewed when circumstances change.
+
+The key question at each step is not "what type of data is this?" but "what would realistically happen if this data were exposed?" A transcript is not Red because it is a transcript. It is Red because it contains the voice or words of an identifiable person in a context where exposure could cause them harm or distress. An anonymised version of the same transcript, where no individual can be identified, is Green.
+
+Context is decisive. An interview about agricultural practices where the participant is identifiable is Red. The same interview conducted with political activists in an authoritarian state is Black. The data type is identical; the consequences of exposure are not.
+
+!!! tip "When in doubt, classify one tier higher"
+    It is easier to relax a classification later than to discover you underestimated the sensitivity of something already in circulation.
+
+<div style="border: 2px solid var(--md-primary-fg-color, #4051b5); border-radius: 12px; padding: 1.5em 2em; margin: 1.5em 0; background: color-mix(in srgb, var(--md-primary-fg-color, #4051b5) 6%, var(--md-default-bg-color, #fff));" markdown>
+
+### :lucide-scan-search: Classify a data object
+
+Work through the questions below to determine the tier for a specific data object. The tool walks through the decision points described above and gives storage and handling guidance for the result.
+
+--8<-- "templates-and-checklists/data-classifier-tool.html"
+
+</div>
+
+
+## Project risk level
+
+Separate from data sensitivity, your project's overall **risk level** determines how much RDM attention it needs. A low-risk project with straightforward data receives lighter-touch support; a high-risk project with sensitive populations and cross-border transfers warrants closer involvement.
+
+| Level | Typical indicators | What it means for you |
+|-------|-------------------|-----------------------|
+| **Low** | Single institution; limited personal data; straightforward methods; internal or minor funding | Light-DMP only; minimal check-ins |
+| **Medium** | Multiple partners; personal data collection; external funding with data requirements; cross-border elements | Full DMP; periodic check-ins; fuller documentation |
+| **High** | Sensitive or vulnerable populations; special category data; complex partnerships; significant cross-border data transfers; novel methods | DPIA required; ethics review likely; legal or DPO consultation; active RDM involvement |
+
+Risk is shaped by the number and type of partners, geographic scope, funder scrutiny, data volume and complexity, methodological novelty, public or political sensitivity of the topic, and project duration. A project may have low-sensitivity data but high organisational risk (many partners, complex data flows), or vice versa.
+
+## What compliance documentation do you need?
+
+Your data classification and project risk level together determine which documents are required. Not every project needs everything.
+
+| Requirement | When needed |
+|-------------|-------------|
+| **Light-DMP** | All projects |
+| **Funder DMP** | Projects funded by the Research Council of Norway, Horizon Europe, ERC, or other funders with DMP requirements |
+| **Sikt notification** | Projects processing personal data in a Norwegian context |
+| **DPIA** | High-risk processing; large-scale sensitive data; new technologies applied to personal data |
+| **REC application** | Health research or research involving human biological material |
+| **Data Processing Agreement** | When an external party processes personal data on your behalf (or you on theirs) |
+| **Consortium or data sharing agreement** | Multi-partner projects with shared data |
+
+!!! tip "Check compliance requirements early"
+    Identifying what you need at the [PLAN](lifecycle-3-plan.md) stage prevents delays later. A Sikt notification takes time to prepare, a DPIA requires DPO involvement, and consortium agreements need legal review. Build these into your project timeline.
+
+## Who controls the data?
+
+If your project involves personal data, you need to know whether CMI is the **data controller**, a **joint controller**, or a **data processor**. This determines your legal responsibilities and what agreements are needed.
+
+| Scenario | CMI's likely role | What you need |
+|----------|-------------------|---------------|
+| CMI designs and conducts its own research, collects data directly | **Controller** | Privacy notice to participants; internal GDPR documentation |
+| CMI leads a consortium, determines research questions, partners contribute data | **Controller** (possibly joint) | DPAs with partners who process on CMI's behalf; joint controller arrangement if partners co-determine purposes |
+| CMI is a partner in an externally led project, contributes to research design | **Joint controller** | Joint controller arrangement with the lead institution |
+| CMI provides data or analysis services to an external party who defines the research | **Processor** | DPA where CMI is the processor |
+| CMI receives an existing dataset from another institution for secondary analysis | Depends on the terms | Data sharing agreement; check original consent and legal basis |
+
+??? info "Common grey areas at CMI"
+
+    **Commissioned research.** When CMI is contracted to conduct research for a government agency or NGO, the question is who determines the purposes of data processing. If the client defines the research questions and CMI executes, CMI may be a processor. If CMI has academic freedom to design the methodology and analysis, CMI is likely the controller or a joint controller. Clarify this in the contract.
+
+    **Consortium projects.** Horizon Europe and Research Council of Norway consortia often involve joint controllership, but this is not always formalised. Check the consortium agreement for data governance provisions. If it is silent, propose a joint controller arrangement or clarify roles in the DMP.
+
+    **Secondary data from partners.** If CMI uses data collected by another institution, verify that the legal basis covers CMI's intended use and that the original consent permits sharing for research. A data sharing agreement may be needed even outside a controller-processor relationship.
+
+    **Interviews with professionals.** Data about individuals in their professional capacity (government officials, organisational leaders) is still personal data under the GDPR. CMI is typically the controller. Sensitivity may be lower, but compliance requirements remain.
+
+## Common mistakes
+
+**Classifying by project instead of by data object.** A project studying public health policy may have Green-tier published statistics, Yellow-tier internal working notes, and Red-tier interview transcripts. The project does not have a single classification; each data object does.
+
+**Classifying by intent instead of by current state.** "We plan to anonymise this" does not make the data Green now. Classification reflects what the data currently contains, not what you intend to do with it. The recordings are Red today; the anonymised transcripts will be Green when anonymisation is complete.
+
+**Treating all personal data as equivalent.** A workshop invitation list and a dataset of interviews about political violence are both personal data. They are not the same risk. The classification scheme exists to make this distinction.
+
+**Assuming "not special category" means "not sensitive."** Much of CMI's most consequential research, on governance, corruption, political economy, and civic space, does not involve health, ethnicity, or the other categories that carry special legal protections. But the data can still be highly sensitive in context. A government official identifiable in a transcript criticising their own ministry faces real professional risk, even though nothing in the transcript falls into a legally protected category. Contextual sensitivity matters as much as data-type sensitivity.
+
+**Forgetting that classification can change.** A dataset that is Red during active research may become Green after anonymisation. A project that starts in a stable context may escalate if the political situation changes. Review classification at project milestones and when circumstances shift.
+
+
+## Contact
+
+For questions about data classification and data management, contact [rdm@cmi.no](mailto:rdm@cmi.no). For DPIA, legal basis, and other GDPR concerns, contact [dpo@cmi.no](mailto:dpo@cmi.no). For IT support and secure storage setup, contact [help@cmi.no](mailto:help@cmi.no).
+
+---
+
+## [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/)
+
+# Project closure
+
+*Project closure is when data management decisions become permanent. Data is either preserved or deleted; documentation is finalised; access is revoked. A structured process ensures nothing drifts into ambiguity: no datasets lingering in uncertain states, no documentation left incomplete, no former collaborators retaining access they no longer need. Start planning at least three months before the project ends.*
+
+## Why closure matters
+
+During the project, many data management decisions are provisional. You store data in a working location, grant access to collaborators, and maintain documentation that is "good enough for now." Closure is when you settle these open questions. If you skip it, the consequences tend to surface later:
+
+- A funder audit requests documentation of how data was handled.
+- A data subject exercises their rights and the project cannot locate the relevant records.
+- A team member leaves and nobody knows where project data is stored or what agreements govern it.
+- Years later, datasets sit on shared drives with no clear owner, no retention decision, and no record of what consent was given.
+
+The time to address these questions is while the project team is still together and the details are fresh.
+
+## When to start
+
+Begin closure planning approximately **three months before the anticipated project end**. This allows time for:
+
+- Confirming the project timeline and any outstanding tasks
+- Identifying funder deliverables and deadlines
+- Planning data disposition for each dataset
+- Completing documentation without rushing
+
+If your project receives an extension, adjust the closure timeline accordingly.
+
+## Finalise the data inventory
+
+The [data inventory](data-inventory.md) is the backbone of closure. Review it against reality and update it to reflect the final state of the project.
+
+| Field | What to check |
+|-------|---------------|
+| **Status** | Update each dataset to its final status: Complete, Archived, Deleted, or Deposited |
+| **Storage location** | Confirm where each dataset currently lives; update if it has been moved |
+| **Retention plan** | Confirm the decision: delete, archive internally, deposit externally, or transfer |
+| **Retention period** | Specify end dates where applicable (e.g. "Delete by 31 December 2030") |
+| **Documentation links** | Verify all links are functional; attach final versions of information letters, consent forms, and agreements |
+
+Ask yourself:
+
+- Are all datasets from the original inventory accounted for?
+- Were any additional datasets created that were not in the original plan?
+- Does the final state match what was described in consent forms and participant information sheets?
+- Are retention decisions consistent with the legal basis for processing and with funder requirements?
+
+!!! tip "Close the gap between plan and reality"
+    Most projects diverge from their original DMP in some way: an unexpected dataset, a changed storage arrangement, a partner who dropped out. Closure is the moment to reconcile the plan with what actually happened. The final documentation should describe the project as it was, not as it was intended to be.
+
+## Decide the fate of each dataset
+
+Every dataset needs a clear disposition decision. There are four options.
+
+### Delete
+
+Delete data when retention is no longer justified: personal data where consent was limited to the project period, identifiable data that has served its purpose, or working files with no ongoing value.
+
+When you delete:
+
+- Confirm that deletion is consistent with consent and your legal basis for processing.
+- Delete from **all** locations: primary storage, backups, and local copies.
+- Document what was deleted, when, by whom, and the method used.
+- Retain the documentation of deletion (not the data itself).
+
+!!! warning "Deletion means all copies"
+    Deleting a file from the project folder while a copy remains on someone's laptop or in an old backup does not constitute deletion under the GDPR. Account for all copies when executing a deletion decision.
+
+### Archive internally
+
+Retain data at CMI for a specified period when there is ongoing research value, a funder retention requirement, or a legal obligation. Set a clear retention end date and restrict access to those who need it.
+
+- Move data to a designated archive location with appropriate access controls.
+- Set a calendar reminder for the retention review date.
+- Document the archive location, who has access, and the retention end date.
+
+### Deposit externally
+
+Publish data to a repository when you have an open data commitment, a funder requires deposit, or the data has reuse value. See the [PUBLISH](lifecycle-8-publish.md) stage for guidance on choosing a repository and preparing data for deposit.
+
+- Select the appropriate repository for the data type.
+- Prepare data for deposit: anonymisation if needed, documentation, metadata.
+- Complete the deposit and obtain a persistent identifier (DOI).
+- Record the repository, identifier, access conditions, and any embargo in the data inventory.
+
+### Transfer
+
+Transfer data to a partner institution or successor when a collaborator continues the work, or when the terms of a commissioned research agreement require it.
+
+- Document the transfer: what was transferred, to whom, when, and under what terms.
+- Ensure a data sharing or transfer agreement is in place.
+
+## Update the DMP
+
+Update your Data Management Plan to reflect what **actually happened**, not just what was planned. The final DMP should cover:
+
+| Section | What to update |
+|---------|----------------|
+| **Data description** | Confirm the data actually collected; note any deviations from the original plan |
+| **Storage** | Document where data was stored during the project |
+| **Access** | Record who had access and any issues encountered |
+| **Preservation** | Final disposition of each dataset |
+| **Sharing** | What was or will be shared; repository details and identifiers |
+
+If your funder requires a final DMP (as Horizon Europe and the Research Council of Norway do), the updated internal version feeds directly into the funder submission.
+
+## Close compliance records
+
+### Sikt notification
+
+If you registered a [Sikt](https://sikt.no/en) notification for the project, update it to reflect the project's completion.
+
+| Scenario | Action |
+|----------|--------|
+| Project complete, data deleted | Close the notification; confirm the end date |
+| Project complete, data archived | Update the notification with the new end date reflecting the retention period |
+| Data deposited in a repository | Update the notification to reflect new storage; close if data is fully anonymised |
+
+### Other compliance obligations
+
+- **REC (Regional Ethics Committee):** Notify if required by your approval conditions.
+- **Data processing agreements:** Confirm that processor obligations have been fulfilled; retain agreements for your records.
+- **Data sharing agreements:** Confirm terms have been met; note any ongoing obligations.
+
+## Review and revoke access
+
+Review who currently has access to project data and storage. The default at closure is to **revoke access unless there is an explicit reason to retain it**.
+
+For external collaborators and guests:
+
+- List everyone with access to the project workspace.
+- For each person, determine whether continued access is needed and for how long.
+- Remove access for anyone no longer involved.
+- Document who retained access and the justification.
+
+!!! tip "Do not leave access open by default"
+    It is easier to restore access for someone who needs it later than to discover, months after project close, that a former collaborator still has unrestricted access to sensitive data. Review access proactively.
+
+## Bundle funder deliverables
+
+If the project has external funding, check the grant agreement for end-of-project requirements and assemble the necessary documentation.
+
+| Funder | Typical requirements |
+|--------|---------------------|
+| **Research Council of Norway** | Final DMP; data deposit confirmation; publication list |
+| **Horizon Europe** | Updated DMP; FAIR data documentation; open access confirmation |
+| **ERC** | Data management summary; repository deposit confirmation |
+| **Other funders** | As specified in the grant agreement |
+
+## Closure checklist
+
+Use this checklist to confirm that all closure tasks are complete.
+
+**Data inventory**
+
+- [ ] All datasets accounted for
+- [ ] Final status confirmed for each dataset
+- [ ] Disposition decision documented for each dataset
+- [ ] Documentation links verified and up to date
+
+**Data disposition**
+
+- [ ] Deletions executed and documented
+- [ ] Internal archives established with access controls and retention dates
+- [ ] Repository deposits completed with metadata and persistent identifiers (where applicable)
+- [ ] Transfers completed with agreements in place (where applicable)
+
+**Documentation**
+
+- [ ] DMP updated to reflect actual practice
+- [ ] Funder deliverables assembled (where applicable)
+
+**Compliance**
+
+- [ ] Sikt notification updated or closed
+- [ ] REC notified (where applicable)
+- [ ] Data processing agreement obligations confirmed fulfilled
+
+**Access**
+
+- [ ] External collaborator access reviewed
+- [ ] Unnecessary access revoked
+- [ ] Remaining access documented with justification
+
+## After closure
+
+Once the project is formally closed:
+
+- Archived project materials remain accessible (read-only) to the core project team.
+- If a data subject exercises their rights, use the archived records to respond.
+- If a funder requests documentation during an audit, the archived project workspace and final DMP provide the evidence.
+- When the retention period expires for archived data, review and delete if retention is no longer justified.
+
+A well-closed project requires no further effort. A poorly closed project generates reactive work for years.
 
 ---
 

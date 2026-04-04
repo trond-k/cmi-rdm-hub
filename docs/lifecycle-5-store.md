@@ -9,7 +9,7 @@ tags:
   - Sensitive data
   - MS365
 notes: "Resolve all issue concering checks for researcher to do themselves; this guide should have the answers, not list more tasks for reseaarchers to do."
-date_updated: 2026-03-26
+date_updated: 2026-04-04
 ---
 
 # STORE: active data storage
@@ -22,8 +22,20 @@ CMI provides Microsoft 365 E5 as its standard working environment. For most proj
 
 This default handles a broad range of research data, from non-sensitive project documents to data with moderate sensitivity, provided that access permissions are configured correctly and limited to those who need them. The E5 security features, including conditional access policies and multi-factor authentication, give you meaningful control over who can reach what. Before looking elsewhere, check whether the standard setup meets your needs. Adding tools without a clear reason creates complexity and fragments your data across platforms.
 
-!!! tip "Set up the SharePoint site before collection starts"
-    Create a dedicated SharePoint site for the project with an agreed folder structure and permissions before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
+CMI organises each research project as a dedicated Microsoft Team with a standard channel structure:
+
+| Channel | What goes here |
+|---------|----------------|
+| **General** | Project-wide announcements, key links, quick-access documents |
+| **Admin** | Contracts, proposals, project management documents, meeting notes |
+| **RDM** | Data management documentation, templates, compliance records |
+| **Research** | Working documents, data files, analysis, fieldwork materials |
+| **Outputs** | Publications, reports, deliverables, dissemination materials |
+
+This structure means your project data has a defined home from the start, with access controls managed at the Team level. The PI is the Team owner and controls who has access. External collaborators are added as guests to specific channels rather than given access to the entire workspace.
+
+!!! tip "Set up the project Team before collection starts"
+    Ensure the project Team exists, the channel structure is in place, and permissions are set before fieldwork begins. If team members start storing files on personal OneDrive accounts or local drives because no shared space exists yet, you will spend weeks consolidating later. See [Name files and structure folders](file-and-folder-naming.md) for conventions.
 
 ## When you need something more
 

@@ -9,7 +9,7 @@ tags:
   - Ethics
   - Data inventory
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-04-04
 ---
 
 # COLLECT: data gathering
@@ -26,6 +26,20 @@ Design your instruments with downstream use in mind. Interview guides should inc
     Test instruments, protocols, and workflows before full-scale collection. A pilot reveals ambiguous questions, technical failures, unrealistic time estimates, and gaps in your documentation plan. It is far cheaper to discover that your recording equipment cannot handle background noise, or that a survey question is consistently misunderstood, before you are in the field with fifty participants scheduled.
 
 For multi-site projects, harmonisation matters. If different teams are collecting data in different locations, agree on shared instruments, coding schemes, and quality thresholds before collection begins. Minor variations in question wording, response categories, or data entry conventions can make datasets incomparable. Document any site-specific adaptations and the reasons for them.
+
+## Confirm your documentation is in place
+
+Before data collection begins, verify that the documentation prepared at the [PLAN](lifecycle-3-plan.md) stage is complete and ready to use:
+
+- **Information letters** (privacy notices) for each category of participant, in the relevant languages. These should describe what data you collect, why, how long you keep it, and what rights participants have.
+- **Consent forms** linked to the information letters, with clear checkboxes for each element of consent.
+- **Sikt notification** submitted and acknowledged, if your project processes personal data in a Norwegian context.
+- **Storage arrangements** confirmed and tested: the project workspace exists, permissions are set, and the team knows where to put what.
+
+These are not formalities to complete after the fact. Collecting personal data without a submitted Sikt notification, or without information letters available in the field, creates compliance problems that are difficult to resolve retrospectively.
+
+!!! tip "Update the data inventory when collection starts"
+    As you begin collecting data, update the [data inventory](data-inventory.md): change dataset statuses from Planned to Collecting, confirm storage locations, and link the documentation (information letters, consent forms, Sikt reference number) to the relevant datasets. This takes roughly 15 minutes and keeps the inventory accurate from the start.
 
 ## Ethical conduct in the field
 
