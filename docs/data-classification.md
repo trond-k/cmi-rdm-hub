@@ -110,17 +110,6 @@ Context is decisive. An interview about agricultural practices where the partici
 !!! tip "When in doubt, classify one tier higher"
     It is easier to relax a classification later than to discover you underestimated the sensitivity of something already in circulation.
 
-<div style="border: 2px solid var(--md-primary-fg-color, #4051b5); border-radius: 12px; padding: 1.5em 2em; margin: 1.5em 0; background: color-mix(in srgb, var(--md-primary-fg-color, #4051b5) 6%, var(--md-default-bg-color, #fff));" markdown>
-
-### :lucide-scan-search: Classify a data object
-
-Work through the questions below to determine the tier for a specific data object. The tool walks through the decision points described above and gives storage and handling guidance for the result.
-
---8<-- "templates-and-checklists/data-classifier-tool.html"
-
-</div>
-
-
 ## Project risk level
 
 Separate from data sensitivity, your project's overall **risk level** determines how much RDM attention it needs. A low-risk project with straightforward data receives lighter-touch support; a high-risk project with sensitive populations and cross-border transfers warrants closer involvement.

@@ -347,7 +347,7 @@ toggle.name = "Switch to light mode"
 #
 # Defining markdown_extensions overrides all built-in defaults, so every
 # default extension is listed explicitly below. Added pymdownx.snippets for
-# HTML widget embedding (--8<-- syntax) and abbreviation auto-append.
+# abbreviation auto-append.
 #
 # Read more:
 # - https://zensical.org/docs/authoring/tooltips/
