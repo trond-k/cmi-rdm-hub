@@ -71,6 +71,7 @@ nav = [
     { "Discover - Make data findable" = "lifecycle-10-discover.md" },
     { "Access - Define who can use your data" = "lifecycle-11-access.md" },
     { "Share & Reuse - Enable responsible reuse" = "lifecycle-12-share-and-reuse.md" },
+    { "Project closure" = "project-closure.md" },
   ]},
   { "Using this hub" = [
     { "Using this hub with AI assistants" = "using-this-hub-with-ai.md" },
@@ -87,7 +88,6 @@ nav = [
   { "Data stewardship" = [
     { "Data classification" = "data-classification.md" },
     { "Name files and structure folders" = "file-and-folder-naming.md" },
-    { "Project closure" = "project-closure.md" },
   ]},
   { "Guides, tools and templates" = [
     { "Decide whether your project uses personal data" = "personal-data-decider.md" },
