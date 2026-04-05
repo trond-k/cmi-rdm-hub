@@ -30,3 +30,10 @@
 *[M365]: Microsoft 365
 *[LLM]: Large Language Model
 *[SCORE]: Systematizing Confidence in Open Research and Evidence
+*[PDA]: Personal Data Act (Norway)
+*[OSF]: Open Science Framework
+*[ICPSR]: Inter-university Consortium for Political and Social Research
+*[QDR]: Qualitative Data Repository
+*[ALLEA]: All European Academies
+*[DDI]: Data Documentation Initiative
+*[REC]: Research Ethics Committee

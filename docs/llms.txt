@@ -47,6 +47,9 @@
 - [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/): Agree on a simple naming pattern and folder layout before the project drifts into confusion.
 ## Guides, tools and templates
 
+- [CMI DMP template (full)](https://trond-k.github.io/cmi-rdm-hub/dmp-template-full/): CMI's institutional Data Management Plan template, structured around CMI's own project experience and mappable to major funder formats.
+- [CMI DMP template (inventory-centred)](https://trond-k.github.io/cmi-rdm-hub/dmp-template-inventory/): A compact, inventory-first DMP variant for internal team coordination, with per-record storage and sharing decisions at the core.
+- [Light-DMP checklist](https://trond-k.github.io/cmi-rdm-hub/dmp-template-light/): A one-page DMP checklist for small, low-risk projects that do not process personal data.
 - [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/): A guide to understanding what counts as personal data in CMI research, where the boundary lies, and what the distinction means for your project design.
 - [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/): A running register of every dataset in your project: what it is, where it lives, who is responsible, and how sensitive it is.
 - [Sikt form walkthrough](https://trond-k.github.io/cmi-rdm-hub/sikt-form-walkthrough/): Section-by-section companion for filling in the Sikt notification form, with all form options and CMI-specific guidance.

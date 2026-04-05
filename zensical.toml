@@ -90,6 +90,9 @@ nav = [
     { "Name files and structure folders" = "file-and-folder-naming.md" },
   ]},
   { "Guides, tools and templates" = [
+    { "CMI DMP template (full)" = "dmp-template-full.md" },
+    { "CMI DMP template (inventory-centred)" = "dmp-template-inventory.md" },
+    { "Light-DMP checklist" = "dmp-template-light.md" },
     { "Decide whether your project uses personal data" = "personal-data-decider.md" },
     { "Build a data inventory" = "data-inventory.md" },
     { "Sikt form walkthrough" = "sikt-form-walkthrough.md" },

@@ -940,7 +940,7 @@ A Data Management Plan (DMP) serves two purposes that are easy to confuse. The f
 The pragmatic solution is to maintain both. Write the funder-facing DMP to meet the requirements of the call (Horizon Europe, the Research Council of Norway, Norad, or whoever is funding the work). Then use it as the skeleton for an internal version that your team keeps current. The internal version can be more detailed, more honest about uncertainties, and more tightly linked to your [data inventory](data-inventory.md), which by this stage should be a formal, structured companion document.
 
 !!! tip "Start from the CMI DMP template"
-    CMI provides a default DMP template that covers all the topics required by major funders (the Research Council of Norway, Horizon Europe, Science Europe) through a similar but differently arranged structure. It integrates the [data inventory](data-inventory.md) as a component of the plan rather than treating it as a separate document. Use it as your starting point; if a funder requires a specific format, the CMI template maps onto it without loss. External DMP tools can help with structured drafting and version management: [Sikt DMP](https://sikt.no/en/data-management-plan), [DMPonline](https://dmponline.dcc.ac.uk/), and [DMPTool](https://dmptool.org/).
+    CMI provides a default DMP template that covers all the topics required by major funders (the Research Council of Norway, Horizon Europe, Science Europe) through a similar but differently arranged structure. It integrates the [data inventory](data-inventory.md) as a component of the plan rather than treating it as a separate document. Use it as your starting point; if a funder requires a specific format, the CMI template maps onto it without loss. Three variants are available: the [full CMI DMP template](dmp-template-full.md) for funder-facing plans, the [inventory-centred variant](dmp-template-inventory.md) for internal team coordination, and the [Light-DMP checklist](dmp-template-light.md) for small, low-risk projects that do not process personal data. External DMP tools can help with structured drafting and version management: [Sikt DMP](https://sikt.no/en/data-management-plan), [DMPonline](https://dmponline.dcc.ac.uk/), and [DMPTool](https://dmptool.org/).
 
 ## What the DMP should cover
 
@@ -2935,6 +2935,432 @@ Establishing a convention is easiest before data collection begins, but it still
 [^3]: University of Cambridge Research Data Management. 'File Organisation, Naming and Version Control'. Available at [data.cam.ac.uk](https://www.data.cam.ac.uk/organising-storing/file-organisation-naming-version-control).
 
 [^4]: Harvard Biomedical Data Management. 'Directory Structure'. Available at [datamanagement.hms.harvard.edu](https://datamanagement.hms.harvard.edu/plan-design/directory-structure).
+
+---
+
+## [CMI DMP template (full)](https://trond-k.github.io/cmi-rdm-hub/dmp-template-full/)
+
+# CMI DMP template (full)
+
+*This is CMI's own institutional DMP template, derived from the structure used in actual CMI projects. It covers the topics required by the Research Council of Norway, Horizon Europe, and Science Europe through a familiar but differently arranged structure. Use it as your starting point, then remap sections to a specific funder format if required.*
+
+## How to use this template
+
+Copy each section below into your own DMP document and adapt the content to your project. Where a **CMI default** callout appears, you can use the text verbatim unless your project has a specific reason to deviate. Where a section says *what to cover*, that is the prompt for your own project-specific writing.
+
+The template is deliberately comprehensive. Some sections (for example, international transfers or CARE principles) may not apply to your project, and it is fine to drop them with a short note explaining why. The [inventory-centred variant](dmp-template-inventory.md) suits internal team coordination, and the [Light-DMP checklist](dmp-template-light.md) is a shorter starting point for small, low-risk projects.
+
+!!! tip "Keep it living"
+    A DMP written once and filed away is a compliance artefact, not a management tool. Schedule reviews at key milestones and update both this document and the [data inventory](data-inventory.md) together.
+
+## 1. Introduction
+
+### 1.1 Purpose and scope
+
+State that the DMP outlines the project's approach to managing research data responsibly, ethically, and transparently, and note commitment to legal compliance, institutional policies, and the FAIR principles.
+
+!!! note "CMI default"
+    This DMP is a living document and will be revised as the project evolves.
+
+### 1.2 Guiding principles
+
+Describe the principles guiding the project's data management, tailored to the project context. Select the principles that apply:
+
+- **FAIR, transparency, and security:** FAIR balanced with ethical responsibility and participant protection. 'As open as possible, as closed as necessary.'
+- **Do-No-Harm:** no action, output, or outcome shall adversely affect participants, stakeholders, or third parties.
+- **Sensitivity minimisation:** only data essential to the research objectives is collected and retained.
+- **Proportionality:** security measures matched to the sensitivity and risk level of each dataset.
+- **Access control (principle of least privilege):** role-based, limited to individuals with a justified need.
+- **Shared responsibility:** all project members share accountability for lawful and ethical data management.
+
+Add context-specific principles where relevant: **conflict sensitivity** (for projects in conflict-affected or politically sensitive contexts), **CARE principles** (for research involving communities in the Global South), **data sovereignty** (for projects involving indigenous or marginalised communities).
+
+## 2. Project data summary
+
+### 2.1 About the project
+
+Record each field as its own line, with a blank line between fields:
+
+- **Full title:** the project's full title
+- **Acronym:** if applicable
+- **Funding source:** funder name and programme
+- **Grant ID:** grant or project number
+- **Project period:** start date – end date (duration)
+- **Geographical scope:** countries and regions
+
+Follow the metadata with a one-to-two-paragraph statement of the research objective.
+
+### 2.2 Purpose of data collection
+
+Describe why data is collected, organised by work package or research question, and how each major data collection activity contributes to the project's objectives.
+
+## 3. Roles and responsibilities
+
+### 3.1 Institutions
+
+List all institutions and describe each one's role in data management. For each partner: what data they collect, process, or store; their controller or processor role; any infrastructure they provide. Note external compliance partners such as Sikt.
+
+!!! note "CMI default"
+    Chr. Michelsen Institute (CMI), Norway, is the host institution and project coordinator. CMI is responsible for overall project management, data storage and security, GDPR compliance, and repository deposit of open-access publications. CMI's Research Data Management Adviser supports development of the Data Management Plan.
+
+### 3.2 Governance and project groups
+
+Describe the project's internal governance for data management. Adapt to project scale: core leadership or project management team chaired by the PI; ethics oversight (CMI Research Ethics Committee, external ethics boards); data protection coordination (CMI's Data Management Adviser, DPO, Sikt); advisory board or stakeholder group if applicable.
+
+## 4. Legal and ethical considerations
+
+### 4.1 GDPR compliance
+
+State whether the project processes personal data and from whom, and note which data protection frameworks apply (GDPR, partner-country legislation). For detailed background, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
+
+???+ note "4.1.1 Legal basis for processing"
+    **CMI default:** public interest (GDPR Art. 6(1)(e)), supported by the Norwegian Personal Data Act §8 and GDPR Art. 89. This applies to all CMI research, not only registry-based or large-scale studies. For special category data, the basis is Art. 9(2)(j) (scientific research purposes).
+
+    GDPR consent is **not** the lawful basis for general data processing. It supplements public interest only for specific bounded activities: recording, name use in publications, and archiving for future reuse.
+
+??? note "4.1.2 Types of personal data"
+    List the categories involved: direct identifiers, indirect identifiers, special category data (Art. 9), and other sensitive data (financial, immigration, etc.). Note any third-person data in interviews or field notes.
+
+??? note "4.1.3 Information and consent"
+    The information letter is the primary instrument. It informs; it does not ask for GDPR consent to process data. Use separate consent elements for recording, name use, and archiving for reuse.
+
+    Describe how voluntariness is ensured (gatekeepers, power dynamics), and any adaptation for fieldwork contexts (oral delivery, high-risk settings). See [Informed consent and information letters](CROSS-ethics.md).
+
+??? note "4.1.4 Data minimisation and anonymisation"
+    Describe how data minimisation is applied and the anonymisation or pseudonymisation strategy.
+
+    **CMI default:** direct identifiers are removed or pseudonymised as early as possible. Linkage keys are stored separately, accessible only to the PI and a designated data steward.
+
+??? note "4.1.5 Data security"
+    **CMI default:** M365 ecosystem with encryption, MFA, role-based access, and tiered restrictions by sensitivity. For higher assurance: TSD or Nettskjema, Tresorit, or Proton Drive.
+
+    For fieldwork: device encryption, daily upload, and local encrypted backup. Recordings uploaded within 24 hours, deleted from local devices after verification.
+
+??? note "4.1.6 Data subject rights"
+    Under the public interest basis, rights are modified by Art. 89(2) and the Norwegian Personal Data Act §17. In particular: there is no GDPR consent to withdraw (only ethical withdrawal and the right to object); the right to erasure is limited (Art. 17(3)(d)); the right to data portability does not apply. The information letter should include a concrete deadline after which deletion may no longer be feasible.
+
+??? note "4.1.7 International data transfers"
+    State whether personal data crosses borders, between which countries, and under what circumstances. Apply CMI's proportional approach: practical safeguards for CMI researchers abroad and research assistants; joint controllership agreements (Art. 26) preferred over SCCs for partner institutions; the research derogation (Art. 49(1)(d)) as an alternative; platform-based solutions for US-based partners.
+
+??? note "4.1.8 Retention and disposal"
+    **CMI default retention periods:** primary research data 10 years; administrative records 5 years; contact information up to 3 years (if stated in the information letter); audio and video recordings deleted after transcription unless they are the research data; consent documentation retained as long as related data exists.
+
+    Describe the deletion procedure across all systems including partner copies. **CMI default:** maintain a deletion log.
+
+### 4.2 Intellectual property and data ownership
+
+Identify data ownership. For multi-partner projects, describe how ownership is formalised (partnership agreements, joint controllership). Note licensing terms for any external or secondary data.
+
+!!! note "CMI default"
+    Publications are released under CC BY 4.0 and deposited in CMI's institutional repository. Datasets are released under CC BY 4.0 or CC0.
+
+### 4.3 Research ethics
+
+Describe the ethical context — what makes the project ethically sensitive. Select and adapt key ethical issues: emotional or psychological distress; social or reputational risks; legal or administrative consequences; professional or institutional risks; physical security risks; power dynamics; third-party risks. Describe mitigation measures as specific actions.
+
+!!! note "CMI default — guidelines and oversight"
+    NESH guidelines apply. The CMI Research Ethics Committee is advisory, not approval-based; consultation is voluntary but encouraged for ethically complex projects. Add other applicable frameworks (Declaration of Helsinki, ALLEA, Good Clinical Practice, Montreal Statement) as relevant.
+
+    **Approvals and notifications:** Sikt notification (required, filed 30+ days before data collection); CMI REC consultation (voluntary); REK (only for medical or health research); partner-country ethics boards.
+
+## 5. Expected data and sensitivity
+
+Give an overview of data types organised by sensitivity level. Reference the [data inventory](data-inventory.md) annex for per-record details. For secondary data, describe source, access conditions, and sensitivity.
+
+!!! note "CMI default — classification"
+    Use CMI's Green / Yellow / Red / Black classification based on risk of harm from exposure. Personal data is Red by default. See [Data classification](data-classification.md) for tier definitions. A single project typically has data objects at multiple tiers — classification applies to the object in its current state.
+
+## 6. Processing, quality, and analysis
+
+Describe the data processing pipeline from collection through to analysis-ready form. Cover:
+
+- Transcription procedures (who, when, what language).
+- Anonymisation and pseudonymisation steps in the pipeline.
+- Quality assurance during collection (training, pilots, back-translation, validation) and after (cleaning, consistency checks, transcription verification).
+- Analysis tools (NVivo, MAXQDA, Atlas.ti, Stata, R, SPSS, etc.).
+- Cross-work-package coordination if applicable (shared codebooks, analysis workshops).
+
+## 7. Documentation, metadata, and archiving
+
+### 7.1 Documentation
+
+Describe the documentation that accompanies each dataset: codebooks, interview guides, observation protocols, data dictionaries.
+
+!!! note "CMI default"
+    At minimum, each dataset has a README file describing the data contents, collection context, variable definitions, and any known limitations.
+
+### 7.2 Metadata standards
+
+Name the metadata standards used (DDI for survey data, Dublin Core for general datasets) and the file-naming conventions and folder structure. See [Name files and structure folders](file-and-folder-naming.md).
+
+### 7.3 Data sharing and archiving
+
+Apply CMI's five sharing pathways from the institutional Open Science Policy: open access, registered access, controlled access, restricted access, no external sharing. Select the most open pathway feasible for each dataset. Full sharing of qualitative data is rarely feasible: controlled access to de-identified excerpts or metadata-only records is often the realistic pathway. **Metadata is always shared** unless doing so creates risk.
+
+!!! note "CMI default — repositories, licences, embargo"
+    **Preferred repositories:** Zenodo (open datasets, code, supplementary materials), OSF (replication packages), openICPSR (quantitative social science), QDR (qualitative data, mediated access, per-deposit fees apply), Sikt's Research Data Archive (quantitative survey data), CMI's internal repository (minimum baseline).
+
+    **Default licences:** CC0 (preferred) or CC BY 4.0 for data; MIT, BSD, or Apache 2.0 for code.
+
+    **Default embargo:** 1–2 years after project completion. Restriction beyond that requires specific justification.
+
+## 8. Monitoring and updates
+
+Describe how the plan is kept current.
+
+!!! note "CMI default"
+    This DMP is a living document and will be revised as the project progresses. The PI and CMI's Research Data Management Adviser are jointly responsible. Review points: after ethical approvals; at project mid-point; before archiving and final outputs; ad hoc for significant changes. Updates are logged with version numbers, dates, and a description of changes.
+
+## Annex 1: Data inventory
+
+The data inventory lists all research data records the project collects or generates. Each record represents a coherent data collection activity, not an individual file. For the standalone guide and full template, see [Build a data inventory](data-inventory.md).
+
+For each data record, describe:
+
+- **Name and description:** what this data is and where it comes from.
+- **Collection method:** how the data is collected or generated.
+- **Participant group:** which participant group(s) this relates to, if applicable.
+- **Formats and estimated volume:** expected file formats and approximate size or number of records.
+- **Artefacts:** concrete data objects produced (audio recordings, transcripts, anonymised datasets, coded datasets, field notes).
+- **Data flow:** how data moves from collection through processing to end state.
+- **Personal data categories:** what personal data is involved, if any.
+- **Sensitivity level:** Green / Yellow / Red / Black classification.
+- **Responsible party:** who collects, stores, and manages this data.
+
+---
+
+## [CMI DMP template (inventory-centred)](https://trond-k.github.io/cmi-rdm-hub/dmp-template-inventory/)
+
+# CMI DMP template (inventory-centred)
+
+*A compact DMP variant designed for internal project coordination rather than funder review. It promotes the data inventory from an annex to the core of the document, so per-record decisions on storage, sensitivity, and sharing live alongside the data they describe. Cross-cutting policies sit in a short Section 4 that states project-level positions once.*
+
+## When to use this variant
+
+Use this template when the primary audience is your project team and CMI's RDM adviser, not a funder review panel. It suits projects where:
+
+- You already have a funder-facing DMP drafted from the [full CMI template](dmp-template-full.md) and need a working operational companion.
+- The data inventory is the thing the team actually consults week to week.
+- Per-record storage and sharing decisions vary enough across data records that a single prose narrative would obscure them.
+
+It is not a substitute for a funder-facing DMP where one is contractually required.
+
+!!! tip "Pair with the data inventory guide"
+    This variant is the DMP companion to [Build a data inventory](data-inventory.md). The inventory captures the *what and where*; this DMP captures the *policy and responsibility* around it.
+
+## Executive summary
+
+Start with a scannable table — one row per research data collection — so a reader can see the whole project at a glance.
+
+| Data collection | Type | Sensitivity | Storage | Sharing pathway |
+|---|---|---|---|---|
+| Village leader interviews | Qualitative | Red | TSD | Controlled access |
+| Household survey | Quantitative | Yellow | CMI M365 | Open access |
+| Administrative records | Secondary | Green | CMI M365 | No external sharing |
+
+**Columns:** *Data collection* (short name); *Type* (qualitative / quantitative / mixed / secondary / administrative); *Sensitivity* (Green / Yellow / Red / Black per [Data classification](data-classification.md)); *Storage* (primary location); *Sharing pathway* (open access / registered access / controlled access / restricted access / no external sharing).
+
+Below the table, add 3–5 bullets summarising the key data management decisions and any unresolved gaps. A reader who only sees this page should come away knowing what data you collect, what is sensitive, and what decisions remain.
+
+## 1. Introduction
+
+State the purpose of the DMP in 2–3 sentences. List the guiding principles as one-line bullets (FAIR and security; Do-No-Harm; sensitivity minimisation; proportionality; access control; shared responsibility; add conflict sensitivity, CARE, or data sovereignty if applicable).
+
+!!! note "CMI default"
+    This DMP is a living document and will be revised as the project evolves.
+
+## 2. Project summary
+
+Record each field on its own line:
+
+- **Full title**
+- **Acronym** (if applicable)
+- **Lead researcher**
+- **Funding source** and programme
+- **Grant ID**
+- **Project period** (start – end, duration)
+- **Geographical scope**
+
+Follow with a 1–2 paragraph **research objective** describing aims, approach, and work package structure.
+
+## 3. Data inventory
+
+This is the core of the document. Create one sub-section per data collection. State what will be done; rationale and institutional context belong in Section 4, not here. Target 20 lines or fewer per record.
+
+### 3.1 [Name of data collection]
+
+**Description and method:** what this data is and how it is collected or generated. One or two sentences.
+
+**Formats and estimated volume:** file formats and approximate size or count. One line.
+
+**Data flow:** chain from collection to end state. Use the concise arrow format:
+
+> Field recording (WAV) → transcription (DOCX) → anonymised transcript (DOCX) → coded dataset (NVivo) → archived transcript (PDF/A)
+
+**Personal data and sensitivity:**
+
+- Categories: direct identifiers / indirect identifiers / special category / none
+- Sensitivity tier: Green / Yellow / Red / Black
+- Key risk: one sentence
+
+**Storage and security:**
+
+- Storage: where stored
+- Access: who has access
+- Fieldwork measures: if applicable
+
+**Sharing and archiving:**
+
+- Pathway: open / registered / controlled / restricted / no external sharing
+- Target repository and licence (e.g., Zenodo, CC BY 4.0)
+- Embargo: if applicable
+- Metadata-only record: whether one will be deposited if data cannot be shared
+
+Repeat for each record. For projects with six or more records of the same type (e.g., eight interview sets across participant groups), group similar records in a summary table and give full sub-sections only to records that differ materially in sensitivity, storage, or sharing pathway.
+
+## 4. Cross-cutting policies
+
+State project-level positions only. Do not repeat per-record details from Section 3.
+
+### 4.1 Legal basis and data subject rights
+
+!!! note "CMI default"
+    Lawful basis for processing personal data is public interest (GDPR Art. 6(1)(e)), supported by the Norwegian Personal Data Act §8 and Art. 89. Special category data is processed under Art. 9(2)(j) (scientific research purposes). GDPR consent is not the lawful basis and is only used to supplement public interest for specific bounded activities (recording, name use, archiving for reuse).
+
+Summarise data subject rights in 2–3 sentences, citing Art. 89(2) and PDA §17. State whether data crosses borders and the applicable safeguard mechanism (joint controllership Art. 26, research derogation Art. 49(1)(d), or platform-based solution). See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
+
+### 4.2 Security and storage
+
+State the project-wide security baseline, any higher-assurance options in use (reference the Section 3 records that use them), and the fieldwork protocol if applicable.
+
+!!! note "CMI default"
+    M365 ecosystem with encryption at rest and in transit, MFA, and role-based access. For fieldwork: device encryption, upload within 24 hours, deletion from local devices after verification.
+
+### 4.3 Sharing and archiving
+
+State the project-level sharing position, documentation standards (README per dataset, codebooks, data dictionaries), the repositories and licences that apply to this project, and the embargo position. Metadata is always deposited, even when data cannot be shared.
+
+!!! note "CMI default"
+    'Open as possible, closed as necessary.' Default licences: CC0 (preferred) or CC BY 4.0 for data; MIT, BSD, or Apache 2.0 for code. Default embargo: 1–2 years after project completion. Restriction beyond that requires specific justification.
+
+### 4.4 Retention and disposal
+
+!!! note "CMI default retention periods"
+    Primary research data 10 years; administrative records 5 years; contact information up to 3 years; audio and video deleted after transcription unless it is the research data; consent documentation retained as long as related data exists. Maintain a deletion log covering all systems including partner copies.
+
+Note any project-specific deviations.
+
+### 4.5 Ethics and oversight
+
+State the ethical context in 1–2 sentences, list key ethical risks and mitigation measures (max 5 bullets), and the approvals and notifications that apply.
+
+!!! note "CMI default"
+    NESH guidelines apply. Sikt notification required; CMI REC consultation voluntary; partner-country ethics boards where applicable; REK only for medical or health research. Additional frameworks (Declaration of Helsinki, ALLEA) only where they apply.
+
+Close with the project's position on IP and data ownership.
+
+## 5. Roles, responsibilities, and resources
+
+### 5.1 Institutions and roles
+
+List all institutions and describe each one's role in data management. For partners, note what data they collect, process, or store and their controller or processor role. Name the PI's responsibilities and CMI's Research Data Management Adviser role.
+
+!!! note "CMI default"
+    Chr. Michelsen Institute (CMI), Norway, is the host institution and project coordinator, responsible for overall data storage, security, GDPR compliance, and repository deposit.
+
+### 5.2 Resources and costs
+
+Estimate data management costs. Use this table as a starting point:
+
+| Item | Estimated cost | Notes |
+|---|---|---|
+| Repository deposit fees |  | e.g., QDR per-deposit fee |
+| Transcription |  | In-house or outsourced |
+| Data storage above baseline |  | CMI M365 included in overhead; TSD or similar priced separately |
+| Research assistant time for data management |  |  |
+
+Note which costs are covered by CMI overhead versus the ones that need to be budgeted in the grant.
+
+## 6. FAIR operationalisation
+
+Summarise how the project implements each FAIR principle. One line per principle:
+
+- **Findable:** datasets deposited with a DOI; metadata-only records for restricted data; PI's ORCID linked.
+- **Accessible:** open datasets via the chosen repository; controlled access where needed; standard protocols throughout.
+- **Interoperable:** tabular data in CSV with codebook; transcripts in PDF/A; DDI metadata for survey data.
+- **Reusable:** CC0 or CC BY 4.0 as per Section 4.3; README and codebook per dataset; analysis code in an open repository.
+
+If a principle cannot be fully implemented (common for sensitive qualitative research), state what will be done and what constraint prevents full implementation.
+
+## 7. Monitoring and updates
+
+!!! note "CMI default"
+    This DMP is a living document. The PI and CMI's Research Data Management Adviser are jointly responsible for updates. Review points: after ethical approvals; at project mid-point; before archiving and final outputs; ad hoc for significant changes.
+
+| Version | Date | Changes | Author |
+|---|---|---|---|
+| 1.0 |  | Initial DMP |  |
+
+---
+
+## [Light-DMP checklist](https://trond-k.github.io/cmi-rdm-hub/dmp-template-light/)
+
+# Light-DMP checklist
+
+*A compact one-page DMP for small, low-risk projects. It covers the minimum set of decisions every CMI project needs to record, without the full institutional template's depth. If your project touches personal data or higher sensitivity tiers, use the [full CMI DMP template](dmp-template-full.md) instead.*
+
+## When to use this checklist
+
+Use this checklist if **all** of the following apply:
+
+- The project is entirely Green or Yellow tier (see [Data classification](data-classification.md)).
+- The project does not process personal data, or processes only minimal indirect identifiers that are removed early.
+- The project is short in duration and limited in partners (single institution or small stable consortium).
+- The funder does not mandate a specific DMP format.
+
+If any of these do not hold, use the [full CMI DMP template](dmp-template-full.md) or the [inventory-centred variant](dmp-template-inventory.md).
+
+## Project information
+
+- **Title:**
+- **PI:**
+- **Funding source and grant ID:**
+- **Project period:**
+- **Research objective (1–2 sentences):**
+
+## What data
+
+- [ ] **Data types listed.** What data the project collects or acquires (types, formats, approximate volumes).
+- [ ] **Sensitivity classified.** Each dataset tagged Green or Yellow per [Data classification](data-classification.md). If any dataset is Red or Black, stop and use the full template.
+- [ ] **Secondary data documented.** For reused data, source, access conditions, and licence recorded.
+
+## Where stored
+
+- [ ] **Storage location named.** Primary storage on CMI M365 (default) or an equivalent approved service, with encryption, MFA, and role-based access.
+- [ ] **Backups verified.** Backup location and frequency recorded.
+- [ ] **File and folder naming agreed.** Conventions documented per [Name files and structure folders](file-and-folder-naming.md).
+- [ ] **Documentation standard set.** At minimum, a README per dataset describing contents, collection context, and any limitations.
+
+## Who is responsible
+
+- [ ] **Roles named.** PI plus at least one data steward (may be the PI in a small project).
+- [ ] **Handover plan noted.** How data responsibilities transfer if a team member leaves.
+
+## What happens after
+
+- [ ] **Sharing pathway chosen.** Default: open access via Zenodo with CC BY 4.0 or CC0 licence. Note any deviation.
+- [ ] **Embargo stated.** CMI default is 1–2 years after project completion; shorter or no embargo preferred where possible.
+- [ ] **Retention period set.** CMI defaults: primary research data 10 years, administrative records 5 years. Note the deletion procedure.
+- [ ] **Metadata record planned.** A metadata record is deposited even if data cannot be shared.
+
+## Review
+
+- [ ] **Review points scheduled.** At minimum: mid-project and before final outputs.
+- [ ] **Living document.** This checklist will be updated with the project's [data inventory](data-inventory.md) at each review.
+
+---
+
+*If the project scope grows — new personal data introduced, new partners added, sensitivity tier raised — revisit against the [full CMI DMP template](dmp-template-full.md) and upgrade the DMP accordingly.*
 
 ---
 
