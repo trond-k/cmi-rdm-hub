@@ -28,6 +28,7 @@
 - [Discover - Make data findable](https://trond-k.github.io/cmi-rdm-hub/lifecycle-10-discover/): Make your data findable: provide rich metadata, use persistent identifiers, and ensure that even restricted datasets are visible to those who need them.
 - [Access - Define who can use your data](https://trond-k.github.io/cmi-rdm-hub/lifecycle-11-access/): Decide who can use your data, under what terms, and through what mechanisms: define access levels, set governance conditions, and plan for eventual withdrawal.
 - [Share & Reuse - Enable responsible reuse](https://trond-k.github.io/cmi-rdm-hub/lifecycle-12-share-and-reuse/): Enable others to use your data responsibly: choose the right licence, document for a stranger, and think about who will reuse your data and what they need.
+- [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/): Close your project systematically: finalise the data inventory, decide what to keep and what to delete, update compliance records, and leave a clear trail for the future.
 ## Using this hub
 
 - [Using this hub with AI assistants](https://trond-k.github.io/cmi-rdm-hub/using-this-hub-with-ai/): How to use AI tools to get more out of this hub: giving your assistant CMI context, ready-made prompts, and honest guidance on what works.
@@ -44,7 +45,6 @@
 
 - [Data classification](https://trond-k.github.io/cmi-rdm-hub/data-classification/): How CMI's four-tier classification scheme works: classify each dataset by sensitivity, understand your project's risk level, and determine what compliance documentation you need.
 - [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/): Agree on a simple naming pattern and folder layout before the project drifts into confusion.
-- [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/): Close your project systematically: finalise the data inventory, decide what to keep and what to delete, update compliance records, and leave a clear trail for the future.
 ## Guides, tools and templates
 
 - [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/): A guide to understanding what counts as personal data in CMI research, where the boundary lies, and what the distinction means for your project design.
