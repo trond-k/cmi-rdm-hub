@@ -7,15 +7,13 @@ tags:
   - Transparency
   - Documentation
 notes: >-
-  Before publishing: (1) Fill in actual AI tool names, model versions, and
-  dates in the table; (2) Confirm proportion of AI-drafted vs. human-drafted
-  content and add if appropriate; (3) Decide on nav placement in zensical.toml
-  (standalone item or under 'About this hub' section); (4) Add the page to
-  the nav array in zensical.toml; (5) Review for consistency with the
-  reproducibility page's AI documentation checklist; (6) Confirm whether
-  subject-matter experts reviewed any sections; (7) Add any new abbreviations
+  Outstanding content work: (1) Fill in actual AI tool names, model versions,
+  and dates in the table; (2) Confirm proportion of AI-drafted vs. human-drafted
+  content and add if appropriate; (3) Review for consistency with the
+  reproducibility page's AI documentation checklist; (4) Confirm whether
+  subject-matter experts reviewed any sections; (5) Add any new abbreviations
   to includes/abbreviations.md if needed.
-date_updated: 2026-03-28
+date_updated: 2026-04-05
 ---
 
 # How AI was used in this guide

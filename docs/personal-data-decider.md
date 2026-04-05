@@ -83,5 +83,8 @@ Data minimisation does not mean avoiding personal data. It means being deliberat
 !!! tip "If you are unsure"
     Err on the side of assuming your project involves personal data. Sikt's advisers assess over ten thousand projects a year and can tell you quickly whether your design crosses the threshold.
 
+!!! info "See also"
+    Once you know whether your project involves personal data, move on to [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for the legal framework, [GDPR concepts for researchers](CROSS-legal.md) for terminology, and [Informed consent and information letters](CROSS-ethics.md) for participant documentation.
+
 !!! info "Review date"
     This page was last reviewed on 2 April 2026. Data protection guidance evolves as regulatory interpretations and institutional practice develop. Verify against current Sikt and Datatilsynet guidance for your specific situation.

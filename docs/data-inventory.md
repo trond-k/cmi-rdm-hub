@@ -106,6 +106,9 @@ If these documents contradict each other, something has gone wrong. The inventor
 ??? example "A data inventory in practice: document-based research"
     Not all projects generate primary data through fieldwork. A commissioned policy review analysing climate adaptation legislation across ten countries might work entirely with published laws, government reports, and grey literature. An inventory is still useful. It records which documents were collected, from which sources, in which languages, and how they were selected. It tracks where the collection is stored, who compiled it, and whether any documents were obtained under access restrictions or confidentiality agreements. If the analytical outputs (a comparative coding framework, an annotated bibliography, a summary matrix) are to be deposited or shared with the commissioning body, the inventory records what was delivered and under what terms. Even when the underlying materials are publicly available, the curated collection and the analytical layer built on top of it are project outputs worth documenting.
 
+!!! info "See also"
+    Use the [Data classification](data-classification.md) scheme to fill the sensitivity classification field for each dataset, and pair the inventory with [Project closure](project-closure.md) when you wind the project down.
+
 ## Start now
 
 If your project is already under way and you do not yet have a data inventory, start one today. Retrofitting is less convenient than building from scratch, but the alternative, continuing without a clear record of what you have, is riskier. List what you know, flag what you are unsure about, and fill in the gaps as you go. A partial inventory that you maintain is more valuable than a perfect template that nobody updates.

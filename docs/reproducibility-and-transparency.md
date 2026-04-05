@@ -18,6 +18,9 @@ date_updated: 2026-04-03
 
 *Reproducibility means someone else can follow the path from your data and documentation to your results. Transparency means they can see why you made the choices you did. These principles apply across methods, but they look different for a scripted regression than for a coded interview. This page covers what reproducibility requires in practice, how to navigate the tension between openness and participant protection, and what funders and publishers now expect.*
 
+!!! info "See also"
+    For the empirical context behind the practices on this page, see [What the largest replication study means for your research](CROSS-replication-evidence.md) in Perspectives.
+
 ## Why this matters now
 
 Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. In April 2026, the largest replication project to date confirmed the scale of the problem: the SCORE programme found that only 49% of 164 social-science studies replicated, with effect sizes more than halving on average, and that data availability was the only reliable predictor of reproducibility.[^8] But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.

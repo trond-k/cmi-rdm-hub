@@ -1899,11 +1899,387 @@ Be cautious with:
 
 ---
 
+## [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/)
+
+# GDPR and legal compliance
+
+*The GDPR applies to virtually all CMI research involving people. This page sets out the recommended interpretive approach: proportional, research-enabling, and grounded in the regulation's own provisions for scientific research. It covers lawful basis, the consent distinction, special category data, cross-border transfers, and data subject rights. For plain-language explanations of GDPR terminology, see [GDPR concepts for researchers](CROSS-legal.md). For operational guidance on information letters, see [Informed consent and information letters](CROSS-ethics.md).*
+
+!!! info "Guidance under development"
+    This page reflects CMI's recommended approach to GDPR compliance in research. These recommendations are based on defensible, research-enabling interpretations of the regulation, but they have not yet been formally adopted as institutional policy. Individual projects may need to deviate, and the reasoning for any deviation should be documented. Contact rdm@cmi.no for project-specific questions.
+
+## Proportionality: the governing principle
+
+The GDPR was designed to regulate large-scale commercial data processing. It was not designed for a researcher conducting 20 interviews in Zanzibar or running a survey of 300 households in rural Ethiopia. The regulation nonetheless applies to research, but its provisions should be interpreted **proportionally**. The GDPR itself requires this: Recital 4 states that the right to data protection 'must be considered in relation to its function in society and be balanced against other fundamental rights, in accordance with the principle of proportionality.' Scientific research is explicitly recognised as a legitimate societal purpose (Recitals 156–159, Article 89).
+
+In practice, proportionality means that the safeguards appropriate for a technology company processing millions of user records are not the same safeguards appropriate for a qualitative research project with a small number of participants. The recommendations on this page are calibrated to the scale, nature, and risk profile of social science research.
+
+??? note "A note on stricter interpretations"
+    Some Norwegian institutions and data protection officers adopt more conservative positions than those described here, often because their guidance is designed to cover all cases, including large-scale, high-risk processing. These stricter positions are not wrong; they are risk-averse. The approach recommended here aims to be legally defensible while minimising unnecessary administrative burden on researchers. Where significant interpretive differences exist, they are flagged on this page.
+
+## Lawful basis: public interest as the recommended default
+
+The recommended default lawful basis for processing personal data in CMI research is **public interest (Article 6(1)(e))**, supported by the Norwegian Personal Data Act §8 and the research-specific provisions in GDPR Article 89. This applies across the full range of CMI research: qualitative, quantitative, mixed methods, interviews, surveys, ethnography, register studies, and evaluations.
+
+Public interest is not limited to registry-based or large-scale research. It is the basis designed for scientific research, and it applies to a semi-structured interview study as much as to a national survey. Sikt's own guidance acknowledges that public interest is often more appropriate than consent for research.
+
+??? warning "Why not consent as the default lawful basis?"
+    Using GDPR consent (Article 6(1)(a)) as the primary lawful basis for research creates several practical problems:
+
+    - **Withdrawal instability.** If consent is the lawful basis, a participant who withdraws triggers a legal obligation to delete their data. In a project running for two years, where the participant's data is woven into analytical frameworks, deletion can seriously impair the research. Under the public interest basis, the right to erasure is limited by Article 17(3)(d).
+    - **Specificity requirements.** GDPR consent must be specific to defined processing purposes. Qualitative and ethnographic research is inherently exploratory, and the scope of relevant data often cannot be fully specified in advance.
+    - **Conflation with ethical consent.** Bundling GDPR consent into the same form as ethical consent confuses two different things and produces consent forms that are simultaneously too detailed and too vague.
+    - **False sense of control.** In many CMI research contexts (fieldwork with vulnerable populations, research in conflict zones, power imbalances), the 'freely given' requirement of GDPR consent is difficult to establish with certainty.
+
+    Many Norwegian institutions default to consent for interview and survey research, reserving public interest for registry studies. This is a risk-averse position, not a legal requirement.
+
+## The consent distinction: ethical consent and GDPR consent
+
+Two different kinds of consent operate in research, and they should not be confused:
+
+- **Ethical consent** is the obligation, rooted in research ethics and the NESH guidelines, to ensure that participation is voluntary, informed, and revocable. Ethical consent is always required when research involves human participants, regardless of the GDPR lawful basis. It is documented through the [information letter](CROSS-ethics.md).
+- **GDPR consent** (Article 6(1)(a)) is a specific lawful basis for processing personal data, with strict legal requirements and specific legal consequences. It is one of several possible lawful bases. When public interest is the lawful basis, GDPR consent is not required.
+
+Under the recommended approach, GDPR consent is reserved for specific, bounded processing activities where it is the most natural fit, such as consent to be recorded, consent to be named in publications, or consent to have data archived for future reuse. These are layered on top of the public interest basis, not used instead of it.
+
+## Special category data
+
+Special category data (Article 9) includes racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation. In CMI's research profile, special category data is common and often arises incidentally. An interview about governance may capture political opinions; ethnographic fieldwork in a multi-ethnic context captures ethnic origin.
+
+The recommended additional basis for special category data is Article 9(2)(j): processing necessary for scientific research purposes with appropriate safeguards under Article 89(1). The Norwegian Personal Data Act §9 provides the national implementation.
+
+!!! tip "Practical approach to special category data"
+    Rather than trying to predict every special category in advance, anticipate at the project level which categories are likely to arise given your topic, methods, and participant groups. Flag these in the Sikt notification and the data inventory. Handle incidental capture proportionally: if a special category arises naturally in an interview, the Article 9(2)(j) basis covers it. Context matters. A passing mention of attending a mosque in an interview about municipal budgets is not necessarily 'religious beliefs' in a GDPR-relevant sense.
+
+## Data minimisation
+
+Data minimisation (Article 5(1)(c)) requires that personal data be adequate, relevant, and limited to what is necessary for the research purpose. This does not mean restricting data collection to a pre-approved script. Qualitative research is inherently open-ended. What minimisation requires is intentionality (collect data related to your research purpose), no gratuitous collection (do not gather data you clearly do not need), and proportional retention (do not keep identifiable data longer than necessary). Retention periods and deletion are covered in forthcoming guidance on data retention.
+
+## Cross-border data transfers
+
+CMI researchers routinely collect data in countries outside the EEA, most of which lack EU adequacy decisions. Not all data movements are the same, and they should not all require the same legal machinery. The recommended approach matches the safeguard mechanism to the actual data flow and risk:
+
+- **Fieldwork data collection.** A CMI researcher collecting data on an encrypted device abroad, with data uploaded to CMI storage in Norway, needs practical safeguards (device encryption, secure upload, password protection), not Standard Contractual Clauses. The data never leaves the researcher's control.
+- **Local research assistants.** When a research assistant acts under CMI's instruction and authority, they are part of the controller's operations. Clear data handling instructions, encrypted devices, and a confidentiality agreement in their contract are sufficient.
+- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Article 26) is often more appropriate than SCCs. The research derogation (Article 49(1)(d)) is a further option for transfers necessary for scientific research in the public interest.
+- **Cloud services and digital tools.** Standard data processing agreements from the service provider are typically sufficient. Prefer tools that offer EEA-based or Swiss-based processing where available. Forthcoming guidance on tools and services will address specific platforms.
+
+??? note "Standard Contractual Clauses"
+    SCCs remain an option for sustained data-sharing arrangements where other mechanisms are not appropriate, but they are designed for commercial data processing relationships and can be disproportionate for academic research collaborations. Joint controllership agreements, the research derogation, and practical security measures are often more fitting for research partnerships.
+
+## Data Protection Impact Assessment
+
+A DPIA is required under Article 35 when processing is likely to result in a high risk to data subjects. Most CMI projects involving a small number of qualitative interviews will not trigger a DPIA. A multi-country survey with thousands of respondents and sensitive topics likely will. The RDM contact (rdm@cmi.no) can advise on whether a DPIA is needed and support the process.
+
+??? example "When a DPIA is recommended"
+    Consider a DPIA when two or more of the following apply: large-scale processing of personal data, systematic evaluation or profiling, processing of special category data in sensitive contexts, processing data on vulnerable groups, or combining datasets from different sources. A DPIA documents the nature and purpose of the processing, the risks to data subjects, and the measures in place to mitigate those risks. It is an internal assessment, not a regulatory submission.
+
+## Data subject rights in research
+
+Under the public interest basis, data subject rights are modified by Article 89(2) and the Norwegian Personal Data Act §17. The information letter should describe these rights clearly but concisely. In practice, most CMI research participants will not exercise them, but you should know how to respond if asked.
+
+| Right | Status under public interest basis |
+|---|---|
+| Information | Fully applies (provided through the information letter) |
+| Access | Applies (provide transcript or relevant records on request) |
+| Rectification | Applies (correct factual errors on request) |
+| Erasure | Limited: may be refused if deletion would seriously impair the research (Article 17(3)(d)). The recommended default is to accommodate deletion requests unless there is a compelling, documented reason to retain the data |
+| Data portability | Does not apply (applies only under consent or contract basis) |
+| Objection | Limited under Article 89(2), but objections should be taken seriously and accommodated where possible |
+
+Forthcoming guidance on data retention will cover withdrawal, objection, and their practical limits in more detail.
+
+---
+
+## [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/)
+
+# GDPR concepts for researchers
+
+*This is a plain-language reference to GDPR concepts as they apply to CMI research. Each entry explains what the concept means, why it matters, and how it works in practice. It is not a legal textbook; it is a working reference for researchers filling in Sikt notifications, drafting information letters, or trying to understand what a DPO is asking them. For CMI's recommended interpretive approach, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md). For operational guidance on information letters and consent, see [Informed consent and information letters](CROSS-ethics.md).*
+
+## Where the GDPR comes from
+
+The GDPR is the latest expression of a European tradition that treats personal data protection as a fundamental right. The EU Charter of Fundamental Rights (Article 8) states: 'Everyone has the right to the protection of personal data concerning him or her.' The regulation, which took effect in 2018, replaced the earlier Data Protection Directive (1995) with a framework that applies directly and uniformly across the EU and EEA.
+
+The GDPR was driven by the explosion of large-scale commercial data processing. Its default mental model is a technology company processing millions of customer records. A researcher conducting 25 interviews in rural Zambia operates in the same legal framework, but at a completely different scale, with completely different risks, and for a completely different purpose. The regulation recognises this through the principle of **proportionality** (Recital 4) and through specific provisions for scientific research (Recitals 156–159, Article 89).
+
+??? note "The historical lineage"
+    The lineage runs through the Council of Europe's Convention 108 (1981), the EU Charter of Fundamental Rights, and the Data Protection Directive (1995). Norway is not an EU member state, but the GDPR applies in Norway through the EEA Agreement. The Norwegian implementation is the Personal Data Act (*Personopplysningsloven*, 2018).
+
+## Roles
+
+**Data controller.** The institution that decides why and how personal data is processed. For CMI projects, CMI is the data controller. The PI acts on behalf of CMI, but CMI carries legal responsibility for GDPR compliance.
+
+**Joint controllers.** Two or more institutions that together decide why and how personal data is processed (Article 26). This is the natural framing for CMI's international research collaborations where both institutions shape the research design. A joint controllership agreement defines each party's responsibilities.
+
+**Data processor.** An organisation that processes personal data on your instructions, without deciding the purpose or design of the research. Examples: a contracted survey firm, a transcription service, a cloud storage platform. If you use a data processor, you need a Data Processing Agreement (Article 28).
+
+**Data subject.** The person whose personal data you are processing: usually a research participant (interviewee, survey respondent, someone observed during fieldwork). It can also be a third person whom your participant talks about and who becomes identifiable in the data. Data subjects have rights under GDPR regardless of whether they are in the EU.
+
+**Data Protection Officer (DPO).** A person designated to advise an institution on data protection compliance (Article 37). CMI's data protection contact serves this advisory function for researchers.
+
+## Legal basis
+
+**Lawful basis (Article 6).** GDPR requires a legal justification for every instance of personal data processing. There are six possible bases; for research, only two are commonly relevant: public interest and consent. You choose your lawful basis before you start collecting data, and the choice has consequences for participant rights and what happens if someone withdraws.
+
+**Public interest (Article 6(1)(e)).** Processing necessary to perform a task carried out in the public interest. Scientific research is recognised as a public interest task under Norwegian law (Personal Data Act §8). This is the standard lawful basis for research projects in Norway and the recommended default for CMI projects.
+
+**GDPR consent (Article 6(1)(a)).** A lawful basis where the data subject's explicit agreement is the legal justification for processing. GDPR consent has strict requirements: freely given, specific, informed, unambiguous, documented, and as easy to withdraw as to give. Withdrawal triggers a legal obligation to delete the data. This is not the recommended default for CMI research; see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for the rationale.
+
+**Ethical consent.** Not a GDPR term. This is the research ethics obligation, grounded in the NESH guidelines, to ensure that participation is voluntary, informed, and revocable. Ethical consent is always required at CMI, regardless of which GDPR lawful basis is used. See [Informed consent and information letters](CROSS-ethics.md).
+
+## Personal data
+
+**Personal data.** Any information relating to an identified or identifiable natural person (Article 4(1)). 'Identifiable' is broad: a name is personal data, but so is a combination of age, occupation, village, and family size if that combination could single someone out.
+
+**Special category data (Article 9).** A subset of personal data that GDPR considers particularly sensitive: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation. Processing special category data requires an additional legal basis; for CMI research, this is Article 9(2)(j) (scientific research purposes with appropriate safeguards).
+
+**Pseudonymisation.** Replacing direct identifiers (names, ID numbers) with a code, while keeping a separate key that links the code back to the person (Article 4(5)). The data is still personal data, but pseudonymisation reduces risk: if the research dataset is exposed, identities are not immediately revealed.
+
+**Anonymisation.** Removing or transforming personal data so that the individual can no longer be identified, even by combining the remaining data with other available information. Truly anonymised data is no longer personal data and falls outside GDPR entirely (Recital 26). Anonymisation is harder than it sounds, especially for qualitative data: a transcript with the name removed but detailed descriptions of role, location, and experiences may still be identifiable.
+
+??? note "Biometric data and de-identification"
+    **Biometric data** is data resulting from specific technical processing of physical, physiological, or behavioural characteristics that allows unique identification (Article 4(14)). The most relevant case for CMI: voice recordings. A voice on an audio recording is arguably biometric data because it can identify a person.
+
+    **De-identification** is not a GDPR term, but is widely used (especially in US and health research contexts) to mean removing obvious identifiers. In practice, de-identification sits somewhere between pseudonymisation and full anonymisation. Data that has been 'de-identified' in a loose sense may still be personal data under GDPR if re-identification is reasonably possible.
+
+## Principles
+
+**Data minimisation (Article 5(1)(c)).** Collect only the personal data that is adequate, relevant, and necessary for your research purpose. This does not mean restricting interviews to a pre-approved script. It means being intentional about what you collect, not gathering data you clearly do not need, and not keeping identifiable data longer than necessary.
+
+**Purpose limitation (Article 5(1)(b)).** Personal data must be collected for specified, explicit, and legitimate purposes. However, GDPR explicitly provides that further processing for scientific research purposes is not considered incompatible with the original purpose (Article 5(1)(b), second sentence). Your project can evolve without violating this principle, provided safeguards are in place.
+
+**Storage limitation (Article 5(1)(e)).** Personal data should be kept in identifiable form no longer than necessary for the research purpose. After that, it should be anonymised or deleted. Forthcoming guidance on data retention will cover default retention periods.
+
+**Accountability (Article 5(2)).** The controller must be able to demonstrate compliance with GDPR principles. This is why documentation matters: the Sikt notification, the data management plan, the information letter, agreements with partners and processors, and records of data handling decisions. You do not need a perfect paper trail; you need enough that, if asked, you can show what you did with personal data and why.
+
+## Safeguards and security
+
+**Appropriate safeguards (Article 89(1)).** GDPR requires 'appropriate technical and organisational measures' when processing personal data for research. What counts as appropriate depends on the risk. For most CMI projects, this means encrypted storage, access restricted to the project team, pseudonymisation where practicable, secure data transmission, and anonymisation or deletion when the research purpose is fulfilled.
+
+**Encryption.** Encryption at rest means data is encrypted when stored on a disk or server (CMI's M365 environment and TSD both provide this automatically). Encryption in transit means data is encrypted while being transmitted over a network (HTTPS provides this). For fieldwork, ensure devices used for data collection have device-level encryption enabled.
+
+**Data Processing Agreement (DPA).** A contract between a data controller and a data processor specifying what the processor may do with the data (Article 28). Required whenever you use an external service that handles personal data on your behalf: transcription services, contracted survey firms, cloud tools outside CMI's institutional infrastructure.
+
+**Joint controllership agreement (Article 26).** An agreement between joint controllers defining each party's responsibilities. This is the recommended instrument for international research collaborations where both CMI and the partner institution shape the research.
+
+**Standard Contractual Clauses (SCCs).** Pre-approved contract templates for transferring personal data to countries outside the EEA (Article 46(2)(c)). Designed for commercial data processing relationships. For research collaborations, joint controllership agreements or the research derogation are often more proportionate alternatives.
+
+**Data Protection Impact Assessment (DPIA).** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
+
+## Data transfers
+
+**Third-country transfer.** Any movement of personal data to a country outside the EU/EEA, including sending data to a partner, storing data on a non-EEA server, and collecting data on a device during fieldwork abroad. Most CMI projects involve third-country transfers.
+
+**Adequacy decision (Article 45).** A finding by the European Commission that a country provides adequate data protection, so data can flow there without additional safeguards. Countries with adequacy decisions include the UK, Japan, and South Korea. Most CMI fieldwork countries do not have adequacy decisions.
+
+**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical and proportionate mechanism for many CMI fieldwork and collaboration transfers.
+
+## Sikt and REK
+
+**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is a legal requirement. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
+
+**REK (Regional Committees for Medical and Health Research Ethics).** The ethics committees that review health research under the Health Research Act. REK approval is required for projects that fall under this act: clinical trials, health registry studies, and research that aims to generate new knowledge about health and disease. Most CMI health-related research is social science research about health (access to services, health policy, wellbeing outcomes) and does not require REK approval. If you are unsure, consult the RDM contact (rdm@cmi.no).
+
+??? note "The difference between Sikt and REK"
+    REK and Sikt serve different functions. REK reviews research ethics and design under the Health Research Act. Sikt assesses data protection compliance under the GDPR. A project that requires REK approval also needs a Sikt notification, but most CMI projects need only the Sikt notification.
+
+??? note "Key sections of the Norwegian Personal Data Act"
+    The most relevant national provisions for CMI researchers:
+
+    - **Section 8** provides the legal basis for processing personal data in the public interest, including scientific research. This anchors the use of public interest (Article 6(1)(e)) as the lawful basis for research in Norway.
+    - **Section 9** implements the derogation for special category data processing for research purposes (Article 9(2)(j)).
+    - **Section 17** implements research-specific modifications to data subject rights (Article 89(2)), allowing certain rights to be limited when processing serves the public interest and appropriate safeguards are in place.
+    - **Section 26** provides for processing of personal data for archiving purposes in the public interest.
+
+---
+
+## [Informed consent and information letters](https://trond-k.github.io/cmi-rdm-hub/CROSS-ethics/)
+
+# Informed consent and information letters
+
+*Every CMI research project involving human participants requires informed, voluntary consent. The information letter is the primary instrument for achieving this: it informs participants about the research and documents their agreement to take part. This page covers what to include in an information letter, how to adapt the process for fieldwork contexts, and how to handle translations and withdrawal. For the underlying legal framework, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).*
+
+## The information letter
+
+The information letter fulfils two functions at once. First, it satisfies GDPR transparency obligations under Articles 13 and 14 by telling participants how their data will be processed. Second, it documents ethical consent: by receiving the information and choosing to take part, participants confirm their voluntary, informed engagement with the research.
+
+When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [the consent distinction](CROSS-gdpr-and-legal-compliance.md#the-consent-distinction-ethical-consent-and-gdpr-consent).
+
+## What to include
+
+Every information letter for a project involving human participants should cover the following:
+
+- Who is responsible for the research (CMI and the named researcher)
+- What the research is about and why personal data is being processed
+- What data will be collected and how
+- The lawful basis for processing: public interest (Article 6(1)(e)), with reference to the Norwegian Personal Data Act §8
+- For special category data: the additional basis under Article 9(2)(j)
+- How data will be stored and secured
+- How long data will be retained
+- Who will have access to the data (project team, named partner institutions if applicable)
+- Participant rights (access, rectification, complaint to Datatilsynet)
+- That participation is voluntary and the participant can withdraw at any time
+- Contact details for the researcher and the RDM contact (rdm@cmi.no)
+- Sikt's contact details as data protection services provider
+
+## Topics to address where relevant
+
+Certain activities should be explicitly described in the information letter so that participants are genuinely informed before choosing to take part. These do not require separate consent forms or checkboxes; participation itself constitutes consent when the participant has been properly informed.
+
+- **Audio or video recording.** Recording is a distinct processing activity with its own implications (voice is arguably biometric data; recordings are inherently identifiable). If the research involves recording, describe this clearly so participants can make an informed choice.
+- **Use of real names or identifiable information in publications.** The default is anonymisation. If identifiable information may be used, explain this so participants are aware.
+- **Archiving data for future reuse.** If data will be deposited in a repository for secondary use beyond the original project, participants need to be informed so their engagement extends to that purpose.
+- **Specific sensitive processing.** Any processing that goes beyond the core research activity, for example sharing identifiable data with a named third party for a defined purpose.
+
+!!! tip "Draft early, revise as needed"
+    Draft the information letter during project setup, before data collection begins. Submit it to Sikt with the notification form for review. The letter can be revised if the project scope changes, but participants should always receive current information before they take part.
+
+## Withdrawal deadlines
+
+The information letter should clearly explain the limits on withdrawal. Specifically, it should state that withdrawal is possible up to a defined point (for example, 'until the data have been de-identified' or 'until [date]'), and that after that point, deletion may no longer be feasible. Each project should define a **concrete deadline** in its DMP and information letter. Forthcoming guidance on data retention will cover the practical limits of withdrawal and objection in more detail.
+
+## Oral information delivery
+
+In many CMI fieldwork contexts, standard written information procedures are inappropriate or insufficient. Literacy, language, cultural context, or security considerations may all play a role.
+
+When written delivery is not suitable, deliver the information letter content orally in a language the participant understands. Document that the information was provided through one of the following:
+
+- A note in the research log recording the date, participant (by pseudonym if names are not being recorded), and confirmation that information was delivered
+- An audio-recorded verbal confirmation from the participant (if recording is part of the study)
+- A witness confirmation (a colleague or research assistant confirms the information was provided)
+
+Written consent elements (for recording, use of real names) can be replaced with oral consent documented in the same way.
+
+!!! warning "When documentation itself creates risk"
+    In conflict zones, authoritarian settings, or situations where a signed form linking a participant to research could endanger them, do not produce written consent documentation. Oral information with no written record of the participant's identity may be the most ethical and GDPR-compliant approach. The flexibility described here applies to the method of delivery, not to the substance: participants must always be informed, regardless of the format.
+
+??? example "Planning oral delivery for fieldwork"
+    Before fieldwork, prepare an oral information delivery script covering all the standard content listed above. Decide on the documentation method you will use and note this in the DMP and Sikt notification. For high-risk contexts where even oral documentation might create risk, consult the RDM contact (rdm@cmi.no) before departing.
+
+## Translated information letters
+
+When participants do not speak Norwegian or English, or when a local language version would improve comprehension, translate the information letter into the relevant language(s). The translation does not need to be a formal legal document; it needs to be clear and comprehensible. Prioritise clarity over legal precision.
+
+Budget for translation in the project proposal. Have the translation reviewed by a local collaborator or research assistant for accuracy and comprehensibility. Retain both the original and translated versions for your records.
+
+## Consent is not a checkbox
+
+Consent in research is not a bureaucratic exercise. A well-drafted information letter, delivered in a way the participant can understand, with genuine opportunity to ask questions and to decline, is what makes consent meaningful. The goal is not a signed form; it is an informed person who has freely chosen to take part in your research.
+
+---
+
+## [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/)
+
+# Prepare a Sikt notification
+
+*Use this guide when your project processes personal data and you need to submit or update a [Sikt notification](https://sikt.no/en/study-or-research/notification-form-personal-data) before data collection begins. The notification is part of [formalising your data handling](lifecycle-3-plan.md) during project setup. Submit at least 30 days before data collection starts.*
+
+If you are still unsure whether the project involves personal data at all, start with [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) or [GDPR concepts for researchers](CROSS-legal.md) first.
+
+[Open the Sikt portal :lucide-arrow-right:](https://minforskning.sikt.no){ .md-button }
+
+## What the notification is (and isn't)
+
+The Sikt notification is not a research ethics approval and it is not a barrier to getting started. It is the formal description of how your project will process personal data, what safeguards you will use, and what will happen to the data at the end. Sikt's role is to [assess whether what you describe is consistent](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) with data protection requirements.
+
+For most CMI projects, the challenge is not whether the form can be completed. The challenge is keeping the answers coherent across the whole form: participant groups, legal basis, storage, transfers, and project end need to line up.
+
+!!! info "Do you need Sikt, REK, or both?"
+    Sikt assesses data protection compliance for research involving personal data. [REK](https://www.forskningsetikk.no/en/about-us/our-committees-and-commission/rek/) (Regional Committees for Medical and Health Research Ethics) provides ethical approval for medical and health research under the Health Research Act. Most CMI projects need only Sikt. If your project falls under the Health Research Act (clinical trials, health registries, research primarily aimed at new knowledge about health and disease), you need REK, and the REK approval should be referenced in the Sikt notification. See [GDPR concepts for researchers](CROSS-legal.md) for more on how the two relate.
+
+## The process from start to finish
+
+1. Prepare your materials: project description, information letter, storage plan, partner details.
+2. Fill in the form section by section (use the [Sikt form walkthrough](sikt-form-walkthrough.md)).
+3. Submit at least 30 days before data collection.
+4. Respond to any clarification requests from your assigned adviser.
+5. Receive the assessment; begin data collection.
+6. [Amend the notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) if the project changes materially.
+7. Report completion through the portal when the project ends.
+
+## Before you open the form
+
+Have these ready ([Sikt's own checklist](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form)):
+
+- a short project description with title, methods, and participant groups
+- a clear view of which personal data categories you will process (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) if you are unsure about categories)
+- a draft participant information sheet or adapted oral script (see [Informed consent and information letters](CROSS-ethics.md) and Sikt's page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
+- your project data workflow, including [storage](lifecycle-5-store.md) and access arrangements
+- details of partners, processors, and any organisations outside the EU/EEA that will access the data (see [GDPR concepts for researchers](CROSS-legal.md) for definitions of these roles)
+- project dates, including when personal data processing starts and when identifiable data will be deleted or anonymised
+- any questionnaires or interview guides you plan to upload
+
+If those pieces are still vague, tighten them first. Most trouble in the Sikt form comes from trying to answer precise questions with an unfinished project setup.
+
+## CMI quick defaults
+
+These are the standard answers for a typical CMI research project. Use them as defaults, then adjust where your project genuinely differs.
+
+| Form field | Typical CMI answer |
+|---|---|
+| Data controller | CMI |
+| Project leader | The PI or formally affiliated project lead |
+| Primary purpose | Research or student paper |
+| Article 6 legal basis | Research in the public interest |
+| Article 9 legal basis | Research in the public interest |
+| Information to participants | Yes |
+| Main storage | CMI-managed systems such as Teams, SharePoint, or approved secure alternatives |
+| Security measures | Encrypted storage, encrypted transmission, restricted access, MFA |
+| Default publication approach | Participants are not identifiable in publications |
+| End of project | Personal data is anonymised or deleted as described in the notification |
+
+For the section-by-section walkthrough you can use with the form open, see the [Sikt form walkthrough](sikt-form-walkthrough.md).
+
+## Common mistakes
+
+- Under-reporting personal data categories, especially contextual identifiers in qualitative material.
+- Using a participant-information sheet that does not match the real method or storage setup.
+- Treating all participants as one sample when they clearly belong to different groups.
+- Confusing participant agreement to take part with the [legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) for processing.
+- Giving a vague data-flow description that never says where the data actually goes.
+- Forgetting to declare third-country recipients or processors outside the EU/EEA.
+- Using a project end date that matches the last publication instead of the end of personal data processing.
+
+## After you submit
+
+Sikt aims to complete [standard assessments within 30 days](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types). Low-risk projects without special-category data may receive an automatic same-day assessment. The busiest period is November through February, so filing early gives you a buffer.
+
+Sikt may come back with requests for clarification. That is normal. The response is meant to tighten the notification, not challenge the existence of the research. You can message the assigned adviser directly through the [portal](https://minforskning.sikt.no), call Sikt on +47 73 98 40 40 (Monday, Tuesday, and Thursday, 10:00–12:00), or use the chat (weekdays 12:00–14:00, except Wednesday).
+
+If the project changes later, [amend the existing notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) rather than starting over. Typical triggers are:
+
+- new data types or special categories
+- new partners or processors
+- new transfer destinations
+- changed timeline or retention period
+- a materially different participant or risk profile
+
+When the project ends, report completion through the portal so the notification is closed in line with what you described.
+
+## Sources and further reading
+
+- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
+- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
+- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
+- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
+- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx) — downloadable Word template for the most common CMI scenario
+- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
+- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
+- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
+- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
+- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+
+---
+
 ## [Reproducibility and transparency](https://trond-k.github.io/cmi-rdm-hub/reproducibility-and-transparency/)
 
 # Reproducibility and transparency
 
 *Reproducibility means someone else can follow the path from your data and documentation to your results. Transparency means they can see why you made the choices you did. These principles apply across methods, but they look different for a scripted regression than for a coded interview. This page covers what reproducibility requires in practice, how to navigate the tension between openness and participant protection, and what funders and publishers now expect.*
+
+!!! info "See also"
+    For the empirical context behind the practices on this page, see [What the largest replication study means for your research](CROSS-replication-evidence.md) in Perspectives.
 
 ## Why this matters now
 
@@ -2044,324 +2420,6 @@ The shift in research assessment matters too. Initiatives such as [DORA](https:/
 
 !!! info "Last reviewed"
     This page was last reviewed on 3 April 2026. AI governance, funder policies, and Norwegian research infrastructure are evolving rapidly; verify against the latest source.
-
----
-
-## [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/)
-
-# What the largest replication study means for your research
-
-*In April 2026, the SCORE programme published the most comprehensive assessment of research credibility in the social and behavioural sciences to date. Across 865 researchers, ~3,900 papers, and 11 disciplines, the results confirmed what smaller studies had suggested: roughly half of published findings do not replicate, and effect sizes shrink substantially when they do. The single strongest predictor of whether a study's results could be reproduced was whether the authors had shared their data. These findings have direct implications for how you plan, document, and share your own work.*
-
-## What the SCORE programme found
-
-The Systematizing Confidence in Open Research and Evidence (SCORE) programme, led by the Center for Open Science, examined papers published between 2009 and 2018 in 62 journals spanning criminology, economics, educational science, health sciences, leadership, marketing, organisational behaviour, political science, psychology, public administration, and sociology. Four coordinated studies tested three dimensions of research credibility: reproducibility, replicability, and analytical robustness.[^1]
-
-### Replicability
-
-Independent teams attempted to replicate 274 claims from 164 quantitative papers, using high-powered designs (median power of 99.6% to detect the original effect size), original materials where available, and peer-reviewed protocols. Only 49.3% of the papers replicated with a statistically significant result in the same direction as the original.[^2] The median effect size dropped from r = 0.25 in the originals to r = 0.10 in the replications, an 82.4% reduction in shared variance. Replication rates varied modestly across disciplines (42.5–63.1%), though some estimates carried high uncertainty.
-
-### Reproducibility
-
-A separate study tested whether the same data and code could reproduce the original results for 143 papers. Only 54% were precisely reproducible; 74% were at least approximately reproducible.[^3] A critical finding: just 24% of the papers in the sample had made their data and code readily available. Those that did had substantially higher reproduction rates. Data availability was, in fact, the only factor that correlated strongly with reproducibility.
-
-### Analytical robustness
-
-When multiple independent teams reanalysed 100 social and behavioural science studies, 34% of the reanalyses closely matched the original results and 74% reached the same overall conclusion.[^4] A focused study of 110 economics and political science papers found higher rates: 85% were computationally reproducible, and 72% of statistically significant results survived robustness checks.[^5]
-
-### Predicting replicability
-
-The SCORE team tested whether replicability could be predicted in advance, using AI tools, prediction markets (where researchers bet on which studies would replicate), and study characteristics. No marker stood out as reliable.[^2] Neither machine learning models nor expert forecasters could consistently distinguish studies that would replicate from those that would not. The only strong correlate was data availability.
-
-!!! note "Not a verdict on individual studies"
-    These are aggregate findings. A 49% replication rate does not mean that any particular study in the sample is wrong. Some failures to replicate reflect limitations of the replication design, not flaws in the original. The findings are a diagnostic of systemic patterns, not a scorecard for individual papers.
-
-## What this means for CMI researchers
-
-The SCORE results are not abstract. They speak directly to decisions you make during every phase of a research project.
-
-**Share your data and code.** Data availability was the only factor reliably associated with reproducibility. This is not just a funder compliance issue; it is the single most effective thing you can do to make your work credible and verifiable. For guidance on how to deposit data, choose repositories, and handle sensitive material, see [PUBLISH](lifecycle-8-publish.md) and [PLAN](lifecycle-3-plan.md).
-
-**Preregister confirmatory studies.** Preregistration separates hypothesis-testing from exploration and reduces the temptation to present post-hoc findings as planned. The SCORE findings reinforce the value of this practice. Over 300 journals now accept Registered Reports, where peer review happens before data collection and publication is guaranteed regardless of outcome.[^6] See [Reproducibility and transparency](reproducibility-and-transparency.md) for details on preregistration and Registered Reports.
-
-**Document your analytical decisions.** When multiple teams analysed the same data, they often reached different conclusions. This underlines the importance of recording not just what you did but why: which model specifications you tried, which you chose, and what your reasoning was. For scripted work, share the code. For qualitative work, maintain analytical memos and versioned codebooks. See [ANALYSE](lifecycle-7-analyse.md) and [Reproducibility and transparency](reproducibility-and-transparency.md).
-
-**Plan for smaller effects.** Effect sizes shrank by more than half on replication. If you are designing a quantitative study, power it for a realistic effect size, not the one reported in a single prior study. The SCORE data suggest that published effect sizes are systematically inflated.
-
-**Recognise that qualitative research faces different challenges.** The SCORE programme tested quantitative claims. For interpretive and qualitative work, the relevant standard is not identical replication but transparency of process: can others trace how you moved from data to conclusions? The hub's guidance on [transparency in qualitative research](reproducibility-and-transparency.md#transparency-in-qualitative-and-fieldwork-based-research) addresses this directly.
-
-## What you can do now
-
-- **Default to sharing.** Deposit data and code in a [trustworthy archive](lifecycle-8-publish.md) unless there is a documented reason not to (participant protection, legal restriction, data sovereignty). Justify exceptions; do not treat them as the default.
-- **Preregister.** Use [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/), or [EGAP](https://egap.org/registry/) for quantitative and mixed-methods work. Consider the [transparency model](reproducibility-and-transparency.md#preregistration) for qualitative studies.
-- **Consider Registered Reports.** If your study tests a pre-specified hypothesis and null findings would be informative, the format eliminates publication bias by design. Over 300 journals now offer it, including *Nature* for social and behavioural research.
-- **Record your decisions.** Keep a decision log or analytical memo throughout the project. This is the single cheapest investment in long-term credibility.
-- **Use the hub.** The [Reproducibility and transparency](reproducibility-and-transparency.md) page covers practical implementation in detail, including tools, infrastructure, and funder expectations.
-
-!!! tip "The SCORE collection in Nature"
-    The full set of SCORE papers, editorials, and commentary is available as a curated collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (*Nature*, April 2026).[^7]
-
-[^1]: The four SCORE studies and related commentary were published in *Nature*, volume 652, issue 8108 (2 April 2026). For a news summary, see Sanderson, K. (2026). 'Half of social-science studies fail replication test in years-long project'. *Nature*. [doi:10.1038/d41586-026-00955-5](https://doi.org/10.1038/d41586-026-00955-5).
-[^2]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y).
-[^3]: 'Investigating the reproducibility of the social and behavioural sciences'. *Nature* (2026). [doi:10.1038/s41586-026-10203-5](https://doi.org/10.1038/s41586-026-10203-5).
-[^4]: Aczel, B. et al. (2026). Analytical robustness study within the SCORE programme. Reported in 'Huge meta-research project puts claims in social-science papers to the test'. *Nature* (2026). [doi:10.1038/d41586-026-00805-4](https://doi.org/10.1038/d41586-026-00805-4).
-[^5]: Brodeur, A. et al. (2026). 'Reproducibility and robustness of economics and political science research'. *Nature* (2026). [doi:10.1038/s41586-026-10251-x](https://doi.org/10.1038/s41586-026-10251-x).
-[^6]: 'More self-reflection in research can lead to better science'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00965-3](https://doi.org/10.1038/d41586-026-00965-3). See also 'Why science has a credibility problem, and how to address it'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00972-4](https://doi.org/10.1038/d41586-026-00972-4).
-[^7]: Nature collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (April 2026).
-
-!!! info "Last reviewed"
-    This page was last reviewed on 3 April 2026.
-
----
-
-## [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/)
-
-# Name files and structure folders
-
-*Agree on a simple naming pattern and folder layout before the project drifts into confusion. The two most common causes of lost or duplicated research files are inconsistent names and missing version information. Fix both early, document the convention once, and the whole team can find what they need without guessing.*
-
-## Start with one naming pattern
-
-Choose a single convention and use it from the first day of data collection. For most CMI projects, a good default is:
-
-```text
-[project]_[site]_[datatype]_[identifier]_[date]_v[version].ext
-```
-
-For example:
-
-```text
-GOVTRUST_KUM_interview_P012_2025-03-12_v01.docx
-```
-
-That gives you five things at a glance: project, location, type, case, and version. Not every file needs all five elements. A project with a single site can drop the site code; a dataset with no meaningful version history can drop the version number. The point is to decide which elements matter for your project and apply them consistently.
-
-!!! tip "Agree on codes before collection starts"
-    Write down the project code, site abbreviations, and any participant or sample identifiers before fieldwork begins. If different team members invent their own shorthand, you will spend hours reconciling files later.
-
-## Keep names sortable
-
-A few mechanical rules make file names sort predictably across operating systems and file browsers:
-
-- Use ISO dates: `YYYY-MM-DD` (so `2025-03-12` sorts before `2025-04-01`).
-- Use only letters, numbers, underscores, and hyphens.
-- Use leading zeros for numbered sequences: `01`, `02`, ... `12`.
-- Never use spaces, dots (other than the file extension), or special characters such as `& ? ! # %`.
-- Keep names under 40–50 characters where possible.[^1] Long names get truncated in file browsers and cause problems on some systems.
-
-If you cannot sort and recognise files without opening them, the naming scheme is not doing its job.
-
-???+ example "Common naming mistakes and how to fix them"
-    Most of these will look familiar. The left column is what happens when people name files in a hurry; the right column shows what a consistent convention produces instead.
-
-    | Instead of | Try |
-    |---|---|
-    | `data-1.xlsx` | `GOVTRUST_KUM_survey_01.xlsx` |
-    | `interviews.docx` | `GOVTRUST_KUM_interview_P003_2025-03-12_v01.docx` |
-    | `Data_NEW(2).csv` | `GOVTRUST_ACC_survey_cleaned_2025-04-01_v02.csv` |
-    | `draft.docx` | `GOVTRUST_report_v01.docx` |
-    | `final version.docx` | `GOVTRUST_report_v03.docx` |
-    | `FINAL-final-revised_TK.docx` | `GOVTRUST_report_v04_2025-06-10_TK.docx` |
-    | `Maria's stuff/notes.txt` | `analysis/fieldnotes_KUM_2025-03-14.md` |
-    | `Copy of Copy of budget.xlsx` | `GOVTRUST_budget_v03.xlsx` |
-
-    The names on the right are longer, but they tell you what the file is without opening it, they sort predictably, and they still make sense six months later.
-
-## Connect related files with a shared identifier
-
-In qualitative and mixed-methods research, a single data collection event often produces several files: an audio recording, a transcript, field notes, and photographs. Give all files from the same event the same identifier so they stay together:[^2]
-
-```text
-GOVTRUST_KUM_interview_P012_2025-03-12_audio.wav
-GOVTRUST_KUM_interview_P012_2025-03-12_transcript_v01.docx
-GOVTRUST_KUM_interview_P012_2025-03-12_fieldnotes.md
-```
-
-This makes it straightforward to find everything connected to one interview, one focus group, or one observation session, even when files are stored in different subfolders by type.
-
-## Track versions in the file name
-
-Use numbered versions: `v01`, `v02`, `v03`. For minor revisions, extend the number: `v01_01`, `v01_02`.[^3] When sharing drafts with colleagues, you can append initials and the date: `report_v02_2025-04-10_TK.docx`.
-
-Never use `final`, `final2`, `FINAL_revised`, or similar labels. They lose all meaning the moment someone makes another change, and they do not sort reliably.
-
-!!! warning "Do not confuse versioning with backup"
-    Version numbers in file names track deliberate revisions to a document. They are not a substitute for regular backups or for the change history that a version control system like Git provides. If your project involves code or scripts, consider using Git alongside your file naming convention.
-
-## Separate raw data from everything else
-
-Folder structure matters as much as file names. The most durable organising principle is to keep raw source material physically separate from anything derived from it:
-
-- `raw/` for untouched source files (recordings, survey exports, and scanned documents)
-- `processed/` for cleaned, transcribed, or transformed versions
-- `analysis/` for working files, scripts, or coding outputs
-- `outputs/` for tables, figures, drafts, and deliverables
-
-Do not edit raw files in place. If you need to correct or transform something, save the result in `processed/` and leave the original intact. This protects the chain of evidence and makes it possible to retrace your steps if something goes wrong downstream.
-
-## Keep the folder tree shallow
-
-Most projects do not need a deep hierarchy. If someone has to click through six levels to reach an interview transcript, the structure is working against them. Three or four levels is usually enough:[^4]
-
-```text
-GOVTRUST/
-├── raw/
-│   ├── interviews/
-│   └── survey/
-├── processed/
-│   ├── transcripts/
-│   └── survey_cleaned/
-├── analysis/
-└── outputs/
-```
-
-Name folders after project content (interviews, survey, fieldwork photos), not after the person currently using them. A folder called `Maria's stuff` tells nobody anything once Maria has moved on.
-
-## Document the pattern once
-
-Put a short `README.txt` or `README.md` at the top of the project folder. It should describe:
-
-- the naming pattern, with one or two examples
-- any project codes, site codes, or participant identifier schemes
-- the meaning of version labels
-- where raw, processed, and final outputs live
-
-If a new team member cannot understand the folder structure from the README alone, the README is missing something.
-
-??? example "A minimal project README"
-    ```text
-    PROJECT: GOVTRUST
-    Naming pattern: [project]_[site]_[datatype]_[ID]_[YYYY-MM-DD]_v[NN].ext
-
-    Site codes:
-      KUM = Kumasi
-      ACC = Accra
-
-    Participant IDs: P001–P050 (assigned in order of recruitment)
-
-    Folder structure:
-      raw/         — untouched source files; do not edit
-      processed/   — cleaned and transcribed versions
-      analysis/    — scripts, coding frameworks, working notes
-      outputs/     — tables, figures, report drafts
-
-    Versions: v01, v02, etc. Minor revisions: v01_01, v01_02.
-    ```
-
-## Set this up early
-
-Establishing a convention is easiest before data collection begins, but it still pays off mid-project. Retrofitting a naming scheme is tedious, but less tedious than continuing without one. If you are renaming a large batch of existing files, tools such as Ant Renamer (Windows), Renamer (macOS), or the `rename` command (Linux) can handle bulk operations without manual file-by-file editing.
-
-[^1]: Harvard Biomedical Data Management. 'File Naming Conventions'. Available at [datamanagement.hms.harvard.edu](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions).
-
-[^2]: CESSDA Data Management Expert Guide. 'File Naming and Folder Structure'. Available at [dmeg.cessda.eu](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/File-naming-and-folder-structure).
-
-[^3]: University of Cambridge Research Data Management. 'File Organisation, Naming and Version Control'. Available at [data.cam.ac.uk](https://www.data.cam.ac.uk/organising-storing/file-organisation-naming-version-control).
-
-[^4]: Harvard Biomedical Data Management. 'Directory Structure'. Available at [datamanagement.hms.harvard.edu](https://datamanagement.hms.harvard.edu/plan-design/directory-structure).
-
----
-
-## [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/)
-
-# The data inventory
-
-*A data inventory is a running register of every dataset your project creates or acquires. It records what each dataset contains, where it is stored, who is responsible for it, how sensitive it is, and what will happen to it when the project ends. Start it early, keep it current, and it becomes the single document that holds your entire data landscape together.*
-
-## What a data inventory does
-
-A Data Management Plan (DMP) describes your intentions: how you plan to handle data across the project lifecycle. The data inventory is its factual counterpart. It records what actually exists. The two documents work in tandem: the DMP sets the framework, and the inventory tracks reality against it.
-
-Without an inventory, common problems accumulate quietly. Datasets are collected but not documented. Files sit on personal laptops with no backup record. A team member leaves, and nobody knows which survey versions they used or where the consent forms are stored. Sensitive data ends up in locations that were never assessed for security. By the time you need to deposit, publish, or delete data, reconstructing what you have and where it is becomes a project in itself.
-
-The inventory prevents this by making the data landscape visible from the start and keeping it visible throughout.
-
-## What to record
-
-A useful inventory does not need to be elaborate, but it does need to be specific. For each dataset, record at minimum:
-
-| Field | What it captures |
-|---|---|
-| Dataset name | A short, recognisable label (e.g., 'Household survey, Kumasi') |
-| Description | What the dataset contains and how it was produced |
-| Research question or work package | Which part of the project this dataset serves |
-| Data type and format | Quantitative, qualitative, geospatial, audiovisual; file formats used |
-| Source | Primary collection, secondary acquisition, administrative records, etc. |
-| Sensitivity classification | Personal data, special category data, politically sensitive, non-sensitive |
-| Storage location | Where the authoritative copy lives (e.g., SharePoint, encrypted cloud service, local drive) |
-| Backup location | Where backups are held and how often they are updated |
-| Responsible person | Who manages this dataset day to day |
-| Access restrictions | Who can access it and under what conditions |
-| Retention plan | How long the data will be kept and what happens afterwards |
-| Status | Current state of the dataset: Planned, Collecting, Processing, Complete, Archived, or Deleted |
-| Persistent identifier | DOI or other identifier, once assigned |
-
-You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
-
-!!! tip "Keep the format simple"
-    A spreadsheet works well for most projects. If you are managing a large or complex portfolio, a structured database may be more appropriate. The format matters less than the discipline of keeping it up to date.
-
-## How the inventory evolves
-
-The data inventory is not a document you write once. It develops alongside the project, becoming more detailed and more authoritative as you move through the research lifecycle.
-
-### Before data collection
-
-At the concept stage, the inventory is a sketch: a preliminary list of the datasets you expect to create or acquire, based on your research questions and methods. It does not need to be precise. Its purpose is to make you think concretely about what data the project will involve, what sensitivities are likely, and whether your plans are feasible.
-
-When you write the funding application, the inventory becomes more structured. Map each anticipated dataset to a research question or work package. Identify likely formats, estimate volumes, and flag sensitivity concerns. This version supports both the data management strategy and the ethics strategy in your proposal, and it helps you cost RDM activities realistically.
-
-By the time you write your DMP, the inventory should be a formal, structured document. Specify metadata standards, file formats, sensitivity classifications, storage locations, and responsibility assignments for each dataset. The inventory is now a key component of the DMP, not a separate exercise.
-
-### During data collection and analysis
-
-Once fieldwork begins, the inventory shifts from planned to actual. Update it as datasets are created: record collection dates, actual formats and volumes, source details, and any deviations from what was planned. If a new dataset emerges that was not anticipated (as often happens in qualitative and mixed-methods research), add it.
-
-The inventory should be reviewed at the same milestones you use to review the DMP: after major collection phases, after processing, and at reporting deadlines. Ask whether the inventory still reflects what you have. Have storage arrangements changed? Has someone new taken over responsibility for a dataset? Has a sensitivity classification shifted because of new information?
-
-!!! warning "Do not let the inventory go stale"
-    An outdated inventory is worse than no inventory at all, because it creates false confidence. If the document says a dataset is on SharePoint but it has since been moved to a secure storage environment, anyone relying on the inventory will look in the wrong place. Schedule regular reviews rather than treating the inventory as a one-off task.
-
-### When to update and how long it takes
-
-The inventory does not need continuous attention. Update it at key milestones, not every time a file changes.
-
-| Milestone | What to do | Typical time |
-|-----------|-----------|--------------|
-| **Project initiation** | Create entries for anticipated datasets; set status to Planned | ~30 minutes |
-| **Data collection start** | Update status to Collecting; confirm storage locations; link documentation (information letters, consent forms, Sikt reference) | ~15 minutes |
-| **Mid-project review** | Verify entries; add any new datasets; update statuses and classifications | ~15 minutes |
-| **Data collection complete** | Update status to Processing or Complete; verify all documentation is linked | ~15 minutes |
-| **Project closure** | Finalise status for all datasets; confirm retention or deletion decisions; see [project closure](project-closure.md) | ~30 minutes |
-
-The initial setup takes the most time. After that, milestone updates are brief because you are confirming and adjusting, not starting from scratch. The inventory tracks categories of data (e.g. "interview transcripts from local officials"), not individual files, so the scope remains manageable regardless of how much data the project generates.
-
-### After the project
-
-When you publish or deposit data, update the inventory with persistent identifiers (DOIs), access conditions, embargo timelines, and the repository where each dataset has been deposited. When data is destroyed at the end of its retention period, record the date and method of destruction.
-
-At this point, the inventory becomes the authoritative record of the project's entire data lifecycle: what was collected, how it was processed, where it was stored, what was published, what was preserved, and what was deleted. For CMI, where projects span sensitive contexts and multiple jurisdictions, this record is not just good practice; it is essential for demonstrating compliance with the GDPR, funder mandates, and ethical commitments to participants.
-
-## Connecting the inventory to other documents
-
-The data inventory does not replace other project documentation. It complements it:
-
-- The **DMP** describes policies and procedures; the inventory records the datasets those policies apply to.
-- The **README** in your project folder describes the naming convention and folder structure; the inventory records what is in those folders and why.
-- **Participant information sheets** document what participants were told about the research and how their data would be used; the inventory records which datasets are covered by which information arrangements.
-- **Data processing agreements** specify the legal terms of data handling with third parties; the inventory records which datasets are subject to those agreements.
-
-If these documents contradict each other, something has gone wrong. The inventory is often the quickest way to spot the discrepancy.
-
-??? example "A data inventory in practice: multi-method fieldwork"
-    A CMI project studying local governance in three East African countries might begin with an inventory listing four planned datasets: a household survey, key informant interviews, focus group discussions, and administrative records obtained from municipal authorities. By mid-project, the inventory has grown to include a fifth dataset (GPS coordinates of service delivery points, added after the first field visit revealed their relevance) and records that two of the original datasets required revised sensitivity classifications after a political crisis in one of the study countries. At project close, the inventory shows that the survey data was deposited in the Sikt Research Data Archive with a DOI and open access, the interview transcripts were deposited with restricted access and a five-year embargo, the GPS data was withheld entirely due to re-identification risk, and the administrative records were returned to the municipal authorities under the terms of the data sharing agreement.
-
-??? example "A data inventory in practice: document-based research"
-    Not all projects generate primary data through fieldwork. A commissioned policy review analysing climate adaptation legislation across ten countries might work entirely with published laws, government reports, and grey literature. An inventory is still useful. It records which documents were collected, from which sources, in which languages, and how they were selected. It tracks where the collection is stored, who compiled it, and whether any documents were obtained under access restrictions or confidentiality agreements. If the analytical outputs (a comparative coding framework, an annotated bibliography, a summary matrix) are to be deposited or shared with the commissioning body, the inventory records what was delivered and under what terms. Even when the underlying materials are publicly available, the curated collection and the analytical layer built on top of it are project outputs worth documenting.
-
-## Start now
-
-If your project is already under way and you do not yet have a data inventory, start one today. Retrofitting is less convenient than building from scratch, but the alternative, continuing without a clear record of what you have, is riskier. List what you know, flag what you are unsure about, and fill in the gaps as you go. A partial inventory that you maintain is more valuable than a perfect template that nobody updates.
 
 ---
 
@@ -2532,6 +2590,154 @@ If your project involves personal data, you need to know whether CMI is the **da
 ## Contact
 
 For questions about data classification and data management, contact [rdm@cmi.no](mailto:rdm@cmi.no). For DPIA, legal basis, and other GDPR concerns, contact [dpo@cmi.no](mailto:dpo@cmi.no). For IT support and secure storage setup, contact [help@cmi.no](mailto:help@cmi.no).
+
+---
+
+## [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/)
+
+# Name files and structure folders
+
+*Agree on a simple naming pattern and folder layout before the project drifts into confusion. The two most common causes of lost or duplicated research files are inconsistent names and missing version information. Fix both early, document the convention once, and the whole team can find what they need without guessing.*
+
+## Start with one naming pattern
+
+Choose a single convention and use it from the first day of data collection. For most CMI projects, a good default is:
+
+```text
+[project]_[site]_[datatype]_[identifier]_[date]_v[version].ext
+```
+
+For example:
+
+```text
+GOVTRUST_KUM_interview_P012_2025-03-12_v01.docx
+```
+
+That gives you five things at a glance: project, location, type, case, and version. Not every file needs all five elements. A project with a single site can drop the site code; a dataset with no meaningful version history can drop the version number. The point is to decide which elements matter for your project and apply them consistently.
+
+!!! tip "Agree on codes before collection starts"
+    Write down the project code, site abbreviations, and any participant or sample identifiers before fieldwork begins. If different team members invent their own shorthand, you will spend hours reconciling files later.
+
+## Keep names sortable
+
+A few mechanical rules make file names sort predictably across operating systems and file browsers:
+
+- Use ISO dates: `YYYY-MM-DD` (so `2025-03-12` sorts before `2025-04-01`).
+- Use only letters, numbers, underscores, and hyphens.
+- Use leading zeros for numbered sequences: `01`, `02`, ... `12`.
+- Never use spaces, dots (other than the file extension), or special characters such as `& ? ! # %`.
+- Keep names under 40–50 characters where possible.[^1] Long names get truncated in file browsers and cause problems on some systems.
+
+If you cannot sort and recognise files without opening them, the naming scheme is not doing its job.
+
+???+ example "Common naming mistakes and how to fix them"
+    Most of these will look familiar. The left column is what happens when people name files in a hurry; the right column shows what a consistent convention produces instead.
+
+    | Instead of | Try |
+    |---|---|
+    | `data-1.xlsx` | `GOVTRUST_KUM_survey_01.xlsx` |
+    | `interviews.docx` | `GOVTRUST_KUM_interview_P003_2025-03-12_v01.docx` |
+    | `Data_NEW(2).csv` | `GOVTRUST_ACC_survey_cleaned_2025-04-01_v02.csv` |
+    | `draft.docx` | `GOVTRUST_report_v01.docx` |
+    | `final version.docx` | `GOVTRUST_report_v03.docx` |
+    | `FINAL-final-revised_TK.docx` | `GOVTRUST_report_v04_2025-06-10_TK.docx` |
+    | `Maria's stuff/notes.txt` | `analysis/fieldnotes_KUM_2025-03-14.md` |
+    | `Copy of Copy of budget.xlsx` | `GOVTRUST_budget_v03.xlsx` |
+
+    The names on the right are longer, but they tell you what the file is without opening it, they sort predictably, and they still make sense six months later.
+
+## Connect related files with a shared identifier
+
+In qualitative and mixed-methods research, a single data collection event often produces several files: an audio recording, a transcript, field notes, and photographs. Give all files from the same event the same identifier so they stay together:[^2]
+
+```text
+GOVTRUST_KUM_interview_P012_2025-03-12_audio.wav
+GOVTRUST_KUM_interview_P012_2025-03-12_transcript_v01.docx
+GOVTRUST_KUM_interview_P012_2025-03-12_fieldnotes.md
+```
+
+This makes it straightforward to find everything connected to one interview, one focus group, or one observation session, even when files are stored in different subfolders by type.
+
+## Track versions in the file name
+
+Use numbered versions: `v01`, `v02`, `v03`. For minor revisions, extend the number: `v01_01`, `v01_02`.[^3] When sharing drafts with colleagues, you can append initials and the date: `report_v02_2025-04-10_TK.docx`.
+
+Never use `final`, `final2`, `FINAL_revised`, or similar labels. They lose all meaning the moment someone makes another change, and they do not sort reliably.
+
+!!! warning "Do not confuse versioning with backup"
+    Version numbers in file names track deliberate revisions to a document. They are not a substitute for regular backups or for the change history that a version control system like Git provides. If your project involves code or scripts, consider using Git alongside your file naming convention.
+
+## Separate raw data from everything else
+
+Folder structure matters as much as file names. The most durable organising principle is to keep raw source material physically separate from anything derived from it:
+
+- `raw/` for untouched source files (recordings, survey exports, and scanned documents)
+- `processed/` for cleaned, transcribed, or transformed versions
+- `analysis/` for working files, scripts, or coding outputs
+- `outputs/` for tables, figures, drafts, and deliverables
+
+Do not edit raw files in place. If you need to correct or transform something, save the result in `processed/` and leave the original intact. This protects the chain of evidence and makes it possible to retrace your steps if something goes wrong downstream.
+
+## Keep the folder tree shallow
+
+Most projects do not need a deep hierarchy. If someone has to click through six levels to reach an interview transcript, the structure is working against them. Three or four levels is usually enough:[^4]
+
+```text
+GOVTRUST/
+├── raw/
+│   ├── interviews/
+│   └── survey/
+├── processed/
+│   ├── transcripts/
+│   └── survey_cleaned/
+├── analysis/
+└── outputs/
+```
+
+Name folders after project content (interviews, survey, fieldwork photos), not after the person currently using them. A folder called `Maria's stuff` tells nobody anything once Maria has moved on.
+
+## Document the pattern once
+
+Put a short `README.txt` or `README.md` at the top of the project folder. It should describe:
+
+- the naming pattern, with one or two examples
+- any project codes, site codes, or participant identifier schemes
+- the meaning of version labels
+- where raw, processed, and final outputs live
+
+If a new team member cannot understand the folder structure from the README alone, the README is missing something.
+
+??? example "A minimal project README"
+    ```text
+    PROJECT: GOVTRUST
+    Naming pattern: [project]_[site]_[datatype]_[ID]_[YYYY-MM-DD]_v[NN].ext
+
+    Site codes:
+      KUM = Kumasi
+      ACC = Accra
+
+    Participant IDs: P001–P050 (assigned in order of recruitment)
+
+    Folder structure:
+      raw/         — untouched source files; do not edit
+      processed/   — cleaned and transcribed versions
+      analysis/    — scripts, coding frameworks, working notes
+      outputs/     — tables, figures, report drafts
+
+    Versions: v01, v02, etc. Minor revisions: v01_01, v01_02.
+    ```
+
+## Set this up early
+
+Establishing a convention is easiest before data collection begins, but it still pays off mid-project. Retrofitting a naming scheme is tedious, but less tedious than continuing without one. If you are renaming a large batch of existing files, tools such as Ant Renamer (Windows), Renamer (macOS), or the `rename` command (Linux) can handle bulk operations without manual file-by-file editing.
+
+[^1]: Harvard Biomedical Data Management. 'File Naming Conventions'. Available at [datamanagement.hms.harvard.edu](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions).
+
+[^2]: CESSDA Data Management Expert Guide. 'File Naming and Folder Structure'. Available at [dmeg.cessda.eu](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/File-naming-and-folder-structure).
+
+[^3]: University of Cambridge Research Data Management. 'File Organisation, Naming and Version Control'. Available at [data.cam.ac.uk](https://www.data.cam.ac.uk/organising-storing/file-organisation-naming-version-control).
+
+[^4]: Harvard Biomedical Data Management. 'Directory Structure'. Available at [datamanagement.hms.harvard.edu](https://datamanagement.hms.harvard.edu/plan-design/directory-structure).
 
 ---
 
@@ -2732,376 +2938,190 @@ A well-closed project requires no further effort. A poorly closed project genera
 
 ---
 
-## [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/)
+## [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/)
 
-# GDPR and legal compliance
+# Decide whether your project uses personal data
 
-*The GDPR applies to virtually all CMI research involving people. This page sets out the recommended interpretive approach: proportional, research-enabling, and grounded in the regulation's own provisions for scientific research. It covers lawful basis, the consent distinction, special category data, cross-border transfers, and data subject rights. For plain-language explanations of GDPR terminology, see [GDPR concepts for researchers](CROSS-legal.md). For operational guidance on information letters, see [Informed consent and information letters](CROSS-ethics.md).*
+*Personal data is any information that can identify a person, directly or through context. The definition is broader than most researchers expect, and the boundary between personal and anonymous data is often blurrier than it appears. This page explains what counts, where CMI projects commonly misjudge, and why the distinction matters for your project design.*
 
-!!! info "Guidance under development"
-    This page reflects CMI's recommended approach to GDPR compliance in research. These recommendations are based on defensible, research-enabling interpretations of the regulation, but they have not yet been formally adopted as institutional policy. Individual projects may need to deviate, and the reasoning for any deviation should be documented. Contact rdm@cmi.no for project-specific questions.
+## The definition
 
-## Proportionality: the governing principle
+Personal data is any information relating to an identified or identifiable natural person. The key word is *identifiable*. A person is identifiable if they can be singled out, directly or indirectly, by anyone with access to the data and reasonably available means.
 
-The GDPR was designed to regulate large-scale commercial data processing. It was not designed for a researcher conducting 20 interviews in Zanzibar or running a survey of 300 households in rural Ethiopia. The regulation nonetheless applies to research, but its provisions should be interpreted **proportionally**. The GDPR itself requires this: Recital 4 states that the right to data protection 'must be considered in relation to its function in society and be balanced against other fundamental rights, in accordance with the principle of proportionality.' Scientific research is explicitly recognised as a legitimate societal purpose (Recitals 156–159, Article 89).
+The test is not whether you intend to identify anyone. It is whether identification is *possible*. This applies regardless of the format (audio, text, numbers, images), the source (interviews, surveys, registers, social media), or whether the data was collected by you or obtained from others.
 
-In practice, proportionality means that the safeguards appropriate for a technology company processing millions of user records are not the same safeguards appropriate for a qualitative research project with a small number of participants. The recommendations on this page are calibrated to the scale, nature, and risk profile of social science research.
+## Direct identifiers
 
-??? note "A note on stricter interpretations"
-    Some Norwegian institutions and data protection officers adopt more conservative positions than those described here, often because their guidance is designed to cover all cases, including large-scale, high-risk processing. These stricter positions are not wrong; they are risk-averse. The approach recommended here aims to be legally defensible while minimising unnecessary administrative burden on researchers. Where significant interpretive differences exist, they are flagged on this page.
+Some data elements identify a person on their own: names, national identity numbers, email addresses, telephone numbers, photographs where someone is recognisable, voice recordings. If your project records any of these, even temporarily, it involves personal data.
 
-## Lawful basis: public interest as the recommended default
+Voice recordings deserve particular attention. A voice on an audio recording is personal data even if you never ask the participant's name, because the voice itself can identify the speaker. The same applies to video where a person is recognisable. Audio-recorded interviews are always personal data.
 
-The recommended default lawful basis for processing personal data in CMI research is **public interest (Article 6(1)(e))**, supported by the Norwegian Personal Data Act §8 and the research-specific provisions in GDPR Article 89. This applies across the full range of CMI research: qualitative, quantitative, mixed methods, interviews, surveys, ethnography, register studies, and evaluations.
+## Indirect identification
 
-Public interest is not limited to registry-based or large-scale research. It is the basis designed for scientific research, and it applies to a semi-structured interview study as much as to a national survey. Sikt's own guidance acknowledges that public interest is often more appropriate than consent for research.
+This is where CMI projects most often misjudge. Data that contains no names or direct identifiers can still be personal data if combinations of variables could single someone out:
 
-??? warning "Why not consent as the default lawful basis?"
-    Using GDPR consent (Article 6(1)(a)) as the primary lawful basis for research creates several practical problems:
+- In a small community, age, gender, village, and occupation together may identify an individual.
+- A district-level health worker described by role, district, and years of service may be the only person fitting that description.
+- GPS coordinates from a household survey in a sparsely populated area can locate a specific homestead.
+- A detailed account of events in a qualitative interview may point to one person, even without a name.
 
-    - **Withdrawal instability.** If consent is the lawful basis, a participant who withdraws triggers a legal obligation to delete their data. In a project running for two years, where the participant's data is woven into analytical frameworks, deletion can seriously impair the research. Under the public interest basis, the right to erasure is limited by Article 17(3)(d).
-    - **Specificity requirements.** GDPR consent must be specific to defined processing purposes. Qualitative and ethnographic research is inherently exploratory, and the scope of relevant data often cannot be fully specified in advance.
-    - **Conflation with ethical consent.** Bundling GDPR consent into the same form as ethical consent confuses two different things and produces consent forms that are simultaneously too detailed and too vague.
-    - **False sense of control.** In many CMI research contexts (fieldwork with vulnerable populations, research in conflict zones, power imbalances), the 'freely given' requirement of GDPR consent is difficult to establish with certainty.
+The question is always whether someone, using this data together with other reasonably available information, could identify a specific person. In small study populations, the answer is more often yes than researchers expect.
 
-    Many Norwegian institutions default to consent for interview and survey research, reserving public interest for registry studies. This is a risk-averse position, not a legal requirement.
+## Pseudonymised data is still personal data
 
-## The consent distinction: ethical consent and GDPR consent
+If participants are given codes or pseudonyms but a separate key links those codes back to real identities, the data is personal data. This is true regardless of who holds the key, where it is stored, or how restricted access is. Pseudonymisation reduces risk, but it does not change the legal classification.
 
-Two different kinds of consent operate in research, and they should not be confused:
+The corollary: data is only truly anonymous if re-identification is no longer possible by any reasonable means. Removing names from interview transcripts is not enough if the content and context could still point to a specific person. True anonymisation is harder than it appears, particularly for qualitative data from small populations.
 
-- **Ethical consent** is the obligation, rooted in research ethics and the NESH guidelines, to ensure that participation is voluntary, informed, and revocable. Ethical consent is always required when research involves human participants, regardless of the GDPR lawful basis. It is documented through the [information letter](CROSS-ethics.md).
-- **GDPR consent** (Article 6(1)(a)) is a specific lawful basis for processing personal data, with strict legal requirements and specific legal consequences. It is one of several possible lawful bases. When public interest is the lawful basis, GDPR consent is not required.
+!!! warning "Collecting anonymously is different from anonymising afterwards"
+    If you collect personal data and anonymise it later, the collection itself is still processing personal data and requires a Sikt notification. Anonymisation is something you do *to* personal data; it does not retroactively make the collection anonymous. If you want anonymous data, the entire collection process must be designed that way from the start.
 
-Under the recommended approach, GDPR consent is reserved for specific, bounded processing activities where it is the most natural fit, such as consent to be recorded, consent to be named in publications, or consent to have data archived for future reuse. These are layered on top of the public interest basis, not used instead of it.
+## Survey platforms and digital traces
 
-## Special category data
+Most online survey tools log respondent email addresses or IP addresses by default. If a platform links responses to identifying information at any point, even temporarily, the responses are personal data. This is true even if the survey questions themselves contain nothing identifying.
 
-Special category data (Article 9) includes racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation. In CMI's research profile, special category data is common and often arises incidentally. An interview about governance may capture political opinions; ethnographic fieldwork in a multi-ethnic context captures ethnic origin.
+A genuinely anonymous survey requires a platform configured to never record respondent identity or network address. If you are unsure whether your platform does this, assume it does until you verify otherwise.
 
-The recommended additional basis for special category data is Article 9(2)(j): processing necessary for scientific research purposes with appropriate safeguards under Article 89(1). The Norwegian Personal Data Act §9 provides the national implementation.
+## Third parties in your data
 
-!!! tip "Practical approach to special category data"
-    Rather than trying to predict every special category in advance, anticipate at the project level which categories are likely to arise given your topic, methods, and participant groups. Flag these in the Sikt notification and the data inventory. Handle incidental capture proportionally: if a special category arises naturally in an interview, the Article 9(2)(j) basis covers it. Context matters. A passing mention of attending a mosque in an interview about municipal budgets is not necessarily 'religious beliefs' in a GDPR-relevant sense.
+Personal data is not limited to your direct participants. If an interviewee names a local official, describes a colleague's behaviour, or discusses a family member's health, those third parties may become identifiable in the data. When they do, they are data subjects under GDPR, even though they never participated in the research.
 
-## Data minimisation
+This is common in qualitative research at CMI. Interviews about governance, service delivery, or community dynamics routinely produce identifiable references to people who are not present. You cannot seek consent from third parties you did not anticipate. What you can do is recognise that this material is personal data and handle it with the same care.
 
-Data minimisation (Article 5(1)(c)) requires that personal data be adequate, relevant, and limited to what is necessary for the research purpose. This does not mean restricting data collection to a pre-approved script. Qualitative research is inherently open-ended. What minimisation requires is intentionality (collect data related to your research purpose), no gratuitous collection (do not gather data you clearly do not need), and proportional retention (do not keep identifiable data longer than necessary). Retention periods and deletion are covered in forthcoming guidance on data retention.
+## Social media and publicly available data
 
-## Cross-border data transfers
+Publicly posted content is personal data if it is linked to an identifiable person. A username, a profile photograph, a searchable quote: these all connect data to an individual. The fact that content was posted publicly does not exempt it from data protection requirements. Research involving social media scraping, online ethnography, or analysis of public discourse typically involves personal data.
 
-CMI researchers routinely collect data in countries outside the EEA, most of which lack EU adequacy decisions. Not all data movements are the same, and they should not all require the same legal machinery. The recommended approach matches the safeguard mechanism to the actual data flow and risk:
+## Special categories
 
-- **Fieldwork data collection.** A CMI researcher collecting data on an encrypted device abroad, with data uploaded to CMI storage in Norway, needs practical safeguards (device encryption, secure upload, password protection), not Standard Contractual Clauses. The data never leaves the researcher's control.
-- **Local research assistants.** When a research assistant acts under CMI's instruction and authority, they are part of the controller's operations. Clear data handling instructions, encrypted devices, and a confidentiality agreement in their contract are sufficient.
-- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Article 26) is often more appropriate than SCCs. The research derogation (Article 49(1)(d)) is a further option for transfers necessary for scientific research in the public interest.
-- **Cloud services and digital tools.** Standard data processing agreements from the service provider are typically sufficient. Prefer tools that offer EEA-based or Swiss-based processing where available. Forthcoming guidance on tools and services will address specific platforms.
+Some personal data is treated as particularly sensitive under GDPR: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation.
 
-??? note "Standard Contractual Clauses"
-    SCCs remain an option for sustained data-sharing arrangements where other mechanisms are not appropriate, but they are designed for commercial data processing relationships and can be disproportionate for academic research collaborations. Joint controllership agreements, the research derogation, and practical security measures are often more fitting for research partnerships.
+In CMI's research profile, special categories arise frequently and often incidentally. An interview about governance may capture political opinions. Ethnographic fieldwork in a multi-ethnic context captures ethnic origin. Health research captures health data. If your project involves personal data, consider whether any of it falls into these categories, because special categories require an additional legal basis for processing. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for how this works in practice.
 
-## Data Protection Impact Assessment
+## Making the choice
 
-A DPIA is required under Article 35 when processing is likely to result in a high risk to data subjects. Most CMI projects involving a small number of qualitative interviews will not trigger a DPIA. A multi-country survey with thousands of respondents and sensitive topics likely will. The RDM contact (rdm@cmi.no) can advise on whether a DPIA is needed and support the process.
+The personal data question is not a bureaucratic hurdle. It is a design decision with real consequences for methodology, data quality, and administrative effort.
 
-??? example "When a DPIA is recommended"
-    Consider a DPIA when two or more of the following apply: large-scale processing of personal data, systematic evaluation or profiling, processing of special category data in sensitive contexts, processing data on vulnerable groups, or combining datasets from different sources. A DPIA documents the nature and purpose of the processing, the risks to data subjects, and the measures in place to mitigate those risks. It is an internal assessment, not a regulatory submission.
+Collecting personal data gives you richer material. Audio recordings preserve nuance that notes cannot. Follow-up interviews, data linkage, and quality control all require identifiers. De-identified data can be archived for reuse in ways that anonymous data sometimes cannot. The cost is a Sikt notification, a legal basis for processing (public interest is the recommended default at CMI), an information letter for participants, and a plan for anonymisation or deletion at the end of the project.
 
-## Data subject rights in research
+Avoiding personal data is simpler to manage but constrains your methods. You cannot follow up with participants, link to other datasets, or check for duplicates.
 
-Under the public interest basis, data subject rights are modified by Article 89(2) and the Norwegian Personal Data Act §17. The information letter should describe these rights clearly but concisely. In practice, most CMI research participants will not exercise them, but you should know how to respond if asked.
+Data minimisation does not mean avoiding personal data. It means being deliberate about what you collect and why. If your research questions require identifiable data, collect it with appropriate safeguards. If they do not, design for anonymity from the start rather than retrofitting it later.
 
-| Right | Status under public interest basis |
+!!! tip "If you are unsure"
+    Err on the side of assuming your project involves personal data. Sikt's advisers assess over ten thousand projects a year and can tell you quickly whether your design crosses the threshold.
+
+!!! info "See also"
+    Once you know whether your project involves personal data, move on to [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for the legal framework, [GDPR concepts for researchers](CROSS-legal.md) for terminology, and [Informed consent and information letters](CROSS-ethics.md) for participant documentation.
+
+!!! info "Review date"
+    This page was last reviewed on 2 April 2026. Data protection guidance evolves as regulatory interpretations and institutional practice develop. Verify against current Sikt and Datatilsynet guidance for your specific situation.
+
+---
+
+## [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/)
+
+# The data inventory
+
+*A data inventory is a running register of every dataset your project creates or acquires. It records what each dataset contains, where it is stored, who is responsible for it, how sensitive it is, and what will happen to it when the project ends. Start it early, keep it current, and it becomes the single document that holds your entire data landscape together.*
+
+## What a data inventory does
+
+A Data Management Plan (DMP) describes your intentions: how you plan to handle data across the project lifecycle. The data inventory is its factual counterpart. It records what actually exists. The two documents work in tandem: the DMP sets the framework, and the inventory tracks reality against it.
+
+Without an inventory, common problems accumulate quietly. Datasets are collected but not documented. Files sit on personal laptops with no backup record. A team member leaves, and nobody knows which survey versions they used or where the consent forms are stored. Sensitive data ends up in locations that were never assessed for security. By the time you need to deposit, publish, or delete data, reconstructing what you have and where it is becomes a project in itself.
+
+The inventory prevents this by making the data landscape visible from the start and keeping it visible throughout.
+
+## What to record
+
+A useful inventory does not need to be elaborate, but it does need to be specific. For each dataset, record at minimum:
+
+| Field | What it captures |
 |---|---|
-| Information | Fully applies (provided through the information letter) |
-| Access | Applies (provide transcript or relevant records on request) |
-| Rectification | Applies (correct factual errors on request) |
-| Erasure | Limited: may be refused if deletion would seriously impair the research (Article 17(3)(d)). The recommended default is to accommodate deletion requests unless there is a compelling, documented reason to retain the data |
-| Data portability | Does not apply (applies only under consent or contract basis) |
-| Objection | Limited under Article 89(2), but objections should be taken seriously and accommodated where possible |
+| Dataset name | A short, recognisable label (e.g., 'Household survey, Kumasi') |
+| Description | What the dataset contains and how it was produced |
+| Research question or work package | Which part of the project this dataset serves |
+| Data type and format | Quantitative, qualitative, geospatial, audiovisual; file formats used |
+| Source | Primary collection, secondary acquisition, administrative records, etc. |
+| Sensitivity classification | Personal data, special category data, politically sensitive, non-sensitive |
+| Storage location | Where the authoritative copy lives (e.g., SharePoint, encrypted cloud service, local drive) |
+| Backup location | Where backups are held and how often they are updated |
+| Responsible person | Who manages this dataset day to day |
+| Access restrictions | Who can access it and under what conditions |
+| Retention plan | How long the data will be kept and what happens afterwards |
+| Status | Current state of the dataset: Planned, Collecting, Processing, Complete, Archived, or Deleted |
+| Persistent identifier | DOI or other identifier, once assigned |
 
-Forthcoming guidance on data retention will cover withdrawal, objection, and their practical limits in more detail.
+You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
 
----
+!!! tip "Keep the format simple"
+    A spreadsheet works well for most projects. If you are managing a large or complex portfolio, a structured database may be more appropriate. The format matters less than the discipline of keeping it up to date.
 
-## [Informed consent and information letters](https://trond-k.github.io/cmi-rdm-hub/CROSS-ethics/)
+## How the inventory evolves
 
-# Informed consent and information letters
+The data inventory is not a document you write once. It develops alongside the project, becoming more detailed and more authoritative as you move through the research lifecycle.
 
-*Every CMI research project involving human participants requires informed, voluntary consent. The information letter is the primary instrument for achieving this: it informs participants about the research and documents their agreement to take part. This page covers what to include in an information letter, how to adapt the process for fieldwork contexts, and how to handle translations and withdrawal. For the underlying legal framework, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).*
+### Before data collection
 
-## The information letter
+At the concept stage, the inventory is a sketch: a preliminary list of the datasets you expect to create or acquire, based on your research questions and methods. It does not need to be precise. Its purpose is to make you think concretely about what data the project will involve, what sensitivities are likely, and whether your plans are feasible.
 
-The information letter fulfils two functions at once. First, it satisfies GDPR transparency obligations under Articles 13 and 14 by telling participants how their data will be processed. Second, it documents ethical consent: by receiving the information and choosing to take part, participants confirm their voluntary, informed engagement with the research.
+When you write the funding application, the inventory becomes more structured. Map each anticipated dataset to a research question or work package. Identify likely formats, estimate volumes, and flag sensitivity concerns. This version supports both the data management strategy and the ethics strategy in your proposal, and it helps you cost RDM activities realistically.
 
-When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [the consent distinction](CROSS-gdpr-and-legal-compliance.md#the-consent-distinction-ethical-consent-and-gdpr-consent).
+By the time you write your DMP, the inventory should be a formal, structured document. Specify metadata standards, file formats, sensitivity classifications, storage locations, and responsibility assignments for each dataset. The inventory is now a key component of the DMP, not a separate exercise.
 
-## What to include
+### During data collection and analysis
 
-Every information letter for a project involving human participants should cover the following:
+Once fieldwork begins, the inventory shifts from planned to actual. Update it as datasets are created: record collection dates, actual formats and volumes, source details, and any deviations from what was planned. If a new dataset emerges that was not anticipated (as often happens in qualitative and mixed-methods research), add it.
 
-- Who is responsible for the research (CMI and the named researcher)
-- What the research is about and why personal data is being processed
-- What data will be collected and how
-- The lawful basis for processing: public interest (Article 6(1)(e)), with reference to the Norwegian Personal Data Act §8
-- For special category data: the additional basis under Article 9(2)(j)
-- How data will be stored and secured
-- How long data will be retained
-- Who will have access to the data (project team, named partner institutions if applicable)
-- Participant rights (access, rectification, complaint to Datatilsynet)
-- That participation is voluntary and the participant can withdraw at any time
-- Contact details for the researcher and the RDM contact (rdm@cmi.no)
-- Sikt's contact details as data protection services provider
+The inventory should be reviewed at the same milestones you use to review the DMP: after major collection phases, after processing, and at reporting deadlines. Ask whether the inventory still reflects what you have. Have storage arrangements changed? Has someone new taken over responsibility for a dataset? Has a sensitivity classification shifted because of new information?
 
-## Topics to address where relevant
+!!! warning "Do not let the inventory go stale"
+    An outdated inventory is worse than no inventory at all, because it creates false confidence. If the document says a dataset is on SharePoint but it has since been moved to a secure storage environment, anyone relying on the inventory will look in the wrong place. Schedule regular reviews rather than treating the inventory as a one-off task.
 
-Certain activities should be explicitly described in the information letter so that participants are genuinely informed before choosing to take part. These do not require separate consent forms or checkboxes; participation itself constitutes consent when the participant has been properly informed.
+### When to update and how long it takes
 
-- **Audio or video recording.** Recording is a distinct processing activity with its own implications (voice is arguably biometric data; recordings are inherently identifiable). If the research involves recording, describe this clearly so participants can make an informed choice.
-- **Use of real names or identifiable information in publications.** The default is anonymisation. If identifiable information may be used, explain this so participants are aware.
-- **Archiving data for future reuse.** If data will be deposited in a repository for secondary use beyond the original project, participants need to be informed so their engagement extends to that purpose.
-- **Specific sensitive processing.** Any processing that goes beyond the core research activity, for example sharing identifiable data with a named third party for a defined purpose.
+The inventory does not need continuous attention. Update it at key milestones, not every time a file changes.
 
-!!! tip "Draft early, revise as needed"
-    Draft the information letter during project setup, before data collection begins. Submit it to Sikt with the notification form for review. The letter can be revised if the project scope changes, but participants should always receive current information before they take part.
+| Milestone | What to do | Typical time |
+|-----------|-----------|--------------|
+| **Project initiation** | Create entries for anticipated datasets; set status to Planned | ~30 minutes |
+| **Data collection start** | Update status to Collecting; confirm storage locations; link documentation (information letters, consent forms, Sikt reference) | ~15 minutes |
+| **Mid-project review** | Verify entries; add any new datasets; update statuses and classifications | ~15 minutes |
+| **Data collection complete** | Update status to Processing or Complete; verify all documentation is linked | ~15 minutes |
+| **Project closure** | Finalise status for all datasets; confirm retention or deletion decisions; see [project closure](project-closure.md) | ~30 minutes |
 
-## Withdrawal deadlines
+The initial setup takes the most time. After that, milestone updates are brief because you are confirming and adjusting, not starting from scratch. The inventory tracks categories of data (e.g. "interview transcripts from local officials"), not individual files, so the scope remains manageable regardless of how much data the project generates.
 
-The information letter should clearly explain the limits on withdrawal. Specifically, it should state that withdrawal is possible up to a defined point (for example, 'until the data have been de-identified' or 'until [date]'), and that after that point, deletion may no longer be feasible. Each project should define a **concrete deadline** in its DMP and information letter. Forthcoming guidance on data retention will cover the practical limits of withdrawal and objection in more detail.
+### After the project
 
-## Oral information delivery
+When you publish or deposit data, update the inventory with persistent identifiers (DOIs), access conditions, embargo timelines, and the repository where each dataset has been deposited. When data is destroyed at the end of its retention period, record the date and method of destruction.
 
-In many CMI fieldwork contexts, standard written information procedures are inappropriate or insufficient. Literacy, language, cultural context, or security considerations may all play a role.
+At this point, the inventory becomes the authoritative record of the project's entire data lifecycle: what was collected, how it was processed, where it was stored, what was published, what was preserved, and what was deleted. For CMI, where projects span sensitive contexts and multiple jurisdictions, this record is not just good practice; it is essential for demonstrating compliance with the GDPR, funder mandates, and ethical commitments to participants.
 
-When written delivery is not suitable, deliver the information letter content orally in a language the participant understands. Document that the information was provided through one of the following:
+## Connecting the inventory to other documents
 
-- A note in the research log recording the date, participant (by pseudonym if names are not being recorded), and confirmation that information was delivered
-- An audio-recorded verbal confirmation from the participant (if recording is part of the study)
-- A witness confirmation (a colleague or research assistant confirms the information was provided)
+The data inventory does not replace other project documentation. It complements it:
 
-Written consent elements (for recording, use of real names) can be replaced with oral consent documented in the same way.
+- The **DMP** describes policies and procedures; the inventory records the datasets those policies apply to.
+- The **README** in your project folder describes the naming convention and folder structure; the inventory records what is in those folders and why.
+- **Participant information sheets** document what participants were told about the research and how their data would be used; the inventory records which datasets are covered by which information arrangements.
+- **Data processing agreements** specify the legal terms of data handling with third parties; the inventory records which datasets are subject to those agreements.
 
-!!! warning "When documentation itself creates risk"
-    In conflict zones, authoritarian settings, or situations where a signed form linking a participant to research could endanger them, do not produce written consent documentation. Oral information with no written record of the participant's identity may be the most ethical and GDPR-compliant approach. The flexibility described here applies to the method of delivery, not to the substance: participants must always be informed, regardless of the format.
+If these documents contradict each other, something has gone wrong. The inventory is often the quickest way to spot the discrepancy.
 
-??? example "Planning oral delivery for fieldwork"
-    Before fieldwork, prepare an oral information delivery script covering all the standard content listed above. Decide on the documentation method you will use and note this in the DMP and Sikt notification. For high-risk contexts where even oral documentation might create risk, consult the RDM contact (rdm@cmi.no) before departing.
+??? example "A data inventory in practice: multi-method fieldwork"
+    A CMI project studying local governance in three East African countries might begin with an inventory listing four planned datasets: a household survey, key informant interviews, focus group discussions, and administrative records obtained from municipal authorities. By mid-project, the inventory has grown to include a fifth dataset (GPS coordinates of service delivery points, added after the first field visit revealed their relevance) and records that two of the original datasets required revised sensitivity classifications after a political crisis in one of the study countries. At project close, the inventory shows that the survey data was deposited in the Sikt Research Data Archive with a DOI and open access, the interview transcripts were deposited with restricted access and a five-year embargo, the GPS data was withheld entirely due to re-identification risk, and the administrative records were returned to the municipal authorities under the terms of the data sharing agreement.
 
-## Translated information letters
+??? example "A data inventory in practice: document-based research"
+    Not all projects generate primary data through fieldwork. A commissioned policy review analysing climate adaptation legislation across ten countries might work entirely with published laws, government reports, and grey literature. An inventory is still useful. It records which documents were collected, from which sources, in which languages, and how they were selected. It tracks where the collection is stored, who compiled it, and whether any documents were obtained under access restrictions or confidentiality agreements. If the analytical outputs (a comparative coding framework, an annotated bibliography, a summary matrix) are to be deposited or shared with the commissioning body, the inventory records what was delivered and under what terms. Even when the underlying materials are publicly available, the curated collection and the analytical layer built on top of it are project outputs worth documenting.
 
-When participants do not speak Norwegian or English, or when a local language version would improve comprehension, translate the information letter into the relevant language(s). The translation does not need to be a formal legal document; it needs to be clear and comprehensible. Prioritise clarity over legal precision.
+!!! info "See also"
+    Use the [Data classification](data-classification.md) scheme to fill the sensitivity classification field for each dataset, and pair the inventory with [Project closure](project-closure.md) when you wind the project down.
 
-Budget for translation in the project proposal. Have the translation reviewed by a local collaborator or research assistant for accuracy and comprehensibility. Retain both the original and translated versions for your records.
+## Start now
 
-## Consent is not a checkbox
-
-Consent in research is not a bureaucratic exercise. A well-drafted information letter, delivered in a way the participant can understand, with genuine opportunity to ask questions and to decline, is what makes consent meaningful. The goal is not a signed form; it is an informed person who has freely chosen to take part in your research.
-
----
-
-## [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/)
-
-# GDPR concepts for researchers
-
-*This is a plain-language reference to GDPR concepts as they apply to CMI research. Each entry explains what the concept means, why it matters, and how it works in practice. It is not a legal textbook; it is a working reference for researchers filling in Sikt notifications, drafting information letters, or trying to understand what a DPO is asking them. For CMI's recommended interpretive approach, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md). For operational guidance on information letters and consent, see [Informed consent and information letters](CROSS-ethics.md).*
-
-## Where the GDPR comes from
-
-The GDPR is the latest expression of a European tradition that treats personal data protection as a fundamental right. The EU Charter of Fundamental Rights (Article 8) states: 'Everyone has the right to the protection of personal data concerning him or her.' The regulation, which took effect in 2018, replaced the earlier Data Protection Directive (1995) with a framework that applies directly and uniformly across the EU and EEA.
-
-The GDPR was driven by the explosion of large-scale commercial data processing. Its default mental model is a technology company processing millions of customer records. A researcher conducting 25 interviews in rural Zambia operates in the same legal framework, but at a completely different scale, with completely different risks, and for a completely different purpose. The regulation recognises this through the principle of **proportionality** (Recital 4) and through specific provisions for scientific research (Recitals 156–159, Article 89).
-
-??? note "The historical lineage"
-    The lineage runs through the Council of Europe's Convention 108 (1981), the EU Charter of Fundamental Rights, and the Data Protection Directive (1995). Norway is not an EU member state, but the GDPR applies in Norway through the EEA Agreement. The Norwegian implementation is the Personal Data Act (*Personopplysningsloven*, 2018).
-
-## Roles
-
-**Data controller.** The institution that decides why and how personal data is processed. For CMI projects, CMI is the data controller. The PI acts on behalf of CMI, but CMI carries legal responsibility for GDPR compliance.
-
-**Joint controllers.** Two or more institutions that together decide why and how personal data is processed (Article 26). This is the natural framing for CMI's international research collaborations where both institutions shape the research design. A joint controllership agreement defines each party's responsibilities.
-
-**Data processor.** An organisation that processes personal data on your instructions, without deciding the purpose or design of the research. Examples: a contracted survey firm, a transcription service, a cloud storage platform. If you use a data processor, you need a Data Processing Agreement (Article 28).
-
-**Data subject.** The person whose personal data you are processing: usually a research participant (interviewee, survey respondent, someone observed during fieldwork). It can also be a third person whom your participant talks about and who becomes identifiable in the data. Data subjects have rights under GDPR regardless of whether they are in the EU.
-
-**Data Protection Officer (DPO).** A person designated to advise an institution on data protection compliance (Article 37). CMI's data protection contact serves this advisory function for researchers.
-
-## Legal basis
-
-**Lawful basis (Article 6).** GDPR requires a legal justification for every instance of personal data processing. There are six possible bases; for research, only two are commonly relevant: public interest and consent. You choose your lawful basis before you start collecting data, and the choice has consequences for participant rights and what happens if someone withdraws.
-
-**Public interest (Article 6(1)(e)).** Processing necessary to perform a task carried out in the public interest. Scientific research is recognised as a public interest task under Norwegian law (Personal Data Act §8). This is the standard lawful basis for research projects in Norway and the recommended default for CMI projects.
-
-**GDPR consent (Article 6(1)(a)).** A lawful basis where the data subject's explicit agreement is the legal justification for processing. GDPR consent has strict requirements: freely given, specific, informed, unambiguous, documented, and as easy to withdraw as to give. Withdrawal triggers a legal obligation to delete the data. This is not the recommended default for CMI research; see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for the rationale.
-
-**Ethical consent.** Not a GDPR term. This is the research ethics obligation, grounded in the NESH guidelines, to ensure that participation is voluntary, informed, and revocable. Ethical consent is always required at CMI, regardless of which GDPR lawful basis is used. See [Informed consent and information letters](CROSS-ethics.md).
-
-## Personal data
-
-**Personal data.** Any information relating to an identified or identifiable natural person (Article 4(1)). 'Identifiable' is broad: a name is personal data, but so is a combination of age, occupation, village, and family size if that combination could single someone out.
-
-**Special category data (Article 9).** A subset of personal data that GDPR considers particularly sensitive: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation. Processing special category data requires an additional legal basis; for CMI research, this is Article 9(2)(j) (scientific research purposes with appropriate safeguards).
-
-**Pseudonymisation.** Replacing direct identifiers (names, ID numbers) with a code, while keeping a separate key that links the code back to the person (Article 4(5)). The data is still personal data, but pseudonymisation reduces risk: if the research dataset is exposed, identities are not immediately revealed.
-
-**Anonymisation.** Removing or transforming personal data so that the individual can no longer be identified, even by combining the remaining data with other available information. Truly anonymised data is no longer personal data and falls outside GDPR entirely (Recital 26). Anonymisation is harder than it sounds, especially for qualitative data: a transcript with the name removed but detailed descriptions of role, location, and experiences may still be identifiable.
-
-??? note "Biometric data and de-identification"
-    **Biometric data** is data resulting from specific technical processing of physical, physiological, or behavioural characteristics that allows unique identification (Article 4(14)). The most relevant case for CMI: voice recordings. A voice on an audio recording is arguably biometric data because it can identify a person.
-
-    **De-identification** is not a GDPR term, but is widely used (especially in US and health research contexts) to mean removing obvious identifiers. In practice, de-identification sits somewhere between pseudonymisation and full anonymisation. Data that has been 'de-identified' in a loose sense may still be personal data under GDPR if re-identification is reasonably possible.
-
-## Principles
-
-**Data minimisation (Article 5(1)(c)).** Collect only the personal data that is adequate, relevant, and necessary for your research purpose. This does not mean restricting interviews to a pre-approved script. It means being intentional about what you collect, not gathering data you clearly do not need, and not keeping identifiable data longer than necessary.
-
-**Purpose limitation (Article 5(1)(b)).** Personal data must be collected for specified, explicit, and legitimate purposes. However, GDPR explicitly provides that further processing for scientific research purposes is not considered incompatible with the original purpose (Article 5(1)(b), second sentence). Your project can evolve without violating this principle, provided safeguards are in place.
-
-**Storage limitation (Article 5(1)(e)).** Personal data should be kept in identifiable form no longer than necessary for the research purpose. After that, it should be anonymised or deleted. Forthcoming guidance on data retention will cover default retention periods.
-
-**Accountability (Article 5(2)).** The controller must be able to demonstrate compliance with GDPR principles. This is why documentation matters: the Sikt notification, the data management plan, the information letter, agreements with partners and processors, and records of data handling decisions. You do not need a perfect paper trail; you need enough that, if asked, you can show what you did with personal data and why.
-
-## Safeguards and security
-
-**Appropriate safeguards (Article 89(1)).** GDPR requires 'appropriate technical and organisational measures' when processing personal data for research. What counts as appropriate depends on the risk. For most CMI projects, this means encrypted storage, access restricted to the project team, pseudonymisation where practicable, secure data transmission, and anonymisation or deletion when the research purpose is fulfilled.
-
-**Encryption.** Encryption at rest means data is encrypted when stored on a disk or server (CMI's M365 environment and TSD both provide this automatically). Encryption in transit means data is encrypted while being transmitted over a network (HTTPS provides this). For fieldwork, ensure devices used for data collection have device-level encryption enabled.
-
-**Data Processing Agreement (DPA).** A contract between a data controller and a data processor specifying what the processor may do with the data (Article 28). Required whenever you use an external service that handles personal data on your behalf: transcription services, contracted survey firms, cloud tools outside CMI's institutional infrastructure.
-
-**Joint controllership agreement (Article 26).** An agreement between joint controllers defining each party's responsibilities. This is the recommended instrument for international research collaborations where both CMI and the partner institution shape the research.
-
-**Standard Contractual Clauses (SCCs).** Pre-approved contract templates for transferring personal data to countries outside the EEA (Article 46(2)(c)). Designed for commercial data processing relationships. For research collaborations, joint controllership agreements or the research derogation are often more proportionate alternatives.
-
-**Data Protection Impact Assessment (DPIA).** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
-
-## Data transfers
-
-**Third-country transfer.** Any movement of personal data to a country outside the EU/EEA, including sending data to a partner, storing data on a non-EEA server, and collecting data on a device during fieldwork abroad. Most CMI projects involve third-country transfers.
-
-**Adequacy decision (Article 45).** A finding by the European Commission that a country provides adequate data protection, so data can flow there without additional safeguards. Countries with adequacy decisions include the UK, Japan, and South Korea. Most CMI fieldwork countries do not have adequacy decisions.
-
-**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical and proportionate mechanism for many CMI fieldwork and collaboration transfers.
-
-## Sikt and REK
-
-**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is a legal requirement. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
-
-**REK (Regional Committees for Medical and Health Research Ethics).** The ethics committees that review health research under the Health Research Act. REK approval is required for projects that fall under this act: clinical trials, health registry studies, and research that aims to generate new knowledge about health and disease. Most CMI health-related research is social science research about health (access to services, health policy, wellbeing outcomes) and does not require REK approval. If you are unsure, consult the RDM contact (rdm@cmi.no).
-
-??? note "The difference between Sikt and REK"
-    REK and Sikt serve different functions. REK reviews research ethics and design under the Health Research Act. Sikt assesses data protection compliance under the GDPR. A project that requires REK approval also needs a Sikt notification, but most CMI projects need only the Sikt notification.
-
-??? note "Key sections of the Norwegian Personal Data Act"
-    The most relevant national provisions for CMI researchers:
-
-    - **Section 8** provides the legal basis for processing personal data in the public interest, including scientific research. This anchors the use of public interest (Article 6(1)(e)) as the lawful basis for research in Norway.
-    - **Section 9** implements the derogation for special category data processing for research purposes (Article 9(2)(j)).
-    - **Section 17** implements research-specific modifications to data subject rights (Article 89(2)), allowing certain rights to be limited when processing serves the public interest and appropriate safeguards are in place.
-    - **Section 26** provides for processing of personal data for archiving purposes in the public interest.
-
----
-
-## [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/)
-
-# Prepare a Sikt notification
-
-*Use this guide when your project processes personal data and you need to submit or update a [Sikt notification](https://sikt.no/en/study-or-research/notification-form-personal-data) before data collection begins. The notification is part of [formalising your data handling](lifecycle-3-plan.md) during project setup. Submit at least 30 days before data collection starts.*
-
-If you are still unsure whether the project involves personal data at all, start with [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) or [GDPR concepts for researchers](CROSS-legal.md) first.
-
-[Open the Sikt portal :lucide-arrow-right:](https://minforskning.sikt.no){ .md-button }
-
-## What the notification is (and isn't)
-
-The Sikt notification is not a research ethics approval and it is not a barrier to getting started. It is the formal description of how your project will process personal data, what safeguards you will use, and what will happen to the data at the end. Sikt's role is to [assess whether what you describe is consistent](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) with data protection requirements.
-
-For most CMI projects, the challenge is not whether the form can be completed. The challenge is keeping the answers coherent across the whole form: participant groups, legal basis, storage, transfers, and project end need to line up.
-
-!!! info "Do you need Sikt, REK, or both?"
-    Sikt assesses data protection compliance for research involving personal data. [REK](https://www.forskningsetikk.no/en/about-us/our-committees-and-commission/rek/) (Regional Committees for Medical and Health Research Ethics) provides ethical approval for medical and health research under the Health Research Act. Most CMI projects need only Sikt. If your project falls under the Health Research Act (clinical trials, health registries, research primarily aimed at new knowledge about health and disease), you need REK, and the REK approval should be referenced in the Sikt notification. See [GDPR concepts for researchers](CROSS-legal.md) for more on how the two relate.
-
-## The process from start to finish
-
-1. Prepare your materials: project description, information letter, storage plan, partner details.
-2. Fill in the form section by section (use the [Sikt form walkthrough](sikt-form-walkthrough.md)).
-3. Submit at least 30 days before data collection.
-4. Respond to any clarification requests from your assigned adviser.
-5. Receive the assessment; begin data collection.
-6. [Amend the notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) if the project changes materially.
-7. Report completion through the portal when the project ends.
-
-## Before you open the form
-
-Have these ready ([Sikt's own checklist](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form)):
-
-- a short project description with title, methods, and participant groups
-- a clear view of which personal data categories you will process (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) if you are unsure about categories)
-- a draft participant information sheet or adapted oral script (see [Informed consent and information letters](CROSS-ethics.md) and Sikt's page on [information for participants](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants))
-- your project data workflow, including [storage](lifecycle-5-store.md) and access arrangements
-- details of partners, processors, and any organisations outside the EU/EEA that will access the data (see [GDPR concepts for researchers](CROSS-legal.md) for definitions of these roles)
-- project dates, including when personal data processing starts and when identifiable data will be deleted or anonymised
-- any questionnaires or interview guides you plan to upload
-
-If those pieces are still vague, tighten them first. Most trouble in the Sikt form comes from trying to answer precise questions with an unfinished project setup.
-
-## CMI quick defaults
-
-These are the standard answers for a typical CMI research project. Use them as defaults, then adjust where your project genuinely differs.
-
-| Form field | Typical CMI answer |
-|---|---|
-| Data controller | CMI |
-| Project leader | The PI or formally affiliated project lead |
-| Primary purpose | Research or student paper |
-| Article 6 legal basis | Research in the public interest |
-| Article 9 legal basis | Research in the public interest |
-| Information to participants | Yes |
-| Main storage | CMI-managed systems such as Teams, SharePoint, or approved secure alternatives |
-| Security measures | Encrypted storage, encrypted transmission, restricted access, MFA |
-| Default publication approach | Participants are not identifiable in publications |
-| End of project | Personal data is anonymised or deleted as described in the notification |
-
-For the section-by-section walkthrough you can use with the form open, see the [Sikt form walkthrough](sikt-form-walkthrough.md).
-
-## Common mistakes
-
-- Under-reporting personal data categories, especially contextual identifiers in qualitative material.
-- Using a participant-information sheet that does not match the real method or storage setup.
-- Treating all participants as one sample when they clearly belong to different groups.
-- Confusing participant agreement to take part with the [legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) for processing.
-- Giving a vague data-flow description that never says where the data actually goes.
-- Forgetting to declare third-country recipients or processors outside the EU/EEA.
-- Using a project end date that matches the last publication instead of the end of personal data processing.
-
-## After you submit
-
-Sikt aims to complete [standard assessments within 30 days](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types). Low-risk projects without special-category data may receive an automatic same-day assessment. The busiest period is November through February, so filing early gives you a buffer.
-
-Sikt may come back with requests for clarification. That is normal. The response is meant to tighten the notification, not challenge the existence of the research. You can message the assigned adviser directly through the [portal](https://minforskning.sikt.no), call Sikt on +47 73 98 40 40 (Monday, Tuesday, and Thursday, 10:00–12:00), or use the chat (weekdays 12:00–14:00, except Wednesday).
-
-If the project changes later, [amend the existing notification](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) rather than starting over. Typical triggers are:
-
-- new data types or special categories
-- new partners or processors
-- new transfer destinations
-- changed timeline or retention period
-- a materially different participant or risk profile
-
-When the project ends, report completion through the portal so the notification is closed in line with what you described.
-
-## Sources and further reading
-
-- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
-- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
-- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
-- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
-- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx) — downloadable Word template for the most common CMI scenario
-- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
-- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
-- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
-- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
-- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+If your project is already under way and you do not yet have a data inventory, start one today. Retrofitting is less convenient than building from scratch, but the alternative, continuing without a clear record of what you have, is riskier. List what you know, flag what you are unsure about, and fill in the gaps as you go. A partial inventory that you maintain is more valuable than a perfect template that nobody updates.
 
 ---
 
@@ -3476,78 +3496,123 @@ The following is a condensed extract from a real Sikt notification for a CMI pro
 
 ---
 
-## [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/)
+## [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/)
 
-# Decide whether your project uses personal data
+# What the largest replication study means for your research
 
-*Personal data is any information that can identify a person, directly or through context. The definition is broader than most researchers expect, and the boundary between personal and anonymous data is often blurrier than it appears. This page explains what counts, where CMI projects commonly misjudge, and why the distinction matters for your project design.*
+*In April 2026, the SCORE programme published the most comprehensive assessment of research credibility in the social and behavioural sciences to date. Across 865 researchers, ~3,900 papers, and 11 disciplines, the results confirmed what smaller studies had suggested: roughly half of published findings do not replicate, and effect sizes shrink substantially when they do. The single strongest predictor of whether a study's results could be reproduced was whether the authors had shared their data. These findings have direct implications for how you plan, document, and share your own work.*
 
-## The definition
+## What the SCORE programme found
 
-Personal data is any information relating to an identified or identifiable natural person. The key word is *identifiable*. A person is identifiable if they can be singled out, directly or indirectly, by anyone with access to the data and reasonably available means.
+The Systematizing Confidence in Open Research and Evidence (SCORE) programme, led by the Center for Open Science, examined papers published between 2009 and 2018 in 62 journals spanning criminology, economics, educational science, health sciences, leadership, marketing, organisational behaviour, political science, psychology, public administration, and sociology. Four coordinated studies tested three dimensions of research credibility: reproducibility, replicability, and analytical robustness.[^1]
 
-The test is not whether you intend to identify anyone. It is whether identification is *possible*. This applies regardless of the format (audio, text, numbers, images), the source (interviews, surveys, registers, social media), or whether the data was collected by you or obtained from others.
+### Replicability
 
-## Direct identifiers
+Independent teams attempted to replicate 274 claims from 164 quantitative papers, using high-powered designs (median power of 99.6% to detect the original effect size), original materials where available, and peer-reviewed protocols. Only 49.3% of the papers replicated with a statistically significant result in the same direction as the original.[^2] The median effect size dropped from r = 0.25 in the originals to r = 0.10 in the replications, an 82.4% reduction in shared variance. Replication rates varied modestly across disciplines (42.5–63.1%), though some estimates carried high uncertainty.
 
-Some data elements identify a person on their own: names, national identity numbers, email addresses, telephone numbers, photographs where someone is recognisable, voice recordings. If your project records any of these, even temporarily, it involves personal data.
+### Reproducibility
 
-Voice recordings deserve particular attention. A voice on an audio recording is personal data even if you never ask the participant's name, because the voice itself can identify the speaker. The same applies to video where a person is recognisable. Audio-recorded interviews are always personal data.
+A separate study tested whether the same data and code could reproduce the original results for 143 papers. Only 54% were precisely reproducible; 74% were at least approximately reproducible.[^3] A critical finding: just 24% of the papers in the sample had made their data and code readily available. Those that did had substantially higher reproduction rates. Data availability was, in fact, the only factor that correlated strongly with reproducibility.
 
-## Indirect identification
+### Analytical robustness
 
-This is where CMI projects most often misjudge. Data that contains no names or direct identifiers can still be personal data if combinations of variables could single someone out:
+When multiple independent teams reanalysed 100 social and behavioural science studies, 34% of the reanalyses closely matched the original results and 74% reached the same overall conclusion.[^4] A focused study of 110 economics and political science papers found higher rates: 85% were computationally reproducible, and 72% of statistically significant results survived robustness checks.[^5]
 
-- In a small community, age, gender, village, and occupation together may identify an individual.
-- A district-level health worker described by role, district, and years of service may be the only person fitting that description.
-- GPS coordinates from a household survey in a sparsely populated area can locate a specific homestead.
-- A detailed account of events in a qualitative interview may point to one person, even without a name.
+### Predicting replicability
 
-The question is always whether someone, using this data together with other reasonably available information, could identify a specific person. In small study populations, the answer is more often yes than researchers expect.
+The SCORE team tested whether replicability could be predicted in advance, using AI tools, prediction markets (where researchers bet on which studies would replicate), and study characteristics. No marker stood out as reliable.[^2] Neither machine learning models nor expert forecasters could consistently distinguish studies that would replicate from those that would not. The only strong correlate was data availability.
 
-## Pseudonymised data is still personal data
+!!! note "Not a verdict on individual studies"
+    These are aggregate findings. A 49% replication rate does not mean that any particular study in the sample is wrong. Some failures to replicate reflect limitations of the replication design, not flaws in the original. The findings are a diagnostic of systemic patterns, not a scorecard for individual papers.
 
-If participants are given codes or pseudonyms but a separate key links those codes back to real identities, the data is personal data. This is true regardless of who holds the key, where it is stored, or how restricted access is. Pseudonymisation reduces risk, but it does not change the legal classification.
+## What this means for CMI researchers
 
-The corollary: data is only truly anonymous if re-identification is no longer possible by any reasonable means. Removing names from interview transcripts is not enough if the content and context could still point to a specific person. True anonymisation is harder than it appears, particularly for qualitative data from small populations.
+The SCORE results are not abstract. They speak directly to decisions you make during every phase of a research project.
 
-!!! warning "Collecting anonymously is different from anonymising afterwards"
-    If you collect personal data and anonymise it later, the collection itself is still processing personal data and requires a Sikt notification. Anonymisation is something you do *to* personal data; it does not retroactively make the collection anonymous. If you want anonymous data, the entire collection process must be designed that way from the start.
+**Share your data and code.** Data availability was the only factor reliably associated with reproducibility. This is not just a funder compliance issue; it is the single most effective thing you can do to make your work credible and verifiable. For guidance on how to deposit data, choose repositories, and handle sensitive material, see [PUBLISH](lifecycle-8-publish.md) and [PLAN](lifecycle-3-plan.md).
 
-## Survey platforms and digital traces
+**Preregister confirmatory studies.** Preregistration separates hypothesis-testing from exploration and reduces the temptation to present post-hoc findings as planned. The SCORE findings reinforce the value of this practice. Over 300 journals now accept Registered Reports, where peer review happens before data collection and publication is guaranteed regardless of outcome.[^6] See [Reproducibility and transparency](reproducibility-and-transparency.md) for details on preregistration and Registered Reports.
 
-Most online survey tools log respondent email addresses or IP addresses by default. If a platform links responses to identifying information at any point, even temporarily, the responses are personal data. This is true even if the survey questions themselves contain nothing identifying.
+**Document your analytical decisions.** When multiple teams analysed the same data, they often reached different conclusions. This underlines the importance of recording not just what you did but why: which model specifications you tried, which you chose, and what your reasoning was. For scripted work, share the code. For qualitative work, maintain analytical memos and versioned codebooks. See [ANALYSE](lifecycle-7-analyse.md) and [Reproducibility and transparency](reproducibility-and-transparency.md).
 
-A genuinely anonymous survey requires a platform configured to never record respondent identity or network address. If you are unsure whether your platform does this, assume it does until you verify otherwise.
+**Plan for smaller effects.** Effect sizes shrank by more than half on replication. If you are designing a quantitative study, power it for a realistic effect size, not the one reported in a single prior study. The SCORE data suggest that published effect sizes are systematically inflated.
 
-## Third parties in your data
+**Recognise that qualitative research faces different challenges.** The SCORE programme tested quantitative claims. For interpretive and qualitative work, the relevant standard is not identical replication but transparency of process: can others trace how you moved from data to conclusions? The hub's guidance on [transparency in qualitative research](reproducibility-and-transparency.md#transparency-in-qualitative-and-fieldwork-based-research) addresses this directly.
 
-Personal data is not limited to your direct participants. If an interviewee names a local official, describes a colleague's behaviour, or discusses a family member's health, those third parties may become identifiable in the data. When they do, they are data subjects under GDPR, even though they never participated in the research.
+## What you can do now
 
-This is common in qualitative research at CMI. Interviews about governance, service delivery, or community dynamics routinely produce identifiable references to people who are not present. You cannot seek consent from third parties you did not anticipate. What you can do is recognise that this material is personal data and handle it with the same care.
+- **Default to sharing.** Deposit data and code in a [trustworthy archive](lifecycle-8-publish.md) unless there is a documented reason not to (participant protection, legal restriction, data sovereignty). Justify exceptions; do not treat them as the default.
+- **Preregister.** Use [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/), or [EGAP](https://egap.org/registry/) for quantitative and mixed-methods work. Consider the [transparency model](reproducibility-and-transparency.md#preregistration) for qualitative studies.
+- **Consider Registered Reports.** If your study tests a pre-specified hypothesis and null findings would be informative, the format eliminates publication bias by design. Over 300 journals now offer it, including *Nature* for social and behavioural research.
+- **Record your decisions.** Keep a decision log or analytical memo throughout the project. This is the single cheapest investment in long-term credibility.
+- **Use the hub.** The [Reproducibility and transparency](reproducibility-and-transparency.md) page covers practical implementation in detail, including tools, infrastructure, and funder expectations.
 
-## Social media and publicly available data
+!!! tip "The SCORE collection in Nature"
+    The full set of SCORE papers, editorials, and commentary is available as a curated collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (*Nature*, April 2026).[^7]
 
-Publicly posted content is personal data if it is linked to an identifiable person. A username, a profile photograph, a searchable quote: these all connect data to an individual. The fact that content was posted publicly does not exempt it from data protection requirements. Research involving social media scraping, online ethnography, or analysis of public discourse typically involves personal data.
+[^1]: The four SCORE studies and related commentary were published in *Nature*, volume 652, issue 8108 (2 April 2026). For a news summary, see Sanderson, K. (2026). 'Half of social-science studies fail replication test in years-long project'. *Nature*. [doi:10.1038/d41586-026-00955-5](https://doi.org/10.1038/d41586-026-00955-5).
+[^2]: Tyner, A. H., Abatayo, A. L., Daley, M. et al. (2026). 'Investigating the replicability of the social and behavioural sciences'. *Nature*, 652, 143–150. [doi:10.1038/s41586-025-10078-y](https://doi.org/10.1038/s41586-025-10078-y).
+[^3]: 'Investigating the reproducibility of the social and behavioural sciences'. *Nature* (2026). [doi:10.1038/s41586-026-10203-5](https://doi.org/10.1038/s41586-026-10203-5).
+[^4]: Aczel, B. et al. (2026). Analytical robustness study within the SCORE programme. Reported in 'Huge meta-research project puts claims in social-science papers to the test'. *Nature* (2026). [doi:10.1038/d41586-026-00805-4](https://doi.org/10.1038/d41586-026-00805-4).
+[^5]: Brodeur, A. et al. (2026). 'Reproducibility and robustness of economics and political science research'. *Nature* (2026). [doi:10.1038/s41586-026-10251-x](https://doi.org/10.1038/s41586-026-10251-x).
+[^6]: 'More self-reflection in research can lead to better science'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00965-3](https://doi.org/10.1038/d41586-026-00965-3). See also 'Why science has a credibility problem, and how to address it'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00972-4](https://doi.org/10.1038/d41586-026-00972-4).
+[^7]: Nature collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (April 2026).
 
-## Special categories
+!!! info "Last reviewed"
+    This page was last reviewed on 3 April 2026.
 
-Some personal data is treated as particularly sensitive under GDPR: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, and data about sex life or sexual orientation.
+---
 
-In CMI's research profile, special categories arise frequently and often incidentally. An interview about governance may capture political opinions. Ethnographic fieldwork in a multi-ethnic context captures ethnic origin. Health research captures health data. If your project involves personal data, consider whether any of it falls into these categories, because special categories require an additional legal basis for processing. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for how this works in practice.
+## [AI in this guide](https://trond-k.github.io/cmi-rdm-hub/ai-in-this-guide/)
 
-## Making the choice
+# How AI was used in this guide
 
-The personal data question is not a bureaucratic hurdle. It is a design decision with real consequences for methodology, data quality, and administrative effort.
+*This hub advises researchers to document their use of AI tools openly and precisely. The same standard applies here. This page describes how AI contributed to producing the RDM Hub, what controls were applied, and what that means for you as a reader.*
 
-Collecting personal data gives you richer material. Audio recordings preserve nuance that notes cannot. Follow-up interviews, data linkage, and quality control all require identifiers. De-identified data can be archived for reuse in ways that anonymous data sometimes cannot. The cost is a Sikt notification, a legal basis for processing (public interest is the recommended default at CMI), an information letter for participants, and a plan for anonymisation or deletion at the end of the project.
+## Why we disclose this
 
-Avoiding personal data is simpler to manage but constrains your methods. You cannot follow up with participants, link to other datasets, or check for duplicates.
+The [Reproducibility and transparency](reproducibility-and-transparency.md) page asks you to record every AI tool you use in research: the tool, the version, the task, and how you handled the output. It would be inconsistent to set that standard without meeting it ourselves. This disclosure is not an apology for using AI, nor a promotion of it. It is a factual account so you can assess the content accordingly.
 
-Data minimisation does not mean avoiding personal data. It means being deliberate about what you collect and why. If your research questions require identifiable data, collect it with appropriate safeguards. If they do not, design for anonymity from the start rather than retrofitting it later.
+## What tools were used
 
-!!! tip "If you are unsure"
-    Err on the side of assuming your project involves personal data. Sikt's advisers assess over ten thousand projects a year and can tell you quickly whether your design crosses the threshold.
+<!-- Update this table with the actual tools, versions, and dates used -->
 
-!!! info "Review date"
-    This page was last reviewed on 2 April 2026. Data protection guidance evolves as regulatory interpretations and institutional practice develop. Verify against current Sikt and Datatilsynet guidance for your specific situation.
+| Tool | Provider | Purpose | Period of use |
+|---|---|---|---|
+| Claude (Opus, Sonnet) | Anthropic | Drafting, structuring, and editing content | [Month Year] onwards |
+
+!!! tip "Be this specific in your own work"
+    This table follows the same documentation standard the hub recommends for research. If you adapt this format for your own project, include model versions and dates of use where possible.
+
+## How AI contributed
+
+AI tools were used at several stages of the hub's production:
+
+- **Content drafting.** AI generated initial drafts of pages based on human-authored outlines, source documents (funder policies, regulatory texts, institutional guidelines), and the hub's style guide.
+- **Structural design.** AI helped develop the content architecture, including the lifecycle stage framework, navigation structure, and page templates.
+- **Research synthesis.** AI summarised funder requirements, Norwegian data protection guidance, and repository policies from primary sources provided by the editor.
+- **Editing and consistency.** AI was used for copyediting, British English enforcement, and checking adherence to the style guide across pages.
+
+The workflow was iterative: a human editor provided outlines, reviewed AI output, corrected errors, and re-prompted where the result fell short. No page was published from a single unreviewed AI pass.
+
+## What AI did not do
+
+- **Editorial judgement.** Decisions about what to include, what to emphasise, and how to frame contested topics (data sovereignty, Global South research contexts, GDPR interpretation) were made by human editors drawing on CMI's institutional knowledge.
+- **Source verification.** All citations, URLs, regulatory references, and factual claims were checked by a human editor against primary sources. AI-generated references were treated as unverified drafts until confirmed.
+- **Institutional policy.** CMI's positions and recommendations reflect human decisions, not AI output.
+- **Final sign-off.** Every page was reviewed and approved by a human editor before publication.
+
+## Limitations you should be aware of
+
+No production process is without risk, and AI-assisted content carries specific ones:
+
+- **Residual errors.** AI models generate plausible but sometimes incorrect information. Despite verification, errors may remain. If you spot one, please let us know.
+- **Framing bias.** AI models reflect patterns in their training data. Subtle biases in emphasis or framing may persist despite editorial review.
+- **Currency.** AI model knowledge has a training cutoff date, and the fields this hub covers (funder policies, GDPR guidance, repository services, AI governance itself) change frequently. The "Last reviewed" date on each page indicates when content was last verified.
+
+## A model you can adapt
+
+If you are writing up your own research and need to disclose AI use, this page is one example of how to do it. The [documentation checklist](reproducibility-and-transparency.md) on the Reproducibility and transparency page provides a more concise, project-level format. The key principle is the same: say what tool you used, what it did, what you did with the output, and what the reader should know.
+
+!!! info "Last reviewed"
+    This page was last reviewed on 28 March 2026. Update this date whenever the production workflow or tools change.
