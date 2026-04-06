@@ -30,3 +30,6 @@
 *[M365]: Microsoft 365
 *[LLM]: Large Language Model
 *[SCORE]: Systematizing Confidence in Open Research and Evidence
+*[PNAS]: Proceedings of the National Academy of Sciences
+*[CoARA]: Coalition for Advancing Research Assessment
+*[DORA]: San Francisco Declaration on Research Assessment
