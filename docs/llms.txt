@@ -53,4 +53,5 @@
 ## Perspectives
 
 - [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/): The 2026 SCORE project tested thousands of social-science claims. Half did not replicate. Here is what the findings mean for how you plan, document, and share your work.
+- [Trustworthiness is something you earn, not claim](https://trond-k.github.io/cmi-rdm-hub/CROSS-trustworthiness-framework/): A February 2026 PNAS paper by Nosek and colleagues sets out seven pillars of research trustworthiness. Here is what the framework proposes and how it maps onto the decisions you make across the research lifecycle.
 - [AI in this guide](https://trond-k.github.io/cmi-rdm-hub/ai-in-this-guide/): How AI tools were used in producing this hub, what editorial controls were applied, and what this means for readers.
