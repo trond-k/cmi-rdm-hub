@@ -29,9 +29,6 @@
 - [Access - Define who can use your data](https://trond-k.github.io/cmi-rdm-hub/lifecycle-11-access/): Decide who can use your data, under what terms, and through what mechanisms: define access levels, set governance conditions, and plan for eventual withdrawal.
 - [Share & Reuse - Enable responsible reuse](https://trond-k.github.io/cmi-rdm-hub/lifecycle-12-share-and-reuse/): Enable others to use your data responsibly: choose the right licence, document for a stranger, and think about who will reuse your data and what they need.
 - [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/): Close your project systematically: finalise the data inventory, decide what to keep and what to delete, update compliance records, and leave a clear trail for the future.
-## Using this hub
-
-- [Using this hub with AI assistants](https://trond-k.github.io/cmi-rdm-hub/using-this-hub-with-ai/): How to use AI tools to get more out of this hub: giving your assistant CMI context, ready-made prompts, and honest guidance on what works.
 ## Legal and ethical
 
 - [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): How the GDPR applies to CMI research, and the recommended interpretive approach: proportionality, lawful basis, special categories, cross-border transfers, and data subject rights.
@@ -54,4 +51,3 @@
 
 - [What the largest replication study means for your research](https://trond-k.github.io/cmi-rdm-hub/CROSS-replication-evidence/): The 2026 SCORE project tested thousands of social-science claims. Half did not replicate. Here is what the findings mean for how you plan, document, and share your work.
 - [Trustworthiness is something you earn, not claim](https://trond-k.github.io/cmi-rdm-hub/CROSS-trustworthiness-framework/): A February 2026 PNAS paper by Nosek and colleagues sets out seven pillars of research trustworthiness. Here is what the framework proposes and how it maps onto the decisions you make across the research lifecycle.
-- [AI in this guide](https://trond-k.github.io/cmi-rdm-hub/ai-in-this-guide/): How AI tools were used in producing this hub, what editorial controls were applied, and what this means for readers.
