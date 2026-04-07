@@ -73,9 +73,6 @@ nav = [
     { "Share & Reuse - Enable responsible reuse" = "lifecycle-12-share-and-reuse.md" },
     { "Project closure" = "project-closure.md" },
   ]},
-  { "Using this hub" = [
-    { "Using this hub with AI assistants" = "using-this-hub-with-ai.md" },
-  ]},
   { "Legal and ethical" = [
     { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
     { "GDPR concepts for researchers" = "CROSS-legal.md" },
@@ -96,8 +93,6 @@ nav = [
   ]},
   { "Perspectives" = [
     { "What the largest replication study means for your research" = "CROSS-replication-evidence.md" },
-    { "Trustworthiness is something you earn, not claim" = "CROSS-trustworthiness-framework.md" },
-    { "AI in this guide" = "ai-in-this-guide.md" },
   ]},
 ]
 
