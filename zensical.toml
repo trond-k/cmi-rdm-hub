@@ -45,14 +45,7 @@ Copyright &copy; 2026 Chr Michelsen Institute
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "Start here" = "get-started.md" },
-  { "Foundations" = [
-    { "The elements of research data management" = "elements-of.md" },
-    { "CMI's institutional context" = "cmi-institutional-context.md" },
-    { "Principles for research data management" = "rdm-principles.md" },
-    { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
-    { "The research data lifecycle" = "research-data-lifecycle.md" },
-  ]},
+  { "Get started" = "get-started.md" },
   { "Before the project" = [
     "before-the-project.md",
     { "Frame - Design and conceptualise" = "lifecycle-1-frame.md" },
@@ -73,26 +66,40 @@ nav = [
     { "Share & Reuse - Enable responsible reuse" = "lifecycle-12-share-and-reuse.md" },
     { "Project closure" = "project-closure.md" },
   ]},
-  { "Legal and ethical" = [
-    { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
-    { "GDPR concepts for researchers" = "CROSS-legal.md" },
-    { "Informed consent and information letters" = "CROSS-ethics.md" },
-    { "Prepare a Sikt notification" = "sikt-notification.md" },
+  { "Topics" = [
+    { "Legal" = [
+      { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
+      { "GDPR concepts for researchers" = "CROSS-legal.md" },
+      { "Prepare a Sikt notification" = "sikt-notification.md" },
+    ]},
+    { "Ethics" = [
+      { "Informed consent and information letters" = "CROSS-ethics.md" },
+    ]},
+    { "Security and data classification" = [
+      { "Data classification" = "data-classification.md" },
+    ]},
+    { "Reproducibility and transparency" = [
+      { "Reproducibility and transparency" = "reproducibility-and-transparency.md" },
+    ]},
   ]},
-  { "Reproducibility and transparency" = [
-    { "Reproducibility and transparency" = "reproducibility-and-transparency.md" },
-  ]},
-  { "Data stewardship" = [
-    { "Data classification" = "data-classification.md" },
-    { "Name files and structure folders" = "file-and-folder-naming.md" },
-  ]},
-  { "Guides, tools and templates" = [
+  { "Tools and templates" = [
     { "Decide whether your project uses personal data" = "personal-data-decider.md" },
     { "Build a data inventory" = "data-inventory.md" },
+    { "Data management plan template" = "dmp-cmi.md" },
     { "Sikt form walkthrough" = "sikt-form-walkthrough.md" },
+    { "Name files and structure folders" = "file-and-folder-naming.md" },
+    { "Using this hub with AI assistants" = "using-this-hub-with-ai.md" },
+  ]},
+  { "Foundations" = [
+    { "The elements of research data management" = "elements-of.md" },
+    { "CMI's institutional context" = "cmi-institutional-context.md" },
+    { "Principles for research data management" = "rdm-principles.md" },
+    { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
+    { "The research data lifecycle" = "research-data-lifecycle.md" },
   ]},
   { "Perspectives" = [
-    { "What the largest replication study means for your research" = "CROSS-replication-evidence.md" },
+    { "Half of findings do not replicate" = "CROSS-replication-evidence.md" },
+    { "Trustworthiness is earned, not claimed" = "CROSS-trustworthiness-framework.md" },
   ]},
 ]
 

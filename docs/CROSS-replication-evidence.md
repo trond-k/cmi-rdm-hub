@@ -1,6 +1,6 @@
 ---
 icon: lucide/flask-conical
-title: "What the largest replication study means for your research"
+title: "Half of findings do not replicate"
 description: "The 2026 SCORE project tested thousands of social-science claims. Half did not replicate. Here is what the findings mean for how you plan, document, and share your work."
 tags:
   - Reproducibility
@@ -13,7 +13,9 @@ notes: ""
 date_updated: 2026-04-03
 ---
 
-# What the largest replication study means for your research
+# Half of findings do not replicate
+
+*Published 3 April 2026*
 
 *In April 2026, the SCORE programme published the most comprehensive assessment of research credibility in the social and behavioural sciences to date. Across 865 researchers, ~3,900 papers, and 11 disciplines, the results confirmed what smaller studies had suggested: roughly half of published findings do not replicate, and effect sizes shrink substantially when they do. The single strongest predictor of whether a study's results could be reproduced was whether the authors had shared their data. These findings have direct implications for how you plan, document, and share your own work.*
 
@@ -72,6 +74,3 @@ The SCORE results are not abstract. They speak directly to decisions you make du
 [^5]: Brodeur, A. et al. (2026). 'Reproducibility and robustness of economics and political science research'. *Nature* (2026). [doi:10.1038/s41586-026-10251-x](https://doi.org/10.1038/s41586-026-10251-x).
 [^6]: 'More self-reflection in research can lead to better science'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00965-3](https://doi.org/10.1038/d41586-026-00965-3). See also 'Why science has a credibility problem, and how to address it'. *Nature* (2 April 2026). [doi:10.1038/d41586-026-00972-4](https://doi.org/10.1038/d41586-026-00972-4).
 [^7]: Nature collection: [Reliable research in the social and behavioural sciences](https://www.nature.com/collections/idajfifcfg) (April 2026).
-
-!!! info "Last reviewed"
-    This page was last reviewed on 3 April 2026.

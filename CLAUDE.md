@@ -53,6 +53,7 @@ working-files/         Drafts, research notes, and work-in-progress (not publish
 zensical.toml          Site configuration (navigation, theme, features)
 pyproject.toml         Python project metadata
 STYLE-GUIDE.md         Content style and tone guidelines (MUST READ)
+PERSPECTIVES-GUIDE.md  Style supplement for Perspectives pieces (READ for commentaries)
 REVIEW-CHECKLIST.md    Pre-publication quality checklist (MUST READ)
 DOCS-AUDIT.md          Content audit and development planning tracker
 base-content-architecture.md  Content strategy and lifecycle stage details
@@ -70,13 +71,14 @@ The site is organised into seven navigation sections defined in `zensical.toml` 
 | During the project | Collect, Store, Process, Analyse |
 | After the project | Publish, Preserve, Discover, Access, Share & Reuse |
 | Using this hub | AI assistant usage guidance |
+| Perspectives | Short commentaries on recent research or policy developments (see `PERSPECTIVES-GUIDE.md`) |
 | Cross-cutting guidance | Reproducibility, file naming, data inventory, GDPR/legal, ethics, Sikt notifications |
 
 The 12 lifecycle stages follow three phases (Before / During / After the project). Cross-cutting guidance applies across all stages. Interactive tools (e.g. `personal-data-decider.md`) are linked from content pages but may not appear directly in the nav.
 
 ## Critical style and content rules
 
-**Read `STYLE-GUIDE.md` and `REVIEW-CHECKLIST.md` before writing or editing any content.** Key rules:
+**Read `STYLE-GUIDE.md` and `REVIEW-CHECKLIST.md` before writing or editing any content.** For Perspectives pieces (short commentaries on recent research or policy developments), also read `PERSPECTIVES-GUIDE.md`, which supplements the main style guide with a distinct voice, tighter word count (500–800 words), and a canonical structure. Key rules:
 
 ### Language
 - **British English throughout** (*organised*, *recognised*, *anonymisation*, *centre*, *colour*, *programme*)
@@ -112,8 +114,9 @@ The 12 lifecycle stages follow three phases (Before / During / After the project
 - No HTML where Markdown or Zensical extensions work (exception: grid card layouts)
 
 ### Abbreviations
-- New abbreviations must be added to `includes/abbreviations.md` in the format `*[ABBR]: Full expansion`
-- On first use in any page, spell out with abbreviation in parentheses or link to glossary
+- Each abbreviation uses **one** definition mechanism: tooltip OR inline expansion, never both
+- **Tooltip:** Frequently used, cross-cutting abbreviations (4+ pages) go in `includes/abbreviations.md` in the format `*[ABBR]: Full expansion`. Do **not** also spell them out inline
+- **Inline:** Niche or page-specific abbreviations (1-2 pages) are spelled out on first use with the abbreviation in parentheses. Do **not** add them to `abbreviations.md`
 
 ## CI/CD
 
@@ -142,7 +145,7 @@ The `.github/workflows/docs.yml` workflow:
 1. Create a `.md` file in `docs/` with proper YAML frontmatter
 2. Add the page to the `nav` array in `zensical.toml`
 3. Follow the style guide for tone, structure, and formatting
-4. Add any new abbreviations to `includes/abbreviations.md`
+4. For cross-cutting abbreviations (4+ pages), add to `includes/abbreviations.md`; for niche terms, spell out inline on first use instead
 5. Run `python scripts/generate_llms_txt.py` to update llms.txt files
 6. Preview with `uv run zensical serve` before committing
 

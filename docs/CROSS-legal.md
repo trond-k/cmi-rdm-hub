@@ -84,7 +84,7 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 
 **Standard Contractual Clauses (SCCs).** Pre-approved contract templates for transferring personal data to countries outside the EEA (Article 46(2)(c)). Designed for commercial data processing relationships. For research collaborations, joint controllership agreements or the research derogation are often more proportionate alternatives.
 
-**Data Protection Impact Assessment (DPIA).** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
+**DPIA.** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
 
 ## Data transfers
 

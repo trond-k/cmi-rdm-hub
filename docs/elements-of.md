@@ -17,9 +17,9 @@ date_updated: 2026-03-27
 
 ## Why a framework helps
 
-It is tempting to treat data management as a checklist: write a Data Management Plan (DMP), choose a storage solution, deposit the data. But checklists do not capture the fact that your choice of storage depends on jurisdiction, your jurisdiction depends on where your partners are, and your partners' expectations depend on institutional norms you may not share. A framework that shows these layers and their relationships helps you:
+It is tempting to treat data management as a checklist: write a DMP, choose a storage solution, deposit the data. But checklists do not capture the fact that your choice of storage depends on jurisdiction, your jurisdiction depends on where your partners are, and your partners' expectations depend on institutional norms you may not share. A framework that shows these layers and their relationships helps you:
 
-- **Spot constraints early.** If you know that cross-border data transfers require a legal basis under the General Data Protection Regulation (GDPR), you can address this at the planning stage rather than discovering it when you try to move files between Oslo and Nairobi.
+- **Spot constraints early.** If you know that cross-border data transfers require a legal basis under the GDPR, you can address this at the planning stage rather than discovering it when you try to move files between Oslo and Nairobi.
 - **Trace problems to their source.** When something goes wrong (a tool does not meet security requirements, a consent process does not cover future reuse), the framework helps you identify which layer the problem originates in and what else it affects.
 - **Communicate across roles.** A principal investigator, a data manager, and an IT administrator think about data management from different starting points. The framework provides shared vocabulary for aligning their perspectives.
 

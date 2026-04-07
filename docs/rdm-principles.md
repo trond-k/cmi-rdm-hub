@@ -30,7 +30,7 @@ Individual projects should interpret and operationalise these principles in ways
 
 **Data should be findable, accessible, interoperable, and reusable — but always in proportion to what is ethically and practically appropriate.**
 
-The FAIR principles (Findable, Accessible, Interoperable, Reusable) provide a valuable orientation for data management. CMI endorses them as a framework for improving the discoverability, quality, and long-term value of research data. However, FAIR is not treated as an absolute standard to be maximised in every case.
+The FAIR principles provide a valuable orientation for data management. CMI endorses them as a framework for improving the discoverability, quality, and long-term value of research data. However, FAIR is not treated as an absolute standard to be maximised in every case.
 
 In practice, this means:
 
@@ -200,7 +200,7 @@ Projects should:
 
 **All data management practices must comply with applicable legal and regulatory requirements, including data protection law, institutional policy, and funder mandates — but legal compliance alone does not guarantee ethical adequacy.**
 
-CMI operates across multiple jurisdictions and regulatory environments. Projects are expected to identify and comply with the relevant legal frameworks — including, but not limited to, the EU General Data Protection Regulation (GDPR), national data protection and cybercrime legislation in countries where research is conducted, and funder-specific data policies.
+CMI operates across multiple jurisdictions and regulatory environments. Projects are expected to identify and comply with the relevant legal frameworks — including, but not limited to, the GDPR, national data protection and cybercrime legislation in countries where research is conducted, and funder-specific data policies.
 
 Where legal requirements conflict with ethical principles (e.g., where a legal framework permits or compels data sharing that would endanger participants), the more protective standard should generally prevail, with the reasoning clearly documented.
 

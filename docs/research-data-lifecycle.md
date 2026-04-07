@@ -16,7 +16,7 @@ date_updated: 2026-03-27
 
 ## Why a lifecycle model
 
-Research data management is often treated as a set of isolated tasks: write a Data Management Plan (DMP) before the project starts, deposit data in a repository when it ends, fill in the forms in between. This misses the point. Decisions made at every stage shape what is possible at every other stage. The file format you choose during collection determines whether your data can be preserved in ten years. The sensitivity screening you do at the concept stage determines whether you can share the data at all. The metadata you record during fieldwork (interview settings, survey setup, contextual notes) determines whether anyone can fully interpret your results.
+Research data management is often treated as a set of isolated tasks: write a DMP before the project starts, deposit data in a repository when it ends, fill in the forms in between. This misses the point. Decisions made at every stage shape what is possible at every other stage. The file format you choose during collection determines whether your data can be preserved in ten years. The sensitivity screening you do at the concept stage determines whether you can share the data at all. The metadata you record during fieldwork (interview settings, survey setup, contextual notes) determines whether anyone can fully interpret your results.
 
 A lifecycle model makes these dependencies visible. It does not add work; it surfaces work that would otherwise need to be done reactively, under pressure, and at greater cost.
 

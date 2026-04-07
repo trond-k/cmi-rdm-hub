@@ -45,7 +45,7 @@ Archives vary in what they require and what they accept. Check the repository's 
 
 ## Assign persistent identifiers and cite data properly
 
-A Digital Object Identifier (DOI) makes your dataset permanently findable and citable, regardless of where it moves. Trustworthy archives assign DOIs automatically on deposit. If you are archiving code through Zenodo's GitHub integration, the DOI is generated when you create a release.
+A DOI makes your dataset permanently findable and citable, regardless of where it moves. Trustworthy archives assign DOIs automatically on deposit. If you are archiving code through Zenodo's GitHub integration, the DOI is generated when you create a release.
 
 Use DOIs consistently. Cite your own data in your publications, just as you would cite someone else's. Follow the [FORCE11 data citation principles](https://force11.org/info/joint-declaration-of-data-citation-principles-final/ "Joint Declaration of Data Citation Principles"): include the creator, title, year, repository, and identifier. Link datasets to the articles that use them, and link articles back to the datasets. This bidirectional linking is what makes the relationship between outputs visible to readers, indexers, and funders.
 

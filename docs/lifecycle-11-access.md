@@ -66,7 +66,7 @@ The choice of mechanism should be proportionate to the actual risk. Overly restr
 
 ## Community governance and partner-held data
 
-For data collected in partnership with communities or local institutions, access governance may not be yours alone to define. The CARE Principles (Collective Benefit, Authority to Control, Responsibility, Ethics) hold that communities should retain meaningful influence over how data about them are used. In practice, this can mean:
+For data collected in partnership with communities or local institutions, access governance may not be yours alone to define. The CARE Principles hold that communities should retain meaningful influence over how data about them are used. In practice, this can mean:
 
 - Joint decision-making on access applications, where the community or local partner reviews requests alongside (or instead of) the depositor.
 - Local retention of some or all data, with metadata published centrally so that the data are discoverable without being directly accessible.
