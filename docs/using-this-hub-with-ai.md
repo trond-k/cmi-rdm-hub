@@ -1,7 +1,7 @@
 ---
 icon: lucide/message-circle-question
-title: "Using this hub with AI assistants"
-description: "How to use AI tools to get more out of this hub: giving your assistant CMI context, ready-made prompts, and honest guidance on what works."
+title: "Using this hub with AI assistance"
+description: "How to use AI tools to get more out of this hub: giving your AI assistant CMI context, ready-made prompts, and honest guidance on what works."
 tags:
   - AI
   - Getting started
@@ -10,7 +10,7 @@ notes: ""
 date_updated: 2026-04-02
 ---
 
-# Using this hub with AI assistants
+# Using this hub with AI assistance
 
 *You can ask an AI assistant questions about research data management and get answers grounded in CMI's own guidance. This page explains how to give your assistant the context it needs, offers ready-made prompts for common situations, and is honest about where AI answers are reliable and where they are not.*
 

@@ -33,7 +33,7 @@ The combination of a Global South focus and work on sensitive topics (authoritar
 
 Research in conflict-affected and authoritarian contexts creates risks of retaliatory harm if participants or researchers are identified. These risks are compounded by regulatory fragmentation: studies document discordant data protection regimes across EU, African, and other national frameworks, with limited Research Ethics Committee capacity for multi-jurisdictional review.[^3]
 
-The EU's General Data Protection Regulation (GDPR) can, however, serve as a human-rights-based safeguard where other protections are insufficient. The GDPR embeds privacy as a fundamental right, imposing standards of lawful, transparent, and proportionate processing.[^4] For CMI, this means GDPR compliance is not merely a bureaucratic obligation; it can function as a baseline of protection for participants in jurisdictions where domestic safeguards are weak or absent.
+The GDPR can, however, serve as a human-rights-based safeguard where other protections are insufficient. The GDPR embeds privacy as a fundamental right, imposing standards of lawful, transparent, and proportionate processing.[^4] For CMI, this means GDPR compliance is not merely a bureaucratic obligation; it can function as a baseline of protection for participants in jurisdictions where domestic safeguards are weak or absent.
 
 !!! info "GDPR Article 89: a research-specific framework"
     Article 89 permits processing of sensitive personal data for scientific research purposes, provided that appropriate safeguards are in place. These include data minimisation, pseudonymisation, and privacy by design.[^5] This gives CMI a legal basis for working with sensitive data while protecting participants.

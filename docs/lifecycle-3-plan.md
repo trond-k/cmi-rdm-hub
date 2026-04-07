@@ -19,7 +19,7 @@ date_updated: 2026-04-04
 
 ## The DMP as a working document
 
-A Data Management Plan (DMP) serves two purposes that are easy to confuse. The first is external: funders require one, and it forms part of your contractual obligations. The second is internal: it is the document your team actually uses to coordinate data handling across the life of the project. These two purposes sometimes pull in different directions. Funder templates tend to be generic and front-loaded, asking you to describe things you cannot yet know in detail. The operational DMP needs to be specific, revisable, and grounded in what is actually happening.
+A DMP serves two purposes that are easy to confuse. The first is external: funders require one, and it forms part of your contractual obligations. The second is internal: it is the document your team actually uses to coordinate data handling across the life of the project. These two purposes sometimes pull in different directions. Funder templates tend to be generic and front-loaded, asking you to describe things you cannot yet know in detail. The operational DMP needs to be specific, revisable, and grounded in what is actually happening.
 
 The pragmatic solution is to maintain both. Write the funder-facing DMP to meet the requirements of the call (Horizon Europe, the Research Council of Norway, Norad, or whoever is funding the work). Then use it as the skeleton for an internal version that your team keeps current. The internal version can be more detailed, more honest about uncertainties, and more tightly linked to your [data inventory](data-inventory.md), which by this stage should be a formal, structured companion document.
 
@@ -68,7 +68,7 @@ By this stage, you need to move from the general awareness of the [FRAME](lifecy
 
 ### GDPR and data protection
 
-If your project processes personal data (and most CMI projects do), you need to identify the lawful basis for processing, determine whether a notification to Sikt is required, and assess whether the nature and scale of processing triggers a Data Protection Impact Assessment (DPIA). International data transfers, particularly from the EU/EEA to countries without an adequacy decision, require additional legal mechanisms.
+If your project processes personal data (and most CMI projects do), you need to identify the lawful basis for processing, determine whether a notification to Sikt is required, and assess whether the nature and scale of processing triggers a DPIA. International data transfers, particularly from the EU/EEA to countries without an adequacy decision, require additional legal mechanisms.
 
 These are not boxes to tick after the fact. They shape how you design participant information, structure storage, and negotiate collaboration agreements. Get advice from CMI's data protection contact early. For detailed guidance, see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 

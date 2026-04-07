@@ -42,7 +42,7 @@ Regardless of the schema, the following elements matter most for findability:
 
 ## Use persistent identifiers consistently
 
-A Digital Object Identifier (DOI) gives your dataset a permanent, resolvable address. It ensures the dataset can be found and cited even if the repository changes its URL structure, and it enables automated linking between outputs. Trustworthy archives assign DOIs on deposit. The task here is to use them consistently.
+A DOI gives your dataset a permanent, resolvable address. It ensures the dataset can be found and cited even if the repository changes its URL structure, and it enables automated linking between outputs. Trustworthy archives assign DOIs on deposit. The task here is to use them consistently.
 
 Cite your dataset by its DOI in your publications. Link the dataset to the articles that use it, and link those articles back to the dataset. Use [ORCIDs](https://orcid.org/) for researchers and [ROR IDs](https://ror.org/) for institutions to connect outputs to the people and organisations that produced them. This network of identifiers is what makes cross-referencing work: a reader who finds your article can follow the DOI to the data; a reader who finds the data can follow the link back to the article.
 

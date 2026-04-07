@@ -17,7 +17,7 @@ date_updated: 2026-04-04
 
 ## What a data inventory does
 
-A Data Management Plan (DMP) describes your intentions: how you plan to handle data across the project lifecycle. The data inventory is its factual counterpart. It records what actually exists. The two documents work in tandem: the DMP sets the framework, and the inventory tracks reality against it.
+A DMP describes your intentions: how you plan to handle data across the project lifecycle. The data inventory is its factual counterpart. It records what actually exists. The two documents work in tandem: the DMP sets the framework, and the inventory tracks reality against it.
 
 Without an inventory, common problems accumulate quietly. Datasets are collected but not documented. Files sit on personal laptops with no backup record. A team member leaves, and nobody knows which survey versions they used or where the consent forms are stored. Sensitive data ends up in locations that were never assessed for security. By the time you need to deposit, publish, or delete data, reconstructing what you have and where it is becomes a project in itself.
 
@@ -43,7 +43,7 @@ A useful inventory does not need to be elaborate, but it does need to be specifi
 | Status | Current state of the dataset: Planned, Collecting, Processing, Complete, Archived, or Deleted |
 | Persistent identifier | DOI or other identifier, once assigned |
 
-You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a Data Protection Impact Assessment (DPIA) has been completed. Longitudinal projects may need to track collection waves.
+You may need additional fields depending on your project. Multi-site studies benefit from a site or country column. Projects working with personal data should record the lawful basis for processing under the GDPR and whether a DPIA has been completed. Longitudinal projects may need to track collection waves.
 
 !!! tip "Keep the format simple"
     A spreadsheet works well for most projects. If you are managing a large or complex portfolio, a structured database may be more appropriate. The format matters less than the discipline of keeping it up to date.

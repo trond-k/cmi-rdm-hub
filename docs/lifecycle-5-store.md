@@ -45,7 +45,7 @@ Some data cannot or should not be stored in the standard MS365 environment. The 
 
 If your project processes personal data that falls into the GDPR's special categories (health data, political opinions, ethnic origin, biometric data), or if the risk profile is elevated because of the research context (conflict zones, authoritarian settings, vulnerable populations), consider a dedicated secure environment.
 
-[TSD (Tjenester for Sensitive Data)](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your Data Protection Impact Assessment (DPIA) or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
+[TSD (Tjenester for Sensitive Data)](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your DPIA or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
 
 For projects involving encrypted file sharing with external partners, particularly in contexts where participants or collaborators face surveillance risks, [Tresorit](https://tresorit.com/) and [ProtonDrive](https://proton.me/drive) offer end-to-end encryption. These are useful for transit and collaboration, but they are not a substitute for a managed research environment like TSD for long-term storage of sensitive data.
 

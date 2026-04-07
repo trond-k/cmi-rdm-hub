@@ -23,7 +23,7 @@ date_updated: 2026-04-03
 
 ## Why this matters now
 
-Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. In April 2026, the largest replication project to date confirmed the scale of the problem: the SCORE programme found that only 49% of 164 social-science studies replicated, with effect sizes more than halving on average, and that data availability was the only reliable predictor of reproducibility.[^8] But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
+Research credibility is under pressure. High-profile fabrication cases, a documented replication crisis, and the spread of AI-generated content have all raised the stakes. In April 2026, the largest replication project to date confirmed the scale of the problem: the Systematizing Confidence in Open Research and Evidence (SCORE) programme found that only 49% of 164 social-science studies replicated, with effect sizes more than halving on average, and that data availability was the only reliable predictor of reproducibility.[^8] But the picture is not bleak: large-scale replication projects consistently find that methodological reforms (preregistration, adequate statistical power, transparent reporting) improve replicability. The practices on this page are a tested response to systemic problems. They were, however, designed primarily for quantitative, lab-based research. If your work involves qualitative interviews, fieldwork in sensitive contexts, or participatory methods in the Global South, the standard prescriptions need adaptation. This page takes both the principles and the complications seriously.
 
 ## What reproducibility requires
 
@@ -83,7 +83,7 @@ If you use generative AI or machine learning tools at any point in the research 
     8. Whether a Data Processing Agreement was in place (if personal data was involved)
 
 !!! warning "Data protection and AI services"
-    Cloud-based AI services process data on remote servers and may retain or train on your input. If personal data is involved, a Data Protection Impact Assessment (DPIA) may be required, along with a Data Processing Agreement with the provider. The Norwegian Data Protection Authority has confirmed that a DPIA is required before deploying generative AI tools that process personal data.[^5] Enterprise-tier services with contractual data protection commitments are not the same as consumer-tier tools; verify which you are using. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for further guidance.
+    Cloud-based AI services process data on remote servers and may retain or train on your input. If personal data is involved, a DPIA may be required, along with a Data Processing Agreement with the provider. The Norwegian Data Protection Authority has confirmed that a DPIA is required before deploying generative AI tools that process personal data.[^5] Enterprise-tier services with contractual data protection commitments are not the same as consumer-tier tools; verify which you are using. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for further guidance.
 
 !!! danger "Hallucinated references are a documented problem"
     AI tools generate plausible but non-existent citations. Audits of recent major conferences found over 100 hallucinated references in accepted papers.[^6] Every AI-generated citation must be verified against the actual source.
@@ -104,7 +104,7 @@ CMI researchers frequently work in contexts where full transparency and particip
 
 The guiding formulation is 'as open as possible, as closed as necessary,' but the burden of justifying closure falls on you. Several principles help navigate the tension:
 
-- **FAIR and CARE together.** The [FAIR principles](https://www.go-fair.org/fair-principles/) maximise data reuse. The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance (Collective Benefit, Authority to Control, Responsibility, Ethics) ensure that reuse does not cause harm.[^7] Neither framework is complete without the other.
+- **FAIR and CARE together.** The [FAIR principles](https://www.go-fair.org/fair-principles/) maximise data reuse. The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance ensure that reuse does not cause harm.[^7] Neither framework is complete without the other.
 - **Tiered access.** Not all data needs to be fully open. Repositories such as [Sikt Research Data Archive](https://sikt.no/en/tjenester/arkivere-data) and the [UK Data Service](https://ukdataservice.ac.uk/) offer restricted access, where approved researchers can use sensitive data under controlled conditions.
 - **Metadata sharing.** When data cannot be shared, describe what the data are: how they were collected, what they contain, and under what conditions access might be negotiated. This supports discoverability without exposure risk.
 - **Temporal sensitivity.** Data safe to share now may not have been safe earlier, and political contexts shift. Review sharing decisions at appropriate intervals rather than treating them as permanent.
@@ -145,9 +145,9 @@ Major research funders have converged on expectations around transparency and re
     | Research Council of Norway | Immediate (Plan S) | FAIR, suitable repository | Yes | Encouraged |
     | ERC | Immediate | FAIR, trusted repository | Yes | Encouraged |
     | Norad | Varies by programme | Increasingly expected | Varies | Not specified |
-    | NIH (US) | Immediate from Jul 2025 | Sharing plan required | Yes | Clinical trials only |
+    | National Institutes of Health, NIH (US) | Immediate from Jul 2025 | Sharing plan required | Yes | Clinical trials only |
 
-The shift in research assessment matters too. Initiatives such as [DORA](https://sfdora.org/) and [CoARA](https://coara.eu/) are moving evaluation away from journal prestige toward research quality, creating institutional space for researchers to invest in reproducibility practices without fearing the effort goes unrewarded.
+The shift in research assessment matters too. Initiatives such as the [Declaration on Research Assessment (DORA)](https://sfdora.org/) and the [Coalition for Advancing Research Assessment (CoARA)](https://coara.eu/) are moving evaluation away from journal prestige toward research quality, creating institutional space for researchers to invest in reproducibility practices without fearing the effort goes unrewarded.
 
 [^1]: Jacobs, A.M., Büthe, T. et al. (2021). [The Qualitative Transparency Deliberations: insights and implications](https://doi.org/10.1017/S1537592720001164). *Perspectives on Politics*, 19(1), 171–208.
 [^2]: Haven, T. & Van Grootel, L. [Preregistration template for qualitative studies](https://osf.io/j7ghv/overview), OSF Registries.
