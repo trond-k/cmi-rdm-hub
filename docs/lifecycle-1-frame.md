@@ -79,3 +79,5 @@ For CMI projects in conflict-affected, authoritarian, or politically volatile se
 ## Sketch a preliminary data inventory
 
 By the end of this stage, you should have enough information to draft a preliminary [data inventory](data-inventory.md): a list of the datasets you expect to create or acquire, with a rough indication of their type, source, likely sensitivity, and purpose. This is not a formal deliverable; it is a thinking tool that provides the foundation the [FUND](lifecycle-2-fund.md) and [PLAN](lifecycle-3-plan.md) stages will build on.
+
+Framing a project also means framing its documentation needs. Each data type implies specific documentation: interviews require information letters, consent arrangements, and interview guides; surveys require codebooks and instrument versions; administrative data requires access agreements and provenance records. Thinking about these [documentation layers](foundations-of-documentation.md) early prevents the common problem of reaching deposit stage with data that cannot be understood or shared because critical documentation was never produced.

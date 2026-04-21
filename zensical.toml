@@ -51,6 +51,7 @@ nav = [
     { "CMI's institutional context" = "cmi-institutional-context.md" },
     { "Principles for research data management" = "rdm-principles.md" },
     { "Foundations of data sharing" = "foundations-of-data-sharing.md" },
+    { "The documentation layers around research data" = "foundations-of-documentation.md" },
     { "The research data lifecycle" = "research-data-lifecycle.md" },
   ]},
   { "Before the project" = [

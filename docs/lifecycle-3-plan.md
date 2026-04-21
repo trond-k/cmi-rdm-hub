@@ -40,6 +40,8 @@ The specific headings vary by funder, but the core topics are consistent. Your D
 
 Not every section needs the same level of detail at the outset. Storage and security arrangements should be specific from the start. Preservation and sharing plans can be outlined in principle and refined as the project develops, provided you revisit them before the project ends.
 
+A DMP is ultimately a plan for maintaining several kinds of documentation, not only datasets and metadata. Consider what [documentation layers](foundations-of-documentation.md) your project requires: descriptive metadata, analytic documentation (codebooks, coding frames), methodological documentation (protocols, instruments), governance documentation (consent, ethics approval, legal basis), and project-context records (roles, retention plans, agreements). Assigning responsibility for each type at this stage prevents gaps from accumulating later.
+
 ## Assign roles and responsibilities
 
 Data management fails most often not because of technical problems but because nobody was clearly responsible. The DMP should name who is accountable for each area:

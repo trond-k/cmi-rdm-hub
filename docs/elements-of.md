@@ -109,6 +109,8 @@ This is a thinking tool, not a form to fill in. Use it when you need to:
 
 The framework does not replace the lifecycle model. The lifecycle tells you *when* to do things; this framework helps you understand *why* certain choices are constrained and *where* the dependencies lie. Together, they give you a map for navigating data management decisions from concept to long-term preservation.
 
+A complementary lens looks inward rather than outward: not the constraints on data management, but the [documentation layers around the data itself](foundations-of-documentation.md). Where this framework maps context, institution, process, and implementation, the documentation-layer model maps what must be maintained around the data to make it understandable, accountable, and reusable over time.
+
 !!! info "Last reviewed"
     This page was last reviewed on 27 March 2026. For rapidly changing
     topics, verify against the latest source.

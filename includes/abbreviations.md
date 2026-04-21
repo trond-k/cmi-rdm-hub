@@ -33,3 +33,4 @@
 *[PNAS]: Proceedings of the National Academy of Sciences
 *[CoARA]: Coalition for Advancing Research Assessment
 *[DORA]: San Francisco Declaration on Research Assessment
+*[DDI]: Data Documentation Initiative

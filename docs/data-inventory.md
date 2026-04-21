@@ -100,6 +100,8 @@ The data inventory does not replace other project documentation. It complements 
 
 If these documents contradict each other, something has gone wrong. The inventory is often the quickest way to spot the discrepancy.
 
+In this sense, the inventory serves as the project's documentation map: it registers not only what data exists, but also what [documentation layers](foundations-of-documentation.md) surround each dataset, including which codebook applies, which consent arrangement covers it, which agreement governs access, and whether methodological documentation has been produced.
+
 ??? example "A data inventory in practice: multi-method fieldwork"
     A CMI project studying local governance in three East African countries might begin with an inventory listing four planned datasets: a household survey, key informant interviews, focus group discussions, and administrative records obtained from municipal authorities. By mid-project, the inventory has grown to include a fifth dataset (GPS coordinates of service delivery points, added after the first field visit revealed their relevance) and records that two of the original datasets required revised sensitivity classifications after a political crisis in one of the study countries. At project close, the inventory shows that the survey data was deposited in the Sikt Research Data Archive with a DOI and open access, the interview transcripts were deposited with restricted access and a five-year embargo, the GPS data was withheld entirely due to re-identification risk, and the administrative records were returned to the municipal authorities under the terms of the data sharing agreement.
 

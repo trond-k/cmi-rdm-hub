@@ -9,6 +9,7 @@
 - [CMI's institutional context](https://trond-k.github.io/cmi-rdm-hub/cmi-institutional-context/): How CMI's research portfolio, partnerships, and operating contexts shape its approach to data management.
 - [Principles for research data management](https://trond-k.github.io/cmi-rdm-hub/rdm-principles/): CMI's eight principles for planning, handling, documenting, securing, and sharing research data. A practical reference for researchers and a citable resource for Data Management Plans.
 - [Foundations of data sharing](https://trond-k.github.io/cmi-rdm-hub/foundations-of-data-sharing/): Why sharing research data matters: the historical, epistemic, ethical, and political arguments that underpin open science and responsible data governance.
+- [The documentation layers around research data](https://trond-k.github.io/cmi-rdm-hub/foundations-of-documentation/): Research data is more than files. It is embedded in a documentation ecology that includes metadata, analytic definitions, methodological records, governance documents, and project-level stewardship records.
 - [The research data lifecycle](https://trond-k.github.io/cmi-rdm-hub/research-data-lifecycle/): How the twelve-stage lifecycle model works, why it matters, and how to use it as a practical framework for managing research data at CMI.
 ## Before the project
 
