@@ -11,3 +11,7 @@ wheels/
 
 # Zensical build output
 site/
+
+# OS and editor cruft
+.DS_Store
+.Rhistory
