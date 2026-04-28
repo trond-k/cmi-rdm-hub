@@ -7,7 +7,7 @@ tags:
   - Getting started
   - Tools
 notes: ""
-date_updated: 2026-04-02
+date_updated: 2026-04-28
 ---
 
 # Using this hub with AI assistance
@@ -32,8 +32,21 @@ This single file contains every page in the hub, formatted for AI consumption. Y
 
 There is also a shorter index file, [llms.txt](llms.txt), which lists every page with a one-line description. This is useful if you want to point your assistant at specific pages rather than the entire hub.
 
-!!! warning "Keep your project details out of consumer AI tools"
-    Do not paste sensitive project information (participant names, unpublished data, confidential funding details) into AI assistants that are not approved for use with sensitive data. The prompts below are designed to work with the hub's published guidance; they do not require you to share confidential material.
+## Be careful what you upload
+
+The hub content itself is public, so uploading `llms-full.txt` to an AI tool is safe. The risk is what you add on top of it: project descriptions, draft documents, data extracts, and conversations about identifiable individuals or partners. Many consumer AI services retain inputs, use them to train future models, or process them on infrastructure that has not been assessed against CMI's data classification tiers.
+
+Treat AI tools the same way you would treat any external service handling project data:
+
+- **Do not upload personal data** (interview transcripts, participant lists, recordings, identifying field notes) to consumer AI services. This includes data that has been pseudonymised but not robustly anonymised.
+- **Do not upload unpublished research material** (draft manuscripts, unshared datasets, confidential funding correspondence) unless the tool is covered by a CMI-approved arrangement.
+- **Strip identifying detail from prompts.** Even when discussing your project in the abstract, avoid participant names, exact field sites, and any combination of details that could re-identify individuals or organisations.
+- **Check the tool's data handling.** Is input retained? Used for training? Where is it processed? Free tiers are typically the most permissive about reuse.
+
+The prompts on this page are written to work entirely from the hub's published guidance and short, non-identifying project sketches; they do not require you to share confidential material.
+
+!!! danger "Consult CMI's AI policy before processing research data with AI tools"
+    CMI's institutional AI policy is the authoritative source for which AI tools are approved for which kinds of data, what counts as acceptable use, and the requirements for AI-assisted processing of research data. This page covers the RDM angle only. If in doubt, ask the AI policy first and your Research Data Management Adviser second.
 
 ## Ready-made prompts
 
@@ -48,6 +61,21 @@ a household survey across three countries / analysis of historical
 court records]. Based on CMI's RDM guidance, what should I think about
 at the planning stage? Cover data management planning, legal
 requirements, and storage.
+```
+
+### Drafting a DMP from the CMI template
+
+```text
+I want to draft a Data Management Plan for a project at CMI using
+CMI's DMP template (dmp-cmi.md). The project [briefly describe: e.g.
+collects qualitative interview data in two East African countries over
+three years / runs a multi-country household survey via Sikt
+Nettskjema / works with partner-supplied registry data]. Funder:
+[funder name and grant ID if known]. Walk through the template
+section by section. For each section, summarise what is needed, draft
+project-specific text, and keep the CMI default language verbatim
+where it applies. Flag any section where you need information I have
+not provided.
 ```
 
 ### Checking funder requirements
@@ -114,4 +142,4 @@ Be cautious with:
 !!! tip "Verify before you act"
     Use AI-generated answers as a starting point, not a final authority. For anything involving legal obligations, ethical approvals, or funder compliance, read the relevant hub page directly and consult the appropriate CMI contact.
 
-!!! info "Last reviewed: 2 April 2026"
+!!! info "Last reviewed: 28 April 2026"

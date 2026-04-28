@@ -68,7 +68,7 @@ nav = [
   ]},
   { "Topics" = [
     { "Legal" = [
-      { "GDPR and legal compliance" = "CROSS-gdpr-and-legal-compliance.md" },
+      { "GDPR for your project" = "CROSS-gdpr-and-legal-compliance.md" },
       { "GDPR concepts for researchers" = "CROSS-legal.md" },
       { "Prepare a Sikt notification" = "sikt-notification.md" },
     ]},
