@@ -24,7 +24,7 @@
 - [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/): Close your project systematically: finalise the data inventory, decide what to keep and what to delete, update compliance records, and leave a clear trail for the future.
 ## Legal
 
-- [GDPR and legal compliance](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): How the GDPR applies to CMI research, and the recommended interpretive approach: proportionality, lawful basis, special categories, cross-border transfers, and data subject rights.
+- [GDPR for your project](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): What to do about GDPR if your project involves people: lawful basis, the two consents, cross-border data, DPIAs, and participant requests.
 - [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/): A plain-language reference to GDPR terminology and concepts as they apply to CMI research: roles, personal data, legal basis, principles, safeguards, transfers, rights, and Norwegian institutions.
 - [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/): What the Sikt notification is, what to have ready, and what CMI's standard answers are.
 ## Ethics
@@ -40,7 +40,7 @@
 
 - [Decide whether your project uses personal data](https://trond-k.github.io/cmi-rdm-hub/personal-data-decider/): A guide to understanding what counts as personal data in CMI research, where the boundary lies, and what the distinction means for your project design.
 - [Build a data inventory](https://trond-k.github.io/cmi-rdm-hub/data-inventory/): A running register of every dataset in your project: what it is, where it lives, who is responsible, and how sensitive it is.
-- [Data management plan template](https://trond-k.github.io/cmi-rdm-hub/dmp-cmi/)
+- [Data management plan template](https://trond-k.github.io/cmi-rdm-hub/dmp-cmi/): CMI's institutional DMP template: section structure and default language you can copy into any DMP tool, with pointers to the underlying guidance.
 - [Sikt form walkthrough](https://trond-k.github.io/cmi-rdm-hub/sikt-form-walkthrough/): Section-by-section companion for filling in the Sikt notification form, with all form options and CMI-specific guidance.
 - [Name files and structure folders](https://trond-k.github.io/cmi-rdm-hub/file-and-folder-naming/): Agree on a simple naming pattern and folder layout before the project drifts into confusion.
 - [Using this hub with AI assistants](https://trond-k.github.io/cmi-rdm-hub/using-this-hub-with-ai/): How to use AI tools to get more out of this hub: giving your AI assistant CMI context, ready-made prompts, and honest guidance on what works.
