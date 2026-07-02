@@ -23,7 +23,7 @@ The voice is that of a **senior CMI colleague** who is an expert in open science
   - *colour*, not *color*
   - *programme* (but *program* when referring to software)
   - *focussed* or *focused* are both acceptable in British English; pick one and be consistent. This guide uses **focused**.
-  - *judgement*, not *judgment*
+  - *judgement*, not *judgment* (exception: *judgment* for court rulings, which is standard British legal usage, e.g. *court judgments*)
 
 - **No em dashes.** Do not use em dashes (—) or their spaced variants ( — ). Restructure the sentence instead. Acceptable alternatives:
   - A full stop and a new sentence (preferred when the clause is substantial).

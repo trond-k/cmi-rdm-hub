@@ -8,7 +8,7 @@ tags:
   - Transparency
   - Documentation
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-07-02
 ---
 
 # ANALYSE: data analysis and interpretation
@@ -36,7 +36,7 @@ Keep an analytical notebook, decision log, or memo trail alongside your analysis
 
 Qualitative analysis involves interpretive judgement in ways that quantitative work does not, and this makes documentation both more difficult and more important. The fact that two competent researchers might code the same transcript differently is not a flaw; it is intrinsic to the method. What matters is that your coding decisions are traceable and your reasoning is visible.
 
-If you are working with a coding framework, maintain a codebook that evolves alongside the analysis. For each code, record a definition, inclusion and exclusion criteria, and examples. If your codes change during the process (as they should in most inductive approaches), version the codebook so you can see how your categories developed. If multiple researchers are coding the same material, establish a procedure for comparing coding, discussing disagreements, and reaching resolution. Inter-coder agreement does not need to be perfect, but the process should be documented.
+If you are working with a coding framework, maintain and version the codebook as described at the [PROCESS](lifecycle-6-process.md) stage; the analysis phase is where it evolves fastest. If multiple researchers are coding the same material, establish a procedure for comparing coding, discussing disagreements, and reaching resolution. Inter-coder agreement does not need to be perfect, but the process should be documented.
 
 Analytical memos are the qualitative equivalent of a lab notebook. Use them to record emerging patterns, surprising findings, contradictions, and your own reflexive responses to the material. These memos are not published, but they are the audit trail that connects your raw data to your conclusions.
 
@@ -93,3 +93,7 @@ If you preregistered an analysis plan at the [PLAN](lifecycle-3-plan.md) stage, 
 Report negative results and null findings. A model that shows no effect is a finding, not a failure. Selective reporting, where only significant or supportive results are presented, distorts the evidence base and wastes the effort of future researchers who will not know that a particular approach has already been tried.
 
 Where AI tools have been used in the analysis (classification, pattern detection, text analysis, or any other application), document what was used, how, and with what limitations. Record the tool, the model version, the parameters, and the extent of human review applied to the output. Do not treat AI-generated results as unmediated findings; they are inputs that require the same critical scrutiny as any other analytical output. See [Reproducibility and transparency](reproducibility-and-transparency.md) for detailed guidance on documenting AI use.
+
+## Update the data inventory
+
+Record analysis outputs that are datasets in their own right (coded corpora, derived variables, model outputs) in the [data inventory](data-inventory.md), with a pointer to the scripts or codebook that produced them. If the analysis changed your view of a dataset's sensitivity, update its classification.

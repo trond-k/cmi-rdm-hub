@@ -8,7 +8,7 @@ tags:
   - Personal data
   - Plan
 notes: ""
-date_updated: 2026-04-01
+date_updated: 2026-07-02
 ---
 
 # Prepare a Sikt notification
@@ -99,13 +99,16 @@ When the project ends, report completion through the portal so the notification 
 
 ## Sources and further reading
 
-- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
-- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
-- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
-- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
-- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx) — downloadable Word template for the most common CMI scenario
-- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
-- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
-- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
-- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
-- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data): main entry point for researchers and students
+- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form): what to prepare before you start
+- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research): Sikt's guidance on choosing the right legal basis
+- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants): templates and requirements for information letters
+- [Information letter template (public interest)](https://cms.sikt.no/sites/default/files/2024-10/Template%20for%20information%20letter%20-%20Research%20project%20(public%20interest%20as%20legal%20basis).docx): downloadable Word template for the most common CMI scenario
+- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types): standard, automatic, and DPIA assessments explained
+- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes): how to amend an existing notification
+- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq): common questions answered by Sikt
+- [Data protection services for research](https://sikt.no/en/data-protection-services): overview of Sikt's services for institutions
+- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research): Sikt's comprehensive privacy handbook for researchers
+
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. The Sikt form and guidance evolve; verify against Sikt's current documentation.

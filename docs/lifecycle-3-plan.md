@@ -10,7 +10,7 @@ tags:
   - Ethics
   - Preregistration
 notes: ""
-date_updated: 2026-04-04
+date_updated: 2026-07-02
 ---
 
 # PLAN: data management planning
@@ -74,7 +74,7 @@ These are not boxes to tick after the fact. They shape how you design participan
 
 ### Ethics review
 
-Your project may be subject to review by several bodies with different roles. [Sikt](https://sikt.no/en) assesses projects involving personal data and provides guidance on data protection compliance; it is a review and advisory body, not an approver. The Regional Committees for Medical and Health Research Ethics (REK) review health-related research and do grant formal approval. CMI's own Research Ethics Committee serves as a reviewer and discussion partner; it does not function as an institutional review board, but can provide an approval statement where a funder or partner institution requires one.
+Your project may be subject to review by several bodies with different roles. [Sikt](https://sikt.no/en) assesses projects involving personal data and provides guidance on data protection compliance; it is a review and advisory body, not an approver. REK review health-related research and do grant formal approval. CMI's own Research Ethics Committee serves as a reviewer and discussion partner; it does not function as an institutional review board, but can provide an approval statement where a funder or partner institution requires one.
 
 For multi-site and multi-jurisdictional projects, equivalent bodies in partner countries may also need to review the work, and their requirements can be inconsistent with Norwegian or European frameworks. Build time into your timeline for this; review processes are rarely fast, and revisions are common.
 

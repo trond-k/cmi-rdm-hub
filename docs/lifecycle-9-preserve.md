@@ -38,9 +38,9 @@ The principle is straightforward: prefer open, widely adopted, non-proprietary f
 | Audio | WAV, FLAC | Compressed proprietary formats (WMA) |
 | Video | MPEG-4 (H.264), FFV1 (lossless) | Proprietary container formats |
 | Images | TIFF (archival), PNG, JPEG | RAW formats without a converted copy |
-| Geospatial | GeoJSON, GeoTIFF, Shapefile | Proprietary GIS project files as the sole format |
+| Geospatial | GeoPackage, GeoJSON, GeoTIFF, Shapefile | Proprietary GIS project files as the sole format |
 
-This does not mean you cannot work in Stata or SPSS during the project. It means that when you deposit, you also provide a format-neutral export. A CSV alongside the Stata file costs almost nothing to produce and ensures the data remains readable regardless of which software licences exist in twenty years.
+This does not mean you cannot work in Stata or SPSS during the project. It means that when you deposit, you also provide a format-neutral export. A CSV alongside the Stata file costs almost nothing to produce and ensures the data remains readable regardless of which software licences exist in 20 years.
 
 !!! warning "Conversion can lose information"
     When you export from a proprietary format to an open one, check what survives. Stata and SPSS files carry variable labels, value labels, and missing-value codes that a plain CSV does not. If these are important (and they usually are), include them in the codebook or a separate data dictionary. The open format preserves the data; the documentation preserves the meaning.
@@ -61,7 +61,7 @@ Not all data should be kept indefinitely. Retention decisions are shaped by lega
 
 **Participant commitments.** If your information letter promised participants that their data would be deleted after a specific date or event, you are bound by that promise. This is one reason to draft information letters carefully at the [PLAN](lifecycle-3-plan.md) stage; overly narrow retention promises can prevent you from archiving data that would otherwise have long-term value.
 
-When data must be destroyed, do it properly. For digital files, secure deletion means overwriting, not just moving to the recycle bin. For data held by an archive under embargo, confirm the destruction procedure with the archive. Document when destruction took place, what was destroyed, and by whom. A certificate of destruction (even a brief internal record) closes the loop and demonstrates compliance.
+When data must be destroyed, do it properly. For digital files, secure deletion means overwriting, not just moving to the recycle bin. For data held by an archive under embargo, confirm the destruction procedure with the archive. Document when destruction took place, what was destroyed, and by whom. A certificate of destruction (even a brief internal record) closes the loop and demonstrates compliance. [Project closure](project-closure.md) is where these confirmations are collected for the project as a whole.
 
 !!! tip "Decide retention early, not at the end"
     Retention periods should be specified in the DMP and the [data inventory](data-inventory.md) during the [PLAN](lifecycle-3-plan.md) stage, not improvised when the project winds down. If retention planning is left to the end, researchers face pressure to keep everything (creating GDPR risk) or delete everything (losing research value).
@@ -83,3 +83,6 @@ If your project generates data that requires long-term preservation beyond what 
 ## Close the inventory loop
 
 The [data inventory](data-inventory.md) should now document the full chain for each dataset: where it was preserved, under what access conditions, for how long, and with what persistent identifiers. For destroyed data, record the date and method. This record demonstrates compliance with the GDPR, funder mandates, and commitments to participants.
+
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. Retention rules and repository certification requirements change; verify against your grant agreement and the archive's current policy.

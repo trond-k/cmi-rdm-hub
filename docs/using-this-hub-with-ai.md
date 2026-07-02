@@ -7,7 +7,7 @@ tags:
   - Getting started
   - Tools
 notes: ""
-date_updated: 2026-04-28
+date_updated: 2026-07-02
 ---
 
 # Using this hub with AI assistance
@@ -142,4 +142,5 @@ Be cautious with:
 !!! tip "Verify before you act"
     Use AI-generated answers as a starting point, not a final authority. For anything involving legal obligations, ethical approvals, or funder compliance, read the relevant hub page directly and consult the appropriate CMI contact.
 
-!!! info "Last reviewed: 28 April 2026"
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. AI assistants and their file-handling features change quickly; if a prompt or upload route described here no longer works, check the tool's own documentation.

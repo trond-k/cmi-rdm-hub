@@ -358,9 +358,9 @@ The following is a condensed extract from a real Sikt notification for a CMI pro
 
     **Section 6 (Samples):** Three separate samples defined:
 
-    1. *Frontline workers and caseworkers* — recruited through professional networks, approximately 15 participants in Norway. Data: name, contact information, voice on audio recordings. Method: personal interview. Information: yes, written.
-    2. *Migrants* — Ukrainian and Syrian refugees in Bergen, Voss, and Øygarden. Data: name, contact information, voice, background information, ethnicity, health data, religious beliefs. Method: personal interview, participant observation. Vulnerability: vulnerable groups (refugees), persons residing outside the EU/EEA. Information: yes, written.
-    3. *Persons in immigration case files* — individuals in publicly available court judgments and anonymised case files. Method: register. Information: no (data from existing public sources; individual notification would require disproportionate effort).
+    1. *Frontline workers and caseworkers*: recruited through professional networks, approximately 15 participants in Norway. Data: name, contact information, voice on audio recordings. Method: personal interview. Information: yes, written.
+    2. *Migrants*: Ukrainian and Syrian refugees in Bergen, Voss, and Øygarden. Data: name, contact information, voice, background information, ethnicity, health data, religious beliefs. Method: personal interview, participant observation. Vulnerability: vulnerable groups (refugees), persons residing outside the EU/EEA. Information: yes, written.
+    3. *Persons in immigration case files*: individuals in publicly available court judgments and anonymised case files. Method: register. Information: no (data from existing public sources; individual notification would require disproportionate effort).
 
     **Section 9 (Data-flow description):** 'Audio recordings from interviews are made on encrypted devices and transferred to CMI's secure research server via encrypted transmission. Recordings are transcribed and anonymised, after which the audio files are deleted. The linkage key connecting participant names to pseudonyms is stored separately from the research data on CMI's secure server with restricted access. Ethnographic field notes are written in anonymised form and stored on the same secure server. Only authorised project members have access to the data through multi-factor authentication.'
 
@@ -368,12 +368,7 @@ The following is a condensed extract from a real Sikt notification for a CMI pro
 
 ## Sources and further reading
 
-- [Notification Form for personal data](https://sikt.no/en/study-or-research/notification-form-personal-data) — main entry point for researchers and students
-- [Checklist for filling out the Notification Form](https://sikt.no/en/study-or-research/notification-form-personal-data/checklist-filling-out-notification-form) — what to prepare before you start
-- [Consent or public interest as legal basis](https://sikt.no/en/legal-basis-personal-data-processing-research) — Sikt's guidance on choosing the right legal basis
-- [Information for participants in research projects](https://sikt.no/en/study-or-research/notification-form-personal-data/information-for-participants) — templates and requirements for information letters
-- [Types of assessments](https://sikt.no/en/study-or-research/notification-form-personal-data/assessment/types) — standard, automatic, and DPIA assessments explained
-- [Notify changes in the project](https://sikt.no/en/study-or-research/notification-form-personal-data/notify-changes) — how to amend an existing notification
-- [FAQ about data protection and notification form](https://sikt.no/en/study-or-research/notification-form-personal-data/faq) — common questions answered by Sikt
-- [Data protection services for research](https://sikt.no/en/data-protection-services) — overview of Sikt's services for institutions
-- [Guide to data protection in research](https://sikt.no/en/tjenester/personverntjenester-forskning/guide-data-protection-research) — Sikt's comprehensive privacy handbook for researchers
+The annotated list of Sikt's own guidance pages, templates, and FAQ is maintained on [Prepare a Sikt notification](sikt-notification.md); it applies equally to this walkthrough.
+
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. Sikt revises the form's sections and options; if the form in front of you differs from this walkthrough, follow the form and tell rdm@cmi.no.

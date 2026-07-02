@@ -9,7 +9,7 @@ tags:
   - Persistent identifiers
   - Sensitive data
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-07-02
 ---
 
 # DISCOVER: findability
@@ -44,7 +44,7 @@ Regardless of the schema, the following elements matter most for findability:
 
 A DOI gives your dataset a permanent, resolvable address. It ensures the dataset can be found and cited even if the repository changes its URL structure, and it enables automated linking between outputs. Trustworthy archives assign DOIs on deposit. The task here is to use them consistently.
 
-Cite your dataset by its DOI in your publications. Link the dataset to the articles that use it, and link those articles back to the dataset. Use [ORCIDs](https://orcid.org/) for researchers and [ROR IDs](https://ror.org/) for institutions to connect outputs to the people and organisations that produced them. This network of identifiers is what makes cross-referencing work: a reader who finds your article can follow the DOI to the data; a reader who finds the data can follow the link back to the article.
+Cite your dataset by its DOI in your publications. Link the dataset to the articles that use it, and link those articles back to the dataset, using the researcher and institution identifiers described at the [PUBLISH](lifecycle-8-publish.md) stage. This network of identifiers is what makes cross-referencing work: a reader who finds your article can follow the DOI to the data; a reader who finds the data can follow the link back to the article.
 
 !!! warning "A DOI without metadata is a dead end"
     A persistent identifier makes a dataset permanently addressable, but if the metadata behind it is sparse or inaccurate, the identifier leads to a landing page that tells the reader almost nothing. The identifier and the metadata work as a pair: the identifier gets the reader to the door, and the metadata tells them what is inside.
@@ -76,7 +76,7 @@ You do not need to understand the technical details of metadata harvesting or se
 
 ## Findability is not a separate task
 
-Much of what makes data findable is a by-product of other decisions: the choice of archive, the quality of metadata provided at deposit, and the consistent use of persistent identifiers. This page draws those threads together and makes the reasoning explicit. If your archive is trustworthy and your metadata is thorough, discoverability largely takes care of itself. The value of thinking about findability as a distinct concern is that it helps you check whether anything has been missed, particularly for restricted datasets where the data are hidden but the metadata should not be.
+Much of what makes data findable is a by-product of other decisions: the choice of archive, the quality of metadata provided at deposit, and the consistent use of persistent identifiers. This page draws those threads together and makes the reasoning explicit. If your archive is trustworthy and your metadata is thorough, discoverability largely takes care of itself. The value of thinking about findability as a distinct concern is that it helps you check whether anything has been missed, particularly for restricted datasets where the data are hidden but the metadata should not be. The [data inventory](data-inventory.md) needs nothing new at this stage; publication details were finalised at [PUBLISH](lifecycle-8-publish.md).
 
 !!! info "Last reviewed"
     This page was last reviewed on 26 March 2026. Metadata standards, repository features, and discovery infrastructure evolve; verify current capabilities against the relevant documentation.

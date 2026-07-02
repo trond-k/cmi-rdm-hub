@@ -9,7 +9,7 @@ tags:
   - Sensitive data
   - MS365
 notes: "Resolve all issue concering checks for researcher to do themselves; this guide should have the answers, not list more tasks for reseaarchers to do."
-date_updated: 2026-04-04
+date_updated: 2026-07-02
 ---
 
 # STORE: active data storage
@@ -45,7 +45,7 @@ Some data cannot or should not be stored in the standard MS365 environment. The 
 
 If your project processes personal data that falls into the GDPR's special categories (health data, political opinions, ethnic origin, biometric data), or if the risk profile is elevated because of the research context (conflict zones, authoritarian settings, vulnerable populations), consider a dedicated secure environment.
 
-[TSD (Tjenester for Sensitive Data)](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your DPIA or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
+[TSD](https://www.uio.no/english/services/it/research/sensitive-data/) is the standard Norwegian solution for sensitive research data. It provides an isolated environment with strict access controls, two-factor authentication, and data residency within Norway. TSD is appropriate when your DPIA or institutional policy requires a higher level of protection than the standard MS365 configuration offers.
 
 For projects involving encrypted file sharing with external partners, particularly in contexts where participants or collaborators face surveillance risks, [Tresorit](https://tresorit.com/) and [ProtonDrive](https://proton.me/drive) offer end-to-end encryption. These are useful for transit and collaboration, but they are not a substitute for a managed research environment like TSD for long-term storage of sensitive data.
 
@@ -101,9 +101,11 @@ For text documents and spreadsheets, MS365's real-time co-authoring and version 
 
 Your storage arrangements may be subject to external requirements beyond your own preferences:
 
-- **GDPR data residency.** Microsoft stores CMI's MS365 data in EU/EEA data centres, which satisfies GDPR residency requirements for most purposes. The question becomes relevant when you move data outside the default infrastructure: sharing files through a non-EU cloud service, transferring data to a partner institution in a country without an EU adequacy decision (i.e. one whose data protection standards the EU has not recognised as essentially equivalent to the GDPR), or using a specialist platform hosted outside Europe. If your project involves any of these, check the legal basis for the transfer before data moves. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
+- **Storage location and the GDPR.** Microsoft stores CMI's MS365 data in EU/EEA data centres. The GDPR has no residency requirement as such, and EU data centres alone do not settle every question about a US-owned provider, but for most CMI purposes this arrangement, combined with the data processing agreement, is acceptable. The question becomes more acute when you move data outside the default infrastructure: sharing files through a non-EU cloud service, transferring data to a partner institution in a country without an EU adequacy decision (i.e. one whose data protection standards the EU has not recognised as essentially equivalent to the GDPR), or using a specialist platform hosted outside Europe. If your project involves any of these, check the legal basis for the transfer before data moves. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 - **Funder mandates.** Some funders specify that data must be stored on institutional or national infrastructure during the project. Check the grant agreement.
 - **Contractual obligations.** Commissioned research may include clauses on data handling, storage location, or access that constrain your choices.
+
+## Update the data inventory
 
 Document your storage arrangements in the DMP and the [data inventory](data-inventory.md), and revisit them if circumstances change (a new partner joins, a dataset turns out to be more sensitive than anticipated, or a provider changes its terms of service).
 

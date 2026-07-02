@@ -33,7 +33,7 @@ The interpretive choices behind these steps are summarised in the sections that 
 
 The CMI default lawful basis is **public interest (GDPR Art. 6(1)(e))**, supported by the Norwegian Personal Data Act §8 and the research-specific provisions in GDPR Art. 89. It applies across the full range of CMI research involving personal data: qualitative, quantitative, mixed methods, interviews, surveys, ethnography, register studies, and evaluations. It is not limited to large-scale or registry-based work.
 
-For **special category data** under Art. 9 (racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, data about sex life or sexual orientation), use the additional basis in **Art. 9(2)(j)** for scientific research purposes with appropriate safeguards under Art. 89(1). The Norwegian Personal Data Act §9 provides the national implementation.
+For **special category data** under Art. 9 (the full list is in [GDPR concepts for researchers](CROSS-legal.md)), use the additional basis in **Art. 9(2)(j)** for scientific research purposes with appropriate safeguards under Art. 89(1). The Norwegian Personal Data Act §9 provides the national implementation.
 
 GDPR consent (Art. 6(1)(a)) is **not** the lawful basis for general processing. Topics sometimes treated as requiring consent, such as recording, name use in publications, and archiving for reuse, are matters to inform participants about in the information letter. They are not GDPR consent elements layered on top of public interest.
 
@@ -51,15 +51,7 @@ Ethical consent is separate from the GDPR lawful basis, and it is always require
 
 **Ethical consent** is the obligation, rooted in research ethics and the NESH guidelines, to ensure participation is voluntary, informed, and revocable. See [Informed consent and information letters](CROSS-ethics.md) for letter mechanics.
 
-**What the letter must inform participants about.** The letter must cover whatever the participant needs to understand the project and their role in it. For most CMI projects this includes:
-
-- the purpose of the research;
-- that the interview will be recorded, filmed, or photographed, where applicable;
-- whether and how the participant may be identified or named in publications;
-- how data will be stored and for how long;
-- whether and where data may be archived for future reuse;
-- how rights such as access, correction, and erasure can be exercised;
-- whom to contact with questions.
+**What the letter must inform participants about.** The letter must cover whatever the participant needs to understand the project and their role in it: the purpose of the research, whether they will be recorded or named, how their data is stored and for how long, archiving plans, their rights, and whom to contact. The full checklist, with wording guidance, is in [Informed consent and information letters](CROSS-ethics.md).
 
 Where the participant has a meaningful choice (for example, whether to be recorded, whether to be named, or whether their data may be archived for reuse), offer it as a project decision they make in the letter, not as a separate "GDPR consent" element layered on top of public interest.
 
@@ -81,7 +73,7 @@ CMI researchers routinely collect data outside the EEA, in countries that lack E
 A DPIA is required under Art. 35 when processing is likely to result in a high risk to data subjects. Most CMI projects with a small number of qualitative interviews will not trigger one. A multi-country survey with thousands of respondents on sensitive topics likely will. Contact rdm@cmi.no early if you are unsure; the assessment is easier to do alongside Sikt preparation than retroactively.
 
 ??? example "When a DPIA is recommended"
-    Consider a DPIA when two or more of the following apply: large-scale processing of personal data; systematic evaluation or profiling; processing of special category data in sensitive contexts; processing data on vulnerable groups; or combining datasets from different sources. A DPIA documents the nature and purpose of the processing, the risks to data subjects, and the measures in place to mitigate those risks. It is an internal assessment, not a regulatory submission.
+    Consider a DPIA when two or more of the following apply: large-scale processing of personal data; systematic evaluation or profiling; processing of special category data in sensitive contexts; processing data on vulnerable groups; or combining datasets from different sources. A DPIA documents the nature and purpose of the processing, the risks to data subjects, and the measures in place to mitigate those risks. It is an internal assessment, not a regulatory submission, with one exception: if the DPIA concludes that a high residual risk remains after mitigation, Art. 36 requires prior consultation with Datatilsynet before processing begins.
 
 ## Participant requests
 

@@ -10,7 +10,7 @@ tags:
   - Data inventory
   - DMP
 notes: ""
-date_updated: 2026-04-04
+date_updated: 2026-07-02
 ---
 
 # Project closure
@@ -19,7 +19,7 @@ date_updated: 2026-04-04
 
 ## Why closure matters
 
-During the project, many data management decisions are provisional. You store data in a working location, grant access to collaborators, and maintain documentation that is "good enough for now." Closure is when you settle these open questions. If you skip it, the consequences tend to surface later:
+During the project, many data management decisions are provisional. You store data in a working location, grant access to collaborators, and maintain documentation that is 'good enough for now'. Closure is when you settle these open questions. If you skip it, the consequences tend to surface later:
 
 - A funder audit requests documentation of how data was handled.
 - A data subject exercises their rights and the project cannot locate the relevant records.
@@ -63,7 +63,7 @@ Ask yourself:
 
 ## Decide the fate of each dataset
 
-Every dataset needs a clear disposition decision. There are four options.
+Every dataset needs a clear disposition decision. There are four options. The retention obligations and destruction procedures behind them are covered at the [PRESERVE](lifecycle-9-preserve.md) stage.
 
 ### Delete
 
@@ -131,7 +131,7 @@ If you registered a [Sikt](https://sikt.no/en) notification for the project, upd
 
 ### Other compliance obligations
 
-- **REC (Regional Ethics Committee):** Notify if required by your approval conditions.
+- **REK:** Notify if required by your approval conditions.
 - **Data processing agreements:** Confirm that processor obligations have been fulfilled; retain agreements for your records.
 - **Data sharing agreements:** Confirm terms have been met; note any ongoing obligations.
 

@@ -106,7 +106,6 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 ??? note "Key sections of the Norwegian Personal Data Act"
     The most relevant national provisions for CMI researchers:
 
-    - **Section 8** provides the legal basis for processing personal data in the public interest, including scientific research. This anchors the use of public interest (Article 6(1)(e)) as the lawful basis for research in Norway.
+    - **Section 8** provides the legal basis for processing personal data in the public interest for scientific or historical research, statistical purposes, and archiving in the public interest. This anchors the use of public interest (Article 6(1)(e)) as the lawful basis for research in Norway.
     - **Section 9** implements the derogation for special category data processing for research purposes (Article 9(2)(j)).
     - **Section 17** implements research-specific modifications to data subject rights (Article 89(2)), allowing certain rights to be limited when processing serves the public interest and appropriate safeguards are in place.
-    - **Section 26** provides for processing of personal data for archiving purposes in the public interest.

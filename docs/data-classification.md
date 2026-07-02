@@ -9,7 +9,7 @@ tags:
   - Compliance
   - Sensitive data
 notes: ""
-date_updated: 2026-04-04
+date_updated: 2026-07-02
 ---
 
 # Data classification
@@ -78,7 +78,7 @@ Classification reflects the data's current state, not its origin or intended des
 
         Do not upload, paste, or input identifiable personal data into general-purpose consumer AI tools (ChatGPT, Claude consumer, Google Translate, or similar). Only enterprise tools with a Data Processing Agreement and a no-training guarantee are acceptable for Red-tier data. This includes transcription and translation services: if you are transcribing recordings containing personal data, the service must have a DPA and must not use uploaded audio for training.
 
-    A DPIA may be required for Red-tier data, particularly when the data includes sensitive personal information (health, ethnicity, political opinion), when the research context is politically sensitive, or when the processing is large-scale (hundreds of participants or more). Contact [dpo@cmi.no](mailto:dpo@cmi.no) for DPIA guidance.
+    A DPIA may be required for Red-tier data, particularly when the data includes sensitive personal information (health, ethnicity, political opinion), when the research context is politically sensitive, or when the processing is large-scale (hundreds of participants or more). Contact [rdm@cmi.no](mailto:rdm@cmi.no) for DPIA guidance.
 
 === ":black_circle: Black (Strictly confidential)"
 
@@ -94,7 +94,7 @@ Classification reflects the data's current state, not its origin or intended des
 
         Data remains within the approved secure infrastructure determined for the project. No AI tools, no cloud-based transcription, no external survey platforms unless they are part of the approved infrastructure.
 
-    A DPIA is almost certainly required. Contact [dpo@cmi.no](mailto:dpo@cmi.no) before data collection begins.
+    A DPIA is almost certainly required. Contact [rdm@cmi.no](mailto:rdm@cmi.no) before data collection begins.
 
     For fieldwork involving Black-tier data, develop explicit data handling protocols: device encryption, transfer procedures, and deletion schedules for field devices. Do not proceed with data collection until storage and handling arrangements have been confirmed.
 
@@ -132,7 +132,7 @@ Your data classification and project risk level together determine which documen
 | **Funder DMP** | Projects funded by the Research Council of Norway, Horizon Europe, ERC, or other funders with DMP requirements |
 | **Sikt notification** | Projects processing personal data in a Norwegian context |
 | **DPIA** | High-risk processing; large-scale sensitive data; new technologies applied to personal data |
-| **REC application** | Health research or research involving human biological material |
+| **REK application** | Health research or research involving human biological material |
 | **Data Processing Agreement** | When an external party processes personal data on your behalf (or you on theirs) |
 | **Consortium or data sharing agreement** | Multi-partner projects with shared data |
 
@@ -176,4 +176,4 @@ If your project involves personal data, you need to know whether CMI is the **da
 
 ## Contact
 
-For questions about data classification and data management, contact [rdm@cmi.no](mailto:rdm@cmi.no). For DPIA, legal basis, and other GDPR concerns, contact [dpo@cmi.no](mailto:dpo@cmi.no). For IT support and secure storage setup, contact [help@cmi.no](mailto:help@cmi.no).
+For questions about data classification, DPIAs, and data management, contact [rdm@cmi.no](mailto:rdm@cmi.no), which escalates to the DPO where needed. For other GDPR concerns, contact [dpo@cmi.no](mailto:dpo@cmi.no). For IT support and secure storage setup, contact [help@cmi.no](mailto:help@cmi.no).

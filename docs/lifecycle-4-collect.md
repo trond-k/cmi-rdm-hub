@@ -9,7 +9,7 @@ tags:
   - Ethics
   - Data inventory
 notes: ""
-date_updated: 2026-04-04
+date_updated: 2026-07-02
 ---
 
 # COLLECT: data gathering
@@ -23,7 +23,7 @@ Whether you are conducting interviews, running a household survey, recording obs
 Design your instruments with downstream use in mind. Interview guides should include consistent identifiers that link to your [file naming convention](file-and-folder-naming.md). Survey instruments should use validated scales where available and define variables precisely enough that a codebook can be generated directly from them. Observation schedules should specify what counts as an instance of the behaviour or event you are recording.
 
 !!! tip "Pilot everything"
-    Test instruments, protocols, and workflows before full-scale collection. A pilot reveals ambiguous questions, technical failures, unrealistic time estimates, and gaps in your documentation plan. It is far cheaper to discover that your recording equipment cannot handle background noise, or that a survey question is consistently misunderstood, before you are in the field with fifty participants scheduled.
+    Test instruments, protocols, and workflows before full-scale collection. A pilot reveals ambiguous questions, technical failures, unrealistic time estimates, and gaps in your documentation plan. It is far cheaper to discover that your recording equipment cannot handle background noise, or that a survey question is consistently misunderstood, before you are in the field with 50 participants scheduled.
 
 For multi-site projects, harmonisation matters. If different teams are collecting data in different locations, agree on shared instruments, coding schemes, and quality thresholds before collection begins. Minor variations in question wording, response categories, or data entry conventions can make datasets incomparable. Document any site-specific adaptations and the reasons for them.
 
@@ -100,7 +100,7 @@ Field notes, interview logs, and collection diaries serve this purpose. They do 
 
     Notes: Interview conducted at participant's workplace (private office,
     door closed). Participant initially hesitant to discuss local government
-    procurement — became more forthcoming after recorder was briefly paused
+    procurement; became more forthcoming after recorder was briefly paused
     at their request. Two passages in Twi will need translation before
     transcription. Audio quality good throughout.
     ```

@@ -10,7 +10,7 @@ tags:
   - Data citation
   - Open access
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-07-02
 ---
 
 # PUBLISH: formal dissemination of data and outputs
@@ -81,3 +81,6 @@ For qualitative and mixed-methods work, full computational reproducibility is ra
 ## Finalise the data inventory
 
 Update the [data inventory](data-inventory.md) with publication details for each dataset: repository, persistent identifier, access conditions, embargo timelines, and licence. For datasets not deposited, record the rationale.
+
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. Funder policies and repository features change; verify against the current policy documents and the repository's own guidance.

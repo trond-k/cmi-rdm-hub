@@ -7,7 +7,7 @@ tags:
   - Getting started
   - Data inventory
 notes: ""
-date_updated: 2026-03-27
+date_updated: 2026-07-02
 ---
 
 # The research data lifecycle
@@ -87,4 +87,5 @@ Sensitivity, legal compliance, and AI governance are additional cross-cutting th
 !!! tip "Start with where you are"
     You do not need to read every stage before acting. If your project is already under way, go to the stage that matches your current situation. Each page is self-contained enough to be useful on its own, with links to earlier and later stages where your decisions depend on them.
 
-!!! info "Last reviewed: 27 March 2026"
+!!! info "Last reviewed"
+    This page was last reviewed on 2 July 2026. The lifecycle model itself is stable; the stage pages it links to are updated more often.
