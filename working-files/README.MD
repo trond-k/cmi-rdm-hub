@@ -14,7 +14,6 @@ so working material maps directly to its published destination.
 | `after-the-project/` | After the project | Publish, Preserve, Discover, Access, Share & Reuse, closure |
 | `topics/` | Topics nav section | Legal, ethics, security, reproducibility |
 | `tools-and-templates/` | Tools and templates | Data inventory, DMP, Sikt form, AI usage |
-| `perspectives/` | Perspectives | Working material for commentary pieces |
 
 Three folders sit outside the mirror structure:
 
@@ -22,7 +21,8 @@ Three folders sit outside the mirror structure:
 |--------|---------|
 | `_archive/` | Superseded early drafts and retired widgets |
 | `_meta/` | Blueprints, prompts, and internal operational recommendations |
-| `examples/` | Real-world examples (e.g. actual project DMPs) |
+| `examples/` | Fictional example documents (e.g. an exemplar DMP; real project DMPs were removed from the public repo) |
+| `data-inventory-approach-cmi/` | Draft materials for the CMI data inventory approach |
 
 ## How to use
 
