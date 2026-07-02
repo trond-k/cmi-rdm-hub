@@ -1,14 +1,14 @@
 ---
 icon: lucide/shield-check
 title: "GDPR for your project"
-description: "What to do about GDPR if your project involves people: lawful basis, the two consents, cross-border data, DPIAs, and participant requests."
+description: "What to do about GDPR if your project involves people: lawful basis, ethical consent and participant information, cross-border data, DPIAs, and participant requests."
 tags:
   - GDPR
   - Legal compliance
   - Data protection
   - Cross-cutting
 notes: ""
-date_updated: 2026-04-28
+date_updated: 2026-07-02
 ---
 
 # GDPR for your project
@@ -73,7 +73,7 @@ CMI researchers routinely collect data outside the EEA, in countries that lack E
 
 - **Fieldwork data collection.** A CMI researcher collecting data on an encrypted device abroad and uploading to CMI storage in Norway needs practical safeguards (device encryption, secure upload, password protection), not Standard Contractual Clauses. The data never leaves the controller's operations.
 - **Local research assistants.** When a research assistant works under CMI's instruction, they are part of the controller's operations. Clear data handling instructions, encrypted devices, and a confidentiality clause in their contract are sufficient.
-- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Art. 26) is often the right fit. The research derogation (Art. 49(1)(d)) is a further option for transfers necessary for scientific research in the public interest.
+- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Art. 26) is often the right fit. The research derogation (Art. 49(1)(d)) is a further option for occasional transfers necessary for scientific research in the public interest, but the EDPB treats Art. 49 derogations as exceptions; for systematic, repeated sharing over the life of a collaboration, put an agreement in place instead.
 - **Cloud services and digital tools.** A standard data processing agreement from the service provider is typically sufficient. Prefer tools that offer EEA-based or Swiss-based processing where available.
 
 ## When a DPIA is needed

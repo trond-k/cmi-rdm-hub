@@ -9,7 +9,7 @@ tags:
   - Reference
   - Cross-cutting
 notes: ""
-date_updated: 2026-03-28
+date_updated: 2026-07-02
 ---
 
 # GDPR concepts for researchers
@@ -84,7 +84,7 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 
 **Standard Contractual Clauses (SCCs).** Pre-approved contract templates for transferring personal data to countries outside the EEA (Article 46(2)(c)). Designed for commercial data processing relationships. For research collaborations, joint controllership agreements or the research derogation are often more proportionate alternatives.
 
-**DPIA.** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
+**DPIA.** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#when-a-dpia-is-needed) for when a DPIA applies.
 
 ## Data transfers
 
@@ -92,11 +92,11 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 
 **Adequacy decision (Article 45).** A finding by the European Commission that a country provides adequate data protection, so data can flow there without additional safeguards. Countries with adequacy decisions include the UK, Japan, and South Korea. Most CMI fieldwork countries do not have adequacy decisions.
 
-**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical and proportionate mechanism for many CMI fieldwork and collaboration transfers.
+**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical option for occasional transfers where no other safeguard fits, but a derogation rather than a standing arrangement: the EDPB treats Article 49 as an exception for non-repetitive transfers, so systematic, repeated sharing needs an agreement under Articles 26 or 46 instead.
 
 ## Sikt and REK
 
-**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is a legal requirement. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
+**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is required under CMI's procedures: it is how the institution documents that its GDPR obligations are met, not a separate statutory approval. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
 
 **REK (Regional Committees for Medical and Health Research Ethics).** The ethics committees that review health research under the Health Research Act. REK approval is required for projects that fall under this act: clinical trials, health registry studies, and research that aims to generate new knowledge about health and disease. Most CMI health-related research is social science research about health (access to services, health policy, wellbeing outcomes) and does not require REK approval. If you are unsure, consult the RDM contact (rdm@cmi.no).
 

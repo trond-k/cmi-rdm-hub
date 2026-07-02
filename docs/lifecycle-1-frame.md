@@ -8,10 +8,10 @@ tags:
   - Sensitivity
   - Feasibility
 notes: ""
-date_updated: 2026-03-25
+date_updated: 2026-07-02
 ---
 
-# Stag 1 - Frame: design and conceptualise
+# FRAME: design and conceptualise
 
 *Good data management starts before data collection, before the funding application, and before the Data Management Plan. It starts when you first think concretely about what data your research questions require. The decisions you make (or postpone) at this stage cascade through the entire lifecycle. Getting them right early prevents costly redesign later.*
 
@@ -66,7 +66,7 @@ Data sensitivity is not binary. A dataset that seems straightforward in one cont
 Ask yourself:
 
 - Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)? See [Decide whether your project uses personal data](personal-data-decider.md) for detailed guidance.
-- Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious beliefs, health data, trade union membership, genetic or biometric data?
+- Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic or biometric data, health data, or data concerning a person's sex life or sexual orientation?
 - Could disclosure cause harm to participants, their families, or their communities, whether through legal repercussions, social stigma, political retaliation, or physical danger?
 - Does the data involve indigenous or community knowledge where governance rights may apply?
 - Are there commercial confidentiality or client privilege concerns, particularly in commissioned research?

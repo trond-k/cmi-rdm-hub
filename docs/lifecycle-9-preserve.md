@@ -9,7 +9,7 @@ tags:
   - Retention
   - FAIR
 notes: ""
-date_updated: 2026-03-26
+date_updated: 2026-07-02
 ---
 
 # PRESERVE: long-term data preservation
@@ -57,7 +57,7 @@ Not all data should be kept indefinitely. Retention decisions are shaped by lega
 
 **Legal minimums.** The GDPR requires that personal data be kept no longer than necessary for the purpose of processing. For research, this means identifiable data should be anonymised or deleted once the research purpose is fulfilled, unless a specific legal basis permits longer retention. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 
-**Funder requirements.** Most funders specify minimum retention periods. The Research Council of Norway and Horizon Europe typically expect data to be preserved for at least ten years after the end of the project, though the specific requirement varies by call. Check your grant agreement.
+**Funder requirements.** Most funders specify minimum retention periods. The Research Council of Norway expects data to be preserved for at least ten years after the end of the project. Horizon Europe sets no fixed retention period for data; it requires deposit in a trusted repository as soon as possible, and grant records must be kept for five years after the balance payment. Check your grant agreement, as requirements vary by call.
 
 **Participant commitments.** If your information letter promised participants that their data would be deleted after a specific date or event, you are bound by that promise. This is one reason to draft information letters carefully at the [PLAN](lifecycle-3-plan.md) stage; overly narrow retention promises can prevent you from archiving data that would otherwise have long-term value.
 

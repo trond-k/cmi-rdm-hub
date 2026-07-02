@@ -7,7 +7,7 @@ tags:
   - Plan
   - Template
 notes: ""
-date_updated: 2026-04-28
+date_updated: 2026-07-02
 ---
 
 # CMI data management plan template
@@ -120,7 +120,7 @@ State whether the project processes personal data, from whom, and which data pro
 
 **Data subject rights.** Under the public interest basis, data subject rights are modified by Art. 89(2) and the Norwegian Personal Data Act §17. There is no GDPR consent to withdraw (only ethical withdrawal and the right to object), the right to erasure is limited (Art. 17(3)(d)), and the right to data portability does not apply. The information letter should give a concrete deadline after which deletion may no longer be feasible.
 
-**International data transfers.** State whether personal data crosses borders, between which countries, and under what circumstances. Apply CMI's proportional approach: practical safeguards for CMI researchers abroad and research assistants; joint controllership agreements (Art. 26) preferred over SCCs for partner institutions; the research derogation (Art. 49(1)(d)) as an alternative; platform-based solutions for US-based partners.
+**International data transfers.** State whether personal data crosses borders, between which countries, and under what circumstances. Apply CMI's proportional approach: practical safeguards for CMI researchers abroad and research assistants; joint controllership agreements (Art. 26) preferred over SCCs for partner institutions; the research derogation (Art. 49(1)(d)) as an alternative for occasional, non-repetitive transfers; platform-based solutions for US-based partners.
 
 **Retention and disposal.** Describe the deletion procedure across all systems, including partner copies, and maintain a deletion log.
 

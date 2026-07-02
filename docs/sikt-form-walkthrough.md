@@ -8,7 +8,7 @@ tags:
   - Personal data
   - Plan
 notes: ""
-date_updated: 2026-04-01
+date_updated: 2026-07-02
 ---
 
 # Sikt form walkthrough
@@ -265,7 +265,7 @@ List the people or organisations that will actually access personal data:
 
 For many CMI projects, [third-country transfer](CROSS-legal.md) is unavoidable because partners, processors, or fieldwork operations involve organisations outside the EU/EEA. If so, select 'Yes' and add one entry per organisation with the transfer basis that matches the real arrangement (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for CMI's tiered approach to transfers):
 
-- 'Decision on adequate level of protection (Art. 45(3))' applies only if the recipient country has an EU adequacy decision (UK, Japan, South Korea, Canada, etc.)
+- 'Decision on adequate level of protection (Art. 45(3))' applies only if the recipient country has an EU adequacy decision (UK, Japan, South Korea, and others; note that Canada's decision covers only commercial organisations, so it rarely applies to university or public-sector partners)
 - 'Covered by necessary safeguards (Art. 46)' applies when covered by a joint controllership agreement, DPA, or standard contractual clauses
 - 'Derogations for specific situations (Art. 49)' includes the research derogation for transfers necessary for important reasons of public interest
 

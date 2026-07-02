@@ -10,7 +10,7 @@ tags:
   - Fieldwork
   - Cross-cutting
 notes: ""
-date_updated: 2026-03-28
+date_updated: 2026-07-02
 ---
 
 # Informed consent and information letters
@@ -21,7 +21,7 @@ date_updated: 2026-03-28
 
 The information letter fulfils two functions at once. First, it satisfies GDPR transparency obligations under Articles 13 and 14 by telling participants how their data will be processed. Second, it documents ethical consent: by receiving the information and choosing to take part, participants confirm their voluntary, informed engagement with the research.
 
-When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [the consent distinction](CROSS-gdpr-and-legal-compliance.md#the-consent-distinction-ethical-consent-and-gdpr-consent).
+When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [ethical consent and participant information](CROSS-gdpr-and-legal-compliance.md#ethical-consent-and-participant-information).
 
 ## What to include
 
