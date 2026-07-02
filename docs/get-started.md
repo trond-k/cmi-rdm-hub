@@ -7,7 +7,7 @@ tags:
   - Lifecycle
   - Navigation
 notes: ""
-date_updated: 2026-03-27
+date_updated: 2026-07-02
 ---
 
 # Start here
@@ -50,14 +50,16 @@ You are wrapping up, publishing, and ensuring long-term access.
 - [**Discover**](lifecycle-10-discover.md) – apply metadata standards so others can find your data
 - [**Access**](lifecycle-11-access.md) – define who can use your data and under what conditions
 - [**Share and Reuse**](lifecycle-12-share-and-reuse.md) – license your data and document it well enough for responsible reuse
+- [**Project closure**](project-closure.md) – confirm that every dataset has a decision and every promise to participants is kept
 
-### Cross-cutting guidance
+### Beyond the lifecycle
 
-Some topics run across multiple stages. These pages address them in one place rather than repeating the same advice throughout:
+Four further sections support the lifecycle stages:
 
-- [Reproducibility and transparency](reproducibility-and-transparency.md) – documenting tools, decisions, and AI use; preregistration
-- [File and folder naming](file-and-folder-naming.md) – conventions that prevent confusion as files multiply
-- [The data inventory](data-inventory.md) – a running register of every dataset in your project
+- **Topics** address questions that run across multiple stages: [GDPR for your project](CROSS-gdpr-and-legal-compliance.md), [GDPR concepts for researchers](CROSS-legal.md), [preparing a Sikt notification](sikt-notification.md), [informed consent and information letters](CROSS-ethics.md), [data classification](data-classification.md), and [reproducibility and transparency](reproducibility-and-transparency.md)
+- **Tools and templates** are working instruments you apply directly: the [personal data decider](personal-data-decider.md), the [data inventory](data-inventory.md), the [DMP template](dmp-cmi.md), the [Sikt form walkthrough](sikt-form-walkthrough.md), [file and folder naming](file-and-folder-naming.md), and [using this hub with AI assistants](using-this-hub-with-ai.md)
+- **Foundations** give the bigger picture: [the elements of RDM](elements-of.md), [CMI's institutional context](cmi-institutional-context.md), [principles for research data management](rdm-principles.md), [foundations of data sharing](foundations-of-data-sharing.md), and [the research data lifecycle](research-data-lifecycle.md)
+- **Perspectives** are short commentaries on recent research and policy developments relevant to how CMI manages data
 
 ## Where to start
 
@@ -85,4 +87,4 @@ Whatever stage you are at, two actions pay for themselves quickly:
 
 2. **Adopt a [file naming convention](file-and-folder-naming.md).** Agree on it with your team before files start multiplying. Renaming hundreds of files later is tedious work that nobody wants to do.
 
-!!! info "Last reviewed: 27 March 2026"
+!!! info "Last reviewed: 2 July 2026"

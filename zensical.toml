@@ -45,7 +45,7 @@ Copyright &copy; 2026 Chr Michelsen Institute
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "Get started" = "get-started.md" },
+  { "Start here" = "get-started.md" },
   { "Before the project" = [
     "before-the-project.md",
     { "Frame - Design and conceptualise" = "lifecycle-1-frame.md" },

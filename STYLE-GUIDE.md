@@ -70,12 +70,7 @@ Every abbreviation, acronym, or technical term must be made accessible to a read
 1. **Tooltip (via `includes/abbreviations.md`).** Abbreviations listed in the global abbreviations file get automatic hover tooltips on every page. For these terms, do **not** also spell them out inline. The tooltip provides the expansion. This is the right mechanism for frequently used, cross-cutting abbreviations (e.g., GDPR, DMP, FAIR, RDM, DPIA, DOI).
 2. **Inline expansion.** For abbreviations that appear on only one or two pages, or that are niche or discipline-specific, spell them out on first use with the abbreviation in parentheses: *Systematizing Confidence in Open Research and Evidence (SCORE)*. Do **not** add these to `includes/abbreviations.md`.
 
-In addition, you may link to a glossary entry or external source on first use:
-
-- **Link to the glossary.** The guide maintains a glossary of RDM terms. Link to the relevant entry on first use: e.g., `[DMP](/glossary#dmp)`.
-- **Link to the external source.** For tools, platforms, standards, organisations, and specifications, link to the official website or homepage on first use: e.g., [Zenodo](https://zenodo.org), [DataCite](https://datacite.org).
-
-When both a glossary entry and an external link are relevant, prefer the glossary link in the body text and include the external URL in the glossary entry itself. This keeps the text clean while ensuring the reader can always find the source.
+In addition, link to the external source on first use: for tools, platforms, standards, organisations, and specifications, link to the official website or homepage, e.g., [Zenodo](https://zenodo.org), [DataCite](https://datacite.org).
 
 **Do not assume the reader knows what things are.** A historian should be able to read the section on genomic data and understand what is at stake, even if the detail is not for them. A bioinformatician should be able to read the section on qualitative data and not feel excluded.
 
@@ -130,30 +125,10 @@ This guide takes AI seriously as a practical tool, not as a revolution. Avoid in
 
 ---
 
-## Glossary and linking conventions
+## Abbreviations and linking conventions
 
-The guide has two complementary systems for making terms accessible:
-
-1. **The glossary page** (`glossary.md`). A full, browsable reference of RDM terms, tools, standards, and abbreviations. Each entry provides a definition and, where applicable, a link to the official source.
-2. **The global abbreviations file** (`includes/abbreviations.md`). A machine-readable list of abbreviation expansions that Zensical renders as hover tooltips on every page. Reserve this for frequently used, cross-cutting abbreviations only. Because tooltips appear on **every** occurrence of the term on every page, adding niche or single-page abbreviations here creates unnecessary visual noise.
-
-These two systems serve different purposes. The glossary page is for readers who want to look something up. The abbreviations file is for readers who encounter a term in passing and need a quick reminder. Both should be kept in sync: every abbreviation in the abbreviations file should also have a glossary entry, and vice versa.
+**The global abbreviations file** (`includes/abbreviations.md`) is a machine-readable list of abbreviation expansions that Zensical renders as hover tooltips on every page. Reserve this for frequently used, cross-cutting abbreviations only (appearing on four or more pages). Because tooltips appear on **every** occurrence of the term on every page, adding niche or single-page abbreviations here creates unnecessary visual noise.
 
 **Important:** Do not both spell out an abbreviation inline and define it in `includes/abbreviations.md`. Use one mechanism or the other. See [Explain abbreviations and technical terms](#explain-abbreviations-and-technical-terms) for guidance on which to choose.
 
-### When to add a glossary entry
-
-Add a glossary entry when:
-- A term, abbreviation, or acronym is used in the guide and is not common knowledge outside the field (e.g., FAIR, DMP, DOI, ORCID, pseudonymisation, CoreTrustSeal).
-- A tool or platform is referenced by name (e.g., Zenodo, DMPonline, KoBoToolbox, Whisper).
-- A standard or specification is mentioned (e.g., Dublin Core, DataCite, Darwin Core, TEI-XML).
-
-If the term has an abbreviation **and** appears on four or more pages, also add it to `includes/abbreviations.md`. For abbreviations that appear on only one or two pages, spell out inline on first use instead.
-
-### Glossary entry format
-
-Each entry should include:
-- **Term** (with abbreviation if applicable).
-- **Definition** in one to three sentences.
-- **Link** to the official homepage or specification, where one exists.
-- **Related terms** or cross-references within the glossary, where useful.
+For terms without an abbreviation, define them in the text on first use, in one to three sentences or a parenthetical clause. For tools, platforms, and standards, link to the official homepage on first use.

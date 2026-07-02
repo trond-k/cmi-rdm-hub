@@ -38,7 +38,7 @@ Pages covering rapidly evolving topics (AI tools, specific funder policies, data
     topics, verify against the latest source.
 ```
 
-This is not required for stable, foundational content (glossary definitions, general principles) but should be used wherever the guidance has a shelf life.
+This is not required for stable, foundational content (general principles, foundational concepts) but should be used wherever the guidance has a shelf life.
 
 ---
 
@@ -53,39 +53,35 @@ Zensical uses **Python Markdown** with extensions. This is not CommonMark or Git
 Always link to the **Markdown source file**, not to the generated HTML path. Zensical translates these to the correct output URLs automatically.
 
 ```markdown
-See the [PLAN stage](../stages/plan.md) for details.
+See the [PLAN stage](lifecycle-3-plan.md) for details.
 ```
 
 Use **relative paths**, not absolute paths. This ensures links survive site restructuring and work correctly regardless of the `use_directory_urls` setting.
 
-### Abbreviations and the global glossary file
+### Abbreviations
 
-Zensical supports automatic abbreviation tooltips via the `abbr` extension and `pymdownx.snippets`. This is the primary mechanism for making abbreviations accessible throughout the guide without repeating definitions on every page.
+Zensical supports automatic abbreviation tooltips via the `abbr` extension and `pymdownx.snippets`. This is the primary mechanism for making frequently used abbreviations accessible throughout the guide without repeating definitions on every page.
 
-Maintain a single file at `includes/abbreviations.md` (a dotfile inside `docs/`, hidden from navigation) containing all abbreviation definitions:
+A single file at `includes/abbreviations.md` (outside `docs/`, so it is not published as a page) contains the tooltip definitions:
 
 ```markdown
 *[RDM]: Research Data Management
 *[DMP]: Data Management Plan
 *[DOI]: Digital Object Identifier
-*[ORCID]: Open Researcher and Contributor ID
 *[FAIR]: Findable, Accessible, Interoperable, Reusable
 *[GDPR]: General Data Protection Regulation
 *[CARE]: Collective Benefit, Authority to Control, Responsibility, Ethics
-*[PID]: Persistent Identifier
-*[LLM]: Large Language Model
-*[OCR]: Optical Character Recognition
-*[API]: Application Programming Interface
 ```
 
-Configure auto-append in the project configuration so that every page inherits these definitions:
+The auto-append configuration in `zensical.toml` makes every page inherit these definitions:
 
 ```toml
 [project.markdown_extensions.pymdownx.snippets]
-auto_append = [".abbreviations.md"]
+auto_append = ["abbreviations.md"]
+base_path = ["includes"]
 ```
 
-**When to add to the abbreviations file:** whenever a new abbreviation or acronym is introduced in any content page, add its definition to `includes/abbreviations.md`.
+**One mechanism per abbreviation.** Frequently used, cross-cutting abbreviations (appearing on 4+ pages) go in `includes/abbreviations.md` and are **not** also spelled out inline. Niche or page-specific abbreviations (1–2 pages) are spelled out on first use with the abbreviation in parentheses and are **not** added to the abbreviations file.
 
 ### Admonitions
 
@@ -115,7 +111,7 @@ Available types and their intended use in this guide:
 ```markdown
 !!! warning "Do not confuse backup with archiving"
     Active project backups and long-term preservation serve different
-    purposes. See the [PRESERVE stage](../stages/preserve.md) for the
+    purposes. See the [PRESERVE stage](lifecycle-9-preserve.md) for the
     distinction.
 ```
 
@@ -156,13 +152,13 @@ Use card grids for landing pages, navigation aids, or visual overviews (e.g. the
 
     Define the problem space and articulate research questions.
 
-    [Read more](stages/frame.md)
+    [Read more](lifecycle-1-frame.md)
 
 - :material-cash: **FUND**
 
     Align data planning with funder requirements.
 
-    [Read more](stages/fund.md)
+    [Read more](lifecycle-2-fund.md)
 
 </div>
 ```
@@ -185,7 +181,7 @@ Do not use footnotes for content that belongs in the body text. If the informati
 
 ### Tooltips on links
 
-Add tooltip text to links where a brief explanation helps the reader without requiring a full glossary detour:
+Add tooltip text to links where a brief explanation helps the reader without interrupting the text:
 
 ```markdown
 [CoreTrustSeal](https://www.coretrustseal.org/ "A certification for trustworthy data repositories")
@@ -200,10 +196,9 @@ Zensical supports Material Design icons and FontAwesome. Use icons sparingly, pr
 ## File and section naming
 
 - Use lowercase and hyphens for file names: `data-management-plan.md`, not `DataManagementPlan.md`.
-- Stage files use the stage name: `frame.md`, `fund.md`, `plan.md`, etc.
-- Discipline files use a short descriptor: `natural-physical-sciences.md`, `humanities.md`.
-- The glossary is a single file: `glossary.md`.
-- The global abbreviations file is at `includes/abbreviations.md` (a dotfile, hidden from navigation).
+- Lifecycle stage files are numbered and named: `lifecycle-1-frame.md`, `lifecycle-2-fund.md`, ..., `lifecycle-12-share-and-reuse.md`.
+- Topics pages and Perspectives pieces use the `CROSS-` prefix: `CROSS-gdpr-and-legal-compliance.md`, `CROSS-replication-evidence.md`.
+- The global abbreviations file is at `includes/abbreviations.md` (outside `docs/`, appended to every page at build time).
 
 ---
 
@@ -222,11 +217,10 @@ Before any content is published or merged, check that it meets the following:
 
 **Inclusivity and accessibility**
 
-- [ ] All abbreviations explained on first use (spelled out, glossary-linked, or both).
+- [ ] Every abbreviation uses exactly one definition mechanism: tooltip via `includes/abbreviations.md` (4+ pages) or inline expansion on first use (1–2 pages), never both.
 - [ ] All tools, platforms, and standards linked to their homepage on first use.
 - [ ] Descriptive link text (no 'click here').
 - [ ] Alt text provided for all images and diagrams.
-- [ ] New abbreviations added to `includes/abbreviations.md`.
 
 **Content**
 
@@ -234,7 +228,7 @@ Before any content is published or merged, check that it meets the following:
 - [ ] Specific tools named where AI is discussed, not just 'AI'.
 - [ ] Guidance is distinguished from legal requirements and funder mandates.
 - [ ] Cross-references used instead of duplicating content.
-- [ ] Glossary entries created for any new terms introduced.
+- [ ] New terms defined in the text on first use.
 
 **Page design**
 

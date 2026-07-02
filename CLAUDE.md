@@ -33,9 +33,9 @@ docs/                  Published content pages (Markdown)
   stylesheets/         Custom CSS (hero.css)
   llms.txt             Auto-generated LLM page index (do not edit)
   llms-full.txt        Auto-generated full-content LLM file (do not edit)
-  CROSS-*.md           Cross-cutting guidance pages
+  CROSS-*.md           Topics pages and Perspectives pieces
   lifecycle-*.md       12 lifecycle stage pages
-  personal-data-decider.md  Personal data guidance (linked from pages)
+  personal-data-decider.md  Personal data guidance (in nav under Tools and templates)
   index.md             Homepage
 includes/              Shared snippets
   abbreviations.md     Global abbreviation definitions (rendered as hover tooltips)
@@ -46,35 +46,35 @@ scripts/               Build-time utility scripts
 reports/               Funder requirement reports (ERC, Horizon Europe, Norad, RCN)
   themes-reports/      Theme-specific reports
 working-files/         Drafts, research notes, and work-in-progress (not published)
-  blueprints/          AI blueprints for content generation
-  prompts/             Prompt templates
-  widgets/             Archived interactive HTML widget files and injection script
-  (+ 13 other topic subdirectories)
+  _archive/            Early drafts and archived interactive widget files
+  _meta/               AI blueprints, prompt templates, and internal recommendations
+  examples/            Example documents (e.g. DMPs)
+  (+ subdirectories mirroring the site navigation: before/during/after-the-project,
+     foundations, tools-and-templates, topics, data-inventory-approach-cmi)
 zensical.toml          Site configuration (navigation, theme, features)
 pyproject.toml         Python project metadata
 STYLE-GUIDE.md         Content style and tone guidelines (MUST READ)
 PERSPECTIVES-GUIDE.md  Style supplement for Perspectives pieces (READ for commentaries)
 REVIEW-CHECKLIST.md    Pre-publication quality checklist (MUST READ)
-DOCS-AUDIT.md          Content audit and development planning tracker
-base-content-architecture.md  Content strategy and lifecycle stage details
+base-content-architecture.md  Early content strategy and lifecycle stage details (predates the current nav)
 ```
 
 ## Content architecture
 
-The site is organised into seven navigation sections defined in `zensical.toml` under the `nav` key:
+The site is organised into eight navigation sections defined in `zensical.toml` under the `nav` key:
 
 | Section | Content |
 |---------|---------|
 | Start here | Landing page (`get-started.md`) |
-| Foundations | Core concepts: elements of RDM, CMI context, principles, data sharing, lifecycle overview |
 | Before the project | Phase landing page + Frame, Fund, Plan |
 | During the project | Collect, Store, Process, Analyse |
-| After the project | Publish, Preserve, Discover, Access, Share & Reuse |
-| Using this hub | AI assistant usage guidance |
+| After the project | Publish, Preserve, Discover, Access, Share & Reuse, Project closure |
+| Topics | Nested subsections: Legal (GDPR pages, Sikt notification), Ethics (consent and information letters), Security and data classification, Reproducibility and transparency |
+| Tools and templates | Personal data decider, data inventory, DMP template, Sikt form walkthrough, file naming, using the hub with AI assistants |
+| Foundations | Core concepts: elements of RDM, CMI context, principles, data sharing, lifecycle overview |
 | Perspectives | Short commentaries on recent research or policy developments (see `PERSPECTIVES-GUIDE.md`) |
-| Cross-cutting guidance | Reproducibility, file naming, data inventory, GDPR/legal, ethics, Sikt notifications |
 
-The 12 lifecycle stages follow three phases (Before / During / After the project). Cross-cutting guidance applies across all stages. Interactive tools (e.g. `personal-data-decider.md`) are linked from content pages but may not appear directly in the nav.
+The 12 lifecycle stages follow three phases (Before / During / After the project). Topics pages apply across all stages.
 
 ## Critical style and content rules
 
@@ -121,7 +121,8 @@ The 12 lifecycle stages follow three phases (Before / During / After the project
 ## CI/CD
 
 The `.github/workflows/docs.yml` workflow:
-- Triggers on push to `master` or `main`
+- Triggers on push to `main`
+- Regenerates the llms.txt files with `python scripts/generate_llms_txt.py`
 - Builds with `zensical build --clean`
 - Deploys the `site/` directory to GitHub Pages
 

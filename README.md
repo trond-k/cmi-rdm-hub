@@ -11,6 +11,7 @@ docs/               Content pages (Markdown)
 includes/           Shared snippets (abbreviations, etc.)
 overrides/          Theme template overrides
 reports/            Funder requirements and theme reports
+scripts/            Build-time utilities (llms.txt generation)
 working-files/      Drafts, early documents, and working notes
 zensical.toml       Site configuration
 ```
@@ -44,6 +45,11 @@ The site follows a 12-stage research data lifecycle grouped into three phases:
 |--------------------|-------------------------------------------|
 | Before the project | Frame, Fund, Plan                         |
 | During the project | Collect, Store, Process, Analyse          |
-| After the project  | Publish, Preserve, Discover, Access, Share & Reuse |
+| After the project  | Publish, Preserve, Discover, Access, Share & Reuse, Project closure |
 
-Cross-cutting guidance (reproducibility, file naming, data inventory) applies across all stages.
+Four further sections support the lifecycle stages:
+
+- **Topics**: guidance that runs across stages (GDPR and legal, ethics and consent, Sikt notifications, data classification, reproducibility and transparency)
+- **Tools and templates**: working instruments (personal data decider, data inventory, DMP template, Sikt form walkthrough, file naming, using the hub with AI assistants)
+- **Foundations**: core concepts (elements of RDM, CMI's institutional context, RDM principles, data sharing, the lifecycle itself)
+- **Perspectives**: short commentaries on recent research and policy developments
