@@ -2,9 +2,10 @@
 
 > A hub for research data management resources and best practices at CMI - Chr. Michelsen Institute.
 
-- [Get started](https://trond-k.github.io/cmi-rdm-hub/get-started/): A quick orientation to the RDM Hub: what it covers, how it is structured, and where to go depending on where you are in your project.
+- [Start here](https://trond-k.github.io/cmi-rdm-hub/get-started/): A quick orientation to the RDM Hub: what it covers, how it is structured, and where to go depending on where you are in your project.
 ## Before the project
 
+- [Before the project](https://trond-k.github.io/cmi-rdm-hub/before-the-project/): From concept to kick-off: framing the research data landscape, securing resources, and formalising plans before data collection begins.
 - [Frame - Design and conceptualise](https://trond-k.github.io/cmi-rdm-hub/lifecycle-1-frame/): Define what data your project needs, whether it already exists, and what challenges collection will involve.
 - [Fund - Align with funder requirements](https://trond-k.github.io/cmi-rdm-hub/lifecycle-2-fund/): Align your data plans with funder requirements, budget for data management, and make binding commitments you can actually keep.
 - [Plan - Formalise data handling](https://trond-k.github.io/cmi-rdm-hub/lifecycle-3-plan/): Formalise how your project will handle data: who is responsible, what legal frameworks apply, and how the DMP will evolve.
@@ -24,7 +25,7 @@
 - [Project closure](https://trond-k.github.io/cmi-rdm-hub/project-closure/): Close your project systematically: finalise the data inventory, decide what to keep and what to delete, update compliance records, and leave a clear trail for the future.
 ## Legal
 
-- [GDPR for your project](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): What to do about GDPR if your project involves people: lawful basis, the two consents, cross-border data, DPIAs, and participant requests.
+- [GDPR for your project](https://trond-k.github.io/cmi-rdm-hub/CROSS-gdpr-and-legal-compliance/): What to do about GDPR if your project involves people: lawful basis, ethical consent and participant information, cross-border data, DPIAs, and participant requests.
 - [GDPR concepts for researchers](https://trond-k.github.io/cmi-rdm-hub/CROSS-legal/): A plain-language reference to GDPR terminology and concepts as they apply to CMI research: roles, personal data, legal basis, principles, safeguards, transfers, rights, and Norwegian institutions.
 - [Prepare a Sikt notification](https://trond-k.github.io/cmi-rdm-hub/sikt-notification/): What the Sikt notification is, what to have ready, and what CMI's standard answers are.
 ## Ethics

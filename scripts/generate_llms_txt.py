@@ -79,7 +79,14 @@ def walk_nav(nav_items: list) -> list[tuple[str, str, str]]:
 
     def _walk(items: list, section: str = ""):
         for item in items:
-            if isinstance(item, dict):
+            if isinstance(item, str):
+                # Bare filename entry (e.g. a section index page): derive the
+                # title from the page's frontmatter, falling back to the slug.
+                md_path = DOCS_DIR / item
+                fm = extract_frontmatter(md_path) if md_path.exists() else {}
+                title = fm.get("title") or item.removesuffix(".md").replace("-", " ").capitalize()
+                results.append((section, title, item))
+            elif isinstance(item, dict):
                 for title, value in item.items():
                     if isinstance(value, str):
                         results.append((section, title, value))

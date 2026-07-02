@@ -4,7 +4,7 @@
 
 ---
 
-## [Get started](https://trond-k.github.io/cmi-rdm-hub/get-started/)
+## [Start here](https://trond-k.github.io/cmi-rdm-hub/get-started/)
 
 # Start here
 
@@ -46,14 +46,16 @@ You are wrapping up, publishing, and ensuring long-term access.
 - [**Discover**](lifecycle-10-discover.md) – apply metadata standards so others can find your data
 - [**Access**](lifecycle-11-access.md) – define who can use your data and under what conditions
 - [**Share and Reuse**](lifecycle-12-share-and-reuse.md) – license your data and document it well enough for responsible reuse
+- [**Project closure**](project-closure.md) – confirm that every dataset has a decision and every promise to participants is kept
 
-### Cross-cutting guidance
+### Beyond the lifecycle
 
-Some topics run across multiple stages. These pages address them in one place rather than repeating the same advice throughout:
+Four further sections support the lifecycle stages:
 
-- [Reproducibility and transparency](reproducibility-and-transparency.md) – documenting tools, decisions, and AI use; preregistration
-- [File and folder naming](file-and-folder-naming.md) – conventions that prevent confusion as files multiply
-- [The data inventory](data-inventory.md) – a running register of every dataset in your project
+- **Topics** address questions that run across multiple stages: [GDPR for your project](CROSS-gdpr-and-legal-compliance.md), [GDPR concepts for researchers](CROSS-legal.md), [preparing a Sikt notification](sikt-notification.md), [informed consent and information letters](CROSS-ethics.md), [data classification](data-classification.md), and [reproducibility and transparency](reproducibility-and-transparency.md)
+- **Tools and templates** are working instruments you apply directly: the [personal data decider](personal-data-decider.md), the [data inventory](data-inventory.md), the [DMP template](dmp-cmi.md), the [Sikt form walkthrough](sikt-form-walkthrough.md), [file and folder naming](file-and-folder-naming.md), and [using this hub with AI assistants](using-this-hub-with-ai.md)
+- **Foundations** give the bigger picture: [the elements of RDM](elements-of.md), [CMI's institutional context](cmi-institutional-context.md), [principles for research data management](rdm-principles.md), [foundations of data sharing](foundations-of-data-sharing.md), and [the research data lifecycle](research-data-lifecycle.md)
+- **Perspectives** are short commentaries on recent research and policy developments relevant to how CMI manages data
 
 ## Where to start
 
@@ -81,13 +83,44 @@ Whatever stage you are at, two actions pay for themselves quickly:
 
 2. **Adopt a [file naming convention](file-and-folder-naming.md).** Agree on it with your team before files start multiplying. Renaming hundreds of files later is tedious work that nobody wants to do.
 
-!!! info "Last reviewed: 27 March 2026"
+!!! info "Last reviewed: 2 July 2026"
+
+---
+
+## [Before the project](https://trond-k.github.io/cmi-rdm-hub/before-the-project/)
+
+# Before the project
+
+*The decisions you make before data collection begins set the trajectory for everything that follows. These three stages establish the intellectual, administrative, and procedural foundations for data management. Getting this right reduces friction, cost, and risk throughout the lifecycle.*
+
+## Three stages, one goal
+
+The 'before' phase covers three distinct stages, each with its own focus:
+
+| Stage | Focus | Key outcome |
+|-------|-------|-------------|
+| [**Frame**](lifecycle-1-frame.md) | Design and conceptualise | A clear picture of what data you need, whether it exists, and what handling it will involve |
+| [**Fund**](lifecycle-2-fund.md) | Align with funder requirements | A proposal that commits to realistic data management and budgets for it |
+| [**Plan**](lifecycle-3-plan.md) | Formalise data handling | A working Data Management Plan with roles, responsibilities, and legal groundwork in place |
+
+These stages overlap in practice. You may start planning before the funding decision, or revisit your framing after a funder requests changes. The lifecycle is a guide, not a rigid sequence.
+
+## Common questions at this stage
+
+??? question "Do I need a Data Management Plan before I apply for funding?"
+    Not a full DMP, but your proposal should demonstrate that you have thought about data management. Most funders expect a data management strategy in the application, and some (RCN, Horizon Europe) require a DMP within the first months of the project. See [Fund](lifecycle-2-fund.md) for funder-specific requirements.
+
+??? question "How do I know if my project involves personal data?"
+    See [Decide whether your project uses personal data](personal-data-decider.md) for a detailed guide. The definition is broader than most researchers expect: it includes any information that can be linked to an identifiable person, directly or indirectly. Audio recordings, IP addresses logged by survey platforms, and combinations of background variables in small populations all count.
+
+??? question "When should I contact Sikt?"
+    Before data collection begins, if your project involves personal data. See [Prepare a Sikt notification](sikt-notification.md) for what to have ready before you start the form.
 
 ---
 
 ## [Frame - Design and conceptualise](https://trond-k.github.io/cmi-rdm-hub/lifecycle-1-frame/)
 
-# Stag 1 - Frame: design and conceptualise
+# FRAME: design and conceptualise
 
 *Good data management starts before data collection, before the funding application, and before the Data Management Plan. It starts when you first think concretely about what data your research questions require. The decisions you make (or postpone) at this stage cascade through the entire lifecycle. Getting them right early prevents costly redesign later.*
 
@@ -142,7 +175,7 @@ Data sensitivity is not binary. A dataset that seems straightforward in one cont
 Ask yourself:
 
 - Does the data contain personal information, whether directly identifying (names, ID numbers) or potentially identifying through context (a specific role in a small community, a distinctive set of demographic characteristics)? See [Decide whether your project uses personal data](personal-data-decider.md) for detailed guidance.
-- Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious beliefs, health data, trade union membership, genetic or biometric data?
+- Does it fall into the GDPR's special categories: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic or biometric data, health data, or data concerning a person's sex life or sexual orientation?
 - Could disclosure cause harm to participants, their families, or their communities, whether through legal repercussions, social stigma, political retaliation, or physical danger?
 - Does the data involve indigenous or community knowledge where governance rights may apply?
 - Are there commercial confidentiality or client privilege concerns, particularly in commissioned research?
@@ -878,7 +911,7 @@ Not all data should be kept indefinitely. Retention decisions are shaped by lega
 
 **Legal minimums.** The GDPR requires that personal data be kept no longer than necessary for the purpose of processing. For research, this means identifiable data should be anonymised or deleted once the research purpose is fulfilled, unless a specific legal basis permits longer retention. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md).
 
-**Funder requirements.** Most funders specify minimum retention periods. The Research Council of Norway and Horizon Europe typically expect data to be preserved for at least ten years after the end of the project, though the specific requirement varies by call. Check your grant agreement.
+**Funder requirements.** Most funders specify minimum retention periods. The Research Council of Norway expects data to be preserved for at least ten years after the end of the project. Horizon Europe sets no fixed retention period for data; it requires deposit in a trusted repository as soon as possible, and grant records must be kept for five years after the balance payment. Check your grant agreement, as requirements vary by call.
 
 **Participant commitments.** If your information letter promised participants that their data would be deleted after a specific date or event, you are bound by that promise. This is one reason to draft information letters carefully at the [PLAN](lifecycle-3-plan.md) stage; overly narrow retention promises can prevent you from archiving data that would otherwise have long-term value.
 
@@ -1383,7 +1416,7 @@ CMI researchers routinely collect data outside the EEA, in countries that lack E
 
 - **Fieldwork data collection.** A CMI researcher collecting data on an encrypted device abroad and uploading to CMI storage in Norway needs practical safeguards (device encryption, secure upload, password protection), not Standard Contractual Clauses. The data never leaves the controller's operations.
 - **Local research assistants.** When a research assistant works under CMI's instruction, they are part of the controller's operations. Clear data handling instructions, encrypted devices, and a confidentiality clause in their contract are sufficient.
-- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Art. 26) is often the right fit. The research derogation (Art. 49(1)(d)) is a further option for transfers necessary for scientific research in the public interest.
+- **Partner institutions.** For genuine research collaborations, a joint controllership agreement (Art. 26) is often the right fit. The research derogation (Art. 49(1)(d)) is a further option for occasional transfers necessary for scientific research in the public interest, but the EDPB treats Art. 49 derogations as exceptions; for systematic, repeated sharing over the life of a collaboration, put an agreement in place instead.
 - **Cloud services and digital tools.** A standard data processing agreement from the service provider is typically sufficient. Prefer tools that offer EEA-based or Swiss-based processing where available.
 
 ## When a DPIA is needed
@@ -1487,7 +1520,7 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 
 **Standard Contractual Clauses (SCCs).** Pre-approved contract templates for transferring personal data to countries outside the EEA (Article 46(2)(c)). Designed for commercial data processing relationships. For research collaborations, joint controllership agreements or the research derogation are often more proportionate alternatives.
 
-**DPIA.** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#data-protection-impact-assessment) for when a DPIA applies.
+**DPIA.** A structured assessment of the risks that data processing poses to data subjects, and the measures taken to mitigate those risks (Article 35). Required when processing is likely to result in a high risk to individuals. See [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md#when-a-dpia-is-needed) for when a DPIA applies.
 
 ## Data transfers
 
@@ -1495,11 +1528,11 @@ The GDPR was driven by the explosion of large-scale commercial data processing. 
 
 **Adequacy decision (Article 45).** A finding by the European Commission that a country provides adequate data protection, so data can flow there without additional safeguards. Countries with adequacy decisions include the UK, Japan, and South Korea. Most CMI fieldwork countries do not have adequacy decisions.
 
-**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical and proportionate mechanism for many CMI fieldwork and collaboration transfers.
+**Research derogation (Article 49(1)(d)).** A provision allowing transfers necessary for important reasons of public interest, which includes scientific research. A practical option for occasional transfers where no other safeguard fits, but a derogation rather than a standing arrangement: the EDPB treats Article 49 as an exception for non-repetitive transfers, so systematic, repeated sharing needs an agreement under Articles 26 or 46 instead.
 
 ## Sikt and REK
 
-**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is a legal requirement. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
+**Sikt.** The Norwegian Agency for Shared Services in Education and Research. Sikt provides data protection advisory services for research. The Sikt notification form is the mechanism by which research institutions report personal data processing in research projects. Filing a notification is required under CMI's procedures: it is how the institution documents that its GDPR obligations are met, not a separate statutory approval. Sikt assesses whether the described processing is consistent with data protection requirements and advises if they see concerns; they do not approve or reject research.
 
 **REK (Regional Committees for Medical and Health Research Ethics).** The ethics committees that review health research under the Health Research Act. REK approval is required for projects that fall under this act: clinical trials, health registry studies, and research that aims to generate new knowledge about health and disease. Most CMI health-related research is social science research about health (access to services, health policy, wellbeing outcomes) and does not require REK approval. If you are unsure, consult the RDM contact (rdm@cmi.no).
 
@@ -1629,7 +1662,7 @@ When the project ends, report completion through the portal so the notification 
 
 The information letter fulfils two functions at once. First, it satisfies GDPR transparency obligations under Articles 13 and 14 by telling participants how their data will be processed. Second, it documents ethical consent: by receiving the information and choosing to take part, participants confirm their voluntary, informed engagement with the research.
 
-When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [the consent distinction](CROSS-gdpr-and-legal-compliance.md#the-consent-distinction-ethical-consent-and-gdpr-consent).
+When the recommended lawful basis is public interest (Article 6(1)(e)), the information letter **informs**; it does not ask for GDPR consent to process data. Participants are free to decline to participate (their ethical right), but their participation is not contingent on signing a GDPR consent form. For the full rationale on this distinction, see [ethical consent and participant information](CROSS-gdpr-and-legal-compliance.md#ethical-consent-and-participant-information).
 
 ## What to include
 
@@ -2314,7 +2347,7 @@ State whether the project processes personal data, from whom, and which data pro
 
 **Data subject rights.** Under the public interest basis, data subject rights are modified by Art. 89(2) and the Norwegian Personal Data Act §17. There is no GDPR consent to withdraw (only ethical withdrawal and the right to object), the right to erasure is limited (Art. 17(3)(d)), and the right to data portability does not apply. The information letter should give a concrete deadline after which deletion may no longer be feasible.
 
-**International data transfers.** State whether personal data crosses borders, between which countries, and under what circumstances. Apply CMI's proportional approach: practical safeguards for CMI researchers abroad and research assistants; joint controllership agreements (Art. 26) preferred over SCCs for partner institutions; the research derogation (Art. 49(1)(d)) as an alternative; platform-based solutions for US-based partners.
+**International data transfers.** State whether personal data crosses borders, between which countries, and under what circumstances. Apply CMI's proportional approach: practical safeguards for CMI researchers abroad and research assistants; joint controllership agreements (Art. 26) preferred over SCCs for partner institutions; the research derogation (Art. 49(1)(d)) as an alternative for occasional, non-repetitive transfers; platform-based solutions for US-based partners.
 
 **Retention and disposal.** Describe the deletion procedure across all systems, including partner copies, and maintain a deletion log.
 
@@ -2668,7 +2701,7 @@ List the people or organisations that will actually access personal data:
 
 For many CMI projects, [third-country transfer](CROSS-legal.md) is unavoidable because partners, processors, or fieldwork operations involve organisations outside the EU/EEA. If so, select 'Yes' and add one entry per organisation with the transfer basis that matches the real arrangement (see [GDPR and legal compliance](CROSS-gdpr-and-legal-compliance.md) for CMI's tiered approach to transfers):
 
-- 'Decision on adequate level of protection (Art. 45(3))' applies only if the recipient country has an EU adequacy decision (UK, Japan, South Korea, Canada, etc.)
+- 'Decision on adequate level of protection (Art. 45(3))' applies only if the recipient country has an EU adequacy decision (UK, Japan, South Korea, and others; note that Canada's decision covers only commercial organisations, so it rarely applies to university or public-sector partners)
 - 'Covered by necessary safeguards (Art. 46)' applies when covered by a joint controllership agreement, DPA, or standard contractual clauses
 - 'Derogations for specific situations (Art. 49)' includes the research derogation for transfers necessary for important reasons of public interest
 
